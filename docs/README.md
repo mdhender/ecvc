@@ -10,7 +10,7 @@ The documentation in this folder is licensed under the
 See [LICENSE](LICENSE) for the full text.
 
 This license applies only to the documentation.
-It is separate from the license that covers the code in this repository.
+It is separate from the license that covers the code in this repository, which is licensed under the [GNU Affero General Public License v3.0](../LICENSE).
 
 ## Contents
 
