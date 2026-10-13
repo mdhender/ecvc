@@ -204,10 +204,10 @@ However you choose to play, good gaming and good luck.
 <a id="rule-A2.1"></a>
 ### A2.1 Computer Map
 
-The cluster is mapped on a three-dimensional grid, and is 30 light years per side.
+The cluster is a sphere with a radius of 26 light years, mapped on a three-dimensional grid with its center at the origin, (0,0,0).
 Each axis is numbered in light years.
-Star systems are designated in the computer by their coordinates, which are stored as three two-digit numbers.
-These numbers range from 0 to 30, an example being 28/02/28.
+Star systems are designated by their coordinates, written (x,y,z) with no spaces, such as (12,-3,7).
+Each coordinate is a whole number of light years; a star system is never at a fraction of a light year.
 
 There are 100 star systems in a game.
 
@@ -217,15 +217,17 @@ There are 100 star systems in a game.
 If two or more stars are at the same coordinates, they are known as a binary star system (two stars), or a trinary star system (three stars), etc.
 Each star of the star system has 10 orbits around it; each star with its planets revolves around the other star (or stars).
 The star system also has an orbit 0, which surrounds all of its solar systems ([A3.1](#rule-A3.1)).
-Each solar system of a multiple star system is designated by adding a letter to the coordinates.
-Thus, star B of star system 28/02/18 designates the second solar system of a multiple star system.
-By convention, Star A always designates the first star of a star system, even if the star system contains only a single star.
+The stars of a star system are numbered from 1, and each solar system is designated by adding its star's number to the coordinates, written (x,y,z,N).
+Thus, (12,-3,7,2) designates the second solar system of the multiple star system at (12,-3,7).
+Star 1 always designates the first star of a star system, even if the star system contains only a single star.
 
 <a id="rule-A2.3"></a>
 ### A2.3 Coordinates on the Printout
 
-All coordinates are given relative to each race's home planet.
-So, each race's home planet coordinates are always 0/0/0.
+All coordinates on a printout are given relative to the race's home planet: they are moved so that the home planet is at the origin, keeping the same orientation.
+So, each race's home planet coordinates are always (0,0,0).
+For a race whose home planet is at (13,13,13), the origin of the cluster is shown as (-13,-13,-13), and the star system at (12,-3,7) is shown as (-1,-16,-6).
+MOV and JMP orders use the coordinates as they are shown on the printout ([S14.1](#rule-S14.1), [S14.2](#rule-S14.2)).
 At the start of the game, a player gets a free magnitude-10 probe report on his printout.
 This will give the coordinates of all stars within 10 light years from the home planet, their distances from the home planet, and a list showing the type of planet in each orbit of each solar system in the home star system.
 
@@ -235,6 +237,7 @@ This will give the coordinates of all stars within 10 light years from the home 
 Each star ("solar system") has at least one planet, with no more than 10 planets per star.
 A solar system has 10 orbits, numbered from 1 to 10; number 1 is closest to the star; and number 10 is farthest from it.
 Each orbit may be occupied by one planet of any type.
+An orbit is designated by adding its number, 1 to 10, to the solar system's designation, written (x,y,z,N,O); thus, (12,-3,7,2,4) is orbit 4 of star 2 in the star system at (12,-3,7).
 The star system around a solar system also has an orbit 0, which holds no planet ([A3.1](#rule-A3.1)).
 
 There are from 500 to 700 planets in a game.
@@ -247,6 +250,8 @@ Orbit 0 belongs to the star system, not to any of its solar systems; it surround
 Orbit 0 is never occupied by a planet, so no colony can be set up there, but ships may stay in it.
 Ships from other star systems always arrive in orbit 0 ([C3.1](#rule-C3.1), [C3.2.1](#rule-C3.2.1)).
 A ship in orbit 0 moves to an orbit of any star in the star system with a MOV order ([S14.1](#rule-S14.1)).
+Orbit 0 is designated by adding 0 to the star system's coordinates, written (x,y,z,0); thus, (12,-3,7,0) is orbit 0 of the star system at (12,-3,7).
+A designation with 0 as its star, such as (12,-3,7,0,5), or with 0 as its orbit, such as (12,-3,7,2,0), is not valid.
 
 <a id="rule-A4.0"></a>
 ## A4.0 Planets
@@ -826,7 +831,7 @@ Ships never land.
 Transfers of POP and other units are done by TPT's.
 There are two ways in which a ship may be propelled.
 It can move (with a MOV order), or it can jump (with a JMP order).
-Ships can only go to coordinate points where there is a star system.
+Ships can only go to coordinates where there is a star system.
 
 <a id="rule-C3.1"></a>
 ### C3.1 Jumps
@@ -887,7 +892,7 @@ If there is a fraction in the amount of light years, the number of turns is roun
 HDRV use 40 x the distance in light years in FUEL units.
 When moving from one orbit to another orbit of the same solar system, or between orbit 0 and an orbit of any solar system in the star system, the distance used is .1 light years.
 When moving from an orbit of one solar system to an orbit of another solar system in the same star system, the distance used is .2 light years.
-Such a move passes through orbit 0 ([A3.1](#rule-A3.1)), so it counts as two moves of .1 light years: from star A orbit 3 to orbit 0, then from orbit 0 to star B orbit 8.
+Such a move passes through orbit 0 ([A3.1](#rule-A3.1)), so it counts as two moves of .1 light years: from star 1 orbit 3 to orbit 0, then from orbit 0 to star 2 orbit 8.
 
 # D. Combat
 
@@ -3968,7 +3973,7 @@ NOTE: ALL SPM ORDERS CAN BE USED IN THE PLAYER'S OWN S/C, OR IN FOREIGN S/C's.
   This format is used in a multiple star system only.
 
 - Format: Ship ID#, "MOV", star system coordinates.
-- Example: 997, MOV, 12,28,-32.
+- Example: 997, MOV, 12,8,-3.
 - Notes: This format is used for moving to another star system.
   Commas, not dashes, are used to separate the coordinates, in order to avoid confusion with negative and positive coordinates.
 
