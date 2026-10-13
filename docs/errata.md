@@ -131,6 +131,17 @@ The chart also stops at a ratio of 10.
 C3.2 says interplanetary moves are always counted as 0.1 light years.
 C3.3 counts a move between the stars of a multiple star system as 0.2.
 
+- **Resolved:** #6. A move within a solar system, including to or from orbit 0, is .1 light years; a move between solar systems passes through orbit 0 and is .2 light years ([C3.3](manual.md#rule-C3.3)).
+  C3.2 now cites C3.3.
+
+### 67. Arrival in orbit 0
+
+- **Rules:** [C3.2](manual.md#rule-C3.2), [A3.1](manual.md#rule-A3.1)
+- **Kind:** gap
+
+C3.2 says a ship moving to another orbit arrives 5 to 10 distance units from the planet and is told who controls it.
+Orbit 0 has no planet, and the rules do not say where a ship arrives there or what it is told.
+
 ## D. Combat
 
 ### 14. Effect of choosing a target

@@ -863,10 +863,10 @@ The following chart shows the odds.
 <a id="rule-C3.2"></a>
 ### C3.2 Moves
 
-Moves can be either interplanetary or interstellar.
+Moves can be either interplanetary, within a star system, or interstellar, from one star system to another.
 When moving from one orbit to another, the ship always arrives in the orbit between 5 and 10 distance units from the planet, and is informed of the ID# and name of the colony which controls the planet.
 In the case of a home planet, the ship will be informed that a race controls it.
-Interplanetary moves are always counted as 0.1 light years in distance, for purposes of fuel usage, and only take one turn.
+Interplanetary moves only take one turn, even between solar systems; the distance they count for fuel usage is given in [C3.3](#rule-C3.3).
 A ship when MOVing is considered to be in hyper space; that is, time does not pass in the ship.
 Neither food nor consumer goods are consumed by the crew; no fuel is used for life support.
 Fuel for the trip is used up at the start of the trip.
@@ -885,9 +885,9 @@ If there is a fraction in the amount of light years, the number of turns is roun
 ### C3.3 Fuel Use
 
 HDRV use 40 x the distance in light years in FUEL units.
-When moving from one orbit to another orbit of the same star, the distance used is .1 light years.
-When moving from an orbit of one star to the orbit of another star in the same star system the distance used is .2 light years.
-When moving between orbit 0 and an orbit of any star in the star system, the distance used is .1 light years.
+When moving from one orbit to another orbit of the same solar system, or between orbit 0 and an orbit of any solar system in the star system, the distance used is .1 light years.
+When moving from an orbit of one solar system to an orbit of another solar system in the same star system, the distance used is .2 light years.
+Such a move passes through orbit 0 ([A3.1](#rule-A3.1)), so it counts as two moves of .1 light years: from star A orbit 3 to orbit 0, then from orbit 0 to star B orbit 8.
 
 # D. Combat
 
