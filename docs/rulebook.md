@@ -3222,6 +3222,11 @@ SPYS use up food, CNGD's, and life support, whether in the home s/c or in a fore
 They do this by forging ration tickets and vouchers.
 The host's death, pay, and ration rates apply).
 
+Espionage activities are separated into various functions, which are performed by a particular group.
+Assigning SPYS is done with a SPM order; which causes them to start functioning immediately.
+SPYS in any group may be moved with a SPM order into any other group, as long as both groups are in the same s/c.
+All groups, other than group G which is non-operational, are listed as follows:
+
 ## 19.2 GROUP G SPYS
 
 To form a spy group, the player writes an ASM order.
@@ -3235,22 +3240,7 @@ SPYS being TFR'd to another s/c will not enter if the structural limitations wou
 SPYS are still controlled by their Ruler regardless of the s/c they are in.
 
 SPYS being TFR'd leave their TPT's just outside the s/c.
-The SPYS will be shot at but not their TPT's, unless the owner of the s/c is their Ruler
-
-### 19.2.1 CASUALTIES
-
-The following formula determines the percentage of SPYS caught and shot when entering and leaving a foreign s/c.
-
-| S/C Type | Percent Caught |
-|----------|----------------|
-| ESC      | 50%            |
-| OBC      | 50%            |
-| OPC      | 10%            |
-| SHP      | 50%            |
-
-Casualties less than one will be rounded up to one.
-
-## GROUP G SPYS, CONT.
+The SPYS will be shot at but not their TPT's, unless the owner of the s/c is their Ruler.
 
 On the turn following the TFR of the group G SPYS, the player may assign the G SPYS to various functions.
 He does this by assigning all or part of the G SPYS to various spy groups, each of which has a separate function, using SPM orders.
@@ -3264,10 +3254,18 @@ The SPYS leave the s/c, being shot at, (with the same rules and casualty percent
 The TPT's then bring the SPYS to their colony.
 The SPYS may not be moved from one foreign s/c to another foreign s/c directly.
 
-Espionage activities are separated into various functions, which are performed by a particular group.
-Assigning SPYS is done with a SPM order; which causes them to start functioning immediately.
-SPYS in any group may be moved with a SPM order into any other group, as long as both groups are in the same s/c.
-All groups, other than group G which is non-operational, are listed as follows:
+### 19.2.1 CASUALTIES
+
+The following formula determines the percentage of SPYS caught and shot when entering and leaving a foreign s/c.
+
+| S/C Type | Percent Caught |
+|----------|----------------|
+| ESC      | 50%            |
+| OBC      | 50%            |
+| OPC      | 10%            |
+| SHP      | 50%            |
+
+Casualties less than one will be rounded up to one.
 
 ## 19.3 GROUP A SPYS
 
@@ -3400,7 +3398,7 @@ Regents are allowed to use GIV and ACP orders only with their own Rulers, or wit
 A Regent can not use SPM orders.
 Any spies he assembles are controlled by his Ruler.
 
-\*\* The s/c is gifted back to the Ruler during the disassembly stage, (16.2.6.5).
+\*\* The s/c is gifted back to the Ruler during the disassembly stage, (16.2.4, step 5).
 
 ## 21.2 INDEPENDENTS
 
