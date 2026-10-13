@@ -1,11 +1,17 @@
 # ecvc
 
-Code and documentation for Empyrean Challenge, a play-by-mail science fiction game.
+Code and documentation for a play-by-email science fiction game.
+
 Empyrean Challenge is owned by James Colombo; its documentation is used here with his permission.
+
+## Code
+
+I don't claim that this is a faithful implementation.
+Given that the game continued to evolve well into the 2010's, I don't think that it's possible.
 
 ## Documentation
 
-- [Rule book](docs/rulebook.md): the 1980 Empyrean Challenge rule book, edited for current games.
+- [Rule book](docs/rulebook.md): the 1980 Empyrean Challenge rule book, edited for current games and to simplify implementation.
 
 ## License
 
