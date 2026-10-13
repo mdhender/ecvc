@@ -33,7 +33,7 @@ The cluster is 30 light years per side, but each coordinate ranges from 0 to 30,
 - **Rules:** [A2.2](manual.md#rule-A2.2), [A3.0](manual.md#rule-A3.0)
 - **Kind:** contradiction
 
-A2.2 says each star of a multiple system has 10 orbits.
+A2.2 says each star of a multiple star system has 10 orbits.
 A3.0 says a star has 11 orbits, numbered 0 to 10.
 
 ### 3. Scale of the habitability number
@@ -120,13 +120,13 @@ Nothing says which applies when both are met on the same turn.
 The outcomes are exclusive (melt, blow up, or arrive intact), but from a ratio of 5 the chances add to more than 100%: 40% + 65% at 5, up to 90% + 100% at 10.
 The chart also stops at a ratio of 10.
 
-### 13. Distance of a move within a system
+### 13. Distance of a move within a star system
 
 - **Rules:** [C3.2](manual.md#rule-C3.2), [C3.3](manual.md#rule-C3.3)
 - **Kind:** contradiction
 
 C3.2 says interplanetary moves are always counted as 0.1 light years.
-C3.3 counts a move between the stars of a multiple system as 0.2.
+C3.3 counts a move between the stars of a multiple star system as 0.2.
 
 ## D. Combat
 

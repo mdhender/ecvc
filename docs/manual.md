@@ -132,7 +132,7 @@ We hope that you find playing our games to be a rewarding and enjoyable gaming e
 # History of the Empyrean Cluster
 
 Some time ago, an Empire was born.
-It prospered and grew to encompass myriad solar systems and hundreds of races.
+It prospered and grew to encompass myriad star systems and hundreds of races.
 The Empire was mighty and ponderous.
 Then, as in other empires, corruption and oppression set in; stirring the subject planets' always present desire for independence to a fever pitch.
 
@@ -141,7 +141,7 @@ This sparked the revolution and started a galactic holocaust.
 
 During the worst years of the war, when biological warfare was used and planets were being decimated right and left; a group of leaders from the rebel worlds decided to hedge their races' continued existence.
 Their plan was to colonize ten worlds, all located in the distant Empyrean Cluster.
-The planets would be in separate solar systems and would each be inhabited by one of ten races.
+The planets would be in separate star systems and would each be inhabited by one of ten races.
 As the rebel worlds couldn't spare much in technological aid, it was decided that the colonies would be agricultural in nature, rather than industrial.
 
 It was not long after the colonies were established that the rebel worlds, having finally overthrown the Empire, began to fight with each other for the remains of the Empire.
@@ -174,8 +174,8 @@ At this point, each of the ten planets has approximately 15 Family-ruled nations
 ## A1.0 Introduction
 
 EMPYREAN CHALLENGE is a computer moderated, hidden movement, play-by-mail science fiction game.
-The goal of the game is the control of a star cluster consisting of 100 solar systems.
-All the systems have one to 10 planets per star but only 10 systems are inhabited at the start of the game; each of the ten systems having one inhabited world.
+The goal of the game is the control of a star cluster consisting of 100 star systems.
+All the star systems have one to 10 planets per star but only 10 star systems are inhabited at the start of the game; each of the ten star systems having one inhabited world.
 Each of the ten inhabited planets has 15 nations; the 15 players on a planet rule the nations individually and together constitute a race.
 
 The game strategy relies heavily on diplomacy and economics.
@@ -184,7 +184,7 @@ Players will find that these considerations, as well as military ones, will gove
 At the start of the game, each player faces the problems of overpopulation, diminishing resources, heavy competition from neighboring nations, and developing interstellar travel.
 Later, the player's challenges occur off planet, usually involving other races.
 
-Each game will have an entirely different set of locations for the 100 solar systems, so that no two games will be entirely alike.
+Each game will have an entirely different set of locations for the 100 star systems, so that no two games will be entirely alike.
 
 These revised rules have been printed in a loose-leaf format; so that corrections and additions to the rules may be made easily, eliminating the need for separate clarifications sheets, etc.
 Should a correction be necessary, the corrected page will be mailed out, with the corrected area indicated to save time, for players to insert in the rules.
@@ -214,12 +214,12 @@ There are 100 star systems in a game.
 <a id="rule-A2.2"></a>
 ### A2.2 Multiple Star Systems
 
-If two or more stars are at the same coordinates, they are known as a binary system (two stars), or a trinary system (three stars), etc.
-Each star of the system has 10 orbits around it; each star with its planets revolves around the other star (or stars).
+If two or more stars are at the same coordinates, they are known as a binary star system (two stars), or a trinary star system (three stars), etc.
+Each star of the star system has 10 orbits around it; each star with its planets revolves around the other star (or stars).
 There is an orbit 0 surrounding the entire star system and its planets, which serves all the stars of a multiple star system, and it is explained in [A3.0](#rule-A3.0)<!-- was it will be explained later -->.
-A multiple star system is designated by adding a letter to the coordinates.
-Thus, star B of system of 28/02/18 designates the second star of a multiple star system.
-By convention, Star A always designates the first star of a system, even if the system contains only a single star.
+Each solar system of a multiple star system is designated by adding a letter to the coordinates.
+Thus, star B of star system 28/02/18 designates the second solar system of a multiple star system.
+By convention, Star A always designates the first star of a star system, even if the star system contains only a single star.
 
 <a id="rule-A2.3"></a>
 ### A2.3 Coordinates on the Printout
@@ -227,7 +227,7 @@ By convention, Star A always designates the first star of a system, even if the 
 All coordinates are given relative to each race's home planet.
 So, each race's home planet coordinates are always 0/0/0.
 At the start of the game, a player gets a free magnitude-10 probe report on his printout.
-This will give the coordinates of all stars within 10 light years from the home planet, their distances from the home planet, and a list showing the type of planet in each orbit of the home system.
+This will give the coordinates of all stars within 10 light years from the home planet, their distances from the home planet, and a list showing the type of planet in each orbit of each solar system in the home star system.
 
 <a id="rule-A3.0"></a>
 ## A3.0 Solar Systems
@@ -236,7 +236,7 @@ Each star ("solar system") has at least one planet, with no more than 10 planets
 A star has 11 orbits, numbered from 0 to 10; number 1 is closest to the star; and number 10 is farthest from it.
 Orbits 1 - 10 may be occupied by one planet of any type per orbit ; orbit 0 is never occupied by a planet.
 If there are two or more stars in a coordinate point, orbit 0 surrounds the stars and the planets, as explained in [A2.2](#rule-A2.2)<!-- was as explained above -->.
-Ships from other systems always arrive in orbit 0.
+Ships from other star systems always arrive in orbit 0.
 
 There are from 500 to 700 planets in a game.
 
@@ -463,7 +463,7 @@ Players are assigned race numbers as follows:
 | PME   | Pre-maneuver energy weapon fire | See Combat ([D6.1.1](#rule-D6.1.1)<!-- was 15 -->).                                                          |
 | PMM   | Pre-maneuver missile fire       | See Combat ([D6.1.2](#rule-D6.1.2)<!-- was 15 -->).                                                          |
 | POP\* | Population unit                 | Consists of 100 people.                                                   |
-| PRB   | Probe                           | This order gathers data about a system and nearer stars.                  |
+| PRB   | Probe                           | This order gathers data about a star system and nearer stars.             |
 | PRO   | Professional unit               | Population unit consisting of 100 highly skilled people.                  |
 | PTC   | Permission to colonize          | This order permits a s/c set up on a planet controlled by another player. |
 | PUP   | Pick-up                         | This order has transports pickup items from another s/c.                  |
@@ -511,8 +511,9 @@ Players are assigned race numbers as follows:
 | STU      | Start-up                     | This order starts up all farms in a s/c, when shut down.      |
 | STUN     | Structural units             | Same as LTSU, but these are the heaviest.                     |
 | SUR      | Survey                       | This order searches a planet for resource deposits.           |
-| SYS      | System                       | Solar system.                                                 |
+| SYS      | Star system                  | Star system.                                                  |
 | SOL\*    | Standard of living           | Total CNGD paid ÷ by total POP, then ÷ by 4.                  |
+| SSL\*    | Solar system                 | Solar system.                                                 |
 
 ### T
 
@@ -737,7 +738,7 @@ All the orders for one stage are processed before any of the orders for the next
 <a id="rule-B3.22"></a>
 ### B3.22 Probe Stage
 
-1. <a id="rule-B3.22.1"></a>PRB orders for systems and orbits processed (see [S10.1](#rule-S10.1)<!-- was 17.4.35 -->)
+1. <a id="rule-B3.22.1"></a>PRB orders for star systems and orbits processed (see [S10.1](#rule-S10.1)<!-- was 17.4.35 -->)
 
 <a id="rule-B4.0"></a>
 ## B4.0 Auxiliary Players
@@ -788,7 +789,7 @@ When a race, as a group, controls 50% or more of the total habitability in the g
 <a id="rule-C1.0"></a>
 ## C1.0 Hyper Drives
 
-Hyper drives (HDRV) are used to propel ships through hyper space, either within a solar system or from one system to another.
+Hyper drives (HDRV) are used to propel ships through hyper space, either within a star system or from one star system to another.
 The engine's jump range is one light year times its TL.
 A ship may have as many HDRV as desired, but all HDRV on one ship should be at the same TL.
 (If different TL's are used, the computer will use the lowest TL in computing the jump range).
@@ -817,17 +818,17 @@ Ships never land.
 Transfers of POP and other units are done by TPT's.
 There are two ways in which a ship may be propelled.
 It can move (with a MOV order), or it can jump (with a JMP order).
-Ships can only go to coordinate points where there is a solar system.
+Ships can only go to coordinate points where there is a star system.
 
 <a id="rule-C3.1"></a>
 ### C3.1 Jumps
 
-Jumps are not made within a solar system; they are only made from one system to another.
-When a JMP order is written, a ship may jump from any orbit in a system to orbit 0 in another system.
+Jumps are not made within a star system; they are only made from one star system to another.
+When a JMP order is written, a ship may jump from any orbit in a star system to orbit 0 in another star system.
 (To move from orbit 0 to another orbit, the player writes a MOV order).
 Each jump requires one turn to complete.
 The distances in jumps are measured in light years.
-To find the distance between one system and another, a system probe is made.
+To find the distance between one star system and another, a system probe is made.
 (See [M2.3](#rule-M2.3)<!-- was Chapter 14 --> for more information).
 
 <a id="rule-C3.1.1"></a>
@@ -865,10 +866,10 @@ Fuel for the trip is used up at the start of the trip.
 <a id="rule-C3.2.1"></a>
 #### C3.2.1 Interstellar Moves
 
-A MOV from one system to another, can, and usually does, take more than one turn.
+A MOV from one star system to another, can, and usually does, take more than one turn.
 The advantage to MOVing, as opposed to jumping, is that there is no danger of the ship being destroyed.
 No orders can be given to the ship until the ship arrives at its destination.
-To compute the length of time it will take a ship to move to a new system, the number of light years between systems is divided by the lowest TL of the assembled HDRV on the ship.
+To compute the length of time it will take a ship to move to a new star system, the number of light years between star systems is divided by the lowest TL of the assembled HDRV on the ship.
 If there is a fraction in the amount of light years, the number of turns is rounded up.
 (10.6 light years divided by 3 (HDRV-3) = 3.53 turns, or 4 turns).
 
@@ -877,7 +878,7 @@ If there is a fraction in the amount of light years, the number of turns is roun
 
 HDRV use 40 x the distance in light years in FUEL units.
 When moving from one orbit to another orbit of the same star, the distance used is .1 light years.
-When moving from an orbit of one star to the orbit of another star in the same system the distance used is .2 light years.
+When moving from an orbit of one star to the orbit of another star in the same star system the distance used is .2 light years.
 
 # D. Combat
 
@@ -1393,8 +1394,8 @@ OBC's may be located in any orbit around a star, whether or not there is a plane
 <a id="rule-F2.4"></a>
 ### F2.4 Ships
 
-SHP's may be located in any orbit around a star, whether or not there is a planet there, and may be moved from orbit to orbit, or from its orbit to orbit 0 of another system.
-All incoming ships arrive in orbit 0 of the system.
+SHP's may be located in any orbit around a star, whether or not there is a planet there, and may be moved from orbit to orbit, or from its orbit to orbit 0 of another star system.
+All incoming ships arrive in orbit 0 of the star system.
 
 <a id="rule-F3.0"></a>
 ## F3.0 Structural Requirements
@@ -2627,7 +2628,7 @@ All three are ordered with a probe (PRB) order.
 
 An orbit probe lists the s/c's at the planet, the log base 10 of the total mass of each kind of resource in the unmined deposits on the planet, the log base 10 of each s/c's mass, its ID#, its name, the type of planet and its habitability number.
 An orbit probe cannot be made of the orbit the s/c is in because s/c's automatically get a probe report of the orbit they are in every turn.
-An orbit probe can be made of any other orbit in the system; in a multiple star system, all orbits in the systems can be probed from one orbit.
+An orbit probe can be made of any other orbit in the solar system; in a multiple star system, all orbits of every solar system in the star system can be probed from one orbit.
 The orbit probe also lists the tactical coordinate positions of the s/c's at the planet.
 
 **Log Base 10**
@@ -2656,9 +2657,9 @@ A system probe will give the planet types by orbit; and a list of coordinates an
 Each magnitude equals one light year.
 A magnitude 3 probe can probe 3 light years.
 The maximum magnitude is 10.
-The distances given by a system probe are the distances from the system the probing s/c is in.
-The coordinates given are the coordinates *relative* to the home system.
-The planet types reported are only for planets in the same system as the probing s/c.
+The distances given by a system probe are the distances from the star system the probing s/c is in.
+The coordinates given are the coordinates *relative* to the home star system.
+The planet types reported are only for planets in the solar systems of the star system the probing s/c is in.
 
 <a id="rule-M3.0"></a>
 ## M3.0 Sensors
@@ -3796,7 +3797,7 @@ In order to cancel an APU order, the player writes it as before, substituting 0 
 
 The above examples are all for orbit probes.
 The first example has s/c 77 PRB orbits one through four of star C.
-The second has s/c 77 probe all orbits in that system.
+The second has s/c 77 probe all orbits in that solar system.
 The third has s/c 77 PRB orbits in star A, (when no star is designated, star A is assumed).
 
 - Format: S/C ID#, "PRB", "S/C", S/C ID #(#'s).
@@ -3807,7 +3808,7 @@ The third has s/c 77 PRB orbits in star A, (when no star is designated, star A i
 - Example: 79, PRB, SYS, 10.
 
 This format is used for a system probe.
-S/C 79 probes the system it is in at magnitude 10.
+S/C 79 probes the star system it is in at magnitude 10.
 
 <a id="rule-S10.2"></a>
 ### S10.2 Survey Orders (SUR)
@@ -3954,17 +3955,17 @@ NOTE: ALL SPM ORDERS CAN BE USED IN THE PLAYER'S OWN S/C, OR IN FOREIGN S/C's.
 - Format: Ship ID#, "MOV", orbit #, star.
 - Example: 995, MOV, 3, B.
 - Notes: This MOV order has ship 995, move to orbit 3 around star B.
-  This format is used in a multi-star system only.
+  This format is used in a multiple star system only.
 
-- Format: Ship ID#, "MOV", system coordinates.
+- Format: Ship ID#, "MOV", star system coordinates.
 - Example: 997, MOV, 12,28,-32.
-- Notes: This format is used for moving to another system.
+- Notes: This format is used for moving to another star system.
   Commas, not dashes, are used to separate the coordinates, in order to avoid confusion with negative and positive coordinates.
 
 <a id="rule-S14.2"></a>
 ### S14.2 Jump Orders (JMP)
 
-- Format: Ship ID#, "JMP", system coordinates.
+- Format: Ship ID#, "JMP", star system coordinates.
 - Example: 385, JMP, 10, -8,-2.
-- Notes: The JMP order has ship 385 jump to system 10,-8,-2.
+- Notes: The JMP order has ship 385 jump to star system 10,-8,-2.
   Commas are used to separate the coordinates.
