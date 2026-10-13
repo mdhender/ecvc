@@ -217,7 +217,7 @@ There are 100 star systems in a game.
 
 If two or more stars are at the same coordinates, they are known as a binary system (two stars), or a trinary system (three stars), etc.
 Each star of the system has 10 orbits around it; each star with its planets revolves around the other star (or stars).
-There is an orbit 0 surrounding the entire star system and its planets, which serves all the stars of a multiple star system, and it will be explained later.
+There is an orbit 0 surrounding the entire star system and its planets, which serves all the stars of a multiple star system, and it is explained in [A3.0](#rule-A3.0)<!-- was it will be explained later -->.
 A multiple star system is designated by adding a letter to the coordinates.
 Thus, star B of system of 28/02/18 designates the second star of a multiple star system.
 By convention, Star A always designates the first star of a system, even if the system contains only a single star.
@@ -236,7 +236,7 @@ This will give the coordinates of all stars within 10 light years from the home 
 Each star ("solar system") has at least one planet, with no more than 10 planets per star.
 A star has 11 orbits, numbered from 0 to 10; number 1 is closest to the star; and number 10 is farthest from it.
 Orbits 1 - 10 may be occupied by one planet of any type per orbit ; orbit 0 is never occupied by a planet.
-If there are two or more stars in a coordinate point, orbit 0 surrounds the stars and the planets, as explained above.
+If there are two or more stars in a coordinate point, orbit 0 surrounds the stars and the planets, as explained in [A2.2](#rule-A2.2)<!-- was as explained above -->.
 Ships from other systems always arrive in orbit 0.
 
 There are from 500 to 700 planets in a game.
@@ -280,7 +280,7 @@ A habitability number indicates the number of population units who can live on a
 Habitability numbers do not affect, and are not affected by, the operations of enclosed surface colonies.
 Each planet has a habitability number ranging from 0 to 25.
 Should a planet have a population exceeding the limit indicated by the habitability number, the death rate of *all* the OPEN colonies on the planet will be increased.
-(Further explained in section 5.3).
+(Further explained in [G3.0](#rule-G3.0)<!-- was section 5.3 -->).
 
 <a id="rule-A4.3"></a>
 ### A4.3 Resource Deposits
@@ -323,8 +323,8 @@ Players are assigned race numbers as follows:
 | AAN  | Allow Add-on                      | This order allows a s/c to increase another s/c.   |
 | ACP  | Accept                            | This order accepts a gift s/c from another player. |
 | ADN  | Add-on                            | This order adds units to an existing s/c.          |
-| AME  | After-maneuver energy-weapon fire | See Combat (15).                                   |
-| AMM  | After-maneuver missile fire       | See Combat (15).                                   |
+| AME  | After-maneuver energy-weapon fire | See Combat ([D6.1.3](#rule-D6.1.3)<!-- was 15 -->).                                   |
+| AMM  | After-maneuver missile fire       | See Combat ([D6.1.4](#rule-D6.1.4)<!-- was 15 -->).                                   |
 | ANM  | Anti-missile                      | A short range missile used for defense.            |
 | APU  | Allow pick-up                     | This order allows a s/c to pick up from another.   |
 | ASC  | Assault craft                     | Armed vehicles capable of short flights in space.  |
@@ -360,7 +360,7 @@ Players are assigned race numbers as follows:
 | DEP   | Deposit gift            | This order gives a mine group (& deposit) to a s/c. |
 | DRF   | Draft                   | This order drafts soldiers and trainees.            |
 | DSB   | Disband                 | This order disbands soldiers and trainees.          |
-| DTS   | Defensive troop support | See Combat (15).                                    |
+| DTS   | Defensive troop support | See Combat ([D4.0](#rule-D4.0)<!-- was 15 -->).                                    |
 | DU\*  | Distance unit           | Equal to 10,000 kilometers.                         |
 
 ### E
@@ -401,7 +401,7 @@ Players are assigned race numbers as follows:
 
 | Code | Term   | Definition       |
 |------|--------|------------------|
-| INV  | Invade | See Combat (15). |
+| INV  | Invade | See Combat ([D2.0](#rule-D2.0)<!-- was 15 -->). |
 
 ### J
 
@@ -453,7 +453,7 @@ Players are assigned race numbers as follows:
 |------|-------------------------|-------------------------------------|
 | OBC  | Orbiting colony         | Colony that orbits a planet.        |
 | OPC  | Open colony             | Surface colony open to enviornment. |
-| OTS  | Offensive troop support | See Combat (15).                    |
+| OTS  | Offensive troop support | See Combat ([D4.0](#rule-D4.0)<!-- was 15 -->).                    |
 
 ### P
 
@@ -461,8 +461,8 @@ Players are assigned race numbers as follows:
 |-------|---------------------------------|---------------------------------------------------------------------------|
 | PAY   | Pay                             | This order changes standing wages.                                        |
 |       | Player                          | A Ruler or a Regent.                                                      |
-| PME   | Pre-maneuver energy weapon fire | See Combat (15).                                                          |
-| PMM   | Pre-maneuver missile fire       | See Combat (15).                                                          |
+| PME   | Pre-maneuver energy weapon fire | See Combat ([D6.1.1](#rule-D6.1.1)<!-- was 15 -->).                                                          |
+| PMM   | Pre-maneuver missile fire       | See Combat ([D6.1.2](#rule-D6.1.2)<!-- was 15 -->).                                                          |
 | POP\* | Population unit                 | Consists of 100 people.                                                   |
 | PRB   | Probe                           | This order gathers data about a system and nearer stars.                  |
 | PRO   | Professional unit               | Population unit consisting of 100 highly skilled people.                  |
@@ -479,7 +479,7 @@ Players are assigned race numbers as follows:
 
 | Code  | Term           | Definition                                                 |
 |-------|----------------|------------------------------------------------------------|
-| RAD   | Raid           | See Combat (15).                                           |
+| RAD   | Raid           | See Combat ([D3.0](#rule-D3.0)<!-- was 15 -->).                                           |
 | RBS\* | Rebel soldiers | Percentage of soldier population willing to rebel.         |
 | REB\* | Rebels         | Percentage of people other than soldiers willing to rebel. |
 | REC   | Receive        | This order receives items transferred from another s/c.    |
@@ -569,7 +569,7 @@ It also lists
 * the types of resources she has and their quantity
 * any miscellaneous items she has
 
-The printout also shows her player ID#, her home colony's ID#, her race number, and a free magnitude-10 probe report as mentioned previously.
+The printout also shows her player ID#, her home colony's ID#, her race number, and a free magnitude-10 probe report as mentioned in [A2.3](#rule-A2.3)<!-- was as mentioned previously -->.
 
 The initial turnsheet will be enclosed with the initial printout and should be sent back to us before the date indicated on the printout.
 All factory groups start with work in process already running.
@@ -579,117 +579,117 @@ All factory groups start with work in process already running.
 
 The orders are processed by the computer in stages.
 In each game, all the orders for a stage are processed in the order in which they were written.
-Combat is the only exception; see 15.9 for details.
+Combat is the only exception; see [D9.0](#rule-D9.0)<!-- was 15.9 --> for details.
 All the orders for one stage are processed before any of the orders for the next stage are begun.
 
 <a id="rule-B3.1"></a>
 ### B3.1 Combat Stage
 
-1. <a id="rule-B3.1.1"></a>PME orders processed (see [S4.4](#rule-S4.4))
-2. <a id="rule-B3.1.2"></a>PMM orders processed (see [S4.5](#rule-S4.5))
-3. <a id="rule-B3.1.3"></a>RUN orders processed (see [S4.3](#rule-S4.3))
-4. <a id="rule-B3.1.4"></a>TMV orders processed (see [S4.1](#rule-S4.1))
-5. <a id="rule-B3.1.5"></a>CLS orders processed (see [S4.2](#rule-S4.2))
-6. <a id="rule-B3.1.6"></a>AME orders processed (see [S4.6](#rule-S4.6))
-7. <a id="rule-B3.1.7"></a>AMM orders processed (see [S4.7](#rule-S4.7))
-8. <a id="rule-B3.1.8"></a>WTD orders processed (see [S4.12](#rule-S4.12))
-9. <a id="rule-B3.1.9"></a>INV orders processed (see [S4.8](#rule-S4.8))
-10. <a id="rule-B3.1.10"></a>OTS orders processed (see [S4.11](#rule-S4.11))
-11. <a id="rule-B3.1.11"></a>DTS orders processed (see [S4.10](#rule-S4.10))
-12. <a id="rule-B3.1.12"></a>RAD orders processed (see [S4.9](#rule-S4.9))
+1. <a id="rule-B3.1.1"></a>PME orders processed (see [S4.4](#rule-S4.4)<!-- was 17.4.4 -->)
+2. <a id="rule-B3.1.2"></a>PMM orders processed (see [S4.5](#rule-S4.5)<!-- was 17.4.5 -->)
+3. <a id="rule-B3.1.3"></a>RUN orders processed (see [S4.3](#rule-S4.3)<!-- was 17.4.3 -->)
+4. <a id="rule-B3.1.4"></a>TMV orders processed (see [S4.1](#rule-S4.1)<!-- was 17.4.1 -->)
+5. <a id="rule-B3.1.5"></a>CLS orders processed (see [S4.2](#rule-S4.2)<!-- was 17.4.2 -->)
+6. <a id="rule-B3.1.6"></a>AME orders processed (see [S4.6](#rule-S4.6)<!-- was 17.4.6 -->)
+7. <a id="rule-B3.1.7"></a>AMM orders processed (see [S4.7](#rule-S4.7)<!-- was 17.4.7 -->)
+8. <a id="rule-B3.1.8"></a>WTD orders processed (see [S4.12](#rule-S4.12)<!-- was 17.4.12 -->)
+9. <a id="rule-B3.1.9"></a>INV orders processed (see [S4.8](#rule-S4.8)<!-- was 17.4.8 -->)
+10. <a id="rule-B3.1.10"></a>OTS orders processed (see [S4.11](#rule-S4.11)<!-- was 17.4.11 -->)
+11. <a id="rule-B3.1.11"></a>DTS orders processed (see [S4.10](#rule-S4.10)<!-- was 17.4.10 -->)
+12. <a id="rule-B3.1.12"></a>RAD orders processed (see [S4.9](#rule-S4.9)<!-- was 17.4.9 -->)
 
 <a id="rule-B3.2"></a>
 ### B3.2 Pre Set-Up Stage
 
-1. <a id="rule-B3.2.1"></a>AAN orders processed (see [S5.2](#rule-S5.2))
-2. <a id="rule-B3.2.2"></a>PTC orders processed (see [S5.1](#rule-S5.1))
-3. <a id="rule-B3.2.3"></a>ACP orders processed (see [S5.7](#rule-S5.7))
+1. <a id="rule-B3.2.1"></a>AAN orders processed (see [S5.2](#rule-S5.2)<!-- was 17.4.14 -->)
+2. <a id="rule-B3.2.2"></a>PTC orders processed (see [S5.1](#rule-S5.1)<!-- was 17.4.13 -->)
+3. <a id="rule-B3.2.3"></a>ACP orders processed (see [S5.7](#rule-S5.7)<!-- was 17.4.19 -->)
 
 <a id="rule-B3.3"></a>
 ### B3.3 Set-Up Stage
 
-1. <a id="rule-B3.3.1"></a>STP orders processed (see [S5.3](#rule-S5.3))
-2. <a id="rule-B3.3.2"></a>ADN orders processed (see [S5.4](#rule-S5.4))
+1. <a id="rule-B3.3.1"></a>STP orders processed (see [S5.3](#rule-S5.3)<!-- was 17.4.15 -->)
+2. <a id="rule-B3.3.2"></a>ADN orders processed (see [S5.4](#rule-S5.4)<!-- was 17.4.16 -->)
 
 <a id="rule-B3.4"></a>
 ### B3.4 Dis-Assembly Stage
 
-1. <a id="rule-B3.4.1"></a>DAS orders processed (see [S6.2](#rule-S6.2))
-2. <a id="rule-B3.4.2"></a>SCR orders processed (see [S6.3](#rule-S6.3))
-3. <a id="rule-B3.4.3"></a>JNK orders processed (see [S5.5](#rule-S5.5))
-4. <a id="rule-B3.4.4"></a>MRG orders processed (see [S5.8](#rule-S5.8))
-5. <a id="rule-B3.4.5"></a>GIV orders processed (see [S5.6](#rule-S5.6))
-6. <a id="rule-B3.4.6"></a>COM orders processed (see [S8.2](#rule-S8.2))
-7. <a id="rule-B3.4.7"></a>DEP orders processed (see [S8.4](#rule-S8.4))
+1. <a id="rule-B3.4.1"></a>DAS orders processed (see [S6.2](#rule-S6.2)<!-- was 17.4.50 -->)
+2. <a id="rule-B3.4.2"></a>SCR orders processed (see [S6.3](#rule-S6.3)<!-- was 17.4.23 -->)
+3. <a id="rule-B3.4.3"></a>JNK orders processed (see [S5.5](#rule-S5.5)<!-- was 17.4.17 -->)
+4. <a id="rule-B3.4.4"></a>MRG orders processed (see [S5.8](#rule-S5.8)<!-- was 17.4.20 -->)
+5. <a id="rule-B3.4.5"></a>GIV orders processed (see [S5.6](#rule-S5.6)<!-- was 17.4.18 -->)
+6. <a id="rule-B3.4.6"></a>COM orders processed (see [S8.2](#rule-S8.2)<!-- was 17.4.21 -->)
+7. <a id="rule-B3.4.7"></a>DEP orders processed (see [S8.4](#rule-S8.4)<!-- was 17.4.22 -->)
 
 <a id="rule-B3.5"></a>
 ### B3.5 Pre-Transfer Stage
 
-1. <a id="rule-B3.5.1"></a>REC orders processed (see [S7.2](#rule-S7.2))
-2. <a id="rule-B3.5.2"></a>APU orders processed (see [S7.4](#rule-S7.4))
+1. <a id="rule-B3.5.1"></a>REC orders processed (see [S7.2](#rule-S7.2)<!-- was 17.4.25 -->)
+2. <a id="rule-B3.5.2"></a>APU orders processed (see [S7.4](#rule-S7.4)<!-- was 17.4.27 -->)
 
 <a id="rule-B3.6"></a>
 ### B3.6 Transfer Stage
 
-1. <a id="rule-B3.6.1"></a>TFR orders processed (see [S7.1](#rule-S7.1))
-2. <a id="rule-B3.6.2"></a>PUP orders processed (see [S7.3](#rule-S7.3))
+1. <a id="rule-B3.6.1"></a>TFR orders processed (see [S7.1](#rule-S7.1)<!-- was 17.4.24 -->)
+2. <a id="rule-B3.6.2"></a>PUP orders processed (see [S7.3](#rule-S7.3)<!-- was 17.4.26 -->)
 
 <a id="rule-B3.7"></a>
 ### B3.7 Build Change Stage
 
-1. <a id="rule-B3.7.1"></a>BCH orders processed (see [S8.1](#rule-S8.1))
-2. <a id="rule-B3.7.2"></a>MCH orders processed (see [S8.3](#rule-S8.3))
-3. <a id="rule-B3.7.3"></a>SHT orders processed (see [S8.5](#rule-S8.5))
-4. <a id="rule-B3.7.4"></a>STU orders processed (see [S8.6](#rule-S8.6))
+1. <a id="rule-B3.7.1"></a>BCH orders processed (see [S8.1](#rule-S8.1)<!-- was 17.4.28 -->)
+2. <a id="rule-B3.7.2"></a>MCH orders processed (see [S8.3](#rule-S8.3)<!-- was 17.4.29 -->)
+3. <a id="rule-B3.7.3"></a>SHT orders processed (see [S8.5](#rule-S8.5)<!-- was 17.4.30 -->)
+4. <a id="rule-B3.7.4"></a>STU orders processed (see [S8.6](#rule-S8.6)<!-- was 17.4.31 -->)
 
 <a id="rule-B3.8"></a>
 ### B3.8 Assembly Stage
 
-1. <a id="rule-B3.8.1"></a>ASM orders processed (see [S6.1](#rule-S6.1))
+1. <a id="rule-B3.8.1"></a>ASM orders processed (see [S6.1](#rule-S6.1)<!-- was 17.4.32 -->)
 
 <a id="rule-B3.9"></a>
 ### B3.9 Market Stage
 
-1. <a id="rule-B3.9.1"></a>BUY orders processed (see [S9.1](#rule-S9.1))
-2. <a id="rule-B3.9.2"></a>SEL orders processed (see [S9.2](#rule-S9.2))
+1. <a id="rule-B3.9.1"></a>BUY orders processed (see [S9.1](#rule-S9.1)<!-- was 17.4.33 -->)
+2. <a id="rule-B3.9.2"></a>SEL orders processed (see [S9.2](#rule-S9.2)<!-- was 17.4.34 -->)
 
 <a id="rule-B3.10"></a>
 ### B3.10 Survey Stage
 
-1. <a id="rule-B3.10.1"></a>SUR orders processed (see [S10.2](#rule-S10.2))
-2. <a id="rule-B3.10.2"></a>S/C PRB orders processed (see [S10.1](#rule-S10.1))
+1. <a id="rule-B3.10.1"></a>SUR orders processed (see [S10.2](#rule-S10.2)<!-- was 17.4.36 -->)
+2. <a id="rule-B3.10.2"></a>S/C PRB orders processed (see [S10.1](#rule-S10.1)<!-- was 17.4.35 -->)
 
 <a id="rule-B3.11"></a>
 ### B3.11 Spy Move Stage
 
-1. <a id="rule-B3.11.1"></a>SPM orders processed (see [S11.1](#rule-S11.1))
+1. <a id="rule-B3.11.1"></a>SPM orders processed (see [S11.1](#rule-S11.1)<!-- was 17.4.37 -->)
 
 <a id="rule-B3.12"></a>
 ### B3.12 Draft Stage
 
-1. <a id="rule-B3.12.1"></a>DRF orders processed (see [S12.1](#rule-S12.1))
-2. <a id="rule-B3.12.2"></a>DSB orders processed (see [S12.2](#rule-S12.2))
+1. <a id="rule-B3.12.1"></a>DRF orders processed (see [S12.1](#rule-S12.1)<!-- was 17.4.40 -->)
+2. <a id="rule-B3.12.2"></a>DSB orders processed (see [S12.2](#rule-S12.2)<!-- was 17.4.41 -->)
 
 <a id="rule-B3.13"></a>
 ### B3.13 Pay Change Stage
 
-1. <a id="rule-B3.13.1"></a>PAY orders processed (see [S12.3](#rule-S12.3))
-2. <a id="rule-B3.13.2"></a>RTN orders processed (see [S12.4](#rule-S12.4))
+1. <a id="rule-B3.13.1"></a>PAY orders processed (see [S12.3](#rule-S12.3)<!-- was 17.4.42 -->)
+2. <a id="rule-B3.13.2"></a>RTN orders processed (see [S12.4](#rule-S12.4)<!-- was 17.4.43 -->)
 
 <a id="rule-B3.14"></a>
 ### B3.14 Naming Stage
 
-1. <a id="rule-B3.14.1"></a>NAM orders processed (see [S13.1](#rule-S13.1))
-2. <a id="rule-B3.14.2"></a>NAP orders processed (see [S13.3](#rule-S13.3))
-3. <a id="rule-B3.14.3"></a>NOM orders processed (see [S13.2](#rule-S13.2))
-4. <a id="rule-B3.14.4"></a>CON orders processed (see [S5.9](#rule-S5.9))
-5. <a id="rule-B3.14.5"></a>UNC orders processed (see [S5.10](#rule-S5.10))
+1. <a id="rule-B3.14.1"></a>NAM orders processed (see [S13.1](#rule-S13.1)<!-- was 17.4.46 -->)
+2. <a id="rule-B3.14.2"></a>NAP orders processed (see [S13.3](#rule-S13.3)<!-- was 17.4.48 -->)
+3. <a id="rule-B3.14.3"></a>NOM orders processed (see [S13.2](#rule-S13.2)<!-- was 17.4.47 -->)
+4. <a id="rule-B3.14.4"></a>CON orders processed (see [S5.9](#rule-S5.9)<!-- was 17.4.44 -->)
+5. <a id="rule-B3.14.5"></a>UNC orders processed (see [S5.10](#rule-S5.10)<!-- was 17.4.45 -->)
 
 <a id="rule-B3.15"></a>
 ### B3.15 Ship Movement Stage
 
-1. <a id="rule-B3.15.1"></a>MOV orders processed (see [S14.1](#rule-S14.1))
-2. <a id="rule-B3.15.2"></a>JMP orders processed (see [S14.2](#rule-S14.2))
+1. <a id="rule-B3.15.1"></a>MOV orders processed (see [S14.1](#rule-S14.1)<!-- was 17.4.38 -->)
+2. <a id="rule-B3.15.2"></a>JMP orders processed (see [S14.2](#rule-S14.2)<!-- was 17.4.39 -->)
 
 <a id="rule-B3.16"></a>
 ### B3.16 Restart Stage
@@ -732,12 +732,12 @@ All the orders for one stage are processed before any of the orders for the next
 <a id="rule-B3.21"></a>
 ### B3.21 News Release Stage
 
-1. <a id="rule-B3.21.1"></a>NSR orders processed (see [S13.4](#rule-S13.4))
+1. <a id="rule-B3.21.1"></a>NSR orders processed (see [S13.4](#rule-S13.4)<!-- was 17.4.49 -->)
 
 <a id="rule-B3.22"></a>
 ### B3.22 Probe Stage
 
-1. <a id="rule-B3.22.1"></a>PRB orders for systems and orbits processed (see [S10.1](#rule-S10.1))
+1. <a id="rule-B3.22.1"></a>PRB orders for systems and orbits processed (see [S10.1](#rule-S10.1)<!-- was 17.4.35 -->)
 
 <a id="rule-B4.0"></a>
 ## B4.0 Auxiliary Players
@@ -753,14 +753,14 @@ A Ruler acquires a Regent by sending a request for one to the Moderator.
 The moderator assigns a player number to the Regent and puts him in touch with his Ruler, who gives him s/c's with a GIV order.
 (The regent accepts them with an ACP order).
 When a Regent is removed, the s/c is gifted back to the Ruler on the turn we are notified. \*\*
-A Regent may use any of the orders listed in Chapter 17, with the following exceptions: A Regent cannot fulfill the victory conditions.
+A Regent may use any of the orders listed in subject [S](#s-orders)<!-- was Chapter 17 -->, with the following exceptions: A Regent cannot fulfill the victory conditions.
 Any planets he controls are counted towards his Ruler's total.
 A Regent, however, may be part of a winning race, in a racial victory.
 Regents are allowed to use GIV and ACP orders only with their own Rulers, or with other Regents of the same Ruler.
 A Regent can not use SPM orders.
 Any spies he assembles are controlled by his Ruler.
 
-\*\* The s/c is gifted back to the Ruler during the disassembly stage, (16.2.4, step 5).
+\*\* The s/c is gifted back to the Ruler during the disassembly stage, ([B3.4.5](#rule-B3.4.5)<!-- was 16.2.4, step 5 -->).
 
 <a id="rule-B4.2"></a>
 ### B4.2 Independents
@@ -807,7 +807,7 @@ A minimum of 100 HDRV are always used.
 A ship must have at least one space drive in order to establish itself in a stable orbit around a planet.
 A ship without a space drive establishes itself in a decaying orbit which has a 50% chance of terminating each turn.
 Other than the one space drive used to maintain orbit, space drives are not used for ship movement, per se.
-They are used in combat, however, See 15.9.2 for details.
+They are used in combat, however, See [D9.2](#rule-D9.2)<!-- was 15.9.2 --> for details.
 (Fuel is used by space drives only during combat).
 
 <a id="rule-C3.0"></a>
@@ -828,7 +828,7 @@ When a JMP order is written, a ship may jump from any orbit in a system to orbit
 Each jump requires one turn to complete.
 The distances in jumps are measured in light years.
 To find the distance between one system and another, a system probe is made.
-(See Chapter 14 for more information).
+(See [M2.3](#rule-M2.3)<!-- was Chapter 14 --> for more information).
 
 <a id="rule-C3.1.1"></a>
 #### C3.1.1 Over-Jumping
@@ -991,7 +991,7 @@ WTD's use TPT capacity just as transfer type orders do.
 
 The pre-maneuver energy weapon fire (PME) order has a s/c fire a percentage of its energy weapons (EWP's) at a certain s/c before ship maneuvers are processed in the combat execution sequence.
 A particular target within the s/c may be chosen by the player, if desired.
-This is explained in 15.6.2, Targets.
+This is explained in [D6.2](#rule-D6.2)<!-- was 15.6.2 -->, Targets.
 
 <a id="rule-D6.1.2"></a>
 #### D6.1.2 Pre-Maneuver Missile Fire
@@ -1204,7 +1204,7 @@ Fractions are dropped.
 <a id="rule-D9.7.3"></a>
 #### D9.7.3 Determining Unit Losses in Raids
 
-Casualties from a raid are computed as above and then multiplied by afraction.
+Casualties from a raid are computed as in [D9.7.2](#rule-D9.7.2)<!-- was as above --> and then multiplied by a fraction.
 The fraction used differs according to the type of target.
 The fractions are 0.3 for OPC's, 0.5 for ESC's, 0.75 for OBC's, and 0.9 for ships.
 
@@ -1286,7 +1286,7 @@ The distance between the attacking colonies was one distance unit, and all ANM's
 <a id="rule-E4.1"></a>
 ### E4.1 Used Against an Invasion
 
-Besides defending against bombardment, as explained above, ANM's are also used defending against invasions and raids.
+Besides defending against bombardment, as explained in [E4.0](#rule-E4.0)<!-- was as explained above -->, ANM's are also used defending against invasions and raids.
 This also is automatic, and does not require an order from the player.
 The number of ANM that can be fired *per turn* of an invasion equals the number of assembled MSL in the s/c.
 The ANM's are fired only once per turn at *all* of the attacking forces combined, the hits are distributed among them proportionately, according to each attacker's combat factor.
@@ -1332,7 +1332,7 @@ This is automatic, the computer handles it, it is never ordered.
 EWP's fire at each volley of MSS that were not destroyed by ANM's.
 EWP's fire only once per turn against invaders and raiders, combined.
 The hits are distributed among them proportionately, according to each attacker's combat factor.
-If the s/c faces both a bombardment and an invasion, the EWP's are fired in both cases, following the combat execution sequence detailed in section 15.9
+If the s/c faces both a bombardment and an invasion, the EWP's are fired in both cases, following the combat execution sequence detailed in [D9.0](#rule-D9.0)<!-- was section 15.9 -->
 The damage, against bombardment, is calculated as follows:
 
     HP=2^ET ÷ 2^MT x 0.3
@@ -1403,7 +1403,7 @@ All incoming ships arrive in orbit 0 of the system.
 ### F3.1 Definition
 
 Assembled STUN, LTSU, or SLSU must encompass the VOLUME of any s/c's units and population, except NMTS and METS in OPC's and ESC's.
-The total volume units times the STRUCTURE RATIO, (see 7.3.1.1), gives the s/c structural requirement.
+The total volume units times the STRUCTURE RATIO, (see [F3.1.1](#rule-F3.1.1)<!-- was 7.3.1.1 -->), gives the s/c structural requirement.
 In OPC's and ESC's, NMTS and METS are stored outside the colony.
 
 <a id="rule-F3.1.1"></a>
@@ -1420,7 +1420,7 @@ The minimum STUN, LTSU, or SLSU required to enclose a single volume unit are:
 
 This means that structural requirements of a SHP are determined by how much it carries.
 If a SHP is to transport 100,000 volume units, it will require a minimum of 1,000,000 STUN, LTSU, or SLSU.
-For the number of volume units per item see the UNIT CHARACTERISTICS SUMMARY on the back cover.
+For the number of volume units per item see the UNIT CHARACTERISTICS SUMMARY in [R3.0](#rule-R3.0)<!-- was on the back cover -->.
 
 <a id="rule-F3.2"></a>
 ### F3.2 Structural Requirement Exceeded
@@ -1489,7 +1489,7 @@ A s/c is STP by only one s/c; STP's are never joint ventures.
 ### F4.4 Personnel
 
 Personnel requirements will vary with the equipment being set up.
-The section entitled Personnel Requirements/Unit on the Unit Characteristics Summary, shown on the back cover, gives this information.
+The section entitled Personnel Requirements/Unit on the Unit Characteristics Summary, shown in [R3.0](#rule-R3.0)<!-- was on the back cover -->, gives this information.
 
 <a id="rule-F4.5"></a>
 ### F4.5 How STP Orders Work
@@ -1582,18 +1582,18 @@ All the materials needed to do the ADN come from the adding-on s/c's POP, NON, a
 ### F5.4 Construction Workers and Add-Ons
 
 The rules regarding CNW's and set ups apply to add-ons, too.
-See 7.4.6.
+See [F4.6](#rule-F4.6)<!-- was 7.4.6 -->.
 
 <a id="rule-F5.5"></a>
 ### F5.5 Transports and Add-Ons
 
 The rules regarding TPT's and set-ups apply to add-ons, too.
-See 7.4.7.
+See [F4.7](#rule-F4.7)<!-- was 7.4.7 -->.
 
 <a id="rule-F5.6"></a>
 ### F5.6 Assemblies and Add-Ons
 
-All rules regarding assemblies and set-ups apply to ADN's too, (see 7.4.8) with the addition that factories in an ADN can also be ordered to be added-on to an existing factory group.
+All rules regarding assemblies and set-ups apply to ADN's too, (see [F4.8](#rule-F4.8)<!-- was 7.4.8 -->) with the addition that factories in an ADN can also be ordered to be added-on to an existing factory group.
 
 <a id="rule-F5.7"></a>
 ### F5.7 Add-On Locations
@@ -1651,7 +1651,7 @@ A player may give up control of a planet by writing an uncontrol (UNC) order.
 A player with a colony on a world where control has been given up may take control by writing a CON order.
 Once a player has received permission to colonize from the controller of the planet, he may set up others colonies on the planet without further permission to colonize orders.
 **HOME PLANETS MAY NOT BE CONTROLLED.**
-Controlling planets is the object of the game (see chapter 22, Victory Conditions).
+Controlling planets is the object of the game (see [B5.0](#rule-B5.0)<!-- was chapter 22 -->, Victory Conditions).
 The player controlling a planet may name it.
 Any planet controlled by a Regent counts toward his Ruler's total.
 If all the s/c's on a home planet are controlled by races other than the home planet's original race, the planet is no longer considered a home planet, and all rules concerning control apply to it.
@@ -1939,7 +1939,7 @@ This number is deducted from the USK and added to the existing trainee units.
 ### G3.1 Unemployable Decreases
 
 Unemployable decreases occur automatically when a portion of UEMs are used to increase the number of USK.
-See 5.2.2.
+See [G2.2](#rule-G2.2)<!-- was 5.2.2 -->.
 
 <a id="rule-G3.2"></a>
 ### G3.2 Unskilled Decreases
@@ -1971,7 +1971,7 @@ Construction worker decreases are due to DAS orders that disassemble them; each 
 <a id="rule-G3.7"></a>
 ### G3.7 Rebel Decreases
 
-Rebel decreases are caused by the Ruler ordering his spies to convert those rebels into loyal population units (see 19. Espionage), and by improved standard of living.
+Rebel decreases are caused by the Ruler ordering his spies to convert those rebels into loyal population units (see [N2.0](#rule-N2.0), Espionage<!-- was 19. Espionage -->), and by improved standard of living.
 Rebel soldiers are decreased in the same manner as rebels.
 
 <a id="rule-G3.8"></a>
@@ -1993,7 +1993,7 @@ This percentage is increased for all open colonies when the planet's habitabilit
 ### G4.1 Consumption
 
 Each population unit (POP) automatically consumes one quarter of a food unit (FOOD) per turn, unless the Ruler rations the s/c.
-If the rationed amount of food is less than 1/16 of a food unit per POP per turn, the computer will divide the food equally, and check for starvation, according to the Starvation Rule below.
+If the rationed amount of food is less than 1/16 of a food unit per POP per turn, the computer will divide the food equally, and check for starvation, according to the Starvation Rule ([G4.1.1](#rule-G4.1.1))<!-- was below -->.
 Ration orders can not be more than 100% (1/4 food unit per POP), or less than 25% (1/16 food unit per POP)
 
 <a id="rule-G4.1.1"></a>
@@ -2081,7 +2081,7 @@ All the farm units at each technological level (TL) form a FRM group.
 There can be only one group *per TL* in a s/c.
 For instance one s/c could have one group of 50,000 FRM-1, and 30,000 FRM-2 and 90,000 FRM-3.
 In order for the farm units to be taken from storage and put to work, the player assembles them into a FRM group.
-This is done with an ASM (assembly) order, and is explained in detail in Chapter 9, Assembly.
+This is done with an ASM (assembly) order, and is explained in detail in [F10.0](#rule-F10.0)<!-- was Chapter 9 -->, Assembly.
 
 <a id="rule-H1.1"></a>
 ### H1.1 Amount of Food Produced
@@ -2141,7 +2141,7 @@ FRM's are assembled in running condition.
 
 The number of FRM-1 that can be assembled in the open colonies of a planet is limited to the habitability number of the planet times 100,000.
 There is no limit to the number of FRM's TL-2 through TL-10 that can be assembled in open colonies.
-And there is no limit to FRM's of any TL in ships, enclosed surface colonies, or orbiting colonies, providing there is enough space for them, and the restrictions in 8.1.3 are observed.
+And there is no limit to FRM's of any TL in ships, enclosed surface colonies, or orbiting colonies, providing there is enough space for them, and the restrictions in [H1.3](#rule-H1.3)<!-- was 8.1.3 --> are observed.
 
 <a id="rule-H2.0"></a>
 ## H2.0 Mining
@@ -2150,7 +2150,7 @@ Mining is done by mine (MIN) units at deposits of natural resources.
 The four types of natural resources are: fuel (FUEL), gold (GOLD), non-metallics (NMTS) and metallics (METS).
 In order for a mine unit to work, it must be taken from storage and assembled into a MIN group.
 (All MIN's in a group must be of the same TL.)
-This is done with an ASM (assembly) order, and is explained in Chapter 9, Assembly.
+This is done with an ASM (assembly) order, and is explained in [F10.0](#rule-F10.0)<!-- was Chapter 9 -->, Assembly.
 
 <a id="rule-H2.1"></a>
 ### H2.1 Amount of Resources Mined
@@ -2191,16 +2191,16 @@ MIN's may be held in storage, however.
 ### H2.5 MCH, DEP, and DAS Orders
 
 When a player no longer needs a mine group, he disassembles it with a DAS (disassembly) order, and the mine units go automatically into storage.
-This is explained fully in Chapter 9, Assembly.
+This is explained fully in [F10.0](#rule-F10.0)<!-- was Chapter 9 -->, Assembly.
 Mine units may be moved from one deposit to another, turned off, or turned on with a mine change order (MCH).
-Examples of MCH orders are shown in Chapter 17, Order Writing.
+Examples of MCH orders are shown in [S8.3](#rule-S8.3)<!-- was Chapter 17, Order Writing -->.
 All MIN's at a deposit may be given to another s/c with a deposit gift (DEP) order.
 
 <a id="rule-H3.0"></a>
 ## H3.0 Manufacturing
 
 Manufacturing is done by factory (FCT) units.
-In order for a factory unit to work, it must be taken from storage and assembled into a FCT group, as is explained in Chapter 9, Assembly.
+In order for a factory unit to work, it must be taken from storage and assembled into a FCT group, as is explained in [F10.0](#rule-F10.0)<!-- was Chapter 9 -->, Assembly.
 All FCT's in a FCT group must be at the same TL.
 Factory groups manufacture everything except population units, food, and resources.
 Each FCT group can only manufacture one item at a time.
@@ -2214,7 +2214,7 @@ Ships can NOT have assembled factories (operating factories), but may carry them
 <a id="rule-H3.1"></a>
 ### H3.1 Fuel and Personnel Requirements
 
-Each FCT requires one PRO times the efficiency factor (see 8.3.2) and three USK times the efficiency factor.
+Each FCT requires one PRO times the efficiency factor (see [H3.2](#rule-H3.2)<!-- was 8.3.2 -->) and three USK times the efficiency factor.
 Each FCT uses 0.5 fuel units times the factory's TL per turn, except FCT units in OBC's within the 5th orbit or less, which use 0 fuel.
 Personnel and fuel are only used by assembled (functioning) FCT groups.
 
@@ -2223,7 +2223,7 @@ Personnel and fuel are only used by assembled (functioning) FCT groups.
 
 Small factory groups are less efficient than larger ones.
 This is reflected by the group's efficiency factor, which determines the cost of building an item.
-The quantity of METS and NMTS required to build an item, (see the back cover, UNIT CHARACTERISTICS SUMMARY), is multiplied by the FCT group's efficiency factor.
+The quantity of METS and NMTS required to build an item, (see [R3.0](#rule-R3.0)<!-- was the back cover -->, UNIT CHARACTERISTICS SUMMARY), is multiplied by the FCT group's efficiency factor.
 The resulting figure is multiplied by the quantity of the unit being manufactured.
 This results in the cost per year; to determine the cost per turn, divide by four.
 For instance, the cost of a LFS-2 is 6 METS and 10 NMTS.
@@ -2257,7 +2257,7 @@ For example: A FCT group of 50,000 FCT-1 is set up to build LFS-2.
 ### H3.4 Work in Process
 
 Work in process (WIP) includes all items in the process of being manufactured.
-Using the example in 8.3.3. of 50,000 FCT-1 being ASM'd (on turn 3) to build 62,500 LFS-2, the printout will report the WIP in this way:
+Using the example in [H3.3](#rule-H3.3)<!-- was 8.3.3. --> of 50,000 FCT-1 being ASM'd (on turn 3) to build 62,500 LFS-2, the printout will report the WIP in this way:
 
 | TURN | WIP 1/4 COMP. | WIP 1/2 COMP. | WIP 3/4 COMP. |
 |------|---------------|---------------|---------------|
@@ -2284,10 +2284,10 @@ Starting on turn 7, 62,500 LFS-2 are added to storage each turn.
 <a id="rule-H3.5"></a>
 ### H3.5 BCH, COM, and DAS Orders
 
-Once ordered to manufacture an item, a factory group will continue to do so, unless ordered to build something else with a build change order (BCH - see 8.3.6, Retooling), or to shut down (a BCH, SHT order).
+Once ordered to manufacture an item, a factory group will continue to do so, unless ordered to build something else with a build change order (BCH - see [H3.6](#rule-H3.6)<!-- was 8.3.6 -->, Retooling), or to shut down (a BCH, SHT order).
 Once ordered to shut down, a FCT group (still assembled) remains shut down, unless ordered to start up (with a BCH, STU order).
 One final way to stop a factory from producing is to disassemble it with a DAS (dis-assembly) order.
-This is explained in Chapter 9, Assembly.
+This is explained in [F10.0](#rule-F10.0)<!-- was Chapter 9 -->, Assembly.
 Dis-assembled factory units go into storage.
 A combine (COM) order combines two factory groups into one; both groups must be manufacturing the same item.
 
@@ -2313,7 +2313,7 @@ Retooled FCT's are shown in WIP.
 
 A factory group ordered to build research (RSCH) will build one research point per FCT times the FCT's TL per game year, divided by four for the amount per turn.
 A FCT group may not build any item of a higher TL than that of the s/c it is in.
-RSCH and TL's are further explained in Chapter 10, Technological Levels.
+RSCH and TL's are further explained in subject [J](#j-technology-and-research)<!-- was Chapter 10 -->, Technological Levels.
 
 <a id="rule-H3.8"></a>
 ### H3.8 STUN, LTSU, and SLSU
@@ -2375,7 +2375,7 @@ For instance, a TL-5 colony can have TL-9 FCT's it bought, but they can not manu
     Reminder: Ships do not have functioning factories.
 
 This colony is able to sell or transfer the FCT-9's, but it would only be able to sell or transfer a technological level of 5.
-More about transferring and selling TL's and RSCH in section 10.4, IMPROVING TL.
+More about transferring and selling TL's and RSCH in [J4.0](#rule-J4.0)<!-- was section 10.4 -->, IMPROVING TL.
 
 <a id="rule-J3.0"></a>
 ## J3.0 Unit TL
@@ -2444,7 +2444,7 @@ A s/c transferring RSCH will have that number deducted from the total RSCH accum
 
 When a s/c's established, it automatically starts out with TL-1, whether the establishing s/c has a higher TL or not.
 
-TFR'ing RSCH requires TPT's, but RSCH do not use up any TPT capacity (see 11.1).
+TFR'ing RSCH requires TPT's, but RSCH do not use up any TPT capacity (see [K1.0](#rule-K1.0)<!-- was 11.1 -->).
 
 <a id="rule-J4.3"></a>
 ### J4.3 Buying and Selling RSCH
@@ -2462,9 +2462,9 @@ A pick-up (PUP) order moves units from one s/c to another, using TPT's of the re
 Any item may be TFR'd or PUP'd if both s/c's belong to the same Ruler, or a Ruler and his Regent, or two Regents belonging to the same Ruler.
 If a s/c belongs to another Ruler of the same race, or his Regent, any item may be TFR'd to it if the receiving s/c writes a receive (REC) order, and any item may be PUP'd from it if that s/c writes an allow pick-up (APU) order.
 If a s/c belongs to a Ruler of another race, or his Regent, only gold may be TFR'd to it, and nothing may be PUP'd from it.
-Gold and RSCH do not require a REC order (see 11.5).
+Gold and RSCH do not require a REC order (see [K5.0](#rule-K5.0)<!-- was 11.5 -->).
 Spies are never traded and never change hands.
-Group G spies may be TFR'd into any s/c, and PUP'd back out of it, to conduct espionage; they remain under their Ruler's control (see 19.2).
+Group G spies may be TFR'd into any s/c, and PUP'd back out of it, to conduct espionage; they remain under their Ruler's control (see [N2.2](#rule-N2.2)<!-- was 19.2 -->).
 (A reminder: spies assembled by a Regent are controlled by his Ruler - they become the Ruler's own spies).
 
 <a id="rule-K2.0"></a>
@@ -2501,7 +2501,7 @@ The s/c that has the TPT's to start with gets full use of them on the turn they 
 Pickups of POP *never* include rebels.
 If there are not enough loyal POP to make up the quantity specified in the order, then the amount picked up is reduced.
 TFR's of POP *always* include rebels, unless the X option is used.
-See Chapter 18, Rebellion, for further details regarding rebels.
+See [N1.0](#rule-N1.0)<!-- was Chapter 18 -->, Rebellion, for further details regarding rebels.
 
 <a id="rule-K3.1"></a>
 ### K3.1 X Option
@@ -2845,7 +2845,7 @@ Only one spy unit per s/c is required for this function but more may be necessar
 These SPYS are used to assassinate other spies.
 They may be used in either domestic or foreign s/c's.
 Group D spies have targets; they can be told which group of SPYS to kill and/or which Ruler's spies are to be killed.
-Examples of this are shown in the SPM orders in Chapter 17, Writing Orders.
+Examples of this are shown in the SPM orders in [S11.1](#rule-S11.1)<!-- was Chapter 17, Writing Orders -->.
 
 <a id="rule-N2.6.1"></a>
 #### N2.6.1 Assassination Casualties
@@ -2861,7 +2861,7 @@ Domestic group D spies always strike first.
 
 These SPYS incite rebellion, and are always used in foreign s/c's.
 Each group E spy unit can convert one loyal population unit to one rebel unit.
-More about this is covered in Chapter 18, Rebellion.
+More about this is covered in [N1.0](#rule-N1.0)<!-- was Chapter 18 -->, Rebellion.
 
 <a id="rule-N2.8"></a>
 ### N2.8 Group F SPYS
@@ -3081,7 +3081,7 @@ There can be no more than one E per quantity; commas and decimal points should n
 ### S2.2 Commas
 
 Commas should be written in quantities where applicable (200,000), and are necessary between quantity and item, (200,000, GOLD), and are used to separate the parts of an order.
-The sample turnsheet, section 17.3, has examples of this.
+The sample turnsheet, [S3.0](#rule-S3.0)<!-- was section 17.3 -->, has examples of this.
 E numbers can not have commas in them.
 
 <a id="rule-S2.3"></a>
@@ -3553,7 +3553,7 @@ This order does not require "END" to finish it.
   The items are taken from 75's storage and are put into 74's storage.
   Any item can be TFR'd to another Ruler of the same race if the receiving s/c writes a REC order.
   Only gold can be TFR'd to a Ruler of another race.
-  Group G SPYS may be TFR'd into a foreign s/c to conduct espionage, but they remain under their Ruler's control (see 11.1).
+  Group G SPYS may be TFR'd into a foreign s/c to conduct espionage, but they remain under their Ruler's control (see [K1.0](#rule-K1.0)<!-- was 11.1 -->).
 
 <a id="rule-S7.1.1"></a>
 #### S7.1.1 Multiple Target TFR Orders
@@ -3585,7 +3585,7 @@ This order does not require "END" to finish it.
 - Notes: The REC order has s/c 307 receive 1,000,000 NMTS from s/c #75.
   This order is not necessary if both s/c's are owned by the same player.
   If X- POP units are used in a REC order, it will be void.
-  REC orders are used only for TFR's from another Ruler of the same race, or his Regent (see 11.1).
+  REC orders are used only for TFR's from another Ruler of the same race, or his Regent (see [K1.0](#rule-K1.0)<!-- was 11.1 -->).
   Gold, RSCH, and SPYS do not require a REC order.
 
 <a id="rule-S7.2.1"></a>
@@ -3627,7 +3627,7 @@ To do this, the order should be written as before, except that the qty # being R
   X-POP units may not be used in a pick up order; is used, it will be void.
   The items are picked up from 70's storage and go into 69's storage.
   Any item can be PUP'd from another Ruler of the same race if that s/c writes an APU order.
-  Nothing can be PUP'd from a Ruler of another race, except the player's own group G SPYS (see 11.1).
+  Nothing can be PUP'd from a Ruler of another race, except the player's own group G SPYS (see [K1.0](#rule-K1.0)<!-- was 11.1 -->).
 
 <a id="rule-S7.3.1"></a>
 #### S7.3.1 Multiple Target PUP Orders
@@ -3660,7 +3660,7 @@ To do this, the order should be written as before, except that the qty # being R
 - Notes: The APU order has s/c 70 allow s/c 69 to pick up 70's 10 SDRV-1.
   X-POP can not be used in an APU order or it will be void.
   APU orders are not used if both s/c's are owned by the same player.
-  APU orders are used only for PUP's by another Ruler of the same race, or his Regent (see 11.1).
+  APU orders are used only for PUP's by another Ruler of the same race, or his Regent (see [K1.0](#rule-K1.0)<!-- was 11.1 -->).
 
 <a id="rule-S7.4.1"></a>
 #### S7.4.1 Multiple Target APU Orders

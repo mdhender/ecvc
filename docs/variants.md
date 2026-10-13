@@ -16,8 +16,8 @@ MAXI-CHALLENGE differs from EMPYREAN CHALLENGE in the following ways:
 4. The market does not exist.
 5. Gold does not exist in MAXI-CHALLENGE, as there will probably be little trade between players.
 6. The efficiency factor used here is always **1** when calculating cost, and is never less than **1** when calculating personnel requirements.
-   (See 8.3, Manufacturing).
-7. TFR, APU, REC, ADN, and STP orders are handled as in the standard rules (see 7.4.3.5, 7.5.8, and 11.1).
+   (See [H3.0](manual.md#rule-H3.0)<!-- was 8.3 -->, Manufacturing).
+7. TFR, APU, REC, ADN, and STP orders are handled as in the standard rules (see [F4.3.5](manual.md#rule-F4.3.5)<!-- was 7.4.3.5 -->, [F5.8](manual.md#rule-F5.8)<!-- was 7.5.8 -->, and [K1.0](manual.md#rule-K1.0)<!-- was 11.1 -->).
 8. Home planets can be controlled exactly like non-home planets
 9. The victory conditions are:
    - A. If all the existing colonies (not ships) belong to one Ruler and his Regents, they win and the game is over.
@@ -159,7 +159,7 @@ All EMPYREAN CHALLENGE rules apply to THE TEN PLANET WAR except for the followin
 7. The player who has s/c's remaining after all other players' have been eliminated wins the game.
 8. A player is eliminated when all of his s/c's have been captured or destroyed and when all of his spies have been killed.
 9. The units a player starts off with are detailed on the Ten Planet War pre-game turn sheet.
-10. The efficiency factor (see 8.3, Manufacturing) is always 1 when calculating cost, and is never less than 1 when calculating personnel requirements.
-11. TFR, APU, REC, ADN, and STP orders are handled as in the standard rules (see 7.4.3.5, 7.5.8, and 11.1).
+10. The efficiency factor (see [H3.0](manual.md#rule-H3.0)<!-- was 8.3 -->, Manufacturing) is always 1 when calculating cost, and is never less than 1 when calculating personnel requirements.
+11. TFR, APU, REC, ADN, and STP orders are handled as in the standard rules (see [F4.3.5](manual.md#rule-F4.3.5)<!-- was 7.4.3.5 -->, [F5.8](manual.md#rule-F5.8)<!-- was 7.5.8 -->, and [K1.0](manual.md#rule-K1.0)<!-- was 11.1 -->).
 12. Farms may be placed in orbiting colonies, but not in ships.
 13. Farms and factories in orbiting colonies use no fuel.

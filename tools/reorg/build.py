@@ -9,8 +9,8 @@ import re
 import sys
 
 from common import (
-    B1_PLACEHOLDER, MANUAL, VARIANTS, VARIANTS_NOTE, Model, anchor, doc_for,
-    heading_level, slugify,
+    B1_PLACEHOLDER, CONNECT, MANUAL, VARIANTS, VARIANTS_NOTE, Model, anchor, doc_for,
+    heading_level, parse_connect, read_lines, slugify,
 )
 
 GLOSSARY = "A7.0"
@@ -205,7 +205,30 @@ class Builder:
                 else:
                     manual += self.rule(r, "manual.md")
         manual += self.concordance()
+        manual, variants = self.apply_edits(manual, variants)
         return "\n".join(manual).rstrip("\n") + "\n", "\n".join(variants).rstrip("\n") + "\n"
+
+    def apply_edits(self, manual, variants):
+        """Apply the reviewed phase 4 edits in docs/connect.md."""
+        edits, problems = parse_connect(read_lines(CONNECT))
+        self.problems += problems
+        self.edits = edits
+        docs = {"manual.md": manual, "variants.md": variants}
+        for e in edits:
+            if e.rule not in self.m.ids:
+                self.problems.append(f"{e.where}: unknown rule {e.rule}")
+                continue
+            lines = docs[doc_for(e.rule)]
+            start = lines.index(f'<a id="{anchor(e.rule)}"></a>')
+            end = start + 1
+            while end < len(lines) and not lines[end].startswith(('<a id="rule-', "# ")):
+                end += 1
+            hits = [i for i in range(start, end) if lines[i] == e.old]
+            if len(hits) != 1:
+                self.problems.append(f"{e.where}: {e.rule} has {len(hits)} lines matching {e.old!r}")
+                continue
+            lines[hits[0]:hits[0] + 1] = e.new
+        return docs["manual.md"], docs["variants.md"]
 
 
 def main():

@@ -23,6 +23,7 @@ Tests will cite rules by their manual ID.
 | `docs/manual.md`   | The reorganized rules, with new IDs.                                                                                |
 | `docs/variants.md` | The variant games (Maxi-Challenge, The Ten Planet War), with IDs in subject V.                                      |
 | `docs/mapping.md`  | Working mapping from every rule book heading to its subject and manual ID.                                          |
+| `docs/connect.md`  | The reviewed phase 4 edits, which the move script applies after copying the rule book text.                         |
 | `docs/errata.md`   | Log of mistakes found in the rules, each citing a rule ID. Entries record problems; they do not fix them.           |
 | `docs/REORG.md`    | This plan.                                                                                                          |
 
@@ -105,7 +106,7 @@ Rewrite internal links to manual anchors using the mapping.
 ### 4. Connect
 
 Fix sentences that relied on the rule book's order, such as "as described above".
-Each changed line is listed for review.
+Each changed line is listed for review in `docs/connect.md`, which the move script applies, so the manual can still be rebuilt from the rule book.
 
 ### 5. Verify
 
@@ -150,6 +151,8 @@ Design work to take up after `manual-baseline`, through `docs/errata.md`:
   Most rules do not say this today, and adding it changes rule text.
 - **Sequence of play annex.** An annex in subject R, after SFB's expanded sequence of play: every step of the turn in order, each citing the rules that govern it.
   The stage steps in B3 are its starting point.
+- **Orbit 0.** A2.2 says orbit 0 is explained in A3.0, and A3.0 says it is explained in A2.2, but neither explains it beyond saying that it surrounds the system and that ships from other systems arrive there.
+  Explain orbit 0 in one rule and have the other cite it.
 
 ## Decisions
 

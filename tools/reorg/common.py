@@ -13,6 +13,7 @@ RULEBOOK = os.path.join(DOCS, "rulebook.md")
 MAPPING = os.path.join(DOCS, "mapping.md")
 MANUAL = os.path.join(DOCS, "manual.md")
 VARIANTS = os.path.join(DOCS, "variants.md")
+CONNECT = os.path.join(DOCS, "connect.md")
 
 # Lines the build writes that are not rule book text. The check ignores them.
 VARIANTS_NOTE = [
@@ -251,7 +252,7 @@ class Model:
         return m.group(1) if m else None
 
     def rewrite_links(self, line, here):
-        """Rewrite links into the rule book to manual anchors.
+        """Rewrite links into the rule book to manual anchors, keeping the old number in a comment.
 
         here is the file the line will live in ("manual.md" or "variants.md").
         Returns (line, unresolved) where unresolved lists link targets with no manual ID.
@@ -268,6 +269,58 @@ class Model:
                 return m.group(0)
             doc = doc_for(rid)
             prefix = "" if doc == here else doc
-            return f"[{rid}]({prefix}#{anchor(rid)})"
+            return f"[{rid}]({prefix}#{anchor(rid)})<!-- was {text} -->"
 
         return LINK_RE.sub(repl, line), unresolved
+
+
+@dataclass
+class Edit:
+    """One reviewed phase 4 change: replace one line of a rule with zero or more lines."""
+    rule: str
+    old: str
+    new: list
+    where: str  # connect.md line, for messages
+
+
+def parse_connect(lines):
+    """Read the edits under "## Edits" in docs/connect.md.
+
+    Each "### <rule ID>" heading is followed by one or more diff code blocks.
+    In a block, a line starting with "-" is a line of the rule as built; the
+    lines starting with "+" after it replace it. A "-" with no "+" deletes the line.
+    """
+    edits, problems = [], []
+    in_edits = False
+    rule = None
+    in_diff = False
+    for n, line in enumerate(lines, 1):
+        where = f"connect.md:{n}"
+        if in_diff:
+            if line.startswith("```"):
+                in_diff = False
+            elif line.startswith("-"):
+                edits.append(Edit(rule, line[1:], [], where))
+            elif line.startswith("+"):
+                if not edits or edits[-1].rule != rule:
+                    problems.append(f"{where}: '+' line with no '-' line before it")
+                else:
+                    edits[-1].new.append(line[1:])
+            elif line.strip():
+                problems.append(f"{where}: diff line must start with '-' or '+'")
+            continue
+        if line.startswith("## "):
+            in_edits = line.strip() == "## Edits"
+            rule = None
+        elif in_edits and line.startswith("### "):
+            rule = line[4:].strip()
+        elif in_edits and line.startswith("```diff"):
+            if rule is None:
+                problems.append(f"{where}: diff block outside a rule heading")
+            in_diff = True
+    return edits, problems
+
+
+def normalize_links(line):
+    """Compare cross-file rule links as same-file links."""
+    return re.sub(r"\]\((?:manual|variants)\.md#", "](#", line)

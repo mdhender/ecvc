@@ -12,8 +12,9 @@ from collections import Counter
 
 from build import Builder
 from common import (
-    ANCHOR_RE, B1_PLACEHOLDER, DOCS, LINK_RE, MANUAL, VARIANTS, VARIANTS_NOTE,
-    Model, heading_level, heading_slugs, id_numbers, read_lines, scan,
+    ANCHOR_RE, B1_PLACEHOLDER, CONNECT, DOCS, LINK_RE, MANUAL, VARIANTS, VARIANTS_NOTE,
+    Model, heading_level, heading_slugs, id_numbers, normalize_links, parse_connect,
+    read_lines, scan,
 )
 
 RULE_HEADING_RE = re.compile(r"^([A-Z]\d+(?:\.\d+)*) (.*)$")
@@ -81,6 +82,20 @@ def compare_bodies(model, manual, variants):
         line, _ = model.rewrite_links(line, "manual.md")
         expected[line] += 1
 
+    # The reviewed phase 4 edits in docs/connect.md are the only allowed differences.
+    out = []
+    edits, problems = parse_connect(read_lines(CONNECT))
+    out += problems
+    for e in edits:
+        old = normalize_links(ANCHOR_RE.sub("", e.old))
+        if expected[old] == 0:
+            out.append(f"{e.where}: edit for {e.rule} replaces a line not in the rule book: {e.old!r}")
+            continue
+        expected[old] -= 1
+        for new in e.new:
+            if new.strip():
+                expected[normalize_links(ANCHOR_RE.sub("", new))] += 1
+
     labels = {f"**{u.title}**" for u in model.unmapped if model.folded_into(u)}
     generated = Builder(model).generated_lines()
     actual = Counter()
@@ -92,8 +107,7 @@ def compare_bodies(model, manual, variants):
             line = ANCHOR_RE.sub("", line)
             if not line.strip():
                 continue
-            # Cross-file links compare as same-file links.
-            line = re.sub(r"\]\((?:manual|variants)\.md#", "](#", line)
+            line = normalize_links(line)
             actual[line] += 1
             where.setdefault(line, f"{doc.name}:{i + 1}")
     missing = expected - actual
@@ -101,9 +115,8 @@ def compare_bodies(model, manual, variants):
     rb_where = {}
     for i, line in body_lines(rb_lines, toc_skip):
         rb_where.setdefault(model.rewrite_links(line, "manual.md")[0], f"rulebook.md:{i + 1}")
-    out = []
     for line, n in sorted(missing.items(), key=lambda kv: rb_where.get(kv[0], "")):
-        out.append(f"only in rulebook.md ({rb_where.get(line)}, x{n}): {line!r}")
+        out.append(f"missing from manual/variants ({rb_where.get(line, 'from connect.md')}, x{n}): {line!r}")
     for line, n in sorted(extra.items(), key=lambda kv: where.get(kv[0], "")):
         out.append(f"only in manual/variants ({where.get(line)}, x{n}): {line!r}")
     return out
@@ -229,7 +242,7 @@ def plain_refs(model, docs):
                 continue
             if doc.lines[i] in VARIANTS_NOTE:
                 continue
-            line = ANCHOR_RE.sub("", LINK_RE.sub("", doc.lines[i]))
+            line = ANCHOR_RE.sub("", LINK_RE.sub("", re.sub(r"<!--.*?-->", "", doc.lines[i])))
             for m in SECTION_REF_RE.finditer(line):
                 num, step = m.group(1) or m.group(3) or m.group(4) or m.group(5), m.group(2)
                 key = num[:-2] if num.endswith(".0") and num[:-2] in sections else num
