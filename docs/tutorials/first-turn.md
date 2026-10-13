@@ -22,7 +22,7 @@ Your factories are already working, because every factory group starts with work
 So your factories keep producing while you learn.
 
 Last, find the free magnitude-10 probe report.
-It lists the stars within 10 light years of your home planet and the planet in each orbit of your home system ([A2.3](../manual.md#rule-A2.3)).
+It lists the stars within 10 light years of your home planet and the planet in each orbit of each solar system in your home star system ([A2.3](../manual.md#rule-A2.3)).
 Your home planet is at coordinates 0/0/0, and every coordinate on the printout is measured from there.
 
 ## Head the turnsheet
