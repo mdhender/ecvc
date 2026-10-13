@@ -4,9 +4,8 @@
 
 EMPYREAN CHALLENGE is a computer moderated, hidden movement, play-by-mail science fiction game.
 The goal of the game is the control of star cluster consisting of 100 solar systems.
-All of the systems have one to 10 planets per star but only 10 systems are inhabited at the start of the game; each of the ten systems having one inhabited world.
+All the systems have one to 10 planets per star but only 10 systems are inhabited at the start of the game; each of the ten systems having one inhabited world.
 Each of the ten inhabited planets has 15 nations; the 15 players on a planet rule the nations individually and together constitute a race.
-(Exception: Games 1 and 2 of EMPYREAN CHALLENGE have 25 nations and 25 players on a planet).
 
 The game strategy relies heavily on diplomacy and economics.
 Players will find that these considerations, as well as military ones, will govern their activities.
@@ -26,4 +25,4 @@ This game is one of the most complex and detailed computer moderated corresponde
 We suggest that novice gamers, or gamers not used to this type of game, begin playing as Regents.
 Regents start the game with limited responsibility and should receive a good deal of coaching from their Rulers.
 
-How ever you choose to play, good gaming and good luck.
+However you choose to play, good gaming and good luck.

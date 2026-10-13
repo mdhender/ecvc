@@ -25,9 +25,8 @@ Ships can NOT have assembled factories (operating factories), but may carry them
 ### 8.3.1 FUEL AND PERSONNEL REQUIREMENTS
 
 Each FCT requires one PRO times the efficiency factor (see 8.3.2) and three USK times the efficiency factor.
-\* Each FCT uses 0.5 fuel units times the factory's TL per turn, except FCT units in OBC's within the 5th orbit or less, which use 0 fuel.
-\* Personnel and fuel are only used by assembled (functioning) FCT groups.
-The efficiency factor in games 1, 2, and 3 is never less than 1.
+Each FCT uses 0.5 fuel units times the factory's TL per turn, except FCT units in OBC's within the 5th orbit or less, which use 0 fuel.
+Personnel and fuel are only used by assembled (functioning) FCT groups.
 
 ### 8.3.2 EFFICIENCY FACTOR - COST
 
@@ -42,17 +41,15 @@ The quantity of FCT's in the group is 50,000, so the efficiency factor is 1.
 The cost per turn is 93,750 METS and 156,250 NMTS.
 
 | Number of FCT's in Group | Efficiency Factor |
-| --- | --- |
-| 1-4 | 6 |
-| 5-49 | 5 |
-| 50-499 | 4 |
-| 500-4,999 | 3 |
-| 5,000-49,999 | 2 |
-| 50.000-199,999 | 1 |
-| 200,000 and up | 0.5 |
+|--------------------------|-------------------|
+| 1 ... 4                  | 6                 |
+| 5 ... 49                 | 5                 |
+| 50 ... 499               | 4                 |
+| 500 ... 4,999            | 3                 |
+| 5,000 ... 49,999         | 2                 |
+| 50.000 ... 199,999       | 1                 |
+| 200,000  ... infinity    | 0.5               |
 
-The efficiency factor is NOT used in determining cost in games 1, 2, and 3 of EMPYREAN CHALLENGE; the calculations are done as shown above excluding the use of an efficiency factor.
-The efficiency factor is also not used when calculating the number of units a FCT group can produce.
+The efficiency factor is not used when calculating the number of units a FCT group can produce.
 
-\* Indicates line has been revised or added on.
-This page revised 5/9/81.
+    NOTE: In the MAXI-CHALLENGE game, the efficiency factor is always 1 when calculating cost per year, and is never less than 1 when calculating personnel requirements.

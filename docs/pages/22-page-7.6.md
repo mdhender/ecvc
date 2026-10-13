@@ -10,11 +10,8 @@ The colony set-up may be an orbiting colony, an enclosed surface colony, or an o
 A player may give up control of a planet by writing an uncontrol (UNC) order.
 A player with a colony on a world where control has been given up may take control by writing a CON order.
 Once a player has received permission to colonize from the controller of the planet, he may set up others colonies on the planet without further permission to colonize orders.
-HOME PLANETS MAY NOT BE CONTROLLED.
+**HOME PLANETS MAY NOT BE CONTROLLED.**
 Controlling planets is the object of the game (see chapter 22, Victory Conditions).
 The player controlling a planet may name it.
-\* Any planet controlled by a Regent counts toward his Ruler's total.
-\* If all the s/c's on a home planet are controlled by races other than the home planet's original race, the planet is no longer considered a home planet, and all rules concerning control apply to it.
-
-\* Indicates line has been revised or added on.
-This page revised 5/9/81.
+Any planet controlled by a Regent counts toward his Ruler's total.
+If all the s/c's on a home planet are controlled by races other than the home planet's original race, the planet is no longer considered a home planet, and all rules concerning control apply to it.

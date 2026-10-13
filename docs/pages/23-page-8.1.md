@@ -5,7 +5,7 @@
 ## 8.1 FARMING
 
 Farming is done by farm (FRM) units.
-All of the farm units at each technological level (TL) form a FRM group.
+All the farm units at each technological level (TL) form a FRM group.
 There can be only one group *per TL* in a s/c.
 For instance one s/c could have one group of 50,000 FRM-1, and 30,000 FRM-2 and 90,000 FRM-3.
 In order for the farm units to be taken from storage and put to work, the player assembles them into a FRM group.
@@ -15,7 +15,7 @@ This is done with an ASM (assembly) order, and is explained in detail in Chapter
 
 The amount of food produced per turn per farm unit depends on the unit's TL.
 A FRM-1 unit (TL-1 farm unit) will produce 25 food units per turn.
-A FRM-2 thru FRM-10 will produce 5 times the TL in food units per turn.
+A FRM-2 through FRM-10 will produce 5 times the TL in food units per turn.
 So, a FRM-2 will produce 10 food units per turn.
 
 ### 8.1.2 EFFECT OF SHORTAGES
@@ -46,14 +46,11 @@ The personnel required to run one FRM unit of any TL is one PRO and three USK.
 
 ### 8.1.5 FUEL USE
 
-\* One FRM-1 uses 0.5 fuel units per turn; one FRM-2 through FRM-5 uses 0.5 times the TL in fuel units per turn; one FRM-6 through FRM-11 uses 1 fuel unit times the TL per turn.
-\* FRM's on OBC's in orbits 1-5 use no fuel, but use solar power.
+One FRM-1 uses 0.5 fuel units per turn; one FRM-2 through FRM-5 uses 0.5 times the TL in fuel units per turn; one FRM-6 through FRM-11 uses 1 fuel unit times the TL per turn.
+FRM's on OBC's in orbits 1-5 use no fuel, but use solar power.
 
 ### 8.1.6 SHUT DOWNS AND START UPS
 
 Shut down orders (SHT) are used to stop the farming done by *all* assembled farms in a s/c; one can not shut down only a portion of them.
-\* Start up orders (STU) are used ONLY to start up farms that have been shut down.
-\* FRM's are assembled in running condition.
-
-\* Indicates line has been revised or added on.
-This page revised 5/9/81.
+Start up orders (STU) are used ONLY to start up farms that have been shut down.
+FRM's are assembled in running condition.

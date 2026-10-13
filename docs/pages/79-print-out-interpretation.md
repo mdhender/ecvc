@@ -10,10 +10,10 @@ Most of the printout is in easy to understand terms, with the exceptions of the 
 4. *Orbit Probes:*
 
 ```text
-                                                       tactical
-Format:   S/C type S/C name (S/C ID#) mass=log base 10 coordinates
-Example:    SHP      VEGA-5 (356)       M=6              9/-28/13
-            OPC      BADSHOT(28)        M=8              0/0/0
+                                                          tactical
+Format:   S/C type  S/C name (S/C ID#)  mass=log base 10  coordinates
+Example:  SHP       VEGA-5   (356)      M=6               9/-28/13
+          OPC       BADSHOT  (28)       M=8               0/0/0
 ```
 
 # ERROR MESSAGES
@@ -28,17 +28,17 @@ Some orders are for a foreign s/c, like SPM orders.
 These orders that fail show up under the heading, "Player's Special Messages".
 The error code at the end of a failed order explains why the order failed.
 
-- E1: Format error.
+- E01: Format error.
   This error also includes mis-spellings and undefined errors.
-- E2: Quantity error.
-  E2 may mean lack of fuel for TPT's involved, but in most cases refers to the quantity of the object of the order.
-- E3: The player does not own the s/c or planet necessary.
-- E4: The s/c does not exist.
-- E5: E5 error codes have been discontinued.
-- E6: The deposit is already being mined.
-- E7: The FCT or MIN group does not exist.
-- E8: The player already has 40 MIN groups, and can not have more.
-- E9: The FCT group cannot make the new item until the FCT's are retooled.
+- E02: Quantity error.
+  E02 may mean lack of fuel for TPT's involved, but in most cases refers to the quantity of the object of the order.
+- E03: The player does not own the s/c or planet necessary.
+- E04: The s/c does not exist.
+- E05: E5 error codes have been discontinued.
+- E06: The deposit is already being mined.
+- E07: The FCT or MIN group does not exist.
+- E08: The player already has 40 MIN groups, and can not have more.
+- E09: The FCT group cannot make the new item until the FCT's are retooled.
 - E10: There is no market at location of the s/c.
   (EC 1, 2, and 3 only).
 - E11: There is not enough space available in the s/c to complete the order.

@@ -19,8 +19,8 @@ S/c's may establish any other type or number of ships and colonies, providing re
 
 #### 7.4.3.1 Restrictions on Type of S/C
 
-\* A player may not set up a colony if this would result in more than one of each type of colony at the same location.
-\* This does not apply to ships; only 99 ships may be set up at the same location by the same player.
+A player may not set up a colony if this would result in more than one of each type of colony at the same location.
+This does not apply to ships; only 99 ships may be set up at the same location by the same player.
 
 #### 7.4.3.2 Restrictions Ruler - Regent
 
@@ -36,9 +36,6 @@ When a player has received PTC on a planet, he does not need it to set up more c
 #### 7.4.3.4 Failures to Set Up
 
 All set-up orders, whether for ships or colonies, will abort if no population are included in the set up order.
-A ship set up will also abort if no SPD are included.
+A ship set up will also abort if no SDRV are included.
 Portions of a STP, or all of it, may fail due to a shortage of construction workers, transports, fuel (for the transports), or due to a shortage of STUN, LTSU, or SLSU (there must be enough to hold the units being STP).
 The s/c's otherwise have no size limitations, and players may build them as they choose.
-
-\* Indicates line has been revised or added on.
-This page revised 5/9/81.

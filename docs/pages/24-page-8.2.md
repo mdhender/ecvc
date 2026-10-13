@@ -4,7 +4,7 @@
 
 The number of FRM-1 that can be assembled in the open colonies of a planet is limited to the habitability number of the planet times 100,000.
 There is no limit to the number of FRM's TL-2 through TL-10 that can be assembled in open colonies.
-\* And there is no limit to FRM's of any TL in ships, enclosed surface colonies, or orbiting colonies, providing there is enough space for them, and the restrictions in 8.1.3 are observed.
+And there is no limit to FRM's of any TL in ships, enclosed surface colonies, or orbiting colonies, providing there is enough space for them, and the restrictions in 8.1.3 are observed.
 
 ## 8.2 MINING
 
@@ -44,6 +44,3 @@ A s/c may not have more than one MIN group at a deposit.
 Only 40 mine groups are allowed in any enclosed surface colony, or in any open colony.
 Since all deposits are located on planets, no MIN's can function on ships or orbiting colonies.
 MIN's may be held in storage, however.
-
-\* Indicates line has been altered or added on.
-This page revised 5/9/81.

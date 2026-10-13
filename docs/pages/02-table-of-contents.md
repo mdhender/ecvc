@@ -2,30 +2,30 @@
 
 # TABLE OF CONTENTS
 
-| Section | Page |
-| --- | --- |
-| FORWARD | 0.1 |
-| 1. INTRODUCTION | 1.1 |
-| 2. HISTORY OF THE EMPYREAN CLUSTER | 2.1 |
-| 3. GAME SET UP | 3.1 |
-| 4. GLOSSARY | 4.1 |
-| 5. POPULATION | 5.1 |
-| 6. BASIC NECESSITIES | 6.1 |
-| 7. SHIPS AND COLONIES | 7.1 |
-| 8. PRODUCTION | 8.1 |
-| 9. ASSEMBLY | 9.1 |
-| 10. TECHNOLOGY | 10.1 |
-| 11. TRANSFERS | 11.1 |
-| 12. MARKET | 12.1 |
-| 13. SHIP MOVEMENT | 13.1 |
-| 14. SURVEYS AND PROBES | 14.1 |
-| 15. COMBAT | 15.1 |
-| 16. TURN SEQUENCE | 16.1 |
-| 17. ORDER WRITING | 17.1 |
-| 18. REBELLION | 18.1 |
-| 19. ESPIONAGE | 19.1 |
-| 20. COMMUNICATION | 20.1 |
-| 21. AUXILLARY PLAYERS | 21.1 |
-| 22. VICTORY CONDITIONS | 22.1 |
-| APPENDIX I: MAXI-CHALLENGE | 23.1 |
-| APPENDIX II: TEN PLANET WAR | 24.1 |
+| Section                            | Page |
+|------------------------------------|------|
+| FORWARD                            | 0.1  |
+| 1. INTRODUCTION                    | 1.1  |
+| 2. HISTORY OF THE EMPYREAN CLUSTER | 2.1  |
+| 3. GAME SET UP                     | 3.1  |
+| 4. GLOSSARY                        | 4.1  |
+| 5. POPULATION                      | 5.1  |
+| 6. BASIC NECESSITIES               | 6.1  |
+| 7. SHIPS AND COLONIES              | 7.1  |
+| 8. PRODUCTION                      | 8.1  |
+| 9. ASSEMBLY                        | 9.1  |
+| 10. TECHNOLOGY                     | 10.1 |
+| 11. TRANSFERS                      | 11.1 |
+| 12. MARKET                         | 12.1 |
+| 13. SHIP MOVEMENT                  | 13.1 |
+| 14. SURVEYS AND PROBES             | 14.1 |
+| 15. COMBAT                         | 15.1 |
+| 16. TURN SEQUENCE                  | 16.1 |
+| 17. ORDER WRITING                  | 17.1 |
+| 18. REBELLION                      | 18.1 |
+| 19. ESPIONAGE                      | 19.1 |
+| 20. COMMUNICATION                  | 20.1 |
+| 21. AUXILLARY PLAYERS              | 21.1 |
+| 22. VICTORY CONDITIONS             | 22.1 |
+| APPENDIX I: MAXI-CHALLENGE         | 23.1 |
+| APPENDIX II: TEN PLANET WAR        | 24.1 |

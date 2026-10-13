@@ -10,7 +10,7 @@ POP listed in a STP are taken from the establishing s/c's population groups.
 Items listed in a STP are never taken from the establishing s/c's assembled items.
 NON listed in a STP go to storage at the new s/c immediately.
 (This is done automatically - no order from the player is necessary).
-UNA in a STP are assembled by CNW and used in the new s/c; they do not go into storage, EXCEPT FOR MINES AND FACTORIES.
+UNA in a STP are assembled by CNW and used in the new s/c; they do not go into storage, **EXCEPT FOR MINES AND FACTORIES**.
 (This is also done automatically and needs no special order from the player).
 POP go into the new s/c's population groups automatically.
 Mines listed in a STP are not automatically assembled upon arrival in the new s/c; they are put into storage and will need an assemble order on the next turn to start them functioning.
@@ -21,7 +21,7 @@ Factory units will be put into storage in the new s/c, unless in the STP order t
 The s/c being set-up can be established only in the same orbit as the s/c that is doing the set-up.
 If a ship or orbiting colony is being set-up, it will be in orbit.
 Note: Ships NEVER land.
-If an open colony or enclosed surface colany is being set-up, it will be on the surface of a planet.
+If an open colony or enclosed surface colony is being set-up, it will be on the surface of a planet.
 
 ## 7.5 ADD-ONS
 
@@ -43,7 +43,7 @@ Portions of an ADN, or all of an ADN, may fail due to a shortage of CNW, fuel fo
 
 A player wishing to ADN to a s/c writes an ADN order to an existing s/c, telling it to add certain items to an existing s/c.
 The computer will cause construction worker units and transports to do the transferring of items in the ADN order.
-All of the materials needed to do the ADN come from the adding-on s/c's POP, NON, and UNA.
+All the materials needed to do the ADN come from the adding-on s/c's POP, NON, and UNA.
 
 ### 7.5.4 CONSTRUCTION WORKERS AND ADD-ONS
 

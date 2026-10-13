@@ -22,14 +22,14 @@ OBC's may be located in any orbit around a star, whether or not there is a plane
 
 ### 7.2.4 SHIPS
 
-SHP's may be located in any orbit around a star, whether or not there is a planet there, and may be moved from orbit to orbit, or from its orbit to the 11th orbit of another system.
-All incoming ships arrive in the system's 11th orbit.
+SHP's may be located in any orbit around a star, whether or not there is a planet there, and may be moved from orbit to orbit, or from its orbit to orbit 0 of another system.
+All incoming ships arrive in orbit 0 of the system.
 
 ## 7.3 STRUCTURAL REQUIREMENTS
 
 ### 7.3.1 DEFINITION
 
-Assembled STUN, LTSU, or SLSU must encompass the VOLUME of any s/c's units and population, with the exception of NMTS and METS in OPC's and ESC's.
+Assembled STUN, LTSU, or SLSU must encompass the VOLUME of any s/c's units and population, except NMTS and METS in OPC's and ESC's.
 The total volume units times the STRUCTURE RATIO, (see 7.3.1.1), gives the s/c structural requirement.
 In OPC's and ESC's, NMTS and METS are stored outside the colony.
 
@@ -37,12 +37,12 @@ In OPC's and ESC's, NMTS and METS are stored outside the colony.
 
 The minimum STUN, LTSU, or SLSU required to enclose a single volume unit are:
 
-| | |
-|---|---|
-| Open colonies (OPC) | 1 |
-| Enclosed surface colonies (ESC) | 5 |
-| Orbiting colonies (OBC) | 8 |
-| Ships (SHP) | 10 |
+|                                 |    |
+|---------------------------------|----|
+| Open colonies (OPC)             | 1  |
+| Enclosed surface colonies (ESC) | 5  |
+| Orbiting colonies (OBC)         | 8  |
+| Ships (SHP)                     | 10 |
 
 This means that structural requirements of a SHP are determined by how much it carries.
 If a SHP is to transport 100,000 volume units, it will require a minimum of 1,000,000 STUN, LTSU, or SLSU.

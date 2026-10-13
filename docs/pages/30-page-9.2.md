@@ -16,9 +16,8 @@ Scrap (SCR) orders convert items *in storage* back into resource units.
 Scrapping causes a 30% loss.
 For instance, scrapping 10,000 MSS-1 will result in 14,000 NMTS and 14,000 METS.
 Scrapping requires one CNW per 300 MU scrapped.
-\* Example: Dis-assembly of 50,000 MU, scrapping of 3,000 MU, and assembly of 100.000 mass units will require a total of 310 CNW units.
-\* (CNW can not be used twice during the same turn).
-Scrapping of population units is not allowed.
 
-\* Indicates line has been revised or added on.
-This page revised 5/9/81.
+Example: Dis-assembly of 50,000 MU, scrapping of 3,000 MU, and assembly of 100.000 mass units will require a total of 310 CNW units.
+(CNW can not be used twice during the same turn).
+
+Scrapping of population units is not allowed.

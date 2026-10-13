@@ -23,11 +23,11 @@ Disbanded SLD become USK.
 ### 5.3.5 SPY DECREASES
 
 Spy decreases are due to assassination by foreign spies, and by DAS orders that disassemble them.
-Each spy unit disassembles into one PRO and one SLD.
+Each spy unit disassembles into 1 PRO and 1 SLD.
 
 ### 5.3.6 CONSTRUCTION WORKER DECREASES
 
-Construction worker decreases are due to DAS orders that disassemble them; each CNW disassembles into one USK and one PRO.
+Construction worker decreases are due to DAS orders that disassemble them; each CNW disassembles into 1 USK and 1 PRO.
 
 ### 5.3.7 REBEL DECREASES
 

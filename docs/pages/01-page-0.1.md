@@ -6,7 +6,7 @@ Thank you for buying this rule book!
 We hope that you decide to play our game after reading the rules.
 The rules should be read twice: once quickly to absorb the general feel of the game; and again in order to gain an in-depth understanding of them.
 
-It should be pointed out that nearly all of the "bookkeeping" in the game is done by the computer, so that the games are easier to play than appears at first glance.
+It should be pointed out that nearly all the "bookkeeping" in the game is done by the computer, so that the games are easier to play than appears at first glance.
 
 A free newsletter, "Odysseys", will be published quarterly, (more or less), which will: announce game winners, rate performances of the other players, announce new games and products, discuss strategy and tactics, and answer players' questions.
 Your articles or letters will be welcome.

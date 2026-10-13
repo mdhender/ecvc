@@ -11,7 +11,7 @@ One planet, whose rulers were braver than most, did rebel and was promptly destr
 This sparked the revolution and started a galactic holocaust.
 
 During the worst years of the war, when biological warfare was used and planets were being decimated right and left; a group of leaders from the rebel worlds decided to hedge their races' continued existence.
-Their plan was to colonize ten worlds, all located in the distant Empyrian Cluster.
+Their plan was to colonize ten worlds, all located in the distant Empyrean Cluster.
 The planets would be in separate solar systems and would each be inhabited by one of ten races.
 As the rebel worlds couldn't spare much in technological aid, it was decided that the colonies would be agricultural in nature, rather than industrial.
 
@@ -20,7 +20,7 @@ These struggles became so intense that hardly a planet escaped massive injury.
 The result of this tremendous destruction left virtually no planet capable of interstellar flight and no single interplanetary government functioning.
 
 The colonies, isolated now, had no problem with food supplies, but their manufacturing capabilities were very limited.
-Their technologies improved, over the centuries, until fairly high levels were achieved; resulting in the re-discoveries of anti-gravity and hyper-space travel.
+Their technologies improved, over the centuries, until fairly high levels were achieved; resulting in the re-discoveries of antigravity and hyper-space travel.
 
 However, the colonies did not escape the great wars unscathed.
 The biological warfare used on the founding rebel planets had affected the colonists' genetic structure, mutating two genes.
@@ -31,10 +31,10 @@ The telepathic ability enabled the individual to communicate mentally with anyon
 Members of the telepathic families had to marry outsiders at first, but as the families grew, they became large enough so that the members could marry within the families themselves and still bypass the dangers of inbreeding.
 To marry within a family was preferred as telepathic communication between husband and wife could be had only if they were related by blood.
 
-These Families, on the ten planets, began to aquire great wealth and power due to the inherent closeness engendered by their shared ability.
+These Families, on the ten planets, began to acquire great wealth and power due to the inherent closeness engendered by their shared ability.
 Eventually, this concentration of power in the hands of the Families, and the growth and separation of the population, caused the formation of nations; each of which was ruled by the head of a Family.
 
 A Ruler used the rest of the Family members to fill all important government positions, as they acted as one with him and could communicate with him instantly; and when space exploration began, the Family members became his ship captains and colony governors.
 As a Ruler's ships ranged further from the home planet, telepathy between planet and ship did not fail, showing that the telepathic range seemed to be unlimited.
 
-At this point, each of the ten planets has approximately 15 Family-ruled nations; each nation competing with each other and with the other races for the control of the Empyrian Cluster.
+At this point, each of the ten planets has approximately 15 Family-ruled nations; each nation competing with each other and with the other races for the control of the Empyrean Cluster.
