@@ -157,8 +157,6 @@ Design work to take up after `manual-baseline`, through `docs/errata.md`:
   Most rules do not say this today, and adding it changes rule text.
 - **Sequence of play annex.** An annex in subject R, after SFB's expanded sequence of play: every step of the turn in order, each citing the rules that govern it.
   The stage steps in B3 are its starting point.
-- **Orbit 0.** A2.2 says orbit 0 is explained in A3.0, and A3.0 says it is explained in A2.2, but neither explains it beyond saying that it surrounds the system and that ships from other systems arrive there.
-  Explain orbit 0 in one rule and have the other cite it.
 - **First-turn tutorial.** `docs/tutorials/first-turn.md` states three things the rules do not say outright:
   that the initial turnsheet is for turn 0 (the rules mention a turn 0 turnsheet in D7.0 but do not say which one it is);
   that a NAM order's name shows in the colony's report on the next printout (S13.1);
