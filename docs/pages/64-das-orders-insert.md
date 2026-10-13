@@ -1,6 +1,6 @@
 <!-- Page - | source: EC Rules 1980 Even Pages.pdf, p32 -->
 
-### 17.4.48 DISASSEMBLY ORDERS (DAS)
+### 17.4.50 DISASSEMBLY ORDERS (DAS)
 
 - Format: S/C ID#, DAS, qty, item.
 - Example: 100, DAS, 400, MSL-1.
@@ -17,7 +17,7 @@
 - Notes; This format takes MIN's out of an existing MIN *group* and puts them into storage.
   Please use the group #, not the deposit location.
 
-#### 17.4.48.1 Multiple DAS Orders
+#### 17.4.50.1 Multiple DAS Orders
 
 - Format: S/C ID#, DAS, qty of unit types, "M".
 - Example:

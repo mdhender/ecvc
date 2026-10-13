@@ -40,7 +40,7 @@ We hope that you find playing our games to be a rewarding and enjoyable gaming e
 - [18. REBELLION](#18-rebellion)
 - [19. ESPIONAGE](#19-espionage)
 - [20. COMMUNICATIONS](#20-communications)
-- [21.0 AUXILLARY PLAYERS](#210-auxillary-players)
+- [21. AUXILLARY PLAYERS](#21-auxillary-players)
 - [22. VICTORY CONDITIONS](#22-victory-conditions)
 - [APPENDIX I: MAXI-CHALLENGE](#appendix-i-maxi-challenge)
 - [APPENDIX II: THE TEN PLANET WAR](#appendix-ii-the-ten-planet-war)
@@ -1653,11 +1653,11 @@ To compute the length of time it will take a ship to move to a new system, the n
 If there is a fraction in the amount of light years, the number of turns is rounded up.
 (10.6 light years divided by 3 (HDRV-3) = 3.53 turns, or 4 turns).
 
-### 13.3.4 COMBAT (DELETED)
+### 13.3.3 COMBAT (DELETED)
 
     Deleted.
 
-### 13.3.5 FUEL USE
+### 13.3.4 FUEL USE
 
 HDRV use 40 x the distance in light years in FUEL units.
 When moving from one orbit to another orbit of the same star, the distance used is .1 light years.
@@ -1929,7 +1929,7 @@ If a force is not armed with either ASC or ASW, then MT = 1.
 
 ### 15.6.5 ENERGY WEAPONS AND ENERGY SHIELDS
 
-#### 15.6.4.1 Offense
+#### 15.6.5.1 Offense
 
 Energy weapons (EWP) are fired by s/c's at s/c's in the same orbit.
 EWP's fire a beam of energy and are not mobile.
@@ -2669,7 +2669,7 @@ will have more LTSU for sale next turn. Signed.
 - Notes: The SCR order has s/c 55 convert the ASW's to resource units.
   POP's can not be scrapped.
 
-### 17.4.23 Multiple Scrap Orders
+#### 17.4.23.1 Multiple Scrap Orders
 
 - Format:
   ```text
@@ -2746,12 +2746,12 @@ This TFR order TFR's 500 PRO-3 to s/c 398 without rebels.
 - Example: 75, REC, 3E3, NMTS, 72, 73.
 - Notes: The multiple target REC order causes the NMTS to be received from 72 and 73.
 
-#### 17.4.25.1 To Cancel Receive Orders
+#### 17.4.25.2 To Cancel Receive Orders
 
 REC orders remain in force until used or canceled.
 To do this, the order should be written as before, except that the qty # being REC'd is changed to 0, as in 29, REC, 0, FOOD, 25.
 
-#### 17.4.25.2 Multiple REC Orders
+#### 17.4.25.3 Multiple REC Orders
 
 - Format: S/C ID#, "REC", quantity of unit types, M, s/c (or s/c's) received from.
 - Example:
@@ -3080,25 +3080,25 @@ NOTE: ALL SPM ORDERS CAN BE USED IN THE PLAYER'S OWN S/C, OR IN FOREIGN S/C's.
 - Example: 681, UNC.
 - Notes: Colony 681 releases control of the world on which it is located.
 
-### 17.4.45 NAME ORDERS (NAM)
+### 17.4.46 NAME ORDERS (NAM)
 
 - Format: S/C ID#, "NAM", s/c name.
 - Example: 39, NAM, Dragon Fire.
 - Notes: The NAM order gives the name of Dragon Fire to s/c 39.
 
-### 17.4.46 PLAYER NAME ORDERS (NOM)
+### 17.4.47 PLAYER NAME ORDERS (NOM)
 
 - Format: Player ID#, "NOM", player name.
 - Example: 15, NOM, Bad Bob.
 - Notes: The NOM order gives the name of Bad Bob to player 15.
 
-### 17.4.47 PLANET NAME ORDERS (NAP)
+### 17.4.48 PLANET NAME ORDERS (NAP)
 
 - Format: S/C ID#, "NAP", planet name.
 - Example: 88, NAP, Goldball.
 - Notes: The NAP order has s/c 88 name the planet it is on: Goldball.
 
-### 17.4.48 NEWS RELEASE ORDERS (NSR)
+### 17.4.49 NEWS RELEASE ORDERS (NSR)
 
 - Format: S/C ID#, "NSR", text, SIGNED (or UNSIGNED).
 - Example: 150, NSR, Space drives for sale next turn. SIGNED.
@@ -3108,7 +3108,7 @@ NOTE: ALL SPM ORDERS CAN BE USED IN THE PLAYER'S OWN S/C, OR IN FOREIGN S/C's.
   News releases must be in the context of the game, must not be obscene, or personally attack another player.
   They may also include a player's real name, address, and phone number.
 
-### 17.4.48 DISASSEMBLY ORDERS (DAS)
+### 17.4.50 DISASSEMBLY ORDERS (DAS)
 
 - Format: S/C ID#, DAS, qty, item.
 - Example: 100, DAS, 400, MSL-1.
@@ -3125,7 +3125,7 @@ NOTE: ALL SPM ORDERS CAN BE USED IN THE PLAYER'S OWN S/C, OR IN FOREIGN S/C's.
 - Notes; This format takes MIN's out of an existing MIN *group* and puts them into storage.
   Please use the group #, not the deposit location.
 
-#### 17.4.48.1 Multiple DAS Orders
+#### 17.4.50.1 Multiple DAS Orders
 
 - Format: S/C ID#, DAS, qty of unit types, "M".
 - Example:
@@ -3381,7 +3381,7 @@ They must be written on separate pieces of paper (any larger than 2" x 2" will d
 Diplomatic messages may not be signed with a false name.
 They may be addressed to members of the same race, or to s/c's located at the same location as one of the sender's s/c's.
 
-# 21.0 AUXILLARY PLAYERS
+# 21. AUXILLARY PLAYERS
 
 ## 21.1 REGENTS
 
@@ -3492,8 +3492,8 @@ All EMPYREAN CHALLENGE rules apply to THE TEN PLANET WAR except for the followin
 9. The units a player starts off with are detailed on the Ten Planet War pre-game turn sheet.
 10. The efficiency factor (see 8.3, Manufacturing) is always 1 when calculating cost, and is never less than 1 when calculating personnel requirements.
 11. TFR, APU, REC, ADN, and STP orders are handled as in the standard rules (see 7.4.3.5, 7.5.8, and 11.1).
-12. FARMS IN ORBITING COLONIES, NOT IN SHIPS
-13. FARMS & FCT IN ORBIT USE NO FUEL
+12. Farms may be placed in orbiting colonies, but not in ships.
+13. Farms and factories in orbiting colonies use no fuel.
 
 # MAXI-CHALLENGE PRE-GAME TURN SHEET
 
