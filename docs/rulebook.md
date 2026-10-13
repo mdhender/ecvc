@@ -2141,7 +2141,7 @@ Fractions are dropped.
 
 #### 15.9.7.3 Determining Unit Losses in Raids
 
-Casualties from a raid are computed as above and then multiplied by afraction.
+Casualties from a raid are computed as above and then multiplied by a fraction.
 The fraction used differs according to the type of target.
 The fractions are 0.3 for OPC's, 0.5 for ESC's, 0.75 for OBC's, and 0.9 for ships.
 
