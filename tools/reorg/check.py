@@ -35,6 +35,13 @@ class Doc:
         self.anchors = []
         for line in self.lines:
             self.anchors += ANCHOR_RE.findall(line)
+        # IDs of the numbered rule headings, including rules added since the rule book.
+        self.rule_ids = set()
+        for kind, i, payload in scan(self.lines):
+            if kind == "heading":
+                m = RULE_HEADING_RE.match(payload[1])
+                if m:
+                    self.rule_ids.add(m.group(1))
         # Line ranges (0-based, end exclusive) of top-level sections that are not rule text.
         self.skip = set()
         start = None
@@ -176,12 +183,13 @@ def check_anchors(model, manual, variants):
             out.append(f"{r.id}: {n} anchors in {doc.name}")
     known = {f"rule-{r.id}" for r in model.rows}
     for doc in (manual, variants):
+        new_rules = {f"rule-{rid}" for rid in doc.rule_ids}
         for a in doc.anchors:
-            if a in known:
+            if a in known or a in new_rules:
                 continue
             m = re.fullmatch(r"rule-(B3\.\d+)\.\d+", a)
             if not (m and m.group(1) in model.ids):
-                out.append(f"{doc.name}: anchor {a!r} is not a mapping row or stage step")
+                out.append(f"{doc.name}: anchor {a!r} is not a rule, mapping row, or stage step")
     return out
 
 
@@ -196,7 +204,8 @@ def check_headings(model, manual, variants):
             level, text = payload
             where = f"{doc.name}:{i + 1}"
             m = RULE_HEADING_RE.match(text)
-            if m and m.group(1) in model.ids:
+            if m:
+                # A rule from the mapping, or one added since the rule book.
                 rid = m.group(1)
                 nums = id_numbers(rid)
                 if len(nums) > 5:
@@ -205,7 +214,7 @@ def check_headings(model, manual, variants):
                     out.append(f"{where}: {rid} is level {level}, expected {heading_level(rid)}")
                 if lines[i - 1] != f'<a id="rule-{rid}"></a>':
                     out.append(f"{where}: {rid} heading is not preceded by its anchor")
-                if text != f"{rid} {model.ids[rid].title}":
+                if rid in model.ids and text != f"{rid} {model.ids[rid].title}":
                     out.append(f"{where}: heading {text!r} does not match mapping title")
                 parent_level = level
             elif level == 1:
