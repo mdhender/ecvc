@@ -5,6 +5,7 @@
 MAXI-CHALLENGE differs from EMPYREAN CHALLENGE in the following ways:
 
 1. Each Ruler starts with the resources of an entire planet.
+   The units a Ruler starts the game with are listed on the pre-game turnsheet.
 2. The News Service does not exist.
 3. There are 20 players per game, instead of 150.
 4. The market does not exist.
@@ -16,6 +17,7 @@ MAXI-CHALLENGE differs from EMPYREAN CHALLENGE in the following ways:
 9. The victory conditions are:
    - A. If all the existing colonies (not ships) belong to one Ruler and his Regents, they win and the game is over.
    - B. A Ruler and his Regents can win by scoring 15,000 victory points.
+     No Victory points can be scored on turn 0.
      Fractions of points are dropped.
      Losing control of a s/c results in a loss of 20 victory points.
      The victory points consist of colony points, ship points, and planet points.
