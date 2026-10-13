@@ -253,6 +253,9 @@ A ship in orbit 0 moves to an orbit of any star in the star system with a MOV or
 Orbit 0 is designated by adding 0 to the star system's coordinates, written (x,y,z,0); thus, (12,-3,7,0) is orbit 0 of the star system at (12,-3,7).
 A designation with 0 as its star, such as (12,-3,7,0,5), or with 0 as its orbit, such as (12,-3,7,2,0), is not valid.
 
+Note: orbit 0 can not be probed ([M2.1](#rule-M2.1)), so only ships in orbit 0 know what ships are there.
+A colony, or a ship in any other orbit, does not see ships arriving in orbit 0 until they move into its orbit.
+
 <a id="rule-A4.0"></a>
 ## A4.0 Planets
 
@@ -2644,6 +2647,8 @@ An orbit probe lists the s/c's at the planet, the log base 10 of the total mass 
 An orbit probe cannot be made of the orbit the s/c is in because s/c's automatically get a probe report of the orbit they are in every turn.
 An orbit probe can be made of any other orbit in the solar system; in a multiple star system, all orbits of every solar system in the star system can be probed from one orbit.
 Orbit 0 can not be the target of an orbit probe, but a ship in orbit 0 gets the probe report of orbit 0 every turn.
+An orbit probe of an orbit with no planet fails with error E19, and one of the orbit the s/c is in fails with error E13.
+Neither uses a sensor, and only that orbit fails; the other orbits in the order are still probed.
 The orbit probe also lists the tactical coordinate positions of the s/c's at the planet.
 
 **Log Base 10**
@@ -3120,6 +3125,17 @@ Spies are simply listed as SPYS.
 Race numbers are NOT used in PAY orders, however.
 Non-population units, (except for consumable units which have four letters each, such as CNGD, NMTS, STUN, and except for TL) *must* have their TL numbers attached.
 Examples: TPT-1, SEN-4, ASC-6, AUT-8, FCT-5.
+
+<a id="rule-S2.5"></a>
+### S2.5 Lists
+
+Some orders take a list, such as the orbits in a probe order.
+A list is written inside brackets, with commas between its items, as in [1, 2, 4].
+An order that takes a list always takes one, even for a single item, as in [4].
+An empty list, [], is a format error (E01).
+[*] stands for every valid item, and is allowed only in an order whose rule says so.
+[*] stands alone; a list such as [5, *] is a format error (E01).
+A list in an order that does not take one is a format error (E01).
 
 <a id="rule-S3.0"></a>
 ## S3.0 Sample Turnsheet
@@ -3802,22 +3818,27 @@ In order to cancel an APU order, the player writes it as before, substituting 0 
 <a id="rule-S10.1"></a>
 ### S10.1 Probe Orders (PRB)
 
-- Format: S/C ID#, "PRB", star, orbit # (#s).
+- Format: S/C ID#, "PRB", star #, [orbit #'s].
 - Examples:
   ```text
-  77, PRB, C, 1, 2, 3, 4.
-  77, PRB, C, 0.
-  77, PRB, 1, 3, 6, 8.
+  77, PRB, 3, [1, 2, 4].
+  77, PRB, 1, [6].
+  77, PRB, 3, [*].
   ```
 
 The above examples are all for orbit probes.
-The first example has s/c 77 PRB orbits one through four of star C.
-The second has s/c 77 probe all orbits of star C; in a PRB order, orbit 0 stands for orbits 1 through 10 of the star, not for orbit 0 itself.
-The third has s/c 77 PRB orbits in star A, (when no star is designated, star A is assumed).
+The star is always given; there is no default star.
+The first example has s/c 77 probe orbits 1, 2, and 4 of star 3.
+The second has s/c 77 probe orbit 6 of star 1; a single orbit is still written as a list ([S2.5](#rule-S2.5)).
+The third has s/c 77 probe every orbit of star 3: [*] is short for [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], and never includes orbit 0.
+Under [*], an orbit with no planet, and the orbit s/c 77 is in ([M2.1](#rule-M2.1)), are skipped without an error and use no sensor.
+If s/c 77 can not make every probe in the list ([M3.0](#rule-M3.0)), it probes the orbits in the order listed, and the rest are not probed.
 
-- Format: S/C ID#, "PRB", "S/C", S/C ID #(#'s).
-- Example: 77, PRB, S/C, 78, 79, 80.
+- Format: S/C ID#, "PRB", "S/C", [S/C ID#'s].
+- Example: 77, PRB, S/C, [78, 79, 80].
 - Notes: These 3 s/c's are probed by s/c 77.
+  If s/c 77 can not make every probe in the list ([M3.0](#rule-M3.0)), it probes the s/c's in the order listed, and the rest are not probed.
+  [*] can not be used in a s/c probe.
 
 - Format: S/C ID#, "PRB", "SYS", Magnitude #.
 - Example: 79, PRB, SYS, 10.
