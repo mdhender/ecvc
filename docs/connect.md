@@ -147,8 +147,8 @@ Chapter 14 as a whole is subject M; the sentence is about system probes, M2.3.
 ### E5.2
 
 ```diff
--If the s/c faces both a bombardment and an invasion, the EWP's are fired in both cases, following the combat execution sequence detailed in section 15.9
-+If the s/c faces both a bombardment and an invasion, the EWP's are fired in both cases, following the combat execution sequence detailed in [D9.0](#rule-D9.0)<!-- was section 15.9 -->
+-If the s/c faces both a bombardment and an invasion, the EWP's are fired in both cases, following the combat execution sequence detailed in section 15.9.
++If the s/c faces both a bombardment and an invasion, the EWP's are fired in both cases, following the combat execution sequence detailed in [D9.0](#rule-D9.0)<!-- was section 15.9 -->.
 ```
 
 ### F3.1

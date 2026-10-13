@@ -335,3 +335,9 @@ def tutorials():
     if not os.path.isdir(d):
         return []
     return sorted(os.path.join(d, f) for f in os.listdir(d) if f.endswith(".md"))
+
+
+def errata():
+    """docs/errata.md, if it exists, as a list."""
+    p = os.path.join(DOCS, "errata.md")
+    return [p] if os.path.exists(p) else []

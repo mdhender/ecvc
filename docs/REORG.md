@@ -156,6 +156,14 @@ Design work to take up after `manual-baseline`, through `docs/errata.md`:
   The stage steps in B3 are its starting point.
 - **Orbit 0.** A2.2 says orbit 0 is explained in A3.0, and A3.0 says it is explained in A2.2, but neither explains it beyond saying that it surrounds the system and that ships from other systems arrive there.
   Explain orbit 0 in one rule and have the other cite it.
+- **First-turn tutorial.** `docs/tutorials/first-turn.md` states three things the rules do not say outright:
+  that the initial turnsheet is for turn 0 (the rules mention a turn 0 turnsheet in D7.0 but do not say which one it is);
+  that a NAM order's name shows in the colony's report on the next printout (S13.1);
+  and that a news release appears in the News Service on the next printout (P1.1).
+  Confirm each against the rules as they are settled, and correct the tutorial or the rules.
+- **Excess POP in closed s/c's.** F3.2 says "In the case of an excess of POP, LFS would not be sufficient, and some would die."
+  The intended rule is: "When LFS would not be sufficient to sustain excess POP but the structure will admit them, some will die."
+  Replace the F3.2 sentence with the clarified one.
 
 ## Decisions
 

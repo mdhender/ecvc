@@ -175,7 +175,7 @@ At this point, each of the ten planets has approximately 15 Family-ruled nations
 ## A1.0 Introduction
 
 EMPYREAN CHALLENGE is a computer moderated, hidden movement, play-by-mail science fiction game.
-The goal of the game is the control of star cluster consisting of 100 solar systems.
+The goal of the game is the control of a star cluster consisting of 100 solar systems.
 All the systems have one to 10 planets per star but only 10 systems are inhabited at the start of the game; each of the ten systems having one inhabited world.
 Each of the ten inhabited planets has 15 nations; the 15 players on a planet rule the nations individually and together constitute a race.
 
@@ -300,16 +300,16 @@ Players are assigned race numbers as follows:
 
 | Player No.  | Race No. |
 |-------------|----------|
-| 1 ... 15    | 0        |
-| 16 ... 30   | 1        |
-| 31 ... 45   | 2        |
-| 46 ... 60   | 3        |
-| 61 ... 75   | 4        |
-| 76 ... 90   | 5        |
-| 91 ... 105  | 6        |
-| 106 ... 120 | 7        |
-| 121 ... 135 | 8        |
-| 136 ... 150 | 9        |
+|   1 ... 15  |  1       |
+|  16 ... 30  |  2       |
+|  31 ... 45  |  3       |
+|  46 ... 60  |  4       |
+|  61 ... 75  |  5       |
+|  76 ... 90  |  6       |
+|  91 ... 105 |  7       |
+| 106 ... 120 |  8       |
+| 121 ... 135 |  9       |
+| 136 ... 150 | 10       |
 
 <a id="rule-A7.0"></a>
 ## A7.0 Glossary
@@ -368,7 +368,7 @@ Players are assigned race numbers as follows:
 | Code | Term                    | Definition                                      |
 |------|-------------------------|-------------------------------------------------|
 | END  | End                     | Signals the end of an add-on or set-up order.   |
-| ESC  | Enclosed surface colony | Surface colony sealed from enviornment.         |
+| ESC  | Enclosed surface colony | Surface colony sealed from environment.         |
 | ESH  | Energy shields          | Defensive armament used against energy weapons. |
 | EWP  | Energy weapons          | Weapons that fire beams or rays of energy.      |
 
@@ -452,7 +452,7 @@ Players are assigned race numbers as follows:
 | Code | Term                    | Definition                          |
 |------|-------------------------|-------------------------------------|
 | OBC  | Orbiting colony         | Colony that orbits a planet.        |
-| OPC  | Open colony             | Surface colony open to enviornment. |
+| OPC  | Open colony             | Surface colony open to environment. |
 | OTS  | Offensive troop support | See Combat ([D4.0](#rule-D4.0)<!-- was 15 -->).                    |
 
 ### P
@@ -511,8 +511,8 @@ Players are assigned race numbers as follows:
 | STP      | Set-up                       | This order establishes a ship or colony.                      |
 | STU      | Start-up                     | This order starts up all farms in a s/c, when shut down.      |
 | STUN     | Structural units             | Same as LTSU, but these are the heaviest.                     |
-| SUR      | Survey                       | This order searches a planet for research deposits.           |
-| SYS      | System                       | Solar system                                                  |
+| SUR      | Survey                       | This order searches a planet for resource deposits.           |
+| SYS      | System                       | Solar system.                                                 |
 | SOL\*    | Standard of living           | Total CNGD paid ÷ by total POP, then ÷ by 4.                  |
 
 ### T
@@ -913,7 +913,7 @@ This is done with a withdraw (WTD) order.
 ### D1.5 Bombard
 
 Fire energy weapons (EWP) and missile launchers (MSL) at other s/c's.
-Bombardment is done the following orders: pre-maneuver energy weapon fire (PME), pre-maneuver missile fire (PMM), after-maneuver energy weapon fire (AME), and after maneuver missile fire (AMM).
+Bombardment is done with the following orders: pre-maneuver energy weapon fire (PME), pre-maneuver missile fire (PMM), after-maneuver energy weapon fire (AME), and after maneuver missile fire (AMM).
 
 <a id="rule-D1.6"></a>
 ### D1.6 Maneuver
@@ -1242,7 +1242,7 @@ Troops can not use ASW to INV ships or orbiting colonies.
 Assault craft (ASC) are armed vehicles that not only carry troops into battle, but are formidable weapons, as well.
 They may be used to INV, raid, support, or defend any type of s/c.
 ASC require one SLD or MRB equivalent to operate a unit.
-ASC do not require TPT's to move them into combat; they are completely mobil.
+ASC do not require TPT's to move them into combat; they are completely mobile.
 When invading or raiding ships, the ASC's speed must be greater than the ship's speed.
 An ASC's speed is 5 times its TL.
 If the number of ASC is insufficient to hold the MRB and SLD, the computer will assign enough TPT's to carry the balance.
@@ -1333,7 +1333,7 @@ This is automatic, the computer handles it, it is never ordered.
 EWP's fire at each volley of MSS that were not destroyed by ANM's.
 EWP's fire only once per turn against invaders and raiders, combined.
 The hits are distributed among them proportionately, according to each attacker's combat factor.
-If the s/c faces both a bombardment and an invasion, the EWP's are fired in both cases, following the combat execution sequence detailed in [D9.0](#rule-D9.0)<!-- was section 15.9 -->
+If the s/c faces both a bombardment and an invasion, the EWP's are fired in both cases, following the combat execution sequence detailed in [D9.0](#rule-D9.0)<!-- was section 15.9 -->.
 The damage, against bombardment, is calculated as follows:
 
     HP=2^ET ÷ 2^MT x 0.3
@@ -1364,7 +1364,7 @@ A's 20,000 energy units divided by 40 equals 500 ESH-2's used to deflect them.
 The total amount of fuel used by the ESH-2's is 10,000 fuel units.
 B's attack takes 750 ESH-2 to deflect it, using 15,000 fuel units.
 C's attack takes 1,250 ESH-2 to deflect it, using 25,000 fuel units.
-None of the attack's penetrated D's ESH's.
+None of the attacks penetrated D's ESH's.
 
 # F. Ships and Colonies
 
@@ -1542,7 +1542,7 @@ UNA in a STP are assembled by CNW and used in the new s/c; they do not go into s
 (This is also done automatically and needs no special order from the player).
 POP go into the new s/c's population groups automatically.
 Mines listed in a STP are not automatically assembled upon arrival in the new s/c; they are put into storage and will need an assemble order on the next turn to start them functioning.
-Factory units will be put into storage in the new s/c, unless in the STP order they were order to manufacture something, in which case they will begin on the following turn automatically.
+Factory units will be put into storage in the new s/c, unless in the STP order they were ordered to manufacture something, in which case they will begin on the following turn automatically.
 
 <a id="rule-F4.9"></a>
 ### F4.9 Set-Up Locations
@@ -1650,7 +1650,7 @@ If the planet is not controlled, the player may set up a colony there with a STP
 The colony set-up may be an orbiting colony, an enclosed surface colony, or an open colony.
 A player may give up control of a planet by writing an uncontrol (UNC) order.
 A player with a colony on a world where control has been given up may take control by writing a CON order.
-Once a player has received permission to colonize from the controller of the planet, he may set up others colonies on the planet without further permission to colonize orders.
+Once a player has received permission to colonize from the controller of the planet, he may set up other colonies on the planet without further permission to colonize orders.
 **HOME PLANETS MAY NOT BE CONTROLLED.**
 Controlling planets is the object of the game (see [B5.0](#rule-B5.0)<!-- was chapter 22 -->, Victory Conditions).
 The player controlling a planet may name it.
@@ -1764,7 +1764,7 @@ Scrapping causes a 30% loss.
 For instance, scrapping 10,000 MSS-1 will result in 14,000 NMTS and 14,000 METS.
 Scrapping requires one CNW per 300 MU scrapped.
 
-Example: Dis-assembly of 50,000 MU, scrapping of 3,000 MU, and assembly of 100.000 mass units will require a total of 310 CNW units.
+Example: Dis-assembly of 50,000 MU, scrapping of 3,000 MU, and assembly of 100,000 mass units will require a total of 310 CNW units.
 (CNW can not be used twice during the same turn).
 
 Scrapping of population units is not allowed.
@@ -1995,7 +1995,7 @@ This percentage is increased for all open colonies when the planet's habitabilit
 
 Each population unit (POP) automatically consumes one quarter of a food unit (FOOD) per turn, unless the Ruler rations the s/c.
 If the rationed amount of food is less than 1/16 of a food unit per POP per turn, the computer will divide the food equally, and check for starvation, according to the Starvation Rule ([G4.1.1](#rule-G4.1.1))<!-- was below -->.
-Ration orders can not be more than 100% (1/4 food unit per POP), or less than 25% (1/16 food unit per POP)
+Ration orders can not be more than 100% (1/4 food unit per POP), or less than 25% (1/16 food unit per POP).
 
 <a id="rule-G4.1.1"></a>
 #### G4.1.1 Starvation Rule
@@ -2234,13 +2234,13 @@ The cost per turn is 93,750 METS and 156,250 NMTS.
 
 | Number of FCT's in Group | Efficiency Factor |
 |--------------------------|-------------------|
-| 1 ... 4                  | 6                 |
-| 5 ... 49                 | 5                 |
-| 50 ... 499               | 4                 |
-| 500 ... 4,999            | 3                 |
-| 5,000 ... 49,999         | 2                 |
-| 50.000 ... 199,999       | 1                 |
-| 200,000  ... infinity    | 0.5               |
+|       1 ... 4            | 6                 |
+|       5 ... 49           | 5                 |
+|      50 ... 499          | 4                 |
+|     500 ... 4,999        | 3                 |
+|   5,000 ... 49,999       | 2                 |
+|  50,000 ... 199,999      | 1                 |
+| 200,000 ... infinity     | 0.5               |
 
 The efficiency factor is not used when calculating the number of units a FCT group can produce.
 
@@ -2262,10 +2262,10 @@ Using the example in [H3.3](#rule-H3.3)<!-- was 8.3.3. --> of 50,000 FCT-1 being
 
 | TURN | WIP 1/4 COMP. | WIP 1/2 COMP. | WIP 3/4 COMP. |
 |------|---------------|---------------|---------------|
-| 3    | 0             | 0             | 0             |
-| 4    | 62,500 LFS-2  | 0             | 0             |
-| 5    | 0             | 62,500 LFS-2  | 0             |
-| 6    | 0             |               | 62,500 LFS-2  |
+| 3    |      0        |      0        |      0        |
+| 4    | 62,500 LFS-2  |      0        |      0        |
+| 5    |      0        | 62,500 LFS-2  |      0        |
+| 6    |      0        |      0        | 62,500 LFS-2  |
 
 Note that the FCT group does not complete 1/4 of the LFS-2 per turn (15,625 in other words), but instead will get the entire 62,500 one quarter of the way to being complete.
 On turn 7 of the example, 62,500 LFS-2 will show up on the storage report on the printout, and the WIP will look like it did on turn 3.
@@ -2275,9 +2275,9 @@ The printout will show:
 
 | TURN | WIP1/4 COMP. | WIP 1/2 COMP. | WIP 3/4 COMP. |
 |------|--------------|---------------|---------------|
-| 3    | 0            | 0             | 0             |
-| 4    | 62,500 LFS-2 | 0             | 0             |
-| 5    | 62,500 LFS-2 | 62,500 LFS-2  | 0             |
+| 3    |      0       |      0        |      0        |
+| 4    | 62,500 LFS-2 |      0        |      0        |
+| 5    | 62,500 LFS-2 | 62,500 LFS-2  |      0        |
 | 6    | 62,500 LFS-2 | 62,500 LFS-2  | 62,500 LFS-2  |
 
 Starting on turn 7, 62,500 LFS-2 are added to storage each turn.
@@ -2420,7 +2420,7 @@ A FCT producing RSCH will build .25 times its TL in RSCH per turn.
 The FCT group will complete its work-in-process before beginning the research.
 RSCH may be transferred or sold, decreasing the total number of RSCH accumulated.
 Once the required number of RSCH have been built, the computer automatically raises the TL of the colony, and decreases the number of RSCH accumulated.
-The quantities of RSCH listed below for each level are the number required to get from the preceeding level to the one listed:
+The quantities of RSCH listed below for each level are the number required to get from the preceding level to the one listed:
 
 | LEVEL | RSCH       |
 |-------|------------|
@@ -2592,7 +2592,7 @@ The actual method of determining new prices and changing prices is known only to
 <a id="rule-L3.1"></a>
 ### L3.1 Price of Unemployables
 
-The price of UEM's alway's starts as a negative (-) number; that is, the player pays the market to take them.
+The price of UEM's always starts as a negative (-) number; that is, the player pays the market to take them.
 
     No other items may be priced below 0.
 
@@ -2626,7 +2626,7 @@ All three are ordered with a probe (PRB) order.
 <a id="rule-M2.1"></a>
 ### M2.1 Orbit Probes
 
-An orbit probe lists the s/c's at the planet,the log base 10 of the total mass of each kind of resource in the unmined deposits on the planet, the log base 10 of each s/c's mass, its ID#, its name, the type of planet and its habitability number.
+An orbit probe lists the s/c's at the planet, the log base 10 of the total mass of each kind of resource in the unmined deposits on the planet, the log base 10 of each s/c's mass, its ID#, its name, the type of planet and its habitability number.
 An orbit probe cannot be made of the orbit the s/c is in because s/c's automatically get a probe report of the orbit they are in every turn.
 An orbit probe can be made of any other orbit in the system; in a multiple star system, all orbits in the systems can be probed from one orbit.
 The orbit probe also lists the tactical coordinate positions of the s/c's at the planet.
@@ -2647,7 +2647,7 @@ The orbit probe also lists the tactical coordinate positions of the s/c's at the
 <a id="rule-M2.2"></a>
 ### M2.2 S/C Probes
 
-A s/c probe lists the log base 10 the mass of a s/c, its population, its assembled STUN, LTSU, or SLSU, and its structural requirements.
+A s/c probe lists the log base 10 of the mass of a s/c, its population, its assembled STUN, LTSU, or SLSU, and its structural requirements.
 Both the s/c doing the probing and the s/c being probed must be in the same orbit.
 
 <a id="rule-M2.3"></a>
@@ -3035,7 +3035,6 @@ The error code at the end of a failed order explains why the order failed.
 | CNW           | --                    | --                    | 2                   | --                | --                           | --                          | 2         |           |
 | other POP     | --                    | --                    | 1                   | --                | --                           | --                          | 1         |           |
 | All resources | --                    | --                    | 1                   | --                | --                           | --                          | 0.5       | NON       |
-| -----------   | -----------           | -----------           | -----------         | -----------       | -----------                  | -----------                 | -----     | ------    |
 
 \* Farms and factories in orbiting colonies within the 5th orbit or less use 0 fuel.
 
@@ -3172,7 +3171,7 @@ will have more LTSU for sale next turn. Signed.
 
 - Format: S/C ID#, "PMM", target s/c, % of MSL's being fired, target.
 - Example: 191, PMM, 220, 30, 5.
-- Notes: The PME order has colony 191 fire 30% of its MSL's at colony 220's FCT groups before any ship maneuver orders are processed.
+- Notes: The PMM order has colony 191 fire 30% of its MSL's at colony 220's FCT groups before any ship maneuver orders are processed.
 
 <a id="rule-S4.6"></a>
 ### S4.6 After-Maneuver Energy Weapon Fire Orders (AME)
@@ -3249,14 +3248,14 @@ will have more LTSU for sale next turn. Signed.
 
 - Format:
   ```text
-  S/C ID#, "OTS", target s/c, s/c to be supported
+  S/C ID#, "OTS", target s/c, s/c to be supported.
   Quantity, item.
   1, END.
   ```
 - Example:
   ```text
   25, OTS, 30, 29.
-  10,000, MRB-1
+  10,000, MRB-1.
   10,000, ASC-2.
   10,000, ASW-1.
   1, END.
@@ -3325,7 +3324,7 @@ will have more LTSU for sale next turn. Signed.
   5, LFS-1.
   1, SEN-1.
   1000, FUEL.
-  100,HDRV-1.
+  100, HDRV-1.
   20, CNGD.
   6, END.
   ```
@@ -3494,8 +3493,8 @@ will have more LTSU for sale next turn. Signed.
   In this case, 10,000 FCT-3 are taken from FCT group #5 and put into storage.
 
 - Format: S/C ID#, DAS, qty, "MIN"-TL#, *group #*.
-- Example: 37, das, 25,000, MIN-2, 8.
-- Notes; This format takes MIN's out of an existing MIN *group* and puts them into storage.
+- Example: 37, DAS, 25,000, MIN-2, 8.
+- Notes: This format takes MIN's out of an existing MIN *group* and puts them into storage.
   Please use the group #, not the deposit location.
 
 <a id="rule-S6.2.1"></a>
@@ -3625,7 +3624,7 @@ To do this, the order should be written as before, except that the qty # being R
 - Format: S/C ID#, "PUP", quantity, item, s/c being picked up from.
 - Example: 69, PUP, 10, SDRV-1, 70.
 - Notes: The PUP order has s/c 69 pick-up SDRV-1 from s/c 70.
-  X-POP units may not be used in a pick up order; is used, it will be void.
+  X-POP units may not be used in a pick up order; if used, it will be void.
   The items are picked up from 70's storage and go into 69's storage.
   Any item can be PUP'd from another Ruler of the same race if that s/c writes an APU order.
   Nothing can be PUP'd from a Ruler of another race, except the player's own group G SPYS (see [K1.0](#rule-K1.0)<!-- was 11.1 -->).
@@ -3650,7 +3649,7 @@ To do this, the order should be written as before, except that the qty # being R
   ```
 - Notes: The multiple PUP order is optional.
   It can be used to PUP more than one item from one or more s/c's.
-  In the case, it picked up 3 items from each of two s/c's.
+  In the example, it picked up 3 items from each of two s/c's.
   If the player wishes, he can write each PUP order separately.
 
 <a id="rule-S7.4"></a>
@@ -3779,7 +3778,7 @@ In order to cancel an APU order, the player writes it as before, substituting 0 
 ### S9.2 Sell Orders (SEL)
 
 - Format: S/C ID#, "SEL", quantity, item.
-- Example, 75, SEL, 62,000, MSS-1.
+- Example: 75, SEL, 62,000, MSS-1.
 - Notes: 75 sells 62,000 MSS-1 to the market.
 
 <a id="rule-S10.0"></a>
@@ -3797,12 +3796,13 @@ In order to cancel an APU order, the player writes it as before, substituting 0 
   ```
 
 The above examples are all for orbit probes.
-The first example has s/c 77 PRB orbits one thru four of star C.
+The first example has s/c 77 PRB orbits one through four of star C.
 The second has s/c 77 probe all orbits in that system.
 The third has s/c 77 PRB orbits in star A, (when no star is designated, star A is assumed).
 
 - Format: S/C ID#, "PRB", "S/C", S/C ID #(#'s).
-- Example: 77, PRB, S/C, 78, 79, 80 These 3 s/c's are probed by s/c 77.
+- Example: 77, PRB, S/C, 78, 79, 80.
+- Notes: These 3 s/c's are probed by s/c 77.
 
 - Format: S/C ID#, "PRB", "SYS", Magnitude #.
 - Example: 79, PRB, SYS, 10.

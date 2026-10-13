@@ -14,7 +14,7 @@ from build import Builder
 from common import (
     ANCHOR_RE, CONNECT, DOCS, LINK_RE, MANUAL, VARIANTS, VARIANTS_NOTE,
     Model, heading_level, heading_slugs, id_numbers, normalize_links, parse_connect,
-    read_lines, scan, tutorials,
+    read_lines, scan, tutorials, errata,
 )
 
 RULE_HEADING_RE = re.compile(r"^([A-Z]\d+(?:\.\d+)*) (.*)$")
@@ -271,7 +271,7 @@ def main():
     failed = False
     checks = [
         ("Body lines match the rule book", compare_bodies(model, manual, variants)),
-        ("Links resolve", check_links([manual, variants] + [Doc(p) for p in tutorials()])),
+        ("Links resolve", check_links([manual, variants] + [Doc(p) for p in tutorials() + errata()])),
         ("Anchors are unique and every mapping row has one", check_anchors(model, manual, variants)),
         ("Heading levels follow the depth rule", check_headings(model, manual, variants)),
         ("Every numbered rule book heading is in the concordance once", check_concordance(model, manual)),
