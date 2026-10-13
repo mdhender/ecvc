@@ -12,7 +12,7 @@ from collections import Counter
 
 from build import Builder
 from common import (
-    ANCHOR_RE, CONNECT, DOCS, LINK_RE, MANUAL, VARIANTS, VARIANTS_NOTE,
+    ANCHOR_RE, CONCORDANCE, CONNECT, DOCS, LINK_RE, MANUAL, VARIANTS, VARIANTS_NOTE,
     Model, heading_level, heading_slugs, id_numbers, normalize_links, parse_connect,
     read_lines, scan, tutorials, errata,
 )
@@ -223,14 +223,13 @@ def check_headings(model, manual, variants):
     return out
 
 
-def check_concordance(model, manual):
+def check_concordance(model, concordance):
     out = []
     rows = Counter()
-    for kind, i, payload in scan(manual.lines):
-        if i in manual.skip and kind == "text":
-            m = re.match(r"^\| \[([^\]]+)\]\(rulebook\.md#([^)]+)\)", manual.lines[i])
-            if m:
-                rows[m.group(2)] += 1
+    for line in concordance.lines:
+        m = re.match(r"^\| \[([^\]]+)\]\(rulebook\.md#([^)]+)\)", line)
+        if m:
+            rows[m.group(2)] += 1
     for s in model.sections:
         if s.numbered and rows[s.slug] != 1:
             out.append(f"concordance: rule book {s.key} appears {rows[s.slug]} times")
@@ -267,14 +266,14 @@ def plain_refs(model, docs):
 
 def main():
     model = Model()
-    manual, variants = Doc(MANUAL), Doc(VARIANTS)
+    manual, variants, concordance = Doc(MANUAL), Doc(VARIANTS), Doc(CONCORDANCE)
     failed = False
     checks = [
         ("Body lines match the rule book", compare_bodies(model, manual, variants)),
-        ("Links resolve", check_links([manual, variants] + [Doc(p) for p in tutorials() + errata()])),
+        ("Links resolve", check_links([manual, variants, concordance] + [Doc(p) for p in tutorials() + errata()])),
         ("Anchors are unique and every mapping row has one", check_anchors(model, manual, variants)),
         ("Heading levels follow the depth rule", check_headings(model, manual, variants)),
-        ("Every numbered rule book heading is in the concordance once", check_concordance(model, manual)),
+        ("Every numbered rule book heading is in the concordance once", check_concordance(model, concordance)),
     ]
     for name, problems in checks:
         print(f"{'FAIL' if problems else 'ok  '} {name}")

@@ -19,9 +19,10 @@ Tests will cite rules by their manual ID.
 
 | File               | Role                                                                                                                |
 |--------------------|---------------------------------------------------------------------------------------------------------------------|
-| `docs/rulebook.md` | Baseline: the 1980 rule book as transcribed and edited so far. Only typographic and scan errors are corrected here. |
+| `docs/rulebook.md` | Baseline: the 1980 rule book as transcribed and edited. Frozen since `manual-baseline`.                             |
 | `docs/manual.md`   | The reorganized rules, with new IDs.                                                                                |
 | `docs/variants.md` | The variant games (Maxi-Challenge, The Ten Planet War), with IDs in subject V.                                      |
+| `docs/concordance.md` | Table mapping every rule book heading to the manual rule that holds its text. |
 | `docs/mapping.md`  | Working mapping from every rule book heading to its subject and manual ID.                                          |
 | `docs/connect.md`  | The reviewed phase 4 edits, which the move script applies after copying the rule book text.                         |
 | `docs/tutorials/`  | Tutorials for new players, which explain the rules without adding to them.                                          |
@@ -32,7 +33,6 @@ Tests will cite rules by their manual ID.
 
 1. **`rulebook-baseline`**: tag `docs/rulebook.md` before the reorganization starts.
 2. **`manual-baseline`**: tag `docs/manual.md` when the reorganization is complete and verified.
-   Tests cite manual IDs only after this tag.
    Rule changes start from this tag, working through `docs/errata.md`.
 
 ## Manual IDs
@@ -43,14 +43,17 @@ Tests will cite rules by their manual ID.
 - `X.0` holds the general provisions for its parent, not just a heading.
   For example, `D3.2.0` holds the general provisions of `D3.2`.
 - A rule may have both text and subordinate rules.
-- Once `manual-baseline` is tagged, an ID is never changed or reused.
+- IDs may still change after `manual-baseline`, while the manual is reorganized before coding starts.
+  A changed ID is updated everywhere it is cited: links, the concordance, `docs/errata.md`, and `docs/tutorials/`.
+- Once coding starts, an ID is never changed or reused, because tests cite it.
   New rules are added with new IDs, even when the hierarchy becomes awkward.
   A deleted rule's ID stays reserved.
 - Gaps left by deleted rules in the rule book (12.2, 13.3.3, 15.6.6.4) are listed in the concordance as having no manual ID.
 
 ## Concordance
 
-`docs/manual.md` ends with a concordance table mapping every rule book section number to its manual ID, linked to both documents.
+`docs/concordance.md` is a table mapping every rule book section number to its manual ID, linked to both documents.
+It began at the end of `docs/manual.md` and moved to its own file after `manual-baseline`.
 Every numbered heading in the rule book appears in the concordance exactly once.
 A rule book section split across several manual rules lists each of them.
 
@@ -182,6 +185,7 @@ Design work to take up after `manual-baseline`, through `docs/errata.md`:
 - **Transcription fixes.** `docs/rulebook.md` may still be corrected for typographic and scan errors, where it does not match the 1980 scans.
   Rule mistakes go to `docs/errata.md` instead.
   A correction made after `docs/manual.md` exists is applied to both files, so the check in phase 5 still holds.
+  Since `manual-baseline`, `docs/rulebook.md` is frozen and `docs/manual.md` is the source of truth.
 - **Examples and charts.** Examples, charts, and tables are folded into the rule they illustrate, with no ID of their own, so tests cannot cite an example as a rule.
   Each keeps its rule book title as an unnumbered bold label, such as `**Example**`.
   The check in phase 5 treats these labels as headings.

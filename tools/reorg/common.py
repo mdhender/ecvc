@@ -14,6 +14,7 @@ MAPPING = os.path.join(DOCS, "mapping.md")
 MANUAL = os.path.join(DOCS, "manual.md")
 VARIANTS = os.path.join(DOCS, "variants.md")
 CONNECT = os.path.join(DOCS, "connect.md")
+CONCORDANCE = os.path.join(DOCS, "concordance.md")
 
 # Lines the build writes that are not rule book text. The check ignores them.
 VARIANTS_NOTE = [

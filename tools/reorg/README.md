@@ -24,10 +24,10 @@ python3 tools/reorg/check.py
 Runs the phase 5 checks on `docs/manual.md` and `docs/variants.md`:
 
 - the sorted body lines match those of `docs/rulebook.md`, after rewriting the rule book's links, applying the edits in `docs/connect.md`, and skipping the bodies of sections the mapping marks "Deleted.";
-- every internal and cross-file link resolves, including the links in `docs/tutorials/` and `docs/errata.md`;
+- every internal and cross-file link resolves, including the links in `docs/concordance.md`, `docs/tutorials/`, and `docs/errata.md`;
 - anchor IDs are unique, and every mapping row has exactly one anchor;
 - heading levels follow the depth rule, and no ID has more than five numbers;
-- every numbered rule book heading appears in the concordance exactly once.
+- every numbered rule book heading appears in `docs/concordance.md` exactly once.
 
 It then lists the plain-text references still to rule book sections, such as "See 5.2.2." or "Chapter 9", with the manual ID each should become.
 It exits 1 if any check fails.
