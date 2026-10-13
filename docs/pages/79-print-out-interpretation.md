@@ -40,7 +40,6 @@ The error code at the end of a failed order explains why the order failed.
 - E08: The player already has 40 MIN groups, and can not have more.
 - E09: The FCT group cannot make the new item until the FCT's are retooled.
 - E10: There is no market at location of the s/c.
-  (EC 1, 2, and 3 only).
 - E11: There is not enough space available in the s/c to complete the order.
 - E12: The player already has 25 FCT groups, and can not have more.
 - E13: The s/c was at the wrong orbit.

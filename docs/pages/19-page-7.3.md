@@ -4,7 +4,6 @@
 
 STP's may be done for other players only if they are in the same race as the player doing the set-up.
 A s/c is STP by only one s/c; STP's are never joint ventures.
-Setups for other players are not allowed in EC #4, EC #5, etc.
 
 ### 7.4.4 PERSONNEL
 

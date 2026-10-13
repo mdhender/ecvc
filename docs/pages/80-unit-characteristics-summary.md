@@ -21,7 +21,7 @@
 | -----------   | -----------           | -----------           | -----------         | -----------       | -----------                  | -----------                 | -----     | ------    |
 | HDRV          | 25xTL                 | 20xTL                 | 45xTL               | 40 x dist.        | 1045xTL MU lift              | none                        | 22.5xTL   | UNA       |
 | LFS           | 3xTL                  | 5xTL                  | 8xTL                | 1xTL              | TL^2= POP supported          | none                        | 4xTL      | UNA       |
-| LTSU \*\*\*   | 0.01                  | 0.04                  | 0.05                | --                | none                         | --                          | 0.025     | UNA \*\*  |
+| LTSU          | 0.01                  | 0.01                  | 0.02                | --                | none                         | --                          | 0.01      | UNA \*\*  |
 | -----------   | -----------           | -----------           | -----------         | -----------       | -----------                  | -----------                 | -------   | ----      |
 | MRB           | 10+TL                 | 10+TL                 | 20+(2xTL)           | 0                 | TLx2= SLD replaced           | none                        | 20+(2xTL) | NON       |
 | MIN           | 5+TL                  | 5+TL                  | 10+(2xTL)           | 0.5xTL            | 25xTL MU/TN                  | 1 PRO + 3 USK               | 5+TL      | UNA       |
@@ -33,7 +33,7 @@
 | SEN           | 1,000xTL              | 2,000xTL              | 3,000xTL            | 0.05xTL           | 1 probe/TL                   | none                        | 1500xTL   | UNA       |
 | SDRV          | 15xTL                 | 10xTL                 | 25xTL               | TL^2              | 1000xTL^2=thrust/TN          | none                        | 12.5xTL   | UNA       |
 | -----------   | -----------           | -----------           | -----------         | -----------       | -----------                  | -----------                 | -----     | ------    |
-| STUN \*\*\*\* | 0.1                   | 0.4                   | 0.5                 | --                | --                           | --                          | 0.25      | UNA \*\*  |
+| STUN          | 0.07                  | 0.03                  | 0.1                 | --                | --                           | --                          | 0.05      | UNA \*\*  |
 | SLSU          | 0.001                 | 0.004                 | 0.005               | --                | --                           | --                          | 0.0025    | UNA \*\*  |
 | TPT           | 3xTL                  | 1xTL                  | 4xTL                | 0.1xTL^2          | 200xTL^2=MU                  | 1 PRO/10 TPT                | 4xTL      | NON       |
 | TPT/COMBAT    | 3xTL                  | 1xTL                  | 4xTL                | 0.01xTL^2         | 3xTL^2=MU/TN                 | 1 PRO/10 TPT                | 4xTL      | NON       |
@@ -47,7 +47,3 @@
 \* Farms and factories in orbiting colonies within the 5th orbit or less use 0 fuel.
 
 \*\* Unassembled items (UNA), when assembled are doubled in volume, except for STUN, LTSU, and SLSU, which are all -1.
-
-\*\*\* LTSU FOR EC 4 & UP AS REG LTSU BUT METS ARE 0.01, NMTS ARE 0.01, TOTAL MASS 0.02, VOLUME 0.01
-
-\*\*\*\* STUN FOR EC 4 & UP AS REG STUN BUT METS ARE 0.07, NMTS ARE 0.03, TOTAL MASS 0.1, VOLUME 0.05

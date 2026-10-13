@@ -9,9 +9,9 @@ MAXI-CHALLENGE differs from EMPYREAN CHALLENGE in the following ways:
 3. There are 20 players per game, instead of 150.
 4. The market does not exist.
 5. Gold does not exist in MAXI-CHALLENGE, as there will probably be little trade between players.
-6. The efficiency factor used here is always **1** when calculating cost, and is never less than **1** when calculating personnel requirements (see 8.3).
+6. The efficiency factor used here is always **1** when calculating cost, and is never less than **1** when calculating personnel requirements.
    (See 8.3, Manufacturing).
-7. TFR, APU, REC, ADN, and STP orders are handled the same as in EC 1, EC 2 and EC3.
+7. TFR, APU, REC, ADN, and STP orders are handled as in the standard rules (see 7.4.3.5, 7.5.8, and 11.1).
 8. Home planets can be controlled exactly like non-home planets
 9. The victory conditions are:
    - A. If all the existing colonies (not ships) belong to one Ruler and his Regents, they win and the game is over.
