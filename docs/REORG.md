@@ -167,7 +167,7 @@ Design work to take up after `manual-baseline`, through `docs/errata.md`:
   Replace the F3.2 sentence with the clarified one.
 - **Coordinates in orders.** MOV and JMP orders write coordinates as `x, y, z` (S14.1, S14.2).
   Change them to the canonical `(x,y,z)`, with `(x,y,z,N)` for a solar system, `(x,y,z,N,O)` for an orbit, and `(x,y,z,0)` for orbit 0, and drop the notes about separating coordinates with commas.
-  Star numbers in the PRB and MOV orders are #9 and #10.
+  Star numbers in the MOV order are #10; the PRB order was done in #9.
 
 ## Decisions
 

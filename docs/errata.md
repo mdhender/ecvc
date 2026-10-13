@@ -144,6 +144,17 @@ C3.3 counts a move between the stars of a multiple star system as 0.2.
 C3.2 says a ship moving to another orbit arrives 5 to 10 distance units from the planet and is told who controls it.
 Orbit 0 has no planet, and the rules do not say where a ship arrives there or what it is told.
 
+### 68. Seeing ships in orbit 0
+
+- **Rules:** [A3.1](manual.md#rule-A3.1), [M2.1](manual.md#rule-M2.1), [M2.2](manual.md#rule-M2.2), [M2.3](manual.md#rule-M2.3), [S10.1](manual.md#rule-S10.1)
+- **Kind:** gap
+
+Ships from other star systems always arrive in orbit 0 (A3.1).
+A ship in orbit 0 gets a probe report of orbit 0 every turn (M2.1), but nothing else in the star system can learn what is there.
+Orbit 0 can not be the target of an orbit probe (M2.1), a s/c probe needs both s/c's in the same orbit (M2.2), and a system probe reports planets and stars, not s/c's (M2.3).
+The rules do not say whether colonies and ships in orbits 1 to 10 should see ships in orbit 0, so ten ships could gather there unseen by everyone else in the star system.
+The list format of [S2.5](manual.md#rule-S2.5) makes `77, PRB, 3, [0].` a well-formed order, but no rule says what it does: M2.1 forbids orbit 0 as a target, and orbit 0 belongs to the star system, not to star 3 (A3.1).
+
 ## D. Combat
 
 ### 14. Effect of choosing a target
@@ -530,6 +541,17 @@ The last SPM format has no quantity, but its examples have one.
 The MOV example moves to 12,28,-32, but relative coordinates in a 30-light-year cluster can not reach -32.
 
 - **Resolved:** #3. The MOV example now moves to 12,8,-3.
+
+### 69. Star letters in probe orders
+
+- **Rules:** [S10.1](manual.md#rule-S10.1), [A3.1](manual.md#rule-A3.1)
+- **Kind:** ambiguity
+
+S10.1 names the star by letter and lets it be left out, in which case star A is assumed.
+Once stars are numbered, the star can not be told from the orbits: `77, PRB, 3, 1, 2.` could be orbits 1 and 2 of star 3, or orbits 3, 1, and 2 of star 1.
+S10.1 also uses orbit 0 to mean orbits 1 to 10 of the star, while A3.1 uses 0 for orbit 0 of the star system.
+
+- **Resolved:** #9. The star is required and the orbits are a list ([S2.5](manual.md#rule-S2.5)); `[*]` is short for orbits 1 to 10 of the star ([S10.1](manual.md#rule-S10.1)).
 
 ## V. Variants
 
