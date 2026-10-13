@@ -245,8 +245,8 @@ Players are assigned race numbers as follows:
 | AAN  | Allow Add-on                      | This order allows a s/c to increase another s/c.   |
 | ACP  | Accept                            | This order accepts a gift s/c from another player. |
 | ADN  | Add-on                            | This order adds units to an existing s/c.          |
-| AME  | After-maneuver energy-weapon fire | See Combat (15.0).                                 |
-| AMM  | After-maneuver missile fire       | See Combat (15.0).                                 |
+| AME  | After-maneuver energy-weapon fire | See Combat (15).                                   |
+| AMM  | After-maneuver missile fire       | See Combat (15).                                   |
 | ANM  | Anti-missile                      | A short range missile used for defense.            |
 | APU  | Allow pick-up                     | This order allows a s/c to pick up from another.   |
 | ASC  | Assault craft                     | Armed vehicles capable of short flights in space.  |
@@ -282,7 +282,7 @@ Players are assigned race numbers as follows:
 | DEP   | Deposit gift            | This order gives a mine group (& deposit) to a s/c. |
 | DRF   | Draft                   | This order drafts soldiers and trainees.            |
 | DSB   | Disband                 | This order disbands soldiers and trainees.          |
-| DTS   | Defensive troop support | See Combat (15.0).                                  |
+| DTS   | Defensive troop support | See Combat (15).                                    |
 | DU\*  | Distance unit           | Equal to 10,000 kilometers.                         |
 
 ## E
@@ -321,9 +321,9 @@ Players are assigned race numbers as follows:
 
 ## I
 
-| Code | Term   | Definition         |
-|------|--------|--------------------|
-| INV  | Invade | See Combat (15.0). |
+| Code | Term   | Definition       |
+|------|--------|------------------|
+| INV  | Invade | See Combat (15). |
 
 ## J
 
@@ -375,7 +375,7 @@ Players are assigned race numbers as follows:
 |------|-------------------------|-------------------------------------|
 | OBC  | Orbiting colony         | Colony that orbits a planet.        |
 | OPC  | Open colony             | Surface colony open to enviornment. |
-| OTS  | Offensive troop support | See Combat (15.0)                   |
+| OTS  | Offensive troop support | See Combat (15).                    |
 
 ## P
 
@@ -383,8 +383,8 @@ Players are assigned race numbers as follows:
 |-------|---------------------------------|---------------------------------------------------------------------------|
 | PAY   | Pay                             | This order changes standing wages.                                        |
 |       | Player                          | A Ruler or a Regent.                                                      |
-| PME   | Pre-maneuver energy weapon fire | See Combat (15.0).                                                        |
-| PMM   | Pre-maneuver missile fire       | See Combat (15.0).                                                        |
+| PME   | Pre-maneuver energy weapon fire | See Combat (15).                                                          |
+| PMM   | Pre-maneuver missile fire       | See Combat (15).                                                          |
 | POP\* | Population unit                 | Consists of 100 people.                                                   |
 | PRB   | Probe                           | This order gathers data about a system and nearer stars.                  |
 | PRO   | Professional unit               | Population unit consisting of 100 highly skilled people.                  |
@@ -401,7 +401,7 @@ Players are assigned race numbers as follows:
 
 | Code  | Term           | Definition                                                 |
 |-------|----------------|------------------------------------------------------------|
-| RAD   | Raid           | See Combat (15.0)                                          |
+| RAD   | Raid           | See Combat (15).                                           |
 | RBS\* | Rebel soldiers | Percentage of soldier population willing to rebel.         |
 | REB\* | Rebels         | Percentage of people other than soldiers willing to rebel. |
 | REC   | Receive        | This order receives items transferred from another s/c.    |
@@ -1031,7 +1031,7 @@ The personnel required to run one FRM unit of any TL is one PRO and three USK.
 
 ### 8.1.5 FUEL USE
 
-One FRM-1 uses 0.5 fuel units per turn; one FRM-2 through FRM-5 uses 0.5 times the TL in fuel units per turn; one FRM-6 through FRM-11 uses 1 fuel unit times the TL per turn.
+One FRM-1 uses 0.5 fuel units per turn; one FRM-2 through FRM-5 uses 0.5 times the TL in fuel units per turn; one FRM-6 through FRM-10 uses 1 fuel unit times the TL per turn.
 FRM's on OBC's in orbits 1-5 use no fuel, but use solar power.
 
 ### 8.1.6 SHUT DOWNS AND START UPS
