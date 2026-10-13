@@ -133,11 +133,25 @@ Tag `manual-baseline`.
 - Keep the conventions of `docs/rulebook.md`: one sentence per line, and leading `\*` or `\*\*` as footnote markers.
 - `docs/manual.md` is covered by the same license as the rest of `docs/`.
 
+## Deferred
+
+Design work to take up after `manual-baseline`, through `docs/errata.md`:
+
+- **Cadres.** Assembly (rule book 9.1) mixes cadres, the SPYS and CNW population groups, with assembling items.
+  The cadre rules are worked out after the reorganization; until then the text moves as is.
+- **Rules cite their stage step.** A rule that acts during the turn says when, by citing its step, such as "during the production stage (B2.17.1)".
+  Most rules do not say this today, and adding it changes rule text.
+- **Sequence of play annex.** An annex in subject R, after SFB's expanded sequence of play: every step of the turn in order, each citing the rules that govern it.
+  The stage steps in B2 are its starting point.
+
 ## Decisions
 
 - **Orders.** Order syntax (chapter 17) is its own subject, S, separate from the rules governing what the orders do.
 - **Ships and colonies.** They share subject F.
 - **Anchors.** Each rule has an anchor of the form `<a id="rule-D3.2.1"></a>`, using the ID exactly as written.
+- **Stage steps.** Each numbered step in a turn-sequence stage gets its own anchor, so tests can cite it: step 4 of B2.1 is `rule-B2.1.4`.
+  The anchor goes at the start of the list item, as in `4. <a id="rule-B2.1.4"></a>TMV orders processed`.
+  The check in phase 5 strips inline anchors before comparing lines.
 - **Heading depth.** Each subject is a level 1 heading, such as `# D. Combat`.
   A top-level rule such as `D3.0` is a level 2 heading.
   Every other rule's heading level is one more than the count of numbers in its ID: `D3.1` is level 3, `D3.2.0` is level 4, and `D3.2.1.1.1` is level 6.
