@@ -2170,97 +2170,97 @@ All the orders for one stage are processed before any of the orders for the next
 
 ### 16.2.1 COMBAT STAGE
 
-1. PME orders processed [Handwritten: 17.2]
-2. PMM orders processed [Handwritten: 17.3]
-3. RUN orders processed [Handwritten: 17.2]
-4. TMV orders processed [Handwritten: 17.2]
-5. CLS orders processed [Handwritten: 17.2]
-6. AME orders processed [Handwritten: 17.3]
-7. AMM orders processed [Handwritten: 17.3]
-8. WTD orders processed [Handwritten: 17.4]
-9. INV orders processed [Handwritten: 17.3]
-10. OTS orders processed [Handwritten: 17.4]
-11. DTS orders processed [Handwritten: 17.3]
-12. RAD orders processed [Handwritten: 17.3]
+1. PME orders processed (see [17.4.4](#1744-pre-maneuver-energy-weapon-fire-orders-pme))
+2. PMM orders processed (see [17.4.5](#1745-pre-maneuver-missile-fire-orders-pmm))
+3. RUN orders processed (see [17.4.3](#1743-run-orders-run))
+4. TMV orders processed (see [17.4.1](#1741-tactical-maneuver-orders-tmv))
+5. CLS orders processed (see [17.4.2](#1742-close-orders-cls))
+6. AME orders processed (see [17.4.6](#1746-after-maneuver-energy-weapon-fire-orders-ame))
+7. AMM orders processed (see [17.4.7](#1747-after-maneuver-missile-fire-orders-amm))
+8. WTD orders processed (see [17.4.12](#17412-withdraw-orders-wtd))
+9. INV orders processed (see [17.4.8](#1748-invasion-orders-inv))
+10. OTS orders processed (see [17.4.11](#17411-offensive-troop-support-orders-ots))
+11. DTS orders processed (see [17.4.10](#17410-defensive-troop-support-orders-dts))
+12. RAD orders processed (see [17.4.9](#1749-raid-orders-rad))
 
 ### 16.2.2 PRE SET-UP STAGE
 
-1. AAN orders processed [Handwritten: 17.4]
-2. PTC orders processed [Handwritten: 17.4]
-3. ACP orders processed [Handwritten: 17.6]
+1. AAN orders processed (see [17.4.14](#17414-allow-add-on-orders-aan))
+2. PTC orders processed (see [17.4.13](#17413-permission-to-colonize-orders-ptc))
+3. ACP orders processed (see [17.4.19](#17419-accept-orders-acp))
 
 ### 16.2.3 SET-UP STAGE
 
-1. STP orders processed [Handwritten: 17.4]
-2. ADN orders processed [Handwritten: 17.5]
+1. STP orders processed (see [17.4.15](#17415-set-up-orders-stp))
+2. ADN orders processed (see [17.4.16](#17416-add-on-orders-adn))
 
 ### 16.2.4 DIS-ASSEMBLY STAGE
 
-1. DAS orders processed [Handwritten: 17.14]
-2. SCR orders processed [Handwritten: 17.6]
-3. JNK orders processed [Handwritten: 17.5]
-4. MRG orders processed [Handwritten: 17.6]
-5. GIV orders processed [Handwritten: 17.6]
-6. COM orders processed [Handwritten: 17.6]
-7. DEP orders processed [Handwritten: 17.6]
+1. DAS orders processed (see [17.4.50](#17450-disassembly-orders-das))
+2. SCR orders processed (see [17.4.23](#17423-scrap-orders-scr))
+3. JNK orders processed (see [17.4.17](#17417-junk-orders-jnk))
+4. MRG orders processed (see [17.4.20](#17420-merge-orders-mrg))
+5. GIV orders processed (see [17.4.18](#17418-give-orders-giv))
+6. COM orders processed (see [17.4.21](#17421-combine-orders-com))
+7. DEP orders processed (see [17.4.22](#17422-deposit-orders-dep))
 
 ### 16.2.5 PRE-TRANSFER STAGE
 
-1. REC orders processed [Handwritten: 17.7]
-2. APU orders processed [Handwritten: 17.8]
+1. REC orders processed (see [17.4.25](#17425-receive-orders-rec))
+2. APU orders processed (see [17.4.27](#17427-allow-pick-up-orders-apu))
 
 ### 16.2.6 TRANSFER STAGE
 
-1. TFR orders processed [Handwritten: 17.7]
-2. PUP orders processed [Handwritten: 17.8]
+1. TFR orders processed (see [17.4.24](#17424-transfer-orders-tfr))
+2. PUP orders processed (see [17.4.26](#17426-pick-up-orders-pup))
 
 ### 16.2.7 BUILD CHANGE STAGE
 
-1. BCH orders processed [Handwritten: 17.9]
-2. MCH orders processed [Handwritten: 17.9]
-3. SHT orders processed [Handwritten: 17.9]
-4. STU orders processed [Handwritten: 17.9]
+1. BCH orders processed (see [17.4.28](#17428-build-change-orders-bch))
+2. MCH orders processed (see [17.4.29](#17429-mine-change-orders-mch))
+3. SHT orders processed (see [17.4.30](#17430-shut-down-orders-sht))
+4. STU orders processed (see [17.4.31](#17431-start-up-orders-stu))
 
 ### 16.2.8 ASSEMBLY STAGE
 
-1. ASM orders processed [Handwritten: 17.10]
+1. ASM orders processed (see [17.4.32](#17432-assembly-orders-asm))
 
 ### 16.2.9 MARKET STAGE
 
-1. BUY orders processed [Handwritten: 17.10]
-2. SEL orders processed [Handwritten: 17.10]
+1. BUY orders processed (see [17.4.33](#17433-buy-orders-buy))
+2. SEL orders processed (see [17.4.34](#17434-sell-orders-sel))
 
 ### 16.2.10 SURVEY STAGE
 
-1. SUR orders processed [Handwritten: 17.11]
-2. S/C PRB orders processed [Handwritten: 17.11]
+1. SUR orders processed (see [17.4.36](#17436-survey-orders-sur))
+2. S/C PRB orders processed (see [17.4.35](#17435-probe-orders-prb))
 
 ### 16.2.11 SPY MOVE STAGE
 
-1. SPM orders processed [Handwritten: 17.11]
+1. SPM orders processed (see [17.4.37](#17437-spy-move-orders-spm))
 
 ### 16.2.12 DRAFT STAGE
 
-1. DRF orders processed [Handwritten: 17.12]
-2. DSB orders processed [Handwritten: 17.13]
+1. DRF orders processed (see [17.4.40](#17440-draft-orders-drf))
+2. DSB orders processed (see [17.4.41](#17441-disband-orders-dsb))
 
 ### 16.2.13 PAY CHANGE STAGE
 
-1. PAY orders processed [Handwritten: 17.13]
-2. RTN orders processed [Handwritten: 17.13]
+1. PAY orders processed (see [17.4.42](#17442-pay-orders-pay))
+2. RTN orders processed (see [17.4.43](#17443-ration-orders-rtn))
 
 ### 16.2.14 NAMING STAGE
 
-1. NAM orders processed [Handwritten: 17.13]
-2. NAP orders processed [Handwritten: 17.13]
-3. NOM orders processed [Handwritten: 17.13]
-4. CON orders processed [Handwritten: 17.13]
-5. UNC orders processed [Handwritten: 17.13]
+1. NAM orders processed (see [17.4.46](#17446-name-orders-nam))
+2. NAP orders processed (see [17.4.48](#17448-planet-name-orders-nap))
+3. NOM orders processed (see [17.4.47](#17447-player-name-orders-nom))
+4. CON orders processed (see [17.4.44](#17444-control-orders-con))
+5. UNC orders processed (see [17.4.45](#17445-uncontrol-orders-unc))
 
 ### 16.2.15 SHIP MOVEMENT STAGE
 
-1. MOV orders processed [Handwritten: 17.12]
-2. JMP orders processed [Handwritten: 17.12]
+1. MOV orders processed (see [17.4.38](#17438-move-orders-mov))
+2. JMP orders processed (see [17.4.39](#17439-jump-orders-jmp))
 
 ### 16.2.16 RESTART STAGE
 
@@ -2297,11 +2297,11 @@ All the orders for one stage are processed before any of the orders for the next
 
 ### 16.2.21 NEWS RELEASE STAGE
 
-1. NSR orders processed [Handwritten: 17.13]
+1. NSR orders processed (see [17.4.49](#17449-news-release-orders-nsr))
 
 ### 16.2.22 PROBE STAGE
 
-1. PRB orders for systems and orbits processed [Handwritten: 17.11]
+1. PRB orders for systems and orbits processed (see [17.4.35](#17435-probe-orders-prb))
 
 # 17. WRITING ORDERS
 
