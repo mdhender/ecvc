@@ -550,7 +550,8 @@ Abbreviations followed by asterisks are never used in writing orders, but are us
 <a id="rule-B1.0"></a>
 ## B1.0 How to Play
 
-The walkthrough of a turn is written in phase 6 of the reorganization.
+The tutorial [Your first turn](tutorials/first-turn.md) takes a new player through one turn of the game.
+It explains these rules but is not part of them.
 
 <a id="rule-B2.0"></a>
 ## B2.0 Initial Printout and Turnsheet

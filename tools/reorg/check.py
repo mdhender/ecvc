@@ -12,9 +12,9 @@ from collections import Counter
 
 from build import Builder
 from common import (
-    ANCHOR_RE, B1_PLACEHOLDER, CONNECT, DOCS, LINK_RE, MANUAL, VARIANTS, VARIANTS_NOTE,
+    ANCHOR_RE, CONNECT, DOCS, LINK_RE, MANUAL, VARIANTS, VARIANTS_NOTE,
     Model, heading_level, heading_slugs, id_numbers, normalize_links, parse_connect,
-    read_lines, scan,
+    read_lines, scan, tutorials,
 )
 
 RULE_HEADING_RE = re.compile(r"^([A-Z]\d+(?:\.\d+)*) (.*)$")
@@ -122,10 +122,13 @@ def compare_bodies(model, manual, variants):
     return out
 
 
-def check_links(docs, targets_only):
+def check_links(docs):
+    """Every relative link in docs resolves to a file, and every fragment to an anchor in it."""
     out = []
-    by_name = {d.name: d for d in docs + targets_only}
+    loaded = {d.path: d for d in docs}
     for doc in docs:
+        here = os.path.dirname(doc.path)
+        rel = os.path.relpath(doc.path, DOCS)
         for kind, i, payload in scan(doc.lines):
             if kind in ("code", "fence"):
                 continue
@@ -133,18 +136,22 @@ def check_links(docs, targets_only):
                 if re.match(r"^[a-z]+:", target):
                     continue
                 path, _, frag = target.partition("#")
+                other = doc
                 if path:
-                    if path not in by_name:
-                        if not os.path.exists(os.path.join(DOCS, path)):
-                            out.append(f"{doc.name}:{i + 1}: missing file {path!r}")
-                        elif frag:
-                            out.append(f"{doc.name}:{i + 1}: cannot check anchor in {path!r}")
+                    full = os.path.normpath(os.path.join(here, path))
+                    if not os.path.exists(full):
+                        out.append(f"{rel}:{i + 1}: missing file {path!r}")
                         continue
-                    other = by_name[path]
-                else:
-                    other = doc
+                    if not frag:
+                        continue
+                    if full not in loaded:
+                        if not full.endswith(".md"):
+                            out.append(f"{rel}:{i + 1}: cannot check anchor in {path!r}")
+                            continue
+                        loaded[full] = Doc(full)
+                    other = loaded[full]
                 if frag and frag not in other.targets():
-                    out.append(f"{doc.name}:{i + 1}: unresolved link [{text}]({target})")
+                    out.append(f"{rel}:{i + 1}: unresolved link [{text}]({target})")
     return out
 
 
@@ -264,7 +271,7 @@ def main():
     failed = False
     checks = [
         ("Body lines match the rule book", compare_bodies(model, manual, variants)),
-        ("Links resolve", check_links([manual, variants], [Doc(os.path.join(DOCS, "rulebook.md"))])),
+        ("Links resolve", check_links([manual, variants] + [Doc(p) for p in tutorials()])),
         ("Anchors are unique and every mapping row has one", check_anchors(model, manual, variants)),
         ("Heading levels follow the depth rule", check_headings(model, manual, variants)),
         ("Every numbered rule book heading is in the concordance once", check_concordance(model, manual)),

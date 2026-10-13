@@ -24,6 +24,7 @@ Tests will cite rules by their manual ID.
 | `docs/variants.md` | The variant games (Maxi-Challenge, The Ten Planet War), with IDs in subject V.                                      |
 | `docs/mapping.md`  | Working mapping from every rule book heading to its subject and manual ID.                                          |
 | `docs/connect.md`  | The reviewed phase 4 edits, which the move script applies after copying the rule book text.                         |
+| `docs/tutorials/`  | Tutorials for new players, which explain the rules without adding to them.                                          |
 | `docs/errata.md`   | Log of mistakes found in the rules, each citing a rule ID. Entries record problems; they do not fix them.           |
 | `docs/REORG.md`    | This plan.                                                                                                          |
 
@@ -120,7 +121,9 @@ Because both files keep one sentence per line, the move can be checked mechanica
 
 ### 6. How to play
 
-Write a short walkthrough in section B that takes a new player through a turn in the order the rule book teaches, linking to the manual rules.
+Write a short walkthrough that takes a new player through a turn in the order the rule book teaches, linking to the manual rules.
+It is a tutorial, in `docs/tutorials/first-turn.md`, not part of the manual: it explains the rules without adding to them, so tests never cite it.
+B1.0 points to it.
 
 ### 7. Read-through
 

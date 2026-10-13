@@ -21,7 +21,10 @@ VARIANTS_NOTE = [
     "The core rules are in [manual.md](manual.md).",
     "Like the rest of `docs/`, it is licensed under CC BY-NC-ND 4.0; see [LICENSE](LICENSE).",
 ]
-B1_PLACEHOLDER = "The walkthrough of a turn is written in phase 6 of the reorganization."
+B1_TEXT = [
+    "The tutorial [Your first turn](tutorials/first-turn.md) takes a new player through one turn of the game.",
+    "It explains these rules but is not part of them.",
+]
 
 HEADING_RE = re.compile(r"^(#{1,6}) (.*?)\s*$")
 FENCE_RE = re.compile(r"^```")
@@ -324,3 +327,11 @@ def parse_connect(lines):
 def normalize_links(line):
     """Compare cross-file rule links as same-file links."""
     return re.sub(r"\]\((?:manual|variants)\.md#", "](#", line)
+
+
+def tutorials():
+    """Paths of the tutorials in docs/tutorials/."""
+    d = os.path.join(DOCS, "tutorials")
+    if not os.path.isdir(d):
+        return []
+    return sorted(os.path.join(d, f) for f in os.listdir(d) if f.endswith(".md"))

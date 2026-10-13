@@ -23,36 +23,36 @@ Each subject has one table, sorted by manual ID, so the tables show the outline 
 - Examples, charts, and tables are folded into the rule they illustrate, with no ID of their own.
 - Gaps left by deleted and folded rules are closed up; both are listed under [No manual ID](#no-manual-id).
 - Orders are grouped by intent, and related orders sit together within a group, such as ASM with DAS, and BCH with COM.
-- B1.0 is reserved for the walkthrough written in phase 6.
+- B1.0 points to the tutorial written in phase 6, `docs/tutorials/first-turn.md`.
 - Subject R holds the annexes.
 - The variant games go in a separate document under subject V, so their IDs stay unique across both documents.
 
 ## A. General Rules and Definitions
 
-| Manual ID | Title                       | Rule book | Notes                                             |
-|-----------|-----------------------------|-----------|---------------------------------------------------|
-| A1.0      | Introduction                | 1         |                                                   |
-| A2.0      | Coordinates                 | 3.1       |                                                   |
-| A2.1      | Computer Map                | 3.1.1     |                                                   |
-| A2.2      | Multiple Star Systems       | 3.1.2     |                                                   |
-| A2.3      | Coordinates on the Printout | 3.1.3     |                                                   |
-| A3.0      | Solar Systems               | 3.2       |                                                   |
-| A4.0      | Planets                     | 3.3       |                                                   |
-| A4.1      | Types of Planets            | 3.3.1     |                                                   |
-| A4.1.1    | Gas Giants                  | 3.3.1.1   |                                                   |
-| A4.1.2    | Terrestrial                 | 3.3.1.2   |                                                   |
-| A4.1.3    | Asteroids                   | 3.3.1.3   |                                                   |
-| A4.2      | Habitability Numbers        | 3.3.2     |                                                   |
-| A4.3      | Resource Deposits           | 3.3.3     |                                                   |
-| A5.0      | Time Scale                  | 3.4       |                                                   |
-| A6.0      | Race Numbers                | 3.6       |                                                   |
-| A7.0      | Glossary                    | 4         | Letter subheadings (A through W) stay unnumbered. |
+| Manual ID | Title                       | Rule book | Notes                                                           |
+|-----------|-----------------------------|-----------|-----------------------------------------------------------------|
+| A1.0      | Introduction                | 1         |                                                                 |
+| A2.0      | Coordinates                 | 3.1       | Heading only.                                                   |
+| A2.1      | Computer Map                | 3.1.1     |                                                                 |
+| A2.2      | Multiple Star Systems       | 3.1.2     |                                                                 |
+| A2.3      | Coordinates on the Printout | 3.1.3     |                                                                 |
+| A3.0      | Solar Systems               | 3.2       |                                                                 |
+| A4.0      | Planets                     | 3.3       | Heading only.                                                   |
+| A4.1      | Types of Planets            | 3.3.1     |                                                                 |
+| A4.1.1    | Gas Giants                  | 3.3.1.1   |                                                                 |
+| A4.1.2    | Terrestrial                 | 3.3.1.2   |                                                                 |
+| A4.1.3    | Asteroids                   | 3.3.1.3   |                                                                 |
+| A4.2      | Habitability Numbers        | 3.3.2     |                                                                 |
+| A4.3      | Resource Deposits           | 3.3.3     |                                                                 |
+| A5.0      | Time Scale                  | 3.4       |                                                                 |
+| A6.0      | Race Numbers                | 3.6       |                                                                 |
+| A7.0      | Glossary                    | 4         | Heading only. Letter subheadings (A through W) stay unnumbered. |
 
 ## B. How to Play
 
 | Manual ID | Title                          | Rule book | Notes                                                                              |
 |-----------|--------------------------------|-----------|------------------------------------------------------------------------------------|
-| B1.0      | How to Play                    |           | New: the walkthrough written in phase 6.                                           |
+| B1.0      | How to Play                    |           | New: points to the tutorial docs/tutorials/first-turn.md, written in phase 6.      |
 | B2.0      | Initial Printout and Turnsheet | 3.5       | Moved from A: starting the game.                                                   |
 | B3.0      | Turn Sequence                  | 16.1      | Takes the text of 16.1 DESCRIPTION. Stage steps are anchored as B3.n.k (REORG.md). |
 | B3.1      | Combat Stage                   | 16.2.1    |                                                                                    |
@@ -346,7 +346,7 @@ Each subject has one table, sorted by manual ID, so the tables show the outline 
 | Manual ID | Title                       | Rule book | Notes                                                                        |
 |-----------|-----------------------------|-----------|------------------------------------------------------------------------------|
 | N1.0      | Rebellion                   | 18        | Chapter 18 has intro text, so the chapter is one topic.                      |
-| N1.1      | Increases                   | 18.1      |                                                                              |
+| N1.1      | Increases                   | 18.1      | Heading only.                                                                |
 | N1.1.1    | Rebel Increase Chart        | 18.1.1    |                                                                              |
 | N1.1.2    | Rebel Soldier Increases     | 18.1.2    |                                                                              |
 | N1.2      | Decreases                   | 18.2      |                                                                              |

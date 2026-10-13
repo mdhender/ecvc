@@ -9,7 +9,7 @@ import re
 import sys
 
 from common import (
-    B1_PLACEHOLDER, CONNECT, MANUAL, VARIANTS, VARIANTS_NOTE, Model, anchor, doc_for,
+    B1_TEXT, CONNECT, MANUAL, VARIANTS, VARIANTS_NOTE, Model, anchor, doc_for,
     heading_level, parse_connect, read_lines, slugify,
 )
 
@@ -83,7 +83,7 @@ class Builder:
             out += [self.glossary_index(), ""]
         s = self.m.row_section.get(r.id)
         if r.id == "B1.0":
-            out += [B1_PLACEHOLDER, ""]
+            out += B1_TEXT + [""]
         elif s is not None:
             if "Heading only" in r.notes and s.body:
                 self.warnings.append(f"{r.id} is marked heading only but rule book {s.key} has body text")
@@ -115,7 +115,7 @@ class Builder:
 
     def generated_lines(self):
         """Lines the build writes that are not rule book text."""
-        return set(VARIANTS_NOTE) | {B1_PLACEHOLDER, self.glossary_index()}
+        return set(VARIANTS_NOTE) | set(B1_TEXT) | {self.glossary_index()}
 
     def anchor_steps(self, rid, body):
         out = []
