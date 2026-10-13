@@ -14,4 +14,5 @@ It is separate from the license that covers the code in this repository, which i
 
 ## Contents
 
-- [pages/](pages/) — a page-by-page Markdown transcription of the 1980 Empyrean Challenge rule book, one file per printed page.
+- [rulebook.md](rulebook.md) — the Empyrean Challenge rule book, edited for current games.
+- [pages/](pages/) — the page-by-page Markdown transcription of the 1980 rule book that rulebook.md was assembled from.
