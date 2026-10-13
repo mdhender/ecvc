@@ -135,6 +135,8 @@ Tag `manual-baseline`.
   Log every mistake found in `docs/errata.md` instead, citing the rule ID.
 - Keep the conventions of `docs/rulebook.md`: one sentence per line, and leading `\*` or `\*\*` as footnote markers.
 - `docs/manual.md` and `docs/variants.md` are covered by the same license as the rest of `docs/`.
+- `tools/` holds documentation scripts, such as the move and check scripts in `tools/reorg/`.
+  It is removed once the documentation is done, before coding starts.
 
 ## Deferred
 
