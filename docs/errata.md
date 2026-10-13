@@ -29,6 +29,8 @@ Typographic and scan errors are not logged here; they are corrected in `docs/rul
 
 The cluster is 30 light years per side, but each coordinate ranges from 0 to 30, which is 31 values.
 
+- **Resolved:** #3. The cluster is a sphere of radius 26 light years, with whole-number coordinates ([A2.1](manual.md#rule-A2.1)).
+
 ### 2. Number of orbits per star
 
 - **Rules:** [A2.2](manual.md#rule-A2.2), [A3.0](manual.md#rule-A3.0)
@@ -526,6 +528,8 @@ The last SPM format has no quantity, but its examples have one.
 - **Kind:** example
 
 The MOV example moves to 12,28,-32, but relative coordinates in a 30-light-year cluster can not reach -32.
+
+- **Resolved:** #3. The MOV example now moves to 12,8,-3.
 
 ## V. Variants
 
