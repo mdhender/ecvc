@@ -216,7 +216,7 @@ There are 100 star systems in a game.
 
 If two or more stars are at the same coordinates, they are known as a binary star system (two stars), or a trinary star system (three stars), etc.
 Each star of the star system has 10 orbits around it; each star with its planets revolves around the other star (or stars).
-There is an orbit 0 surrounding the entire star system and its planets, which serves all the stars of a multiple star system, and it is explained in [A3.0](#rule-A3.0)<!-- was it will be explained later -->.
+The star system also has an orbit 0, which surrounds all of its solar systems ([A3.1](#rule-A3.1)).
 Each solar system of a multiple star system is designated by adding a letter to the coordinates.
 Thus, star B of star system 28/02/18 designates the second solar system of a multiple star system.
 By convention, Star A always designates the first star of a star system, even if the star system contains only a single star.
@@ -233,12 +233,20 @@ This will give the coordinates of all stars within 10 light years from the home 
 ## A3.0 Solar Systems
 
 Each star ("solar system") has at least one planet, with no more than 10 planets per star.
-A star has 11 orbits, numbered from 0 to 10; number 1 is closest to the star; and number 10 is farthest from it.
-Orbits 1 - 10 may be occupied by one planet of any type per orbit ; orbit 0 is never occupied by a planet.
-If there are two or more stars in a coordinate point, orbit 0 surrounds the stars and the planets, as explained in [A2.2](#rule-A2.2)<!-- was as explained above -->.
-Ships from other star systems always arrive in orbit 0.
+A solar system has 10 orbits, numbered from 1 to 10; number 1 is closest to the star; and number 10 is farthest from it.
+Each orbit may be occupied by one planet of any type.
+The star system around a solar system also has an orbit 0, which holds no planet ([A3.1](#rule-A3.1)).
 
 There are from 500 to 700 planets in a game.
+
+<a id="rule-A3.1"></a>
+### A3.1 Orbit 0
+
+Every star system has an orbit 0, whether it has one star or several.
+Orbit 0 belongs to the star system, not to any of its solar systems; it surrounds every solar system in the star system.
+Orbit 0 is never occupied by a planet, so no colony can be set up there, but ships may stay in it.
+Ships from other star systems always arrive in orbit 0 ([C3.1](#rule-C3.1), [C3.2.1](#rule-C3.2.1)).
+A ship in orbit 0 moves to an orbit of any star in the star system with a MOV order ([S14.1](#rule-S14.1)).
 
 <a id="rule-A4.0"></a>
 ## A4.0 Planets
@@ -879,6 +887,7 @@ If there is a fraction in the amount of light years, the number of turns is roun
 HDRV use 40 x the distance in light years in FUEL units.
 When moving from one orbit to another orbit of the same star, the distance used is .1 light years.
 When moving from an orbit of one star to the orbit of another star in the same star system the distance used is .2 light years.
+When moving between orbit 0 and an orbit of any star in the star system, the distance used is .1 light years.
 
 # D. Combat
 
@@ -1394,7 +1403,7 @@ OBC's may be located in any orbit around a star, whether or not there is a plane
 <a id="rule-F2.4"></a>
 ### F2.4 Ships
 
-SHP's may be located in any orbit around a star, whether or not there is a planet there, and may be moved from orbit to orbit, or from its orbit to orbit 0 of another star system.
+SHP's may be located in any orbit around a star, or in orbit 0 ([A3.1](#rule-A3.1)), whether or not there is a planet there, and may be moved from orbit to orbit, or from its orbit to orbit 0 of another star system.
 All incoming ships arrive in orbit 0 of the star system.
 
 <a id="rule-F3.0"></a>
@@ -2112,7 +2121,7 @@ They may only be assembled in open colonies.
 #### H1.3.2 FRM-2 Through FRM-5
 
 These are hydroponic farms.
-They may be assembled in any colonies in orbits 1 through 5, but not in ships in any orbit, and not in colonies in orbits 6 - 11.
+They may be assembled in any colonies in orbits 1 through 5, but not in ships in any orbit, and not in colonies in orbits 6 - 10.
 
 <a id="rule-H1.3.3"></a>
 #### H1.3.3 FRM-6 Through FRM-10
@@ -2629,6 +2638,7 @@ All three are ordered with a probe (PRB) order.
 An orbit probe lists the s/c's at the planet, the log base 10 of the total mass of each kind of resource in the unmined deposits on the planet, the log base 10 of each s/c's mass, its ID#, its name, the type of planet and its habitability number.
 An orbit probe cannot be made of the orbit the s/c is in because s/c's automatically get a probe report of the orbit they are in every turn.
 An orbit probe can be made of any other orbit in the solar system; in a multiple star system, all orbits of every solar system in the star system can be probed from one orbit.
+Orbit 0 can not be the target of an orbit probe, but a ship in orbit 0 gets the probe report of orbit 0 every turn.
 The orbit probe also lists the tactical coordinate positions of the s/c's at the planet.
 
 **Log Base 10**
@@ -3797,7 +3807,7 @@ In order to cancel an APU order, the player writes it as before, substituting 0 
 
 The above examples are all for orbit probes.
 The first example has s/c 77 PRB orbits one through four of star C.
-The second has s/c 77 probe all orbits in that solar system.
+The second has s/c 77 probe all orbits of star C; in a PRB order, orbit 0 stands for orbits 1 through 10 of the star, not for orbit 0 itself.
 The third has s/c 77 PRB orbits in star A, (when no star is designated, star A is assumed).
 
 - Format: S/C ID#, "PRB", "S/C", S/C ID #(#'s).

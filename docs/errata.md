@@ -15,6 +15,7 @@ Rule changes start from the `manual-baseline` tag and work through this list.
   - *ambiguity*: the rule can be read more than one way;
   - *gap*: the rules do not say what happens;
   - *withdrawn*: the entry turned out not to be a rule mistake, and its number stays reserved.
+- **Resolved**, when present, names the issue that fixed the rule and says how.
 - Entries are grouped by the subject of their first rule.
 
 Typographic and scan errors are not logged here; they are corrected in `docs/rulebook.md` and the manual is rebuilt.
@@ -35,6 +36,8 @@ The cluster is 30 light years per side, but each coordinate ranges from 0 to 30,
 
 A2.2 says each star of a multiple star system has 10 orbits.
 A3.0 says a star has 11 orbits, numbered 0 to 10.
+
+- **Resolved:** #2. A solar system has orbits 1 to 10; orbit 0 belongs to the star system ([A3.1](manual.md#rule-A3.1)).
 
 ### 3. Scale of the habitability number
 
@@ -298,6 +301,8 @@ and market prices, which L3.0 says are "known only to the computer".
 - **Kind:** contradiction
 
 Hydroponic farms may not be assembled "in colonies in orbits 6 - 11", but orbits only go to 10.
+
+- **Resolved:** #2. H1.3.2 now says "orbits 6 - 10".
 
 ### 35. Shutting down part of the farms
 
