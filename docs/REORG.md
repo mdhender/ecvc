@@ -16,13 +16,13 @@ Tests will cite rules by their manual ID.
 
 ## Files
 
-| File               | Role                                                                                                      |
-|--------------------|-----------------------------------------------------------------------------------------------------------|
-| `docs/rulebook.md` | Baseline: the 1980 rule book as transcribed and edited so far. Rules are not changed here.                |
-| `docs/manual.md`   | The reorganized rules, with new IDs.                                                                      |
-| `docs/mapping.md`  | Working mapping from every rule book heading to its subject and manual ID.                                |
-| `docs/errata.md`   | Log of mistakes found in the rules, each citing a rule ID. Entries record problems; they do not fix them. |
-| `docs/REORG.md`    | This plan.                                                                                                |
+| File               | Role                                                                                                                |
+|--------------------|---------------------------------------------------------------------------------------------------------------------|
+| `docs/rulebook.md` | Baseline: the 1980 rule book as transcribed and edited so far. Only typographic and scan errors are corrected here. |
+| `docs/manual.md`   | The reorganized rules, with new IDs.                                                                                |
+| `docs/mapping.md`  | Working mapping from every rule book heading to its subject and manual ID.                                          |
+| `docs/errata.md`   | Log of mistakes found in the rules, each citing a rule ID. Entries record problems; they do not fix them.           |
+| `docs/REORG.md`    | This plan.                                                                                                          |
 
 ## Baselines
 
@@ -73,8 +73,10 @@ This first-pass list of subjects is a starting point for the mapping, not a deci
 | N      | Espionage and rebellion       | 18, 19                      |
 | P      | Diplomacy and communications  | 20                          |
 | R      | Reference material            | appendices, charts, reports |
+| S      | Orders                        | 17                          |
 
-Chapter 17, Writing Orders, is left out of the table until the orders decision under [Open decisions](#open-decisions) is made.
+Orders are their own subject because order entry is the biggest difference between EC and SFB: SFB is played live, with little plotted, while every EC turn is written orders.
+Subject S may later be divided by the intent of the orders, such as combat or set-up.
 
 The history of the Empyrean Cluster stays as unnumbered introductory material.
 
@@ -89,7 +91,7 @@ Done when every rule book heading has a row and the subjects and IDs are agreed.
 
 ### 2. Settle open decisions
 
-Resolve the questions under [Open decisions](#open-decisions) and record the answers in this file.
+Record the answers to open questions under [Decisions](#decisions).
 
 ### 3. Move
 
@@ -131,14 +133,17 @@ Tag `manual-baseline`.
 - Keep the conventions of `docs/rulebook.md`: one sentence per line, and leading `\*` or `\*\*` as footnote markers.
 - `docs/manual.md` is covered by the same license as the rest of `docs/`.
 
-## Open decisions
+## Decisions
 
-- **Orders.** Should order syntax (chapter 17) be its own subject, separate from the rules governing what orders do?
-  The working assumption is yes.
-- **Ships and colonies.** Do they share subject F, or split?
-  The working assumption is that they share it for now.
-- **Anchors.** What form do manual anchors take, for example `<a id="D3.2.1"></a>` or `<a id="rule-d3.2.1"></a>`?
-- **Heading depth.** Markdown has six heading levels.
-  Decide how rules deeper than the available levels are shown.
-- **Transcription fixes.** May `docs/rulebook.md` still be corrected where it does not match the 1980 scans, as distinct from rule mistakes, which go to `docs/errata.md`?
-- **Mapping format.** Is a Markdown table in `docs/mapping.md` enough for the move script, or should the mapping be a CSV?
+- **Orders.** Order syntax (chapter 17) is its own subject, S, separate from the rules governing what the orders do.
+- **Ships and colonies.** They share subject F.
+- **Anchors.** Each rule has an anchor of the form `<a id="rule-D3.2.1"></a>`, using the ID exactly as written.
+- **Heading depth.** Each subject is a level 1 heading, such as `# D. Combat`.
+  A top-level rule such as `D3.0` is a level 2 heading.
+  Every other rule's heading level is one more than the count of numbers in its ID: `D3.1` is level 3, `D3.2.0` is level 4, and `D3.2.1.1.1` is level 6.
+  A manual ID therefore has at most five numbers.
+  The deepest rule book headings have five numbers, such as 17.4.27.1.1, and lose one when the chapter becomes a subject letter, so they fit with a level to spare.
+- **Mapping format.** `docs/mapping.md` is a Markdown table, which the move script parses.
+- **Transcription fixes.** `docs/rulebook.md` may still be corrected for typographic and scan errors, where it does not match the 1980 scans.
+  Rule mistakes go to `docs/errata.md` instead.
+  A correction made after `docs/manual.md` exists is applied to both files, so the check in phase 5 still holds.
