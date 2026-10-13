@@ -27,17 +27,12 @@ MAXI-CHALLENGE differs from EMPYREAN CHALLENGE in the following ways:
        - aa. (Assembled HDRV's x each HDRV's TL) divided by 10,000 OR (SHP's mass divided by 0.6 ) divided by 10,000,000; whichever is LESS.
          Note: SHP's mass does not include the mass of FOOD.
      - C. Planet points are counted as follows:
-       - aa. For MAXI-CHALLENGE fast games 1 & 2, and slow game #1:
-         - aaa. Habitability number of controlled planet plus 2.
-       - bb. For MAXI-CHALLENGE fast games 3 thru 8, and slow games 2 thru 5.
-         - aaa. Habitability number of controlled planet times 3.
-       - cc. For MAXI-CHALLENGE bitterend games:
-         - aaa. Same as EMPYREAN CHALLENGE
-       - dd. For MAXI-CHALLENGE fast games #9, #10 and all following fast games; for slow game #6 and all following slow games; and for all Headstart games:
-         - aaa. Population on a planet is counted in OPC's only.
-         - bbb. Habitability points are only awarded where the POP is 200,000 per habitability point.
-           I.E., a hab 25 planet requires a POP of 5E6 in order to get the FULL 75 victory points, (five million POP divided by 2E6 hab points = 25. 25 x 3 = 75 victory points).
-           A hab 25 planet requires a POP of at least 2E5 to get 3 victory points.*
+       - aa. Habitability number of controlled planet times 3.
+       - bb. Population on a planet is counted in OPC's only.
+       - cc. Habitability points are only awarded where the POP is 200,000 per habitability point.
+         I.E., a hab 25 planet requires a POP of 5E6 in order to get the FULL 75 victory points, (five million POP divided by 2E5 POP per hab point = 25. 25 x 3 = 75 victory points).
+         A hab 25 planet requires a POP of at least 2E5 to get 3 victory points.*
+       - dd. For MAXI-CHALLENGE bitterend games, planet points are counted the same as in EMPYREAN CHALLENGE.
 
 \* Thus, planet points are awarded for the number of population units you control on a given habitable planet in OPC's rather than for simply controlling the planet.
 In theory, players could share a planet.

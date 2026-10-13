@@ -80,7 +80,3 @@ The remaining 3,750,000 FCT-1 may be allocated among the other 24 FCT groups, or
 | 23.     |                 |               |
 | 24.     |                 |               |
 | 25.     |                 |               |
-
-Please indicate whether you wish to be in a fast or slow game: ___
-
-Fast games will be run at two turns a month, slow at one turn per month, approx.
