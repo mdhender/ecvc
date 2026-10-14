@@ -289,7 +289,7 @@ D10.0 transfers the s/c when the defending troops are eliminated, but does not s
 - **Kind:** gap
 
 D6.2 applies a hit's damage to one kind of unit and passes any excess on, but the rules give the damage needed to destroy a unit only for structural units: 500 M.U. destroys 1,000 STUN, STUL, or STUS, or 10,000 on ships (D6.3.4).
-That rate does not follow from their mass, since STUN, STUL, and STUS differ in mass but absorb damage alike.
+That rate is specified independently of unit mass.
 Nothing says how much damage destroys any other unit, such as POP, METS, or MSL.
 
 ### 84. Salvo and volley
@@ -441,6 +441,12 @@ F3.2 describes an excess as exceeding the "structural requirement", without maki
 Rewrite the enclosed volume rules to state how to total population, stored items, and assembled items, including the METS and NMTS exception for surface colonies.
 Keep the zero assembled volume of structural units settled by errata 22, and state how enclosed volume and the structure ratio determine the required structure and available capacity.
 Clarify the consequences of exceeding that capacity separately from insufficient life support.
+
+- **Resolved:** #64, in part. STUN, STUL, and STUS each weigh 0.1 MU; their enclosure capacities are 1, 5, and 20 STUN equivalents per assembled unit ([F3.1.1](manual.md#rule-F3.1.1), [R3.0](manual.md#rule-R3.0)).
+  F3.1 defines the enclosed volume and structural requirement; F3.1.1 defines combined enclosure capacity and includes the capacity table and a revised ship example.
+  STUL and STUS material quantities and unassembled volumes are scaled with their unit masses, preserving material proportions and stored volume per MU.
+  The glossary and H3.8 describe the types by enclosure capacity rather than different unit masses.
+  F3.2's excess-capacity and life-support consequences remain open; combat damage rules are unchanged.
 
 ## G. Population
 

@@ -169,8 +169,10 @@ Design work to take up after `manual-baseline`, through `docs/errata.md`:
   STUN and all unit characteristics remain unchanged.
 - **Structural unit volume (resolved).** Errata 22 sets assembled STUN, STUL, and STUS volume to zero in F3.1, F10.7, and R3.0.
   Their unassembled volumes remain unchanged.
-- **Enclosed volume.** Errata 90 calls for explicit enclosed volume, structural requirement, and capacity calculations, including storage and assembly exceptions.
-  Clarify excess-capacity consequences separately from life support, preserving errata 22's zero assembled structural volume.
+- **Enclosed volume (partly resolved).** Errata 90 (#64) defines enclosed volume, structural requirement, and combined capacity in F3.1 and F3.1.1.
+  Each structural unit weighs 0.1 MU; STUL and STUS enclose 5 and 20 times the volume of STUN, with material quantities and stored volumes scaled to the new unit masses in R3.0.
+  Assembled structural volume remains zero, and combat damage rules are unchanged.
+  Clarifying excess-capacity consequences separately from life support in F3.2 remains deferred.
 
 ## Decisions
 
