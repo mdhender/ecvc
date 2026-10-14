@@ -437,14 +437,16 @@ The SEL example also gives a price, which L4.0 says SEL orders never have.
 
 J3.0's list of units without a TL does not include RSCH.
 
-### 41. Which TL research raises
+### 41. Which TL research raises ✅
 
 - **Rules:** [J4.0](manual.md#rule-J4.0), [J4.1](manual.md#rule-J4.1), [J4.2](manual.md#rule-J4.2)
 - **Kind:** ambiguity
 
 J4.0 says research raises a s/c's TL, and RSCH can be transferred to ships, but J4.1 says the computer raises "the TL of the colony".
 
-### 79. RSCH applied before it can be transferred
+- **Resolved:** #34. Any s/c raises its TL by assembling RSCH with an ASM order naming the TL ([J4.1](manual.md#rule-J4.1), [S6.1](manual.md#rule-S6.1)).
+
+### 79. RSCH applied before it can be transferred ✅
 
 - **Rules:** [B3.17.6](manual.md#rule-B3.17.6), [J4.1](manual.md#rule-J4.1), [J4.2](manual.md#rule-J4.2), [K5.0](manual.md#rule-K5.0)
 - **Kind:** contradiction
@@ -453,6 +455,10 @@ J4.1 has the computer raise the TL automatically once enough RSCH has been built
 J4.2 and K5.0 let a s/c transfer RSCH to another s/c, such as one of the player's ships.
 If RSCH were applied automatically, a colony could never build up RSCH to transfer to her ships.
 See also errata 41.
+
+- **Resolved:** #34. RSCH is no longer applied automatically: it accumulates until the player assembles it with an ASM order naming the target TL, such as 75, ASM, TL-3 ([J4.1](manual.md#rule-J4.1), [S6.1](manual.md#rule-S6.1)).
+  The TL is raised at B3.17.6, one level at a time toward the TL named, as far as the RSCH pay for; the rest stay accumulated, and several TL's may be gained in one turn.
+  A second ASM order for TL in the same turn fails with E01.
 
 ## L. Markets and Trade
 

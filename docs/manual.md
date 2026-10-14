@@ -736,7 +736,7 @@ All the orders for one stage are processed before any of the orders for the next
 3. <a id="rule-B3.17.3"></a>Mines produce
 4. <a id="rule-B3.17.4"></a>Factories produce
 5. <a id="rule-B3.17.5"></a>People are paid; back pay is computed
-6. <a id="rule-B3.17.6"></a>TL increases
+6. <a id="rule-B3.17.6"></a>TL increases (see [J4.1](#rule-J4.1))
 
 <a id="rule-B3.18"></a>
 ### B3.18 Espionage Stage
@@ -2459,8 +2459,11 @@ A build change - research - order (BCH, RSCH) will cause a FCT group to change f
 A FCT producing RSCH will build .25 times its TL in RSCH per turn.
 The FCT group will complete its work-in-process before beginning the research.
 RSCH may be transferred or sold, decreasing the total number of RSCH accumulated.
-Once the required number of RSCH have been built, the computer automatically raises the TL of the colony, and decreases the number of RSCH accumulated.
-RSCH is applied to TL once per turn, never twice, during the production stage ([B3.17.6](#rule-B3.17.6)).
+RSCH accumulate in the s/c until the player assembles them with an ASM order naming the TL he wants, such as 75, ASM, TL-3 ([S6.1](#rule-S6.1)).
+The ASM order is processed in the assembly stage, but the TL is raised during the production stage ([B3.17.6](#rule-B3.17.6)), so RSCH built that turn are counted.
+The s/c's TL rises one level at a time toward the TL named, as far as its RSCH pay for, and the RSCH used are deducted from the total accumulated; any RSCH left over stay accumulated.
+Several TL's may be gained in one turn this way.
+RSCH is applied to TL once per turn, never twice: a second ASM order for TL in the same turn fails with error E01 ([R2.0](#rule-R2.0)).
 The quantities of RSCH listed below for each level are the number required to get from the preceding level to the one listed:
 
 | LEVEL | RSCH       |
@@ -3495,6 +3498,12 @@ will have more LTSU for sale next turn. Signed.
 - Example: 100, ASM, 100, SPYS.
 - Example: 100, ASM, 3E5, MSL-1.
 - Notes: This format is used to either form SPYS and CNW's, or to take items out of storage and put them to use.
+
+- Format: S/C ID#, "ASM", "TL"-TL#.
+- Example: 75, ASM, TL-3.
+- Notes: This format assembles RSCH to raise the s/c's TL to the TL named (see [J4.1](#rule-J4.1)).
+  If s/c 75 is TL-1 with 300,000 RSCH, it rises to TL-3 and has no RSCH left.
+  With 250,000 RSCH, it rises to TL-2 and keeps 150,000 RSCH.
 
 - Format: S/C ID#, "ASM", quantity, "FCT"-TL#, item to build.
 - Example: 83, ASM, 20,000, FCT-4, LFS-1.
