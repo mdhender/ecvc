@@ -592,3 +592,11 @@ The sheet says "Both your home planet and your orbiting colony have TL-1"; TL be
 
 Item 9 refers to the Ten Planet War pre-game turn sheet, which is not in the rules.
 There are no Independents in the game (item 3), but N1.4 gives a s/c that rebels to an Independent in some cases.
+
+### 68. Energy weapon damage divisor not bounded
+
+- **Rules:** [E5.1](manual.md#rule-E5.1), [E3.1](manual.md#rule-E3.1)
+- **Kind:** gap
+
+The damage formula divides by "D + SP/10 - S", which is 0 or negative when the attacker's sensor TL is at least the distance plus a tenth of the target's speed, such as when two ships share tactical coordinates.
+E3.1 uses 1 in place of the same expression when it is less than 1; E5.1 does not say what to use.
