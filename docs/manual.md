@@ -440,10 +440,10 @@ A Regent takes the race of his Ruler ([B4.1](#rule-B4.1)), and an Independent ta
 
 ### L
 
-| Code | Term                   | Definition                                 |
-|------|------------------------|--------------------------------------------|
-| LFS  | Life Support units     | Recycle air and water for ships and ESC's. |
-| LTSU | Light structural units | Walls, beams, etc. of a s/c - very light.  |
+| Code | Term                   | Definition                                                                      |
+|------|------------------------|---------------------------------------------------------------------------------|
+| LFS  | Life Support units     | Recycle air and water for every s/c except OPC's ([G6.1](#rule-G6.1)).          |
+| LTSU | Light structural units | Walls, beams, etc. of a s/c - very light.                                       |
 
 ### M
 

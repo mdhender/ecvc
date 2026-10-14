@@ -111,13 +111,15 @@ The glossary says words in it "should be abbreviated" in orders; S2.0 says they 
 - **Resolved:** #28. Glossary terms must be abbreviated in orders; the glossary now says so and cites S2.0 ([A7.0](manual.md#rule-A7.0)).
   S2.0 now says an order that writes one out in full, such as "missiles-6", is rejected with error E01 ([S2.0](manual.md#rule-S2.0)).
 
-### 9. Life support in orbiting colonies
+### 9. Life support in orbiting colonies ✅
 
 - **Rules:** [A7.0](manual.md#rule-A7.0), [G6.1](manual.md#rule-G6.1)
 - **Kind:** contradiction
 
 The glossary says LFS serve "ships and ESC's".
 G6.1 says only OPC's do not require LFS, so OBC's need them too.
+
+- **Resolved:** #30. Every s/c except OPC's requires LFS; the glossary now says so and cites G6.1 ([A7.0](manual.md#rule-A7.0)).
 
 ### 76. Standard of living is not defined in the rules
 
