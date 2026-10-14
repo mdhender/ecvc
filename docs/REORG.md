@@ -165,6 +165,8 @@ Design work to take up after `manual-baseline`, through `docs/errata.md`:
 - **Excess POP in closed s/c's.** F3.2 says "In the case of an excess of POP, LFS would not be sufficient, and some would die."
   The intended rule is: "When LFS would not be sufficient to sustain excess POP but the structure will admit them, some will die."
   Replace the F3.2 sentence with the clarified one.
+- **Structural unit abbreviations.** Errata 89 renames LTSU to STUL and SLSU to STUS throughout the manual.
+  STUN and all unit characteristics remain unchanged.
 
 ## Decisions
 

@@ -414,6 +414,15 @@ A JNK dis-assembles all the assembled items of a s/c, but the rules do not say w
 
 F8.0 says the two s/c's factory groups "must not exceed 25"; S5.8 says they "must total less than 25".
 
+### 89. Structural unit abbreviations
+
+- **Rules:** [F3.1](manual.md#rule-F3.1), [A7.0](manual.md#rule-A7.0), [D6.3.4](manual.md#rule-D6.3.4), [F10.2](manual.md#rule-F10.2), [H3.6](manual.md#rule-H3.6), [H3.8](manual.md#rule-H3.8), [J3.0](manual.md#rule-J3.0), [R3.0](manual.md#rule-R3.0)
+- **Kind:** structure
+
+Rename light structural units from LTSU to STUL and super-light structural units from SLSU to STUS throughout the manual, including the glossary, tables, and order examples.
+STUN remains unchanged.
+This is a change of abbreviations only, not of unit characteristics or rules.
+
 ## G. Population
 
 ### 27. Who counts as unemployable
