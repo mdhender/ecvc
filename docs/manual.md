@@ -1372,12 +1372,17 @@ Energy weapons (EWP) are fired by s/c's at s/c's in the same orbit.
 EWP's fire a beam of energy and are not mobile.
 The damage is calculated as follows:
 
-    DA = ((F ÷ (D + SP/10 - S)) x E) - SH
+    E  = the sum of 10 x TL^2 for each EWP fired at the target
+    DF = (D + DB) ÷ S
+    DA = (E ÷ DF) - SH
 
-Where DA is the damage in mass units, F is the number of EWP that fire, D is the number of distance units to the target, SP is the speed, S is the highest TL sensor assembled in the attacker's s/c, E is the energy of each unit fired (10 x TL of the EWP), SH is the target's shielding.
+Where DA is the damage in mass units, E is the total energy of the EWP fired, D is the number of distance units to the target, DB is the dodge bonus, S is the weighted average TL of the assembled sensors in the attacker's s/c ([D6.3.3](#rule-D6.3.3)), and SH is the target's shielding.
+Each EWP fires 10 x its TL-squared energy units.
+If the target is dodging, DB is its speed divided by 10; otherwise DB is 0.
+If DF is less than 1, the value 1 is used in its place.
 (Shielding is the total energy units deflected by all the assembled energy shields in the s/c.
 Each energy shield (ESH) deflects 10 x its TL-squared energy units per attack).
-If the expression D + SP/10 - S is less than 1, the value 1 will be used in its place to solve the rest of the equation.
+DA is rounded down to benefit the defender, and if it is less than 0, no damage is done.
 The firing of EWP against s/c's happens twice per turn: pre-maneuver and after-maneuver.
 
     EWP MAY NOT FIRE FROM A SURFACE COLONY AT A SURFACE COLONY.
