@@ -1470,6 +1470,7 @@ All incoming ships arrive in orbit 0 of the star system.
 ### F3.1 Definition
 
 Assembled STUN, LTSU, or SLSU must encompass the VOLUME of any s/c's units and population, except NMTS and METS in OPC's and ESC's.
+Assembled STUN, LTSU, and SLSU have zero volume and do not add to the structural requirement ([R3.0](#rule-R3.0)).
 The total volume units times the STRUCTURE RATIO, (see [F3.1.1](#rule-F3.1.1)<!-- was 7.3.1.1 -->), gives the s/c structural requirement.
 In OPC's and ESC's, NMTS and METS are stored outside the colony.
 
@@ -1814,7 +1815,7 @@ All spies assembled by a Regent will be under the control of his Ruler.
 <a id="rule-F10.7"></a>
 ### F10.7 Miscellaneous
 
-Assembled items take up TWICE as many volume units as when unassembled.
+Assembled items take up TWICE as many volume units as when unassembled, except STUN, LTSU, and SLSU, which have zero assembled volume ([R3.0](#rule-R3.0)).
 Also, assembled items do not leave the s/c.
 Only UNA or NON can be TFR'd or ADN'd to another s/c, or can be picked up by another s/c.
 So, assembled items must be dis-assembled first.
@@ -3120,7 +3121,8 @@ The error code at the end of a failed order explains why the order failed.
 
 \* Farms and factories in orbiting colonies within the 5th orbit or less use 0 fuel.
 
-\*\* Unassembled items (UNA), when assembled are doubled in volume, except for STUN, LTSU, and SLSU, which are all -1.
+\*\* Unassembled items (UNA), when assembled are doubled in volume, except for STUN, LTSU, and SLSU, which have zero assembled volume.
+The table gives their unassembled volumes, which are unchanged.
 
 # S. Orders
 
