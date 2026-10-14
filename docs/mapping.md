@@ -428,19 +428,15 @@ Each subject has one table, sorted by manual ID, so the tables show the outline 
 | S6.3.1    | Multiple Scrap Orders                          | 17.4.23.1   |                                     |
 | S7.0      | Transfer Orders                                |             | New group heading.                  |
 | S7.1      | Transfer Orders (TFR)                          | 17.4.24     |                                     |
-| S7.1.1    | Multiple Target TFR Orders                     | 17.4.24.1   |                                     |
 | S7.1.2    | Multiple TFR Orders                            | 17.4.24.2   |                                     |
 | S7.2      | Receive Orders (REC)                           | 17.4.25     |                                     |
-| S7.2.1    | Multiple Target REC Orders                     | 17.4.25.1   |                                     |
 | S7.2.2    | To Cancel Receive Orders                       | 17.4.25.2   | Order persistence; could move to K. |
 | S7.2.3    | Multiple REC Orders                            | 17.4.25.3   |                                     |
 | S7.3      | Pick Up Orders (PUP)                           | 17.4.26     |                                     |
-| S7.3.1    | Multiple Target PUP Orders                     | 17.4.26.1   |                                     |
 | S7.3.2    | Multiple PUP Orders                            | 17.4.26.2   |                                     |
 | S7.4      | Allow Pick Up Orders (APU)                     | 17.4.27     |                                     |
-| S7.4.1    | Multiple Target APU Orders                     | 17.4.27.1   |                                     |
-| S7.4.1.1  | Cancelling APU Orders                          | 17.4.27.1.1 | Order persistence; could move to K. |
 | S7.4.2    | Multiple APU Orders                            | 17.4.27.2   |                                     |
+| S7.4.3    | Cancelling APU Orders                          | 17.4.27.1.1 | Order persistence; could move to K. |
 | S8.0      | Production Orders                              |             | New group heading.                  |
 | S8.1      | Build Change Orders (BCH)                      | 17.4.28     |                                     |
 | S8.2      | Combine Orders (COM)                           | 17.4.21     |                                     |
@@ -513,5 +509,9 @@ These rules go in `docs/variants.md`, not the manual.
 | 17.4.14.1  | Multiple Target AAN Orders                       | Folded into S5.2 by #12.                                  |
 | 17.4.16.1  | Multiple Target ADN Orders                       | Folded into S5.4 by #12.                                  |
 | 17.4.17.1  | Multiple Target JNK Orders                       | Folded into S5.5 by #12.                                  |
+| 17.4.24.1  | Multiple Target TFR Orders                       | Folded into S7.1 by #13.                                  |
+| 17.4.25.1  | Multiple Target REC Orders                       | Folded into S7.2 by #13.                                  |
+| 17.4.26.1  | Multiple Target PUP Orders                       | Folded into S7.3 by #13.                                  |
+| 17.4.27.1  | Multiple Target APU Orders                       | Folded into S7.4 by #13.                                  |
 |            | Foreword                                         | Unnumbered front matter.                                  |
 |            | Table of Contents                                | Regenerated for the manual.                               |
