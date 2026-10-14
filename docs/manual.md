@@ -1059,8 +1059,10 @@ A target within the s/c may be chosen.
 ### D6.2 Targets
 
 A player does not have to specify a target in his bombardment orders.
-If targets are not specified, the damage will be done randomly.
-Specifying a target will increase the chance of hitting the target area by 50%.
+Damage is allocated at random among the units in the s/c hit, and each unit's chance of being hit is its share of the s/c's mass.
+Troops ([D2.2](#rule-D2.2)) count at 75% of their mass, and weapons at 90% of their mass, when the chances are worked out.
+Specifying a target group ([D6.2.1](#rule-D6.2.1)) increases the mass of the units in that group by half, rounded up, before the chances are worked out, but decreases the total damage by 25%.
+All the damage is applied to the target s/c.
 Only colonies may be targeted for bombardment, not ships.
 
 <a id="rule-D6.2.1"></a>
@@ -1123,7 +1125,7 @@ The TL's used in computing ANM and EWP hits on MSS's and troops is the *weighted
 * A ship may not fire an EWP or MSL unless it has at least one assembled sensor on board.
 * A colony can't fire on a ship unless it has an assembled SEN.
 * A colony can fire on another colony without a SEN.
-* Damage from bombardment against untargeted colonies and against ships is allocated randomly.
+* Damage from bombardment against untargeted colonies and against ships is allocated randomly, by mass ([D6.2](#rule-D6.2)).
 * STUN, LTSU,and SLSU all absorb damage at the same rate.
   (500 M.U. damaged will destroy 1,000 STUN or 1,000 LTSU or 1,000 SLSU).
   *On ships, the number destroyed will be 10,000 instead.*
@@ -1132,7 +1134,7 @@ The TL's used in computing ANM and EWP hits on MSS's and troops is the *weighted
   Each tactical coordinate is a whole number of distance units from -999 to 999.
   Tactical coordinates are not cluster coordinates ([A2.1](#rule-A2.1)); they are written the same way, and context tells them apart.
 * The scale is 1 distance unit = 10,000 km's.
-* Troops and weapons are not as likely to be hit as other items are, even if they are in the designated target group.
+* Troops and weapons are not as likely to be hit as other items are, even if they are in the designated target group ([D6.2](#rule-D6.2)).
 * Ships do not collide.
 
 <a id="rule-D7.0"></a>

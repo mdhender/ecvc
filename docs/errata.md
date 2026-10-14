@@ -216,12 +216,16 @@ Arriving ships are placed "between 5 and 10 distance units from the planet" and 
 
 ## D. Combat
 
-### 14. Effect of choosing a target
+### 14. Effect of choosing a target ✅
 
 - **Rules:** [D6.2](manual.md#rule-D6.2)
 - **Kind:** ambiguity
 
 "Specifying a target will increase the chance of hitting the target area by 50%" does not say whether the 50% is added or multiplied, or what the base chance is.
+
+- **Resolved:** #43. A unit's chance of being hit is its share of the s/c's mass, with troops counted at 75% of their mass and weapons at 90% ([D6.2](manual.md#rule-D6.2)).
+  A target group's mass is increased by half, rounded up, before the chances are worked out, and specifying a target decreases the total damage by 25%.
+  All the damage is applied to the target s/c.
 
 ### 15. Colony positions in bombardment
 
