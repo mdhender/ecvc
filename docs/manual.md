@@ -1059,10 +1059,13 @@ A target within the s/c may be chosen.
 ### D6.2 Targets
 
 A player does not have to specify a target in his bombardment orders.
-Damage is allocated at random among the units in the s/c hit, and each unit's chance of being hit is its share of the s/c's mass.
-Troops ([D2.2](#rule-D2.2)) count at 75% of their mass, and weapons at 90% of their mass, when the chances are worked out.
-Specifying a target group ([D6.2.1](#rule-D6.2.1)) increases the mass of the units in that group by half, rounded up, before the chances are worked out, but decreases the total damage by 25%.
-All the damage is applied to the target s/c.
+Each salvo, all the MSS or all the EWP that one s/c fires with one bombardment order, counts as one hit.
+Each hit strikes one kind of unit in the s/c hit, such as MSL-1 or METS, chosen at random; each kind's chance of being hit is its share of the s/c's mass.
+All the damage from the hit is applied to that kind of unit.
+If the damage is more than it takes to destroy all of them, the excess is applied to another kind of unit, chosen at random the same way but without the target bonus, and so on until all the damage has been applied or nothing is left in the s/c.
+Troops ([D2.2](#rule-D2.2)) count at 75% of their mass, and weapons (ANM, ASC, ASW, EWP, MSL, and MSS) at 90% of their mass, rounded down, when the chances are worked out.
+Specifying a target group ([D6.2.1](#rule-D6.2.1)) increases the mass of the units in that group by half, rounded up, before the chances are worked out, but decreases the damage of each hit by 25%, rounded down.
+When the mass of a kind of unit is adjusted twice, the adjustments are applied in the order that gives the lower mass.
 Only colonies may be targeted for bombardment, not ships.
 
 <a id="rule-D6.2.1"></a>

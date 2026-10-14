@@ -223,9 +223,11 @@ Arriving ships are placed "between 5 and 10 distance units from the planet" and 
 
 "Specifying a target will increase the chance of hitting the target area by 50%" does not say whether the 50% is added or multiplied, or what the base chance is.
 
-- **Resolved:** #43. A unit's chance of being hit is its share of the s/c's mass, with troops counted at 75% of their mass and weapons at 90% ([D6.2](manual.md#rule-D6.2)).
-  A target group's mass is increased by half, rounded up, before the chances are worked out, and specifying a target decreases the total damage by 25%.
-  All the damage is applied to the target s/c.
+- **Resolved:** #43. Each salvo is one hit, and strikes one kind of unit chosen at random, each kind's chance being its share of the s/c's mass ([D6.2](manual.md#rule-D6.2)).
+  All the hit's damage goes to that kind of unit; any excess goes to another kind chosen the same way, without the target bonus, until all the damage is applied.
+  Troops count at 75% of their mass and weapons (ANM, ASC, ASW, EWP, MSL, MSS) at 90%, rounded down.
+  A target group's mass is increased by half, rounded up, and specifying a target decreases each hit's damage by 25%, rounded down.
+  A kind of unit adjusted twice takes the order that gives the lower mass.
 
 ### 15. Colony positions in bombardment
 
@@ -265,6 +267,24 @@ D10.0 transfers the s/c when the defending troops are eliminated, but does not s
 
 "The victor WTD's troops on the turn following the victory" does not say whether this is automatic or needs a WTD order.
 "Unfinished battles will continue on the following turn" does not say whether the INV and support orders must be written again.
+
+### 83. Damage needed to destroy a unit
+
+- **Rules:** [D6.2](manual.md#rule-D6.2), [D6.3.4](manual.md#rule-D6.3.4)
+- **Kind:** gap
+
+D6.2 applies a hit's damage to one kind of unit and passes any excess on, but the rules give the damage needed to destroy a unit only for structural units: 500 M.U. destroys 1,000 STUN, LTSU, or SLSU, or 10,000 on ships (D6.3.4).
+That rate does not follow from their mass, since STUN, LTSU, and SLSU differ in mass but absorb damage alike.
+Nothing says how much damage destroys any other unit, such as POP, METS, or MSL.
+
+### 84. Salvo and volley
+
+- **Rules:** [D6.2](manual.md#rule-D6.2), [E4.0](manual.md#rule-E4.0), [E4.1](manual.md#rule-E4.1), [E5.2](manual.md#rule-E5.2)
+- **Kind:** structure
+
+D6.2 calls the MSS or EWP that one s/c fires with one bombardment order a salvo, which is one hit.
+E4.0, E4.1, and E5.2 call the MSS one s/c fires a volley.
+The rules should use one term.
 
 ## E. Weapons and Defenses
 
