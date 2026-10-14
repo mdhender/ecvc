@@ -160,6 +160,7 @@ Nothing says which applies when both are met on the same turn.
 
 - **Resolved:** #38. A racial victory ends the game ([B5.2](manual.md#rule-B5.2)).
   The Moderator selects one victory condition, individual or racial, when the game is set up; a game never uses both ([B5.0](manual.md#rule-B5.0)).
+  The variants say that their victory conditions replace those of the standard game ([V1.0](variants.md#rule-V1.0), [V2.0](variants.md#rule-V2.0)).
 
 ## C. Movement and Navigation
 
