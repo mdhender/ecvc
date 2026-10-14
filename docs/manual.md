@@ -870,22 +870,29 @@ To find the distance between one star system and another, a system probe is made
 #### C3.1.1 Over-Jumping
 
 If a ship is ordered to JMP more than its HDRVs' TL in light years, there is a chance that either the HDRV will melt (still completing the JMP), or the HDRV will blow up (destroying the ship), or that the ship will arrive completely intact.
-The following chart shows the odds.
+The HDRVs' TL is the lowest TL of the HDRV on the ship ([C1.0](#rule-C1.0)).
+The light years to be jumped are divided by the HDRVs' TL, and any fraction is rounded up to give the ratio: a jump of 11 light years with HDRV-10 is 1.1, rounded up to 2.
+A JMP with a ratio above 10 is refused and fails with error E20 ([R2.0](#rule-R2.0)).
+The computer first rolls for the HDRV blowing up; if the ship survives, it then rolls for the HDRV melting.
+The following chart shows the chance of each roll.
 
 **Chart**
 
-| LIGHT YEARS TO BE JUMPED DIVIDED BY THE HYPER DRIVES' TL  | CHANCE OF BLOW UP | CHANCE OF MELTING |
-|-----------------------------------------------------------|-------------------|-------------------|
-| 1 OR LESS                                                 | 0%                | 0%                |
-| 2 OR LESS                                                 | 10%               | 20%               |
-| 3 OR LESS                                                 | 20%               | 35%               |
-| 4 OR LESS                                                 | 30%               | 50%               |
-| 5 OR LESS                                                 | 40%               | 65%               |
-| 6 OR LESS                                                 | 50%               | 80%               |
-| 7 OR LESS                                                 | 60%               | 90%               |
-| 8 OR LESS                                                 | 70%               | 100%              |
-| 9 OR LESS                                                 | 80%               | 100%              |
-| 10 OR LESS                                                | 90%               | 100%              |
+| RATIO | CHANCE OF BLOW UP | CHANCE OF MELTING, IF NOT BLOWN UP |
+|-------|-------------------|------------------------------------|
+| 1     | 0%                | 0%                                 |
+| 2     | 10%               | 20%                                |
+| 3     | 20%               | 35%                                |
+| 4     | 30%               | 50%                                |
+| 5     | 40%               | 65%                                |
+| 6     | 50%               | 80%                                |
+| 7     | 60%               | 90%                                |
+| 8     | 70%               | 100%                               |
+| 9     | 80%               | 100%                               |
+| 10    | 90%               | 100%                               |
+
+For example, at a ratio of 5 the ship blows up 40% of the time.
+In the other 60%, the HDRV melt 65% of the time, so 39% of such jumps melt the HDRV and 21% arrive intact.
 
 <a id="rule-C3.2"></a>
 ### C3.2 Moves

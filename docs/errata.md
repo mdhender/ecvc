@@ -164,13 +164,16 @@ Nothing says which applies when both are met on the same turn.
 
 ## C. Movement and Navigation
 
-### 12. Over-jump chances exceed 100%
+### 12. Over-jump chances exceed 100% ✅
 
 - **Rules:** [C3.1.1](manual.md#rule-C3.1.1)
 - **Kind:** contradiction
 
 The outcomes are exclusive (melt, blow up, or arrive intact), but from a ratio of 5 the chances add to more than 100%: 40% + 65% at 5, up to 90% + 100% at 10.
 The chart also stops at a ratio of 10.
+
+- **Resolved:** #40. The computer rolls in turn: first for blowing up, then, if the ship survives, for melting ([C3.1.1](manual.md#rule-C3.1.1)).
+  The ratio is the light years divided by the lowest HDRV TL on the ship ([C1.0](manual.md#rule-C1.0)), rounded up; the chart rows are 1 to 10, and a JMP with a ratio above 10 fails with E20.
 
 ### 13. Distance of a move within a star system ✅
 
