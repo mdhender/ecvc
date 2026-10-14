@@ -165,9 +165,6 @@ Design work to take up after `manual-baseline`, through `docs/errata.md`:
 - **Excess POP in closed s/c's.** F3.2 says "In the case of an excess of POP, LFS would not be sufficient, and some would die."
   The intended rule is: "When LFS would not be sufficient to sustain excess POP but the structure will admit them, some will die."
   Replace the F3.2 sentence with the clarified one.
-- **Coordinates in orders.** MOV and JMP orders write coordinates as `x, y, z` (S14.1, S14.2).
-  Change them to the canonical `(x,y,z)`, with `(x,y,z,N)` for a solar system, `(x,y,z,N,O)` for an orbit, and `(x,y,z,0)` for orbit 0, and drop the notes about separating coordinates with commas.
-  Star numbers in the MOV order are #10; the PRB order was done in #9.
 
 ## Decisions
 
