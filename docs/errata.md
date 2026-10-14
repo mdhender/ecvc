@@ -307,7 +307,8 @@ D9.6 turns surrendering SLD into UEM, but troops include MRB ([D2.2](manual.md#r
 Nothing says what happens to surrendering MRB, or to the ASC and ASW that carried or armed the surrendering force.
 
 - **Resolved:** #51. When a side surrenders, its MRB are sabotaged (destroyed), and its MTSP, ASC, and ASW are transferred to the victor ([D9.6](manual.md#rule-D9.6)).
-  Defenders who surrender to a raid recover their MRB, MTSP, ASC, and ASW when the raiders leave.
+  Defenders who surrender to a raid lose nothing: their SLD do not become UEM, and they keep their MRB, MTSP, ASC, and ASW.
+  In a rebellion, the losing side's MRB go to the victor ([N1.4](manual.md#rule-N1.4)).
 
 ## E. Weapons and Defenses
 

@@ -1213,7 +1213,8 @@ Each ratio is rounded to benefit the defender: the defenders' combat factor divi
 SLD that surrender, here or when forced to by [D4.0](#rule-D4.0) or [D5.0](#rule-D5.0), become UEM of their own race (UEM-R, where R is their race number), as losing soldiers do after a rebellion ([N1.4](#rule-N1.4)).
 When a side surrenders, its MRB are sabotaged: they are destroyed, and do not fight on.
 The MTSP, ASC, and ASW of the surrendering side are transferred to the victor.
-In a raid, defenders who surrender lose none of these: when the raiders leave, the defenders recover their MRB, MTSP, ASC, and ASW.
+In a raid, defenders who surrender lose nothing: when the raiders leave, their SLD do not become UEM, and they keep their MRB, MTSP, ASC, and ASW.
+In a rebellion, the losing side's MRB are not sabotaged; they go to the victor ([N1.4](#rule-N1.4)).
 
 <a id="rule-D9.7"></a>
 ### D9.7 Invasion Casualties
@@ -2807,6 +2808,7 @@ The rebellion proceeds in combat, with the activists and rebel soldiers treated 
 
 If the rebels and rebel soldiers lose, then 70% of their survivors become loyal.
 All losing SLD and rebel soldier survivors become UEM's.
+Losing MRB are not sabotaged, as they are in other battles ([D9.6](#rule-D9.6)); they go to the victor.
 If the rebels and rebel soldiers win, then the number of rebels and rebel soldiers is reduced to 0, as they are now considered to be loyal to the new regime.
 The s/c then is given to the Ruler with the most group E spies in the colony.
 If that Ruler or one of his Regents was the former owner, then the Ruler with the second highest number of E spies gets control.
