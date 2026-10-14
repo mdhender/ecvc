@@ -736,7 +736,7 @@ All the orders for one stage are processed before any of the orders for the next
 3. <a id="rule-B3.17.3"></a>Mines produce
 4. <a id="rule-B3.17.4"></a>Factories produce
 5. <a id="rule-B3.17.5"></a>People are paid; back pay is computed
-6. <a id="rule-B3.17.6"></a>TL increases (1st check)
+6. <a id="rule-B3.17.6"></a>TL increases
 
 <a id="rule-B3.18"></a>
 ### B3.18 Espionage Stage
@@ -2460,6 +2460,7 @@ A FCT producing RSCH will build .25 times its TL in RSCH per turn.
 The FCT group will complete its work-in-process before beginning the research.
 RSCH may be transferred or sold, decreasing the total number of RSCH accumulated.
 Once the required number of RSCH have been built, the computer automatically raises the TL of the colony, and decreases the number of RSCH accumulated.
+RSCH is applied to TL once per turn, never twice, during the production stage ([B3.17.6](#rule-B3.17.6)).
 The quantities of RSCH listed below for each level are the number required to get from the preceding level to the one listed:
 
 | LEVEL | RSCH       |
