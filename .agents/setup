@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "${BASH_SOURCE[0]}")/.."
+SECONDS=0
+
+echo 'Checking system prerequisites...'
+packages=()
+command -v curl >/dev/null || packages+=(curl)
+command -v tar >/dev/null || packages+=(tar)
+if ! command -v python3 >/dev/null || ! python3 -c 'import sys; sys.exit(sys.version_info < (3, 10))'; then
+    packages+=(python3)
+fi
+[[ -f /etc/ssl/certs/ca-certificates.crt ]] || packages+=(ca-certificates)
+if ((${#packages[@]})); then
+    sudo apt-get update
+    sudo apt-get install -y "${packages[@]}"
+fi
+
+go_version="$(awk '$1 == "go" { print $2; exit }' go.mod)"
+[[ -n "$go_version" ]]
+echo "Checking Go $go_version (${SECONDS}s elapsed)..."
+if ! command -v go >/dev/null || [[ "$(go version | awk '{print $3}')" != "go$go_version" ]]; then
+    case "$(uname -m)" in
+        x86_64) arch=amd64 ;;
+        aarch64) arch=arm64 ;;
+        *) echo 'Unsupported Go architecture' >&2; exit 1 ;;
+    esac
+    install_dir="/usr/local/lib/go-$go_version-$arch"
+    if [[ ! -x "$install_dir/bin/go" ]]; then
+        download_dir="$(mktemp -d)"
+        trap 'rm -rf "$download_dir"' EXIT
+        archive="go$go_version.linux-$arch.tar.gz"
+        checksum="$(curl -fsSL --retry 3 'https://go.dev/dl/?mode=json&include=all' |
+            python3 -c 'import json, sys
+filename = sys.argv[1]
+print(next(f["sha256"] for release in json.load(sys.stdin) for f in release["files"] if f["filename"] == filename))' "$archive")"
+        echo "Downloading $archive..."
+        curl -fsSL --retry 3 "https://go.dev/dl/$archive" -o "$download_dir/$archive"
+        (cd "$download_dir"; printf '%s  %s\n' "$checksum" "$archive" | sha256sum -c -)
+        tar -xzf "$download_dir/$archive" -C "$download_dir"
+        sudo mv "$download_dir/go" "$install_dir"
+    fi
+    sudo ln -sfn "$install_dir/bin/go" /usr/local/bin/go
+    sudo ln -sfn "$install_dir/bin/gofmt" /usr/local/bin/gofmt
+fi
+go version
+
+echo "Downloading Go dependencies (${SECONDS}s elapsed)..."
+go mod download
+go mod verify
+echo "Warming the Go build cache (${SECONDS}s elapsed)..."
+go build ./...
+echo "Orb setup finished in ${SECONDS}s."

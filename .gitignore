@@ -6,3 +6,4 @@
 .idea/
 .upstream/
 __pycache__/
+.amp/portals/*
