@@ -260,13 +260,17 @@ In subject E, ANM's and EWP's defend against MSS's, and only ESH's defend agains
 
 - **Resolved:** #49. D9.1 and D9.3 follow subject E: ESH's defend against energy beams, and ANM's and then EWP's against MSS's ([D9.1](manual.md#rule-D9.1), [D9.3](manual.md#rule-D9.3)).
 
-### 18. Surrender ratio
+### 18. Surrender ratio ✅
 
 - **Rules:** [D9.6](manual.md#rule-D9.6), [D10.0](manual.md#rule-D10.0)
 - **Kind:** ambiguity, gap
 
 D9.6 triggers surrender when the ratio "is 6 to 1", not at least 6 to 1.
 D10.0 transfers the s/c when the defending troops are eliminated, but does not say what happens when the defenders surrender.
+
+- **Resolved:** #51. Surrender takes a ratio of at least 6 to 1, rounded to benefit the defender, and applies to raiders as well as invaders ([D9.6](manual.md#rule-D9.6)).
+  SLD that surrender, including forces made to surrender by D4.0 and D5.0, become UEM of their own race (UEM-R).
+  A surrender by the defenders captures the s/c, as if they had been eliminated ([D10.0](manual.md#rule-D10.0)).
 
 ### 19. After the battle
 
@@ -293,6 +297,18 @@ Nothing says how much damage destroys any other unit, such as POP, METS, or MSL.
 D6.2 calls the MSS or EWP that one s/c fires with one bombardment order a salvo, which is one hit.
 E4.0, E4.1, and E5.2 call the MSS one s/c fires a volley.
 The rules should use one term.
+
+### 85. Surrendering robots and assault units ✅
+
+- **Rules:** [D2.2](manual.md#rule-D2.2), [D9.6](manual.md#rule-D9.6), [D10.0](manual.md#rule-D10.0)
+- **Kind:** gap
+
+D9.6 turns surrendering SLD into UEM, but troops include MRB ([D2.2](manual.md#rule-D2.2)), which are robots, not population.
+Nothing says what happens to surrendering MRB, or to the ASC and ASW that carried or armed the surrendering force.
+
+- **Resolved:** #51. When a side surrenders, its MRB are sabotaged (destroyed), and its MTSP, ASC, and ASW are transferred to the victor ([D9.6](manual.md#rule-D9.6)).
+  Defenders who surrender to a raid lose nothing: their SLD do not become UEM, and they keep their MRB, MTSP, ASC, and ASW.
+  In a rebellion, the losing side's MRB go to the victor ([N1.4](manual.md#rule-N1.4)).
 
 ## E. Weapons and Defenses
 
