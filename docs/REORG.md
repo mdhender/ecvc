@@ -172,6 +172,8 @@ Design work to take up after `manual-baseline`, through `docs/errata.md`:
 - **Enclosed volume (partly resolved).** Errata 90 (#64) defines enclosed volume, structural requirement, and combined capacity in F3.1 and F3.1.1.
   Each structural unit weighs 0.1 MU; STUL and STUS enclose 5 and 20 times the volume of STUN, with material quantities and stored volumes scaled to the new unit masses in R3.0.
   Assembled structural volume remains zero, and combat damage rules are unchanged.
+  #66 defines required enclosure and available enclosure capacity in VU, distinct from structural requirement in STUN equivalents, and corrects F3.2's terminology.
+  R3.0's listed volume means the VU required to enclose an item, not necessarily its physical volume.
   Clarifying excess-capacity consequences separately from life support in F3.2 remains deferred.
 
 ## Decisions

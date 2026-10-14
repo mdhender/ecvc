@@ -1469,10 +1469,10 @@ All incoming ships arrive in orbit 0 of the star system.
 <a id="rule-F3.1"></a>
 ### F3.1 Definition
 
-Assembled STUN, STUL, or STUS must enclose the volume of a s/c's units and population, except NMTS and METS in OPC's and ESC's.
-The enclosed volume is the sum of the volumes of the population, stored items, and assembled items that require enclosure, using [R3.0](#rule-R3.0) and the assembly exceptions in [F10.7](#rule-F10.7).
-Assembled STUN, STUL, and STUS have zero volume and do not add to the structural requirement ([R3.0](#rule-R3.0)).
-The enclosed volume times the structure ratio gives the structural requirement in STUN equivalents ([F3.1.1](#rule-F3.1.1)).
+Assembled STUN, STUL, or STUS provide enclosure capacity for a s/c's units and population, except NMTS and METS in OPC's and ESC's.
+Required enclosure is the sum of the volume units (VU) required to enclose the population, stored items, and assembled items that require enclosure, using [R3.0](#rule-R3.0) and the assembly exceptions in [F10.7](#rule-F10.7).
+Assembled STUN, STUL, and STUS require zero VU of enclosure and do not add to the structural requirement ([R3.0](#rule-R3.0)).
+The required enclosure in VU times the structure ratio gives the structural requirement in STUN equivalents ([F3.1.1](#rule-F3.1.1)).
 The s/c must have enough assembled structural units to meet this requirement, subject to [F3.2](#rule-F3.2).
 In OPC's and ESC's, NMTS and METS are stored outside the colony.
 
@@ -1491,7 +1491,7 @@ The structure ratio is the number of STUN equivalents required to enclose one vo
 | Orbiting colonies (OBC)         | 8               |
 | Ships (SHP)                     | 10              |
 
-The available enclosure capacity is the total assembled STUN equivalents divided by the structure ratio.
+Available enclosure capacity is the VU of enclosure supplied by the assembled structural units: the total assembled STUN equivalents divided by the structure ratio.
 The following table gives the volume units enclosed by 1 MU of assembled structure:
 
 | Structural Unit | Mass Per Unit (MU) | Units Per 1 MU | OPC | ESC | OBC  | SHIP |
@@ -1507,12 +1507,12 @@ If a SHP is to transport 100,000 volume units, it requires 1,000,000 STUN equiva
 For the number of volume units per item see the UNIT CHARACTERISTICS SUMMARY in [R3.0](#rule-R3.0)<!-- was on the back cover -->.
 
 <a id="rule-F3.2"></a>
-### F3.2 Structural Requirement Exceeded
+### F3.2 Enclosure Capacity Exceeded
 
-Open colonies may exceed their structural requirement.
+In open colonies, required enclosure may exceed available enclosure capacity.
 When this happens, POP are forced into the fields outside the colony to live.
 Twenty-five percent of the dispossessed POP's will turn rebel each turn.
-In ships, orbiting colonies, and enclosed surface colonies, structural requirement excesses prevent new items from entering the colony.
+In ships, orbiting colonies, and enclosed surface colonies, required enclosure exceeding available enclosure capacity prevents new items from entering the s/c.
 In the case of an excess of POP, LFS would not be sufficient, and some would die.
 
 <a id="rule-F4.0"></a>
@@ -1831,7 +1831,7 @@ All spies assembled by a Regent will be under the control of his Ruler.
 <a id="rule-F10.7"></a>
 ### F10.7 Miscellaneous
 
-Assembled items take up TWICE as many volume units as when unassembled, except STUN, STUL, and STUS, which have zero assembled volume ([R3.0](#rule-R3.0)).
+Assembled items require TWICE as many VU of enclosure as when unassembled, except STUN, STUL, and STUS, which require zero VU when assembled ([R3.0](#rule-R3.0)).
 Also, assembled items do not leave the s/c.
 Only UNA or NON can be TFR'd or ADN'd to another s/c, or can be picked up by another s/c.
 So, assembled items must be dis-assembled first.
@@ -3101,6 +3101,9 @@ The error code at the end of a failed order explains why the order failed.
 <a id="rule-R3.0"></a>
 ## R3.0 Unit Characteristics Summary
 
+The VOLUME column gives the volume units (VU) required to enclose one item, not necessarily its physical volume.
+For assembly-type items (UNA), it gives the unassembled enclosure requirement; assembled requirements are described in the footnote below and [F10.7](#rule-F10.7).
+
 | COMPONENT     | UNIT COMPOSITION METS | UNIT COMPOSITION NMTS | TOTAL MASS PER UNIT | FUEL USE PER UNIT | OUTPUT OR CAPACITY PER UNIT  | PERSONNEL REQUIREMENTS/UNIT | VOLUME    | ASSEMBLY? |
 |---------------|-----------------------|-----------------------|---------------------|-------------------|------------------------------|-----------------------------|-----------|-----------|
 | ASW           | 1xTL                  | 1xTL                  | 2xTL                | 0                 | 2xTL^2=CF                    | 1 SLD                       | 2xTL      | NON       |
@@ -3137,9 +3140,9 @@ The error code at the end of a failed order explains why the order failed.
 
 \* Farms and factories in orbiting colonies within the 5th orbit or less use 0 fuel.
 
-\*\* Unassembled items (UNA), when assembled are doubled in volume, except for STUN, STUL, and STUS, which have zero assembled volume.
-The table gives their unassembled volumes.
-Their enclosure capacities are given in STUN equivalents, as defined in [F3.1.1](#rule-F3.1.1).
+\*\* When assembled, UNA require twice their listed VU of enclosure, except STUN, STUL, and STUS, which require zero VU when assembled.
+Each unassembled STUN, STUL, or STUS requires the listed 0.05 VU of enclosure.
+The enclosure capacity provided by assembled structural units is given in STUN equivalents in the OUTPUT OR CAPACITY PER UNIT column, as defined in [F3.1.1](#rule-F3.1.1).
 
 # S. Orders
 

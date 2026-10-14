@@ -79,7 +79,7 @@ Like the rest of `docs/`, it is licensed under CC BY-NC-ND 4.0; see [LICENSE](LI
 | [7.3](rulebook.md#73-structural-requirements) | Structural Requirements | [F3.0](manual.md#rule-F3.0) | |
 | [7.3.1](rulebook.md#731-definition) | Definition | [F3.1](manual.md#rule-F3.1) | |
 | [7.3.1.1](rulebook.md#7311-structure-ratio) | Structure Ratio | [F3.1.1](manual.md#rule-F3.1.1) | |
-| [7.3.2](rulebook.md#732-structural-requirement-exceeded) | Structural Requirement Exceeded | [F3.2](manual.md#rule-F3.2) | |
+| [7.3.2](rulebook.md#732-structural-requirement-exceeded) | Structural Requirement Exceeded | [F3.2](manual.md#rule-F3.2) | Manual title: Enclosure Capacity Exceeded (errata 90, #66). |
 | [7.4](rulebook.md#74-set-ups) | Set Ups | [F4.0](manual.md#rule-F4.0) | |
 | [7.4.1](rulebook.md#741-description) | Description | [F4.1](manual.md#rule-F4.1) | |
 | [7.4.2](rulebook.md#742-sc-id-numbers) | S/C ID Numbers | [F4.2](manual.md#rule-F4.2) | |
