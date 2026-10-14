@@ -434,6 +434,7 @@ This is a change of abbreviations only, not of unit characteristics or rules.
 
 - **Rules:** [F3.1](manual.md#rule-F3.1), [F3.1.1](manual.md#rule-F3.1.1), [F3.2](manual.md#rule-F3.2), [F10.7](manual.md#rule-F10.7), [R3.0](manual.md#rule-R3.0)
 - **Kind:** ambiguity
+- **Issue:** [#64](https://github.com/mdhender/ecvc/issues/64)
 
 The rules should distinguish the volume that must be enclosed, the structural units required to enclose it, and the capacity provided by the assembled structural units.
 F3.2 describes an excess as exceeding the "structural requirement", without making those quantities distinct.
