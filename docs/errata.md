@@ -101,12 +101,15 @@ The Maxi-Challenge colony points in V1.0 depend on which is right.
   R1.0 now reports the SOL as the rules calculate it, with no formula of its own ([R1.0](manual.md#rule-R1.0)).
   The glossary formula stays until the rules define SOL (errata 76).
 
-### 8. Abbreviations: should or must
+### 8. Abbreviations: should or must ✅
 
 - **Rules:** [A7.0](manual.md#rule-A7.0), [S2.0](manual.md#rule-S2.0)
 - **Kind:** contradiction
 
 The glossary says words in it "should be abbreviated" in orders; S2.0 says they "must be abbreviated".
+
+- **Resolved:** #28. Glossary terms must be abbreviated in orders; the glossary now says so and cites S2.0 ([A7.0](manual.md#rule-A7.0)).
+  This follows the order parser, which rejects a term written out in full, such as "missiles-6".
 
 ### 9. Life support in orbiting colonies
 

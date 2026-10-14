@@ -572,7 +572,7 @@ A Regent takes the race of his Ruler ([B4.1](#rule-B4.1)), and an Independent ta
 | WIP\* | Work in process | Items in the process of being manufactured. |
 | WTD   | Withdraw        | This order withdraws troops from combat.    |
 
-In writing orders all words listed in the Glossary should be abbreviated in the same manner in the orders.
+In writing orders, all words listed in the Glossary must be abbreviated as shown ([S2.0](#rule-S2.0)).
 Abbreviations followed by asterisks are never used in writing orders, but are used in the text of this rule book, or in the printouts you receive.
 
 # B. How to Play
