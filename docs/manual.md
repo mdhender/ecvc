@@ -1211,6 +1211,8 @@ If the combat factor of the defenders and their supporters, divided by that of t
 If the attackers' combat factor divided by the defenders' is at least 6, then the defenders surrender.
 Each ratio is rounded to benefit the defender: the defenders' combat factor divided by the attackers' is rounded up, and the attackers' divided by the defenders' is rounded down.
 SLD that surrender, here or when forced to by [D4.0](#rule-D4.0) or [D5.0](#rule-D5.0), become UEM of their own race (UEM-R, where R is their race number), as losing soldiers do after a rebellion ([N1.4](#rule-N1.4)).
+When a side surrenders, its MRB are junked: they are destroyed, and do not fight on.
+The MTSP, ASC, and ASW of the surrendering side are transferred to the victor.
 
 <a id="rule-D9.7"></a>
 ### D9.7 Invasion Casualties

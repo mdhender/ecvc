@@ -298,13 +298,15 @@ D6.2 calls the MSS or EWP that one s/c fires with one bombardment order a salvo,
 E4.0, E4.1, and E5.2 call the MSS one s/c fires a volley.
 The rules should use one term.
 
-### 85. Surrendering robots and assault units
+### 85. Surrendering robots and assault units ✅
 
 - **Rules:** [D2.2](manual.md#rule-D2.2), [D9.6](manual.md#rule-D9.6), [D10.0](manual.md#rule-D10.0)
 - **Kind:** gap
 
 D9.6 turns surrendering SLD into UEM, but troops include MRB ([D2.2](manual.md#rule-D2.2)), which are robots, not population.
 Nothing says what happens to surrendering MRB, or to the ASC and ASW that carried or armed the surrendering force.
+
+- **Resolved:** #51. When a side surrenders, its MRB are junked, and its MTSP, ASC, and ASW are transferred to the victor ([D9.6](manual.md#rule-D9.6)).
 
 ## E. Weapons and Defenses
 
