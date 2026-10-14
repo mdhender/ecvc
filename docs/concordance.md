@@ -135,7 +135,7 @@ Like the rest of `docs/`, it is licensed under CC BY-NC-ND 4.0; see [LICENSE](LI
 | [8.3.5](rulebook.md#835-bch-com-and-das-orders) | BCH, COM, and DAS Orders | [H3.5](manual.md#rule-H3.5) | |
 | [8.3.6](rulebook.md#836-retooling) | Retooling | [H3.6](manual.md#rule-H3.6) | |
 | [8.3.7](rulebook.md#837-research-and-tl) | Research and TL | [H3.7](manual.md#rule-H3.7) | |
-| [8.3.8](rulebook.md#838-stun-ltsu-and-slsu) | STUN, LTSU, and SLSU | [H3.8](manual.md#rule-H3.8) | |
+| [8.3.8](rulebook.md#838-stun-ltsu-and-slsu) | STUN, LTSU, and SLSU | [H3.8](manual.md#rule-H3.8) | Manual uses STUN, STUL, and STUS (errata 89). |
 | [8.3.9](rulebook.md#839-shortages-and-factory-group-numbers) | Shortages and Factory Group Numbers | [H3.9](manual.md#rule-H3.9) | |
 | [8.3.10](rulebook.md#8310-automation) | Automation | [H3.10](manual.md#rule-H3.10) | |
 | [9](rulebook.md#9-assembly) | Assembly | | Chapter heading with no text; its sections become topics. |

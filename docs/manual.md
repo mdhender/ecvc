@@ -443,7 +443,6 @@ A Regent takes the race of his Ruler ([B4.1](#rule-B4.1)), and an Independent ta
 | Code | Term                   | Definition                                                                      |
 |------|------------------------|---------------------------------------------------------------------------------|
 | LFS  | Life Support units     | Recycle air and water for every s/c except OPC's ([G6.1](#rule-G6.1)).          |
-| LTSU | Light structural units | Walls, beams, etc. of a s/c - very light.                                       |
 
 ### M
 
@@ -533,13 +532,14 @@ A Regent takes the race of his Ruler ([B4.1](#rule-B4.1)), and an Independent ta
 | Code     | Term                         | Definition                                                    |
 |----------|------------------------------|---------------------------------------------------------------|
 | SLD      | Soldier unit                 | Population unit consisting of 100 soldiers.                   |
-| SLSU     | Super-light structural units | Same as LTSU, only much lighter.                              |
 | SDRV     | Space Drives                 | Maneuver in combat and keep ships in orbit.                   |
 | SPM      | Spy move                     | This order changes spies from one group or target to another. |
 | SPYS     | Spy cadre                    | Cadre consisting of 1 PRO and 1 SLD.                          |
 | STP      | Set-up                       | This order establishes a ship or colony.                      |
 | STU      | Start-up                     | This order starts up all farms in a s/c, when shut down.      |
-| STUN     | Structural units             | Same as LTSU, but these are the heaviest.                     |
+| STUL     | Light structural units       | Walls, beams, etc. of a s/c - very light.                       |
+| STUN     | Structural units             | Same as STUL, but these are the heaviest.                     |
+| STUS     | Super-light structural units | Same as STUL, only much lighter.                              |
 | SUR      | Survey                       | This order searches a planet for resource deposits.           |
 | SYS      | Star system                  | Star system.                                                  |
 | SOL\*    | Standard of living           | Total CNGD paid ÷ by total POP, then ÷ by 4.                  |
@@ -1128,8 +1128,8 @@ The TL's used in computing ANM and EWP hits on MSS's and troops is the *weighted
 * A colony can't fire on a ship unless it has an assembled SEN.
 * A colony can fire on another colony without a SEN.
 * Damage from bombardment against untargeted colonies and against ships is allocated randomly, by mass ([D6.2](#rule-D6.2)).
-* STUN, LTSU,and SLSU all absorb damage at the same rate.
-  (500 M.U. damaged will destroy 1,000 STUN or 1,000 LTSU or 1,000 SLSU).
+* STUN, STUL,and STUS all absorb damage at the same rate.
+  (500 M.U. damaged will destroy 1,000 STUN or 1,000 STUL or 1,000 STUS).
   *On ships, the number destroyed will be 10,000 instead.*
 * Ship maneuvers during combat take place on a 3-D grid around the planet, with the planet at (0,0,0).
   A point on the grid is given by its tactical coordinates, written (x,y,z) with no spaces, such as (1,-5,2).
@@ -1469,15 +1469,15 @@ All incoming ships arrive in orbit 0 of the star system.
 <a id="rule-F3.1"></a>
 ### F3.1 Definition
 
-Assembled STUN, LTSU, or SLSU must encompass the VOLUME of any s/c's units and population, except NMTS and METS in OPC's and ESC's.
-Assembled STUN, LTSU, and SLSU have zero volume and do not add to the structural requirement ([R3.0](#rule-R3.0)).
+Assembled STUN, STUL, or STUS must encompass the VOLUME of any s/c's units and population, except NMTS and METS in OPC's and ESC's.
+Assembled STUN, STUL, and STUS have zero volume and do not add to the structural requirement ([R3.0](#rule-R3.0)).
 The total volume units times the STRUCTURE RATIO, (see [F3.1.1](#rule-F3.1.1)<!-- was 7.3.1.1 -->), gives the s/c structural requirement.
 In OPC's and ESC's, NMTS and METS are stored outside the colony.
 
 <a id="rule-F3.1.1"></a>
 #### F3.1.1 Structure Ratio
 
-The minimum STUN, LTSU, or SLSU required to enclose a single volume unit are:
+The minimum STUN, STUL, or STUS required to enclose a single volume unit are:
 
 |                                 |    |
 |---------------------------------|----|
@@ -1487,7 +1487,7 @@ The minimum STUN, LTSU, or SLSU required to enclose a single volume unit are:
 | Ships (SHP)                     | 10 |
 
 This means that structural requirements of a SHP are determined by how much it carries.
-If a SHP is to transport 100,000 volume units, it will require a minimum of 1,000,000 STUN, LTSU, or SLSU.
+If a SHP is to transport 100,000 volume units, it will require a minimum of 1,000,000 STUN, STUL, or STUS.
 For the number of volume units per item see the UNIT CHARACTERISTICS SUMMARY in [R3.0](#rule-R3.0)<!-- was on the back cover -->.
 
 <a id="rule-F3.2"></a>
@@ -1544,7 +1544,7 @@ When a player has received PTC on a planet, he does not need it to set up more c
 
 All set-up orders, whether for ships or colonies, will abort if no population are included in the set up order.
 A ship set up will also abort if no SDRV are included.
-Portions of a STP, or all of it, may fail due to a shortage of construction workers, transports, fuel (for the transports), or due to a shortage of STUN, LTSU, or SLSU (there must be enough to hold the units being STP).
+Portions of a STP, or all of it, may fail due to a shortage of construction workers, transports, fuel (for the transports), or due to a shortage of STUN, STUL, or STUS (there must be enough to hold the units being STP).
 The s/c's otherwise have no size limitations, and players may build them as they choose.
 
 <a id="rule-F4.3.5"></a>
@@ -1579,7 +1579,7 @@ If there are not enough CNW listed in the STP order for the required assemblies,
 The helping CNW return to the establishing s/c when they are done.
 If there are no CNW listed in the STP order at all, all the work is done by CNW of the establishing s/c, and they all return to it.
 If there are not enough CNW in the establishing s/c either, as many items in the STP order are assembled as possible, **IN THE ORDER IN WHICH THEY ARE LISTED IN THE STP ORDER**.
-(A player should therefore list the STUN (or LTSU or SLSU) first, followed by the other units in the order of their importance).
+(A player should therefore list the STUN (or STUL or STUS) first, followed by the other units in the order of their importance).
 UNA that can not be assembled by the CNW are simply left in the establishing s/c.
 
 <a id="rule-F4.7"></a>
@@ -1637,7 +1637,7 @@ An existing s/c may ADN to any other type or number of ships and colonies, so lo
 <a id="rule-F5.2.1"></a>
 #### F5.2.1 ADN Abortions
 
-Portions of an ADN, or all of an ADN, may fail due to a shortage of CNW, fuel for the TPT's, TPT's, or STUN (or LTSU or SLSU) to hold all the additional units.
+Portions of an ADN, or all of an ADN, may fail due to a shortage of CNW, fuel for the TPT's, TPT's, or STUN (or STUL or STUS) to hold all the additional units.
 
 <a id="rule-F5.3"></a>
 ### F5.3 How ADN Orders Work
@@ -1752,13 +1752,13 @@ The following items are assembly type items:
 * FRM
 * HDRV
 * LFS
-* LTSU
+* STUL
 * MIN
 * MSL
 * SEN
 * SDRV
 * STUN
-* SLSU
+* STUS
 
 An ASM order takes an unassembled item from storage, assembles it, and makes it work.
 
@@ -1815,7 +1815,7 @@ All spies assembled by a Regent will be under the control of his Ruler.
 <a id="rule-F10.7"></a>
 ### F10.7 Miscellaneous
 
-Assembled items take up TWICE as many volume units as when unassembled, except STUN, LTSU, and SLSU, which have zero assembled volume ([R3.0](#rule-R3.0)).
+Assembled items take up TWICE as many volume units as when unassembled, except STUN, STUL, and STUS, which have zero assembled volume ([R3.0](#rule-R3.0)).
 Also, assembled items do not leave the s/c.
 Only UNA or NON can be TFR'd or ADN'd to another s/c, or can be picked up by another s/c.
 So, assembled items must be dis-assembled first.
@@ -2371,7 +2371,7 @@ A FCT group may be changed from building one item to building another, but it mu
 
 * In the case of switching from making an item to making research points, no retool order is needed (switching from research to an item *does* require a retool order.)
 
-* Also, in the case of switching from one type of structural unit (STUN, LTSU, SLSU) to another, no retool order is needed.
+* Also, in the case of switching from one type of structural unit (STUN, STUL, STUS) to another, no retool order is needed.
 * If the FCT units in a group are occupied with WIP, they will not retool, even though the BCH, RETL order is accepted and acknowledged on the printout.
   As the FCT are freed from WIP, they retool themselves.
 
@@ -2389,15 +2389,15 @@ A FCT group may not build any item of a higher TL than that of the s/c it is in.
 RSCH and TL's are further explained in subject [J](#j-technology-and-research)<!-- was Chapter 10 -->, Technological Levels.
 
 <a id="rule-H3.8"></a>
-### H3.8 STUN, LTSU, and SLSU
+### H3.8 STUN, STUL, and STUS
 
 STUN are only built in ESC's and OPC's.
 STUN can not be built in OBC's.
-An attempt to do so will result in the computer changing the STUN to either LTSU or SLSU.
+An attempt to do so will result in the computer changing the STUN to either STUL or STUS.
 
-* OBC's TL 1-4 build LTSU, so the computer would change the STUN to LTSU.
-* OBC's TL5-10 build SLSU, so the computer would change the STUN to SLSU.
-* And if one tried to have an OBC-7, for instance, build LTSU, the computer would automatically change the LTSU to SLSU.
+* OBC's TL 1-4 build STUL, so the computer would change the STUN to STUL.
+* OBC's TL5-10 build STUS, so the computer would change the STUN to STUS.
+* And if one tried to have an OBC-7, for instance, build STUL, the computer would automatically change the STUL to STUS.
 
 In other words, ordering a heavier type of structural unit than what should have been ordered will cause the computer to correct it to the appropriate lighter type.
 But ordering a *lighter* structural unit than what should have been ordered will cause the order to abort.
@@ -2468,8 +2468,8 @@ All units have a TL except for the following:
 * NMTS
 * MTSP
 * STUN
-* LTSU
-* SLSU
+* STUL
+* STUS
 
 *A unit's TL is part of the unit's name.*
 
@@ -2728,7 +2728,7 @@ The orbit probe also lists the tactical coordinates of the s/c's at the planet (
 <a id="rule-M2.2"></a>
 ### M2.2 S/C Probes
 
-A s/c probe lists the log base 10 of the mass of a s/c, its population, its assembled STUN, LTSU, or SLSU, and its structural requirements.
+A s/c probe lists the log base 10 of the mass of a s/c, its population, its assembled STUN, STUL, or STUS, and its structural requirements.
 Both the s/c doing the probing and the s/c being probed must be in the same orbit.
 
 <a id="rule-M2.3"></a>
@@ -3101,7 +3101,7 @@ The error code at the end of a failed order explains why the order failed.
 | FRM TL6-10    | 4+TL                  | 2+TL                  | 6+(2xTL)            | 1xTL              | 5xTL FOOD/TN                 | 1 PRO + 3 USK               | 3+TL      | UNA       |
 | HDRV          | 25xTL                 | 20xTL                 | 45xTL               | 40 x dist.        | 1045xTL MU lift              | none                        | 22.5xTL   | UNA       |
 | LFS           | 3xTL                  | 5xTL                  | 8xTL                | 1xTL              | TL^2= POP supported          | none                        | 4xTL      | UNA       |
-| LTSU          | 0.01                  | 0.01                  | 0.02                | --                | none                         | --                          | 0.01      | UNA \*\*  |
+| STUL          | 0.01                  | 0.01                  | 0.02                | --                | none                         | --                          | 0.01      | UNA \*\*  |
 | MRB           | 10+TL                 | 10+TL                 | 20+(2xTL)           | 0                 | TLx2= SLD replaced           | none                        | 20+(2xTL) | NON       |
 | MIN           | 5+TL                  | 5+TL                  | 10+(2xTL)           | 0.5xTL            | 25xTL MU/TN                  | 1 PRO + 3 USK               | 5+TL      | UNA       |
 | MSL           | 15xTL                 | 10xTL                 | 25xTL               | 0                 | 1 MSS/attack                 | none                        | 12.5xTL   | UNA       |
@@ -3111,7 +3111,7 @@ The error code at the end of a failed order explains why the order failed.
 | SEN           | 1,000xTL              | 2,000xTL              | 3,000xTL            | 0.05xTL           | 1 probe/TL                   | none                        | 1500xTL   | UNA       |
 | SDRV          | 15xTL                 | 10xTL                 | 25xTL               | TL^2              | 1000xTL^2=thrust/TN          | none                        | 12.5xTL   | UNA       |
 | STUN          | 0.07                  | 0.03                  | 0.1                 | --                | --                           | --                          | 0.05      | UNA \*\*  |
-| SLSU          | 0.001                 | 0.004                 | 0.005               | --                | --                           | --                          | 0.0025    | UNA \*\*  |
+| STUS          | 0.001                 | 0.004                 | 0.005               | --                | --                           | --                          | 0.0025    | UNA \*\*  |
 | TPT           | 3xTL                  | 1xTL                  | 4xTL                | 0.1xTL^2          | 200xTL^2=MU                  | 1 PRO/10 TPT                | 4xTL      | NON       |
 | TPT/COMBAT    | 3xTL                  | 1xTL                  | 4xTL                | 0.01xTL^2         | 3xTL^2=MU/TN                 | 1 PRO/10 TPT                | 4xTL      | NON       |
 | SPYS          | --                    | --                    | 2                   | --                | --                           | --                          | 2         |           |
@@ -3121,7 +3121,7 @@ The error code at the end of a failed order explains why the order failed.
 
 \* Farms and factories in orbiting colonies within the 5th orbit or less use 0 fuel.
 
-\*\* Unassembled items (UNA), when assembled are doubled in volume, except for STUN, LTSU, and SLSU, which have zero assembled volume.
+\*\* Unassembled items (UNA), when assembled are doubled in volume, except for STUN, STUL, and STUS, which have zero assembled volume.
 The table gives their unassembled volumes, which are unchanged.
 
 # S. Orders
@@ -3227,7 +3227,7 @@ RACE #2      SIGNATURE:                      PLAYER ID #22    ACCT #0353
 
 209, PAY, .4, PRO.
 22, NSR, Our mega-freighter, #209, The White Star, is departing for orbit 6; we
-will have more LTSU for sale next turn. Signed.
+will have more STUL for sale next turn. Signed.
 22, NSR, Bad Bob, You have made a fatal mistake.  BE WARNED! Unsigned.
 ```
 
@@ -3444,7 +3444,7 @@ will have more LTSU for sale next turn. Signed.
 - Example:
   ```text
   38, ADN, [205].
-  1,400,000, SLSU.
+  1,400,000, STUS.
   12, LFS-1.
   10,000, FCT-1.
   6,000, FCT-1, FCT-2.
@@ -3452,7 +3452,7 @@ will have more LTSU for sale next turn. Signed.
   1, END.
   ```
 - Notes: The ADN order has colony 38 ADN to colony 205.
-  As in the STP order, the items are listed in the order of their importance, with the SLSU listed first, and only one quantity and one type of unit is allowed per line.
+  As in the STP order, the items are listed in the order of their importance, with the STUS listed first, and only one quantity and one type of unit is allowed per line.
   Add-on orders always finish with **1, END**, never with any other quantity.
   The 10,000 FCT-1 will go into storage, the 6,000 FCT-1 will be assembled and begin manufacturing FCT-2, and the 1,000 FCT-1 will be added to FCT group #3 already in colony 205.
   A single s/c is still written as a list ([S2.5](#rule-S2.5)), and `[*]` can not be used in an ADN order.
@@ -3460,7 +3460,7 @@ will have more LTSU for sale next turn. Signed.
 - Example:
   ```text
   38, ADN, [205, 206, 207, 208, 209, 210].
-  1,400,000, SLSU.
+  1,400,000, STUS.
   12, LFS-1.
   300, PRO-2.
   1, END.
@@ -3744,7 +3744,7 @@ A REC order cancelled this way is cancelled for every s/c in its list.
 - Example:
   ```text
   307, PUP, 3, M, [80, 81].
-  2E6, LTSU.
+  2E6, STUL.
   800, FOOD.
   90, CNW-2.
   ```
@@ -3777,12 +3777,12 @@ A REC order cancelled this way is cancelled for every s/c in its list.
 - Example:
   ```text
   75, APU, 2, M, [66, 67, 68, 69, 70, 71, 72, 73, 74].
-  300,500, SLSU.
+  300,500, STUS.
   400, PRO-5.
   ```
 - Notes: The multiple APU order is optional.
   It can be used to have more than one item picked up by one or more s/c's.
-  In this case, it has s/c 75 allow 9 s/c's to each pick up 300,300 SLSU and 400 PRO-5 from s/c 75.
+  In this case, it has s/c 75 allow 9 s/c's to each pick up 300,300 STUS and 400 PRO-5 from s/c 75.
   If the player wishes, he can write each APU order separately.
 
 <a id="rule-S7.4.3"></a>

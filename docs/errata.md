@@ -288,8 +288,8 @@ D10.0 transfers the s/c when the defending troops are eliminated, but does not s
 - **Rules:** [D6.2](manual.md#rule-D6.2), [D6.3.4](manual.md#rule-D6.3.4)
 - **Kind:** gap
 
-D6.2 applies a hit's damage to one kind of unit and passes any excess on, but the rules give the damage needed to destroy a unit only for structural units: 500 M.U. destroys 1,000 STUN, LTSU, or SLSU, or 10,000 on ships (D6.3.4).
-That rate does not follow from their mass, since STUN, LTSU, and SLSU differ in mass but absorb damage alike.
+D6.2 applies a hit's damage to one kind of unit and passes any excess on, but the rules give the damage needed to destroy a unit only for structural units: 500 M.U. destroys 1,000 STUN, STUL, or STUS, or 10,000 on ships (D6.3.4).
+That rate does not follow from their mass, since STUN, STUL, and STUS differ in mass but absorb damage alike.
 Nothing says how much damage destroys any other unit, such as POP, METS, or MSL.
 
 ### 84. Salvo and volley
@@ -386,7 +386,7 @@ Structural units must enclose the volume of the s/c's units, and R3.0 gives STUN
 The rules do not say whether the structural units must enclose themselves.
 R3.0's footnote, that assembled STUN, LTSU, and SLSU are "all -1", may be meant to answer this, but its meaning is unclear.
 
-- **Resolved:** #60. Assembled STUN, LTSU, and SLSU have zero volume and do not add to the structural requirement ([F3.1](manual.md#rule-F3.1), [F10.7](manual.md#rule-F10.7), [R3.0](manual.md#rule-R3.0)).
+- **Resolved:** #60. Assembled STUN, STUL, and STUS have zero volume and do not add to the structural requirement ([F3.1](manual.md#rule-F3.1), [F10.7](manual.md#rule-F10.7), [R3.0](manual.md#rule-R3.0)).
   Their unassembled volumes remain unchanged.
 
 ### 23. Spare transports in a set-up
@@ -417,7 +417,7 @@ A JNK dis-assembles all the assembled items of a s/c, but the rules do not say w
 
 F8.0 says the two s/c's factory groups "must not exceed 25"; S5.8 says they "must total less than 25".
 
-### 89. Structural unit abbreviations
+### 89. Structural unit abbreviations ✅
 
 - **Rules:** [F3.1](manual.md#rule-F3.1), [A7.0](manual.md#rule-A7.0), [D6.3.4](manual.md#rule-D6.3.4), [F10.2](manual.md#rule-F10.2), [H3.6](manual.md#rule-H3.6), [H3.8](manual.md#rule-H3.8), [J3.0](manual.md#rule-J3.0), [R3.0](manual.md#rule-R3.0)
 - **Kind:** structure
@@ -425,6 +425,10 @@ F8.0 says the two s/c's factory groups "must not exceed 25"; S5.8 says they "mus
 Rename light structural units from LTSU to STUL and super-light structural units from SLSU to STUS throughout the manual, including the glossary, tables, and order examples.
 STUN remains unchanged.
 This is a change of abbreviations only, not of unit characteristics or rules.
+
+- **Resolved:** #62. LTSU is renamed STUL and SLSU is renamed STUS throughout the manual and variants, including the glossary, tables, and order examples.
+  Supporting documentation uses the new abbreviations, except where recording historical terminology from the frozen rule book or earlier errata.
+  STUN and all unit characteristics remain unchanged.
 
 ### 90. Enclosed volume rules
 
@@ -532,7 +536,7 @@ Error codes E08 and E12 say the *player* already has 40 MIN groups or 25 FCT gro
 - **Rules:** [H3.5](manual.md#rule-H3.5), [H3.6](manual.md#rule-H3.6), [S8.1](manual.md#rule-S8.1), [S8.2](manual.md#rule-S8.2)
 - **Kind:** contradiction
 
-S8.1 names RSCH as the only change that needs no RETL; H3.6 also exempts switching between STUN, LTSU, and SLSU.
+S8.1 names RSCH as the only change that needs no RETL; H3.6 also exempts switching between STUN, STUL, and STUS.
 S8.2 requires combined groups to have the same type of work in process; H3.5 requires only the same item.
 
 ## J. Technology and Research
@@ -750,7 +754,7 @@ The example `75, DAS, 4, M.` is followed by five item lines.
 - **Rules:** [S7.4.2](manual.md#rule-S7.4.2)
 - **Kind:** example
 
-The example allows 300,500 SLSU; the notes say 300,300.
+The example allows 300,500 STUS; the notes say 300,300.
 
 ### 60. SPM format without a quantity
 

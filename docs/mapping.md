@@ -289,7 +289,7 @@ Each subject has one table, sorted by manual ID, so the tables show the outline 
 | H3.5      | BCH, COM, and DAS Orders             | 8.3.5     |                                    |
 | H3.6      | Retooling                            | 8.3.6     |                                    |
 | H3.7      | Research and TL                      | 8.3.7     | Cross-reference J4 (improving TL). |
-| H3.8      | STUN, LTSU, and SLSU                 | 8.3.8     |                                    |
+| H3.8      | STUN, STUL, and STUS                 | 8.3.8     | Renamed by errata 89.               |
 | H3.9      | Shortages and Factory Group Numbers  | 8.3.9     |                                    |
 | H3.10     | Automation                           | 8.3.10    |                                    |
 
