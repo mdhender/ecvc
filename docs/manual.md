@@ -3021,6 +3021,7 @@ The error code at the end of a failed order explains why the order failed.
 - E17: A REC, AAN, or APU order was written, but for a lesser amount.
 - E18: The planet is already controlled.
 - E19: There is no planet in that orbit.
+- E20: Invalid destination.
 
 <a id="rule-R3.0"></a>
 ## R3.0 Unit Characteristics Summary
@@ -3161,7 +3162,7 @@ RACE #2      SIGNATURE:                      PLAYER ID #22    ACCT #0353
 22, SPM, 1, G, A.
 25, SPM, 1E3, G, E.
 209, TFR, 100,000, METS, 22.
-209, MOV, 6.
+209, MOV, (0,0,0,1,6).
 
 209, PAY, .4, PRO.
 22, NSR, Our mega-freighter, #209, The White Star, is departing for orbit 6; we
@@ -3987,24 +3988,31 @@ NOTE: ALL SPM ORDERS CAN BE USED IN THE PLAYER'S OWN S/C, OR IN FOREIGN S/C's.
 <a id="rule-S14.1"></a>
 ### S14.1 Move Orders (MOV)
 
-- Format: Ship ID#, "MOV", orbit #.
-- Example: 995, MOV, 3.
-- Notes: The MOV order has ship 995 move to orbit 3.
+- Format: Ship ID#, "MOV", (x,y,z,N,O).
+- Example: 995, MOV, (-1,-16,-6,2,3).
+- Notes: This MOV order has ship 995 move to orbit 3 of star 2 in the star system at (-1,-16,-6).
+  The star is always given; there is no default star, and in a single star system it is star 1 ([A2.2](#rule-A2.2)).
+  This format is used only for an orbit of the star system the ship is in; an orbit of any other star system fails with error E20.
 
-- Format: Ship ID#, "MOV", orbit #, star.
-- Example: 995, MOV, 3, B.
-- Notes: This MOV order has ship 995, move to orbit 3 around star B.
-  This format is used in a multiple star system only.
+- Format: Ship ID#, "MOV", (x,y,z,0).
+- Example: 995, MOV, (-1,-16,-6,0).
+- Notes: This MOV order has ship 995 move to orbit 0 of the star system at (-1,-16,-6) ([A3.1](#rule-A3.1)).
+  This format is used only for orbit 0 of the star system the ship is in; orbit 0 of any other star system fails with error E20.
 
-- Format: Ship ID#, "MOV", star system coordinates.
-- Example: 997, MOV, 12,8,-3.
-- Notes: This format is used for moving to another star system.
-  Commas, not dashes, are used to separate the coordinates, in order to avoid confusion with negative and positive coordinates.
+- Format: Ship ID#, "MOV", (x,y,z).
+- Example: 997, MOV, (12,8,-3).
+- Notes: This MOV order has ship 997 move to the star system at (12,8,-3), arriving in orbit 0 ([A3.1](#rule-A3.1)).
+  This format is used for moving to another star system.
+  (x,y,z) may be the star system the ship is in; the order is still valid, and the ship moves to its orbit 0.
+
+The coordinates are those shown on the printout ([A2.3](#rule-A2.3)).
+A solar system, (x,y,z,N), is not a destination; a MOV order to one is a format error (E01).
 
 <a id="rule-S14.2"></a>
 ### S14.2 Jump Orders (JMP)
 
-- Format: Ship ID#, "JMP", star system coordinates.
-- Example: 385, JMP, 10, -8,-2.
-- Notes: The JMP order has ship 385 jump to star system 10,-8,-2.
-  Commas are used to separate the coordinates.
+- Format: Ship ID#, "JMP", (x,y,z).
+- Example: 385, JMP, (10,-8,-2).
+- Notes: The JMP order has ship 385 jump to the star system at (10,-8,-2), arriving in orbit 0 ([C3.1](#rule-C3.1)).
+  (x,y,z) may be the star system the ship is in; the order is still valid, and the ship moves to its orbit 0.
+  The coordinates are those shown on the printout ([A2.3](#rule-A2.3)).

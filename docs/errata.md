@@ -570,6 +570,27 @@ S10.1 also uses orbit 0 to mean orbits 1 to 10 of the star, while A3.1 uses 0 fo
 
 - **Resolved:** #9. The star is required and the orbits are a list ([S2.5](manual.md#rule-S2.5)); `[*]` is short for orbits 1 to 10 of the star ([S10.1](manual.md#rule-S10.1)).
 
+### 72. Star letters in move orders
+
+- **Rules:** [S14.1](manual.md#rule-S14.1), [S14.2](manual.md#rule-S14.2), [A2.1](manual.md#rule-A2.1), [A2.2](manual.md#rule-A2.2)
+- **Kind:** ambiguity
+
+S14.1 names the star by letter, as in `995, MOV, 3, B.`, and leaves it out outside a multiple star system without saying which star is meant.
+Once stars are numbered, `995, MOV, 3, 2.` is two numbers and a move to another star system is three, so only the count tells the formats apart.
+S14.1 has no format for a move to orbit 0, and S14.1 and S14.2 write coordinates as `12,8,-3` rather than `(12,8,-3)` (A2.1).
+
+- **Resolved:** #10. MOV and JMP write their destinations as designations: `(x,y,z,N,O)` for an orbit and `(x,y,z,0)` for orbit 0 of the ship's own star system, and `(x,y,z)` for another star system ([S14.1](manual.md#rule-S14.1), [S14.2](manual.md#rule-S14.2)).
+  The star is always given; an orbit or orbit 0 of another star system fails with error E20, and `(x,y,z)` naming the ship's own star system is valid and moves it to orbit 0.
+
+### 73. Jumping to the ship's own star system
+
+- **Rules:** [S14.2](manual.md#rule-S14.2), [C3.1](manual.md#rule-C3.1), [C3.1.1](manual.md#rule-C3.1.1), [C3.2](manual.md#rule-C3.2), [C3.3](manual.md#rule-C3.3)
+- **Kind:** gap
+
+S14.2 says a JMP order naming the star system the ship is in is valid, and the ship moves to its orbit 0.
+C3.1 says jumps are not made within a star system.
+The rules do not say whether such an order is handled as a jump or as a move: whether it uses 40 FUEL per light year of a zero-length jump or the .1 light years of a move to orbit 0 (C3.3), whether it can over-jump (C3.1.1), and whether the ship is in hyper space for it (C3.2).
+
 ## V. Variants
 
 ### 62. Races in Maxi-Challenge
