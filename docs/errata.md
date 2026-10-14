@@ -649,6 +649,15 @@ APU's cancel rule, S7.4.3, follows its multiple APU rule, S7.4.2.
 REC's cancel rule, S7.2.2, comes before its multiple REC rule, S7.2.3.
 REC should mirror APU, with the cancel rule after the multiple rule.
 
+### 78. E numbers in quantities
+
+- **Rules:** [S2.1](manual.md#rule-S2.1), [S3.0](manual.md#rule-S3.0), [S6.1](manual.md#rule-S6.1), [S6.1.1](manual.md#rule-S6.1.1), [S6.2.1](manual.md#rule-S6.2.1), [S7.2](manual.md#rule-S7.2), [S7.3.2](manual.md#rule-S7.3.2), [S12.2](manual.md#rule-S12.2)
+- **Kind:** contradiction
+
+S2.1 lets players write quantities as E numbers, such as 4E7 for 40,000,000, and the order examples in S3.0, S6.1, S6.1.1, S6.2.1, S7.2, S7.3.2, and S12.2 use them.
+The new game engine does not accept E numbers.
+S2.1 should drop them, and the examples should write their quantities out.
+
 ## V. Variants
 
 ### 62. Races in Maxi-Challenge
