@@ -1099,10 +1099,6 @@ All colonies are at tactical coordinates (0,0,0), so the distance between two co
 | OBC  | OPC | 2        |
 | OBC  | OBC | 3        |
 
-surface colony (ESC or OPC) to surface colony is 1 distance unit;
-orbiting colony to surface colony is 2 distance units;
-orbiting colony vs orbiting colony is 3
-
 When a ship is involved, the ship's tactical coordinates ([D6.3.4](#rule-D6.3.4)) are shown on the orbit probe section of the printout ([M2.1](#rule-M2.1)).
 
 When determining MSS and EWP hits on colonies, a colony's speed is always 0.
