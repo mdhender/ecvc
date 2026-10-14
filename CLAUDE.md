@@ -49,7 +49,7 @@ Tests cite the IDs of the rules they validate.
 
 - Do not run `tools/reorg/build.py`: it regenerates `docs/manual.md` and `docs/variants.md` from the rule book and would overwrite edits made to the manual.
 - `tools/reorg/check.py` still checks links, anchors, heading levels, and `docs/concordance.md`.
-  Its first check, that the manual's body lines match the rule book, fails once the manual is edited directly.
+  Its check that the manual's body lines match the rule book fails once the manual is edited directly, so it is skipped unless `--rulebook` is given.
 - `tools/` is removed once the documentation is done, before coding starts.
 
 ## Git
