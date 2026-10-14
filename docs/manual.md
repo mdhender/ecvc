@@ -1351,7 +1351,7 @@ The damage is calculated as follows:
     DA = ((F ÷ (D + SP/10 - S)) x E) - SH
 
 Where DA is the damage in mass units, F is the number of EWP that fire, D is the number of distance units to the target, SP is the speed, S is the highest TL sensor assembled in the attacker's s/c, E is the energy of each unit fired (10 x TL of the EWP), SH is the target's shielding.
-(Shielding is the total energy units deflected by all of the assembled energy shields in the s/c.
+(Shielding is the total energy units deflected by all the assembled energy shields in the s/c.
 Each energy shield (ESH) deflects 10 x its TL-squared energy units per attack).
 If the expression D + SP/10 - S is less than 1, the value 1 will be used in its place to solve the rest of the equation.
 The firing of EWP against s/c's happens twice per turn: pre-maneuver and after-maneuver.
@@ -2996,7 +2996,7 @@ They may be addressed to members of the same race, or to s/c's located at the sa
 Most of the printout is in easy to understand terms, with the exceptions of the abbreviations listed in the Glossary, the error messages, orbit probes, and the three headings shown below.
 
 1. Space Available is the number of additional volume units a s/c can hold.
-2. Transport Not Used is the total unused carrying capacity of all of the TPT's in the s/c measured in mass units.
+2. Transport Not Used is the total unused carrying capacity of all the TPT's in the s/c measured in mass units.
 3. Standard of Living is the total CNGD's paid divided by the total population and multiplied by 4 (which makes the rate annual).
 4. *Orbit Probes:*
 
