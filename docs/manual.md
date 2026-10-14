@@ -572,7 +572,7 @@ A Regent takes the race of his Ruler ([B4.1](#rule-B4.1)), and an Independent ta
 | WIP\* | Work in process | Items in the process of being manufactured. |
 | WTD   | Withdraw        | This order withdraws troops from combat.    |
 
-In writing orders all words listed in the Glossary should be abbreviated in the same manner in the orders.
+In writing orders, all words listed in the Glossary must be abbreviated as shown ([S2.0](#rule-S2.0)).
 Abbreviations followed by asterisks are never used in writing orders, but are used in the text of this rule book, or in the printouts you receive.
 
 # B. How to Play
@@ -3107,7 +3107,7 @@ The pages should be numbered if there is more than one.
 ## S2.0 General Rules on Writing Orders
 
 All order lines must end in a period, and must start with a s/c ID number since all orders are addressed to s/c's.
-All words in orders shown on the abbreviation list must be abbreviated.
+All words in orders shown on the abbreviation list must be abbreviated, or the order will be rejected with error E01 ([R2.0](#rule-R2.0)).
 All order lines must be less than 80 characters long, including spaces.
 The s/c ID# at the beginning of the order must belong to the player writing the order.
 
