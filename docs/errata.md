@@ -109,7 +109,7 @@ The Maxi-Challenge colony points in V1.0 depend on which is right.
 The glossary says words in it "should be abbreviated" in orders; S2.0 says they "must be abbreviated".
 
 - **Resolved:** #28. Glossary terms must be abbreviated in orders; the glossary now says so and cites S2.0 ([A7.0](manual.md#rule-A7.0)).
-  This follows the order parser, which rejects a term written out in full, such as "missiles-6".
+  S2.0 now says an order that writes one out in full, such as "missiles-6", is rejected with error E01 ([S2.0](manual.md#rule-S2.0)).
 
 ### 9. Life support in orbiting colonies
 
@@ -127,6 +127,14 @@ G6.1 says only OPC's do not require LFS, so OBC's need them too.
 Births (G2.1), rebels (G3.7, N1.2), and Maxi-Challenge colony points (V1.0) depend on the standard of living (SOL), but no rule defines it.
 Only the glossary gives a formula, and it is not the whole calculation.
 The rules should define SOL, calculated quarterly, with total CNGD paid (G5.1) as one part, and the glossary should cite that rule.
+
+### 77. Rebel-free population codes are not in the glossary
+
+- **Rules:** [A7.0](manual.md#rule-A7.0), [K3.2](manual.md#rule-K3.2), [S2.0](manual.md#rule-S2.0)
+- **Kind:** gap
+
+K3.2 has a TFR leave rebels behind by changing the last letter of the population code to X, as in PRX-3 for PRO-3.
+The glossary does not list these codes (PRX, SLX, CNX, and the rest), although S2.0 requires the words in orders to be abbreviated as the glossary shows them.
 
 ## B. How to Play
 

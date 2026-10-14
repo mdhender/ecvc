@@ -3107,7 +3107,7 @@ The pages should be numbered if there is more than one.
 ## S2.0 General Rules on Writing Orders
 
 All order lines must end in a period, and must start with a s/c ID number since all orders are addressed to s/c's.
-All words in orders shown on the abbreviation list must be abbreviated.
+All words in orders shown on the abbreviation list must be abbreviated, or the order will be rejected with error E01 ([R2.0](#rule-R2.0)).
 All order lines must be less than 80 characters long, including spaces.
 The s/c ID# at the beginning of the order must belong to the player writing the order.
 
