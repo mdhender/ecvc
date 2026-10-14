@@ -17,13 +17,14 @@ Rule changes start from the `manual-baseline` tag and work through this list.
   - *structure*: a rule is out of place, or out of step with its counterparts;
   - *withdrawn*: the entry turned out not to be a rule mistake, and its number stays reserved.
 - **Resolved**, when present, names the issue that fixed the rule and says how.
+  A resolved entry has ✅ at the end of its title; an entry resolved only in part does not.
 - Entries are grouped by the subject of their first rule.
 
 Typographic and scan errors are not logged here; they are corrected in `docs/rulebook.md` and the manual is rebuilt.
 
 ## A. General Rules and Definitions
 
-### 1. Coordinate range does not match the cluster size
+### 1. Coordinate range does not match the cluster size ✅
 
 - **Rules:** [A2.1](manual.md#rule-A2.1)
 - **Kind:** contradiction
@@ -32,7 +33,7 @@ The cluster is 30 light years per side, but each coordinate ranges from 0 to 30,
 
 - **Resolved:** #3. The cluster is a sphere of radius 26 light years, with whole-number coordinates ([A2.1](manual.md#rule-A2.1)).
 
-### 2. Number of orbits per star
+### 2. Number of orbits per star ✅
 
 - **Rules:** [A2.2](manual.md#rule-A2.2), [A3.0](manual.md#rule-A3.0)
 - **Kind:** contradiction
@@ -126,7 +127,7 @@ Nothing says which applies when both are met on the same turn.
 The outcomes are exclusive (melt, blow up, or arrive intact), but from a ratio of 5 the chances add to more than 100%: 40% + 65% at 5, up to 90% + 100% at 10.
 The chart also stops at a ratio of 10.
 
-### 13. Distance of a move within a star system
+### 13. Distance of a move within a star system ✅
 
 - **Rules:** [C3.2](manual.md#rule-C3.2), [C3.3](manual.md#rule-C3.3)
 - **Kind:** contradiction
@@ -156,7 +157,7 @@ Orbit 0 can not be the target of an orbit probe (M2.1), a s/c probe needs both s
 The rules do not say whether colonies and ships in orbits 1 to 10 should see ships in orbit 0, so ten ships could gather there unseen by everyone else in the star system.
 The list format of [S2.5](manual.md#rule-S2.5) makes `77, PRB, 3, [0].` a well-formed order, but no rule says what it does: M2.1 forbids orbit 0 as a target, and orbit 0 belongs to the star system, not to star 3 (A3.1).
 
-### 71. Placement of arriving and new ships
+### 71. Placement of arriving and new ships ✅
 
 - **Rules:** [C3.2](manual.md#rule-C3.2), [F4.1](manual.md#rule-F4.1)
 - **Kind:** ambiguity
@@ -337,7 +338,7 @@ and market prices, which L3.0 says are "known only to the computer".
 
 ## H. Production and Industry
 
-### 34. Orbit 11
+### 34. Orbit 11 ✅
 
 - **Rules:** [H1.3.2](manual.md#rule-H1.3.2), [A3.0](manual.md#rule-A3.0)
 - **Kind:** contradiction
@@ -554,7 +555,7 @@ The example allows 300,500 SLSU; the notes say 300,300.
 
 The last SPM format has no quantity, but its examples have one.
 
-### 61. Move example outside the cluster
+### 61. Move example outside the cluster ✅
 
 - **Rules:** [S14.1](manual.md#rule-S14.1), [A2.1](manual.md#rule-A2.1)
 - **Kind:** example
@@ -563,7 +564,7 @@ The MOV example moves to 12,28,-32, but relative coordinates in a 30-light-year 
 
 - **Resolved:** #3. The MOV example now moves to 12,8,-3.
 
-### 69. Star letters in probe orders
+### 69. Star letters in probe orders ✅
 
 - **Rules:** [S10.1](manual.md#rule-S10.1), [A3.1](manual.md#rule-A3.1)
 - **Kind:** ambiguity
@@ -574,7 +575,7 @@ S10.1 also uses orbit 0 to mean orbits 1 to 10 of the star, while A3.1 uses 0 fo
 
 - **Resolved:** #9. The star is required and the orbits are a list ([S2.5](manual.md#rule-S2.5)); `[*]` is short for orbits 1 to 10 of the star ([S10.1](manual.md#rule-S10.1)).
 
-### 72. Star letters in move orders
+### 72. Star letters in move orders ✅
 
 - **Rules:** [S14.1](manual.md#rule-S14.1), [S14.2](manual.md#rule-S14.2), [A2.1](manual.md#rule-A2.1), [A2.2](manual.md#rule-A2.2)
 - **Kind:** ambiguity
