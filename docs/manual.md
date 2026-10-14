@@ -1175,7 +1175,7 @@ It does not matter in what order the player has his combat orders written on his
 ### D9.1 Pre-Maneuver Fire
 
 All EWP's and MSL's may be fired before ships maneuver.
-The defensive weapons (EWP's and ANM's) defend against the energy beams and MSS's, and then the damage is calculated.
+The defensive weapons defend: ESH's against energy beams ([E6.0](#rule-E6.0)), and ANM's and then EWP's against MSS's ([E4.0](#rule-E4.0), [E5.2](#rule-E5.2)); then the damage is calculated.
 
 <a id="rule-D9.2"></a>
 ### D9.2 Ship Maneuvers
@@ -1192,7 +1192,7 @@ Total thrust is measured by adding up the thrust of all the assembled SDRV's.
 ### D9.3 Post-Maneuver Fire
 
 All EWP's and MSL's may be fired after ships maneuver.
-The defensive weapons defend, and the damage is calculated.
+The defensive weapons defend: ESH's against energy beams ([E6.0](#rule-E6.0)), and ANM's and then EWP's against MSS's ([E4.0](#rule-E4.0), [E5.2](#rule-E5.2)); then the damage is calculated.
 
 <a id="rule-D9.4"></a>
 ### D9.4 Troop Movement

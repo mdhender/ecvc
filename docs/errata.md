@@ -250,13 +250,15 @@ The rule speaks of "multiple-TL EWP's and MSS's", then applies the percentage to
 - **Resolved:** #47. The percentage applies to MSL and EWP, and the number committed at each TL is rounded down ([D6.3.2](manual.md#rule-D6.3.2)).
   Each MSL committed fires one MSS of its own TL; a s/c short of MSS at that TL fires only the MSS it has.
 
-### 17. What defends against energy beams
+### 17. What defends against energy beams ✅
 
 - **Rules:** [D9.1](manual.md#rule-D9.1), [E4.0](manual.md#rule-E4.0), [E5.2](manual.md#rule-E5.2), [E6.0](manual.md#rule-E6.0)
 - **Kind:** contradiction
 
 D9.1 says EWP's and ANM's "defend against the energy beams and MSS's".
 In subject E, ANM's and EWP's defend against MSS's, and only ESH's defend against beams.
+
+- **Resolved:** #49. D9.1 and D9.3 follow subject E: ESH's defend against energy beams, and ANM's and then EWP's against MSS's ([D9.1](manual.md#rule-D9.1), [D9.3](manual.md#rule-D9.3)).
 
 ### 18. Surrender ratio
 
