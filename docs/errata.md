@@ -272,13 +272,16 @@ D10.0 transfers the s/c when the defending troops are eliminated, but does not s
   SLD that surrender, including forces made to surrender by D4.0 and D5.0, become UEM of their own race (UEM-R).
   A surrender by the defenders captures the s/c, as if they had been eliminated ([D10.0](manual.md#rule-D10.0)).
 
-### 19. After the battle
+### 19. After the battle ✅
 
 - **Rules:** [D10.0](manual.md#rule-D10.0)
 - **Kind:** ambiguity
 
 "The victor WTD's troops on the turn following the victory" does not say whether this is automatic or needs a WTD order.
 "Unfinished battles will continue on the following turn" does not say whether the INV and support orders must be written again.
+
+- **Resolved:** #54. A battle with no winner continues in the next round of combat, the following turn's combat stage, without new orders ([D10.0](manual.md#rule-D10.0)).
+  The victor's troops are withdrawn automatically during troop movement in the next round, and until then are still in the s/c, where they fight a third-party invader.
 
 ### 83. Damage needed to destroy a unit
 
