@@ -377,14 +377,17 @@ D6.3.4 lets a colony fire on another colony without a SEN, which makes S 0, and 
 
 ## F. Ships and Colonies
 
-### 22. Volume of structural units
+### 22. Volume of structural units ✅
 
-- **Rules:** [F3.1](manual.md#rule-F3.1), [R3.0](manual.md#rule-R3.0)
+- **Rules:** [F3.1](manual.md#rule-F3.1), [F10.7](manual.md#rule-F10.7), [R3.0](manual.md#rule-R3.0)
 - **Kind:** ambiguity
 
 Structural units must enclose the volume of the s/c's units, and R3.0 gives STUN, LTSU, and SLSU a volume.
 The rules do not say whether the structural units must enclose themselves.
 R3.0's footnote, that assembled STUN, LTSU, and SLSU are "all -1", may be meant to answer this, but its meaning is unclear.
+
+- **Resolved:** #60. Assembled STUN, LTSU, and SLSU have zero volume and do not add to the structural requirement ([F3.1](manual.md#rule-F3.1), [F10.7](manual.md#rule-F10.7), [R3.0](manual.md#rule-R3.0)).
+  Their unassembled volumes remain unchanged.
 
 ### 23. Spare transports in a set-up
 
@@ -422,6 +425,17 @@ F8.0 says the two s/c's factory groups "must not exceed 25"; S5.8 says they "mus
 Rename light structural units from LTSU to STUL and super-light structural units from SLSU to STUS throughout the manual, including the glossary, tables, and order examples.
 STUN remains unchanged.
 This is a change of abbreviations only, not of unit characteristics or rules.
+
+### 90. Enclosed volume rules
+
+- **Rules:** [F3.1](manual.md#rule-F3.1), [F3.1.1](manual.md#rule-F3.1.1), [F3.2](manual.md#rule-F3.2), [F10.7](manual.md#rule-F10.7), [R3.0](manual.md#rule-R3.0)
+- **Kind:** ambiguity
+
+The rules should distinguish the volume that must be enclosed, the structural units required to enclose it, and the capacity provided by the assembled structural units.
+F3.2 describes an excess as exceeding the "structural requirement", without making those quantities distinct.
+Rewrite the enclosed volume rules to state how to total population, stored items, and assembled items, including the METS and NMTS exception for surface colonies.
+Keep the zero assembled volume of structural units settled by errata 22, and state how enclosed volume and the structure ratio determine the required structure and available capacity.
+Clarify the consequences of exceeding that capacity separately from insufficient life support.
 
 ## G. Population
 
