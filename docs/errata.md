@@ -140,12 +140,15 @@ The glossary does not list these codes (PRX, SLX, CNX, and the rest), although S
 
 ## B. How to Play
 
-### 10. Second TL check
+### 10. Second TL check ✅
 
 - **Rules:** [B3.17.6](manual.md#rule-B3.17.6), [J4.1](manual.md#rule-J4.1)
 - **Kind:** gap
 
 The production stage has "TL increases (1st check)", but no stage has a second check.
+
+- **Resolved:** #32. RSCH is applied to TL once per turn, never twice, during the production stage ([J4.1](manual.md#rule-J4.1)).
+  B3.17.6 is now "TL increases", without "(1st check)" ([B3.17.6](manual.md#rule-B3.17.6)).
 
 ### 11. End of the game on a racial victory
 
@@ -440,6 +443,16 @@ J3.0's list of units without a TL does not include RSCH.
 - **Kind:** ambiguity
 
 J4.0 says research raises a s/c's TL, and RSCH can be transferred to ships, but J4.1 says the computer raises "the TL of the colony".
+
+### 79. RSCH applied before it can be transferred
+
+- **Rules:** [B3.17.6](manual.md#rule-B3.17.6), [J4.1](manual.md#rule-J4.1), [J4.2](manual.md#rule-J4.2), [K5.0](manual.md#rule-K5.0)
+- **Kind:** contradiction
+
+J4.1 has the computer raise the TL automatically once enough RSCH has been built, using up the RSCH.
+J4.2 and K5.0 let a s/c transfer RSCH to another s/c, such as one of the player's ships.
+If RSCH were applied automatically, a colony could never build up RSCH to transfer to her ships.
+See also errata 41.
 
 ## L. Markets and Trade
 
