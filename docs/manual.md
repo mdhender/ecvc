@@ -319,7 +319,8 @@ One turn in the game equals one quarter of a (galactic standard) year.
 <a id="rule-A6.0"></a>
 ## A6.0 Race Numbers
 
-Players are assigned race numbers as follows:
+Each player has a race number, which is recorded separately from his player number.
+Player numbers 1 to 150 belong to the Rulers who start the game with a home world, and only for them does the player number determine the race number, as follows:
 
 | Player No.  | Race No. |
 |-------------|----------|
@@ -333,6 +334,9 @@ Players are assigned race numbers as follows:
 | 106 ... 120 |  8       |
 | 121 ... 135 |  9       |
 | 136 ... 150 | 10       |
+
+Any other player's player number does not determine his race.
+A Regent takes the race of his Ruler ([B4.1](#rule-B4.1)), and an Independent takes the race of the majority of his s/c's population ([B4.2](#rule-B4.2)).
 
 <a id="rule-A7.0"></a>
 ## A7.0 Glossary
@@ -772,12 +776,13 @@ All the orders for one stage are processed before any of the orders for the next
 <a id="rule-B4.1"></a>
 ### B4.1 Regents
 
-Regents (formerly called Subordinates) are players who run one or more s/c's for a single Ruler.
+Regents are players who run one or more s/c's for a single Ruler.
 Any number of s/c's may be managed by a single Regent.
 A Ruler may advise his Regent and issue commands to him, but the only actual control he has over him is to remove him from the game.
 The Ruler removes him by sending a postcard or note to the Moderator, telling him the name of the Regent and the ID numbers of the s/c's he manages.
 A Ruler acquires a Regent by sending a request for one to the Moderator.
-The moderator assigns a player number to the Regent and puts him in touch with his Ruler, who gives him s/c's with a GIV order.
+The moderator assigns the next available player number to the Regent and puts him in touch with his Ruler, who gives him s/c's with a GIV order.
+A Regent takes the race of his Ruler; his player number does not determine his race ([A6.0](#rule-A6.0)).
 (The regent accepts them with an ACP order).
 When a Regent is removed, the s/c is gifted back to the Ruler on the turn we are notified. \*\*
 A Regent may use any of the orders listed in subject [S](#s-orders)<!-- was Chapter 17 -->, with the following exceptions: A Regent cannot fulfill the victory conditions.
@@ -795,6 +800,7 @@ Any spies he assembles are controlled by his Ruler.
 Independents are Rulers who have been given control of a s/c that has had a successful rebellion.
 All rules, including victory conditions, apply to Independents.
 If the population of a newly rebelled s/c is composed of mixed races, then the race number of the new Independent will be the same as that of the majority of the population.
+The moderator assigns the next available player number to the new Independent; his player number does not determine his race ([A6.0](#rule-A6.0)).
 Planets controlled by Independents count towards their race's victory total, as well as towards the Independent's total.
 
 <a id="rule-B5.0"></a>
