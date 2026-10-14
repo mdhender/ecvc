@@ -176,7 +176,7 @@ Each subject has one table, sorted by manual ID, so the tables show the outline 
 | F3.0      | Structural Requirements                      | 7.3       | Heading only.                                                                                                 |
 | F3.1      | Definition                                   | 7.3.1     |                                                                                                               |
 | F3.1.1    | Structure Ratio                              | 7.3.1.1   |                                                                                                               |
-| F3.2      | Structural Requirement Exceeded              | 7.3.2     |                                                                                                               |
+| F3.2      | Enclosure Capacity Exceeded                  | 7.3.2     | Renamed for errata 90 (#66).                                                                                   |
 | F4.0      | Set Ups                                      | 7.4       | Heading only.                                                                                                 |
 | F4.1      | Description                                  | 7.4.1     |                                                                                                               |
 | F4.2      | S/C ID Numbers                               | 7.4.2     |                                                                                                               |

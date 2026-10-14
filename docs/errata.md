@@ -446,6 +446,8 @@ Clarify the consequences of exceeding that capacity separately from insufficient
   F3.1 defines the enclosed volume and structural requirement; F3.1.1 defines combined enclosure capacity and includes the capacity table and a revised ship example.
   STUL and STUS material quantities and unassembled volumes are scaled with their unit masses, preserving material proportions and stored volume per MU.
   The glossary and H3.8 describe the types by enclosure capacity rather than different unit masses.
+  #66 clarifies required enclosure and available enclosure capacity in VU, with structural requirement in STUN equivalents; F3.2 is now titled "Enclosure Capacity Exceeded".
+  R3.0 and F10.7 define listed volume as the VU required to enclose each item, with the existing assembly exceptions unchanged.
   F3.2's excess-capacity and life-support consequences remain open; combat damage rules are unchanged.
 
 ## G. Population
