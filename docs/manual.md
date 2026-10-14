@@ -806,6 +806,9 @@ Planets controlled by Independents count towards their race's victory total, as 
 <a id="rule-B5.0"></a>
 ## B5.0 Victory Conditions
 
+When the game is set up, the Moderator selects its victory condition: individual victory ([B5.1](#rule-B5.1)) or racial victory ([B5.2](#rule-B5.2)).
+A game never uses both.
+
 <a id="rule-B5.1"></a>
 ### B5.1 Individual Victory
 
@@ -814,7 +817,7 @@ When a single Ruler gains control of 15% or more of the total habitability, (the
 <a id="rule-B5.2"></a>
 ### B5.2 Racial Victory
 
-When a race, as a group, controls 50% or more of the total habitability in the game for four consecutive turns while no other race controls half as much, then a racial victory is declared.
+When a race, as a group, controls 50% or more of the total habitability in the game for four consecutive turns while no other race controls half as much, then a racial victory is declared, the game is over, and that race wins.
 
 # C. Movement and Navigation
 

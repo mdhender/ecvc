@@ -19,7 +19,7 @@ MAXI-CHALLENGE differs from EMPYREAN CHALLENGE in the following ways:
    (See [H3.0](manual.md#rule-H3.0)<!-- was 8.3 -->, Manufacturing).
 7. TFR, APU, REC, ADN, and STP orders are handled as in the standard rules (see [F4.3.5](manual.md#rule-F4.3.5)<!-- was 7.4.3.5 -->, [F5.8](manual.md#rule-F5.8)<!-- was 7.5.8 -->, and [K1.0](manual.md#rule-K1.0)<!-- was 11.1 -->).
 8. Home planets can be controlled exactly like non-home planets.
-9. The victory conditions are:
+9. The victory conditions, which replace those of the standard game ([B5.0](manual.md#rule-B5.0)), are:
    - A. If all the existing colonies (not ships) belong to one Ruler and his Regents, they win and the game is over.
    - B. A Ruler and his Regents can win by scoring 15,000 victory points.
      No Victory points can be scored on turn 0.
@@ -157,6 +157,7 @@ All EMPYREAN CHALLENGE rules apply to THE TEN PLANET WAR except for the followin
 5. Each player starts on one of the planets.
 6. There are only ten players per game.
 7. The player who has s/c's remaining after all other players' have been eliminated wins the game.
+   This replaces the victory conditions of the standard game ([B5.0](manual.md#rule-B5.0)).
 8. A player is eliminated when all of his s/c's have been captured or destroyed and when all of his spies have been killed.
 9. The units a player starts off with are detailed on the Ten Planet War pre-game turn sheet.
 10. The efficiency factor (see [H3.0](manual.md#rule-H3.0)<!-- was 8.3 -->, Manufacturing) is always 1 when calculating cost, and is never less than 1 when calculating personnel requirements.

@@ -150,13 +150,17 @@ The production stage has "TL increases (1st check)", but no stage has a second c
 - **Resolved:** #32. RSCH is applied to TL once per turn, never twice, during the production stage ([J4.1](manual.md#rule-J4.1)).
   B3.17.6 is now "TL increases", without "(1st check)" ([B3.17.6](manual.md#rule-B3.17.6)).
 
-### 11. End of the game on a racial victory
+### 11. End of the game on a racial victory ✅
 
 - **Rules:** [B5.1](manual.md#rule-B5.1), [B5.2](manual.md#rule-B5.2)
 - **Kind:** gap
 
 B5.1 says the game is over on an individual victory; B5.2 says a racial victory "is declared" but not whether the game ends.
 Nothing says which applies when both are met on the same turn.
+
+- **Resolved:** #38. A racial victory ends the game ([B5.2](manual.md#rule-B5.2)).
+  The Moderator selects one victory condition, individual or racial, when the game is set up; a game never uses both ([B5.0](manual.md#rule-B5.0)).
+  The variants say that their victory conditions replace those of the standard game ([V1.0](variants.md#rule-V1.0), [V2.0](variants.md#rule-V2.0)).
 
 ## C. Movement and Navigation
 
