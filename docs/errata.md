@@ -306,7 +306,8 @@ The rules should use one term.
 D9.6 turns surrendering SLD into UEM, but troops include MRB ([D2.2](manual.md#rule-D2.2)), which are robots, not population.
 Nothing says what happens to surrendering MRB, or to the ASC and ASW that carried or armed the surrendering force.
 
-- **Resolved:** #51. When a side surrenders, its MRB are junked, and its MTSP, ASC, and ASW are transferred to the victor ([D9.6](manual.md#rule-D9.6)).
+- **Resolved:** #51. When a side surrenders, its MRB are sabotaged (destroyed), and its MTSP, ASC, and ASW are transferred to the victor ([D9.6](manual.md#rule-D9.6)).
+  Defenders who surrender to a raid recover their MRB, MTSP, ASC, and ASW when the raiders leave.
 
 ## E. Weapons and Defenses
 
