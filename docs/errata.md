@@ -240,12 +240,15 @@ The table uses "ORB", which is not defined (the glossary uses OBC), and lists OR
 - **Resolved:** #45. All colonies are at (0,0,0), and the table gives the effective distance between two colonies ([D6.3.1](manual.md#rule-D6.3.1)).
   ORB is corrected to OBC, and the table now has ESC to OBC and OPC to OBC.
 
-### 16. Commitment percentage names MSS
+### 16. Commitment percentage names MSS ✅
 
 - **Rules:** [D6.3.2](manual.md#rule-D6.3.2)
 - **Kind:** ambiguity
 
 The rule speaks of "multiple-TL EWP's and MSS's", then applies the percentage to "each MSL and EWP".
+
+- **Resolved:** #47. The percentage applies to MSL and EWP, and the number committed at each TL is rounded down ([D6.3.2](manual.md#rule-D6.3.2)).
+  Each MSL committed fires one MSS of its own TL; a s/c short of MSS at that TL fires only the MSS it has.
 
 ### 17. What defends against energy beams
 
