@@ -2997,7 +2997,7 @@ Most of the printout is in easy to understand terms, with the exceptions of the 
 
 1. Space Available is the number of additional volume units a s/c can hold.
 2. Transport Not Used is the total unused carrying capacity of all the TPT's in the s/c measured in mass units.
-3. Standard of Living is the total CNGD's paid divided by the total population and multiplied by 4 (which makes the rate annual).
+3. Standard of Living is the s/c's standard of living (SOL) for the turn, as calculated each quarter by the rules.
 4. *Orbit Probes:*
 
 ```text

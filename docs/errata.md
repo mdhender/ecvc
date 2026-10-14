@@ -97,6 +97,10 @@ The glossary defines SOL as total CNGD paid ÷ total POP, then ÷ 4.
 R1.0 says the total is multiplied by 4, "which makes the rate annual".
 The Maxi-Challenge colony points in V1.0 depend on which is right.
 
+- **Resolved:** #26, in part. Neither formula is right: SOL is calculated quarterly, and total CNGD paid is only part of the calculation.
+  R1.0 now reports the SOL as the rules calculate it, with no formula of its own ([R1.0](manual.md#rule-R1.0)).
+  The glossary formula stays until the rules define SOL (errata 76).
+
 ### 8. Abbreviations: should or must
 
 - **Rules:** [A7.0](manual.md#rule-A7.0), [S2.0](manual.md#rule-S2.0)
@@ -111,6 +115,15 @@ The glossary says words in it "should be abbreviated" in orders; S2.0 says they 
 
 The glossary says LFS serve "ships and ESC's".
 G6.1 says only OPC's do not require LFS, so OBC's need them too.
+
+### 76. Standard of living is not defined in the rules
+
+- **Rules:** [A7.0](manual.md#rule-A7.0), [G2.1](manual.md#rule-G2.1), [G3.7](manual.md#rule-G3.7), [G5.1](manual.md#rule-G5.1), [N1.2](manual.md#rule-N1.2), [R1.0](manual.md#rule-R1.0), [V1.0](variants.md#rule-V1.0)
+- **Kind:** gap
+
+Births (G2.1), rebels (G3.7, N1.2), and Maxi-Challenge colony points (V1.0) depend on the standard of living (SOL), but no rule defines it.
+Only the glossary gives a formula, and it is not the whole calculation.
+The rules should define SOL, calculated quarterly, with total CNGD paid (G5.1) as one part, and the glossary should cite that rule.
 
 ## B. How to Play
 
