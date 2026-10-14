@@ -2463,6 +2463,8 @@ RSCH accumulate in the s/c until the player assembles them with an ASM order nam
 The ASM order is processed in the assembly stage, but the TL is raised during the production stage ([B3.17.6](#rule-B3.17.6)), so RSCH built that turn are counted.
 The s/c's TL rises one level at a time toward the TL named, as far as its RSCH pay for, and the RSCH used are deducted from the total accumulated; any RSCH left over stay accumulated.
 Several TL's may be gained in one turn this way.
+An ASM order naming the s/c's current TL, a lower TL, or a TL above 10 fails with error E01.
+If the RSCH do not pay for the TL named, the order fails with error E02; but if they pay for at least one level, the s/c still gains the levels they pay for.
 RSCH is applied to TL once per turn, never twice: a second ASM order for TL in the same turn fails with error E01 ([R2.0](#rule-R2.0)).
 The quantities of RSCH listed below for each level are the number required to get from the preceding level to the one listed:
 
@@ -3503,7 +3505,7 @@ will have more LTSU for sale next turn. Signed.
 - Example: 75, ASM, TL-3.
 - Notes: This format assembles RSCH to raise the s/c's TL to the TL named (see [J4.1](#rule-J4.1)).
   If s/c 75 is TL-1 with 300,000 RSCH, it rises to TL-3 and has no RSCH left.
-  With 250,000 RSCH, it rises to TL-2 and keeps 150,000 RSCH.
+  With 250,000 RSCH, it rises to TL-2 and keeps 150,000 RSCH, and the order fails with error E02 because TL-3 was not reached.
 
 - Format: S/C ID#, "ASM", quantity, "FCT"-TL#, item to build.
 - Example: 83, ASM, 20,000, FCT-4, LFS-1.
@@ -3539,6 +3541,7 @@ will have more LTSU for sale next turn. Signed.
   ```
 - Notes: The multiple ASM orders are used to allow a s/c to assemble more than one item in a turn without writing a separate order for each assembly.
   This is optional, though, and the player may write each order separately if he wishes.
+  TL is never allowed in a multiple ASM order; a TL line fails with error E01, and the rest of the order is still processed (see [J4.1](#rule-J4.1)).
 
 <a id="rule-S6.2"></a>
 ### S6.2 Disassembly Orders (DAS)
