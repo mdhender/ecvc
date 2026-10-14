@@ -1106,7 +1106,9 @@ When determining MSS and EWP hits on colonies, a colony's speed is always 0.
 <a id="rule-D6.3.2"></a>
 #### D6.3.2 Commitment Percentage
 
-When s/c's with multiple-TL EWP's and MSS's are involved in bombardment, the percentage commitment (percent of weapons committed) applies equally to each MSL and EWP the s/c has, regardless of the TL of each.
+When s/c's with multiple-TL EWP's and MSL's are involved in bombardment, the percentage commitment (percent of weapons committed) applies equally to each MSL and EWP the s/c has, regardless of the TL of each.
+The number of MSL and EWP committed at each TL is rounded down.
+Each MSL committed fires one MSS of its own TL ([E3.0](#rule-E3.0)); if the s/c has fewer MSS of that TL than MSL committed, it fires only the MSS it has.
 
 <a id="rule-D6.3.3"></a>
 #### D6.3.3 Weighted Average
