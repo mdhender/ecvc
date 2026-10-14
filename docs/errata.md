@@ -66,13 +66,17 @@ M1.0 reports "the resource each deposit contains", which suggests one.
 - **Resolved:** #22. A deposit contains 1,000,000 to 99,000,000 units of a single resource, with a yield of 1% to 9% for gold and 10% to 90% for the others ([A4.3](manual.md#rule-A4.3)).
   MIN's extract ORE, which is refined at the deposit's yield and rounded down, up to the quantity left in the deposit ([H2.1](manual.md#rule-H2.1)).
 
-### 5. Race numbers for Regents and Independents
+### 5. Race numbers for Regents and Independents ✅
 
 - **Rules:** [A6.0](manual.md#rule-A6.0), [B4.1](manual.md#rule-B4.1), [B4.2](manual.md#rule-B4.2)
 - **Kind:** gap
 
 A6.0 maps player numbers 1 to 150 to races.
 The Moderator assigns Regents a player number (B4.1), and Independents take the race of their population (B4.2), but neither number is covered by the table.
+
+- **Resolved:** #24. Race is recorded separately from the player number; only the Rulers with home worlds, players 1 to 150, take their race from the A6.0 table ([A6.0](manual.md#rule-A6.0)).
+  Regents and Independents get the next available player number.
+  A Regent takes his Ruler's race ([B4.1](manual.md#rule-B4.1)); an Independent takes the race of his s/c's majority population ([B4.2](manual.md#rule-B4.2)).
 
 ### 6. Sample turnsheet race number
 
