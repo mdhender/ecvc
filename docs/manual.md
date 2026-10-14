@@ -537,9 +537,9 @@ A Regent takes the race of his Ruler ([B4.1](#rule-B4.1)), and an Independent ta
 | SPYS     | Spy cadre                    | Cadre consisting of 1 PRO and 1 SLD.                          |
 | STP      | Set-up                       | This order establishes a ship or colony.                      |
 | STU      | Start-up                     | This order starts up all farms in a s/c, when shut down.      |
-| STUL     | Light structural units       | Walls, beams, etc. of a s/c - very light.                       |
-| STUN     | Structural units             | Same as STUL, but these are the heaviest.                     |
-| STUS     | Super-light structural units | Same as STUL, only much lighter.                              |
+| STUL     | Light structural units       | Enclose 5 times the volume of STUN per unit ([F3.1.1](#rule-F3.1.1)). |
+| STUN     | Structural units             | Standard walls, beams, etc. of a s/c.                         |
+| STUS     | Super-light structural units | Enclose 20 times the volume of STUN per unit ([F3.1.1](#rule-F3.1.1)). |
 | SUR      | Survey                       | This order searches a planet for resource deposits.           |
 | SYS      | Star system                  | Star system.                                                  |
 | SOL\*    | Standard of living           | Total CNGD paid ÷ by total POP, then ÷ by 4.                  |
@@ -1469,25 +1469,41 @@ All incoming ships arrive in orbit 0 of the star system.
 <a id="rule-F3.1"></a>
 ### F3.1 Definition
 
-Assembled STUN, STUL, or STUS must encompass the VOLUME of any s/c's units and population, except NMTS and METS in OPC's and ESC's.
+Assembled STUN, STUL, or STUS must enclose the volume of a s/c's units and population, except NMTS and METS in OPC's and ESC's.
+The enclosed volume is the sum of the volumes of the population, stored items, and assembled items that require enclosure, using [R3.0](#rule-R3.0) and the assembly exceptions in [F10.7](#rule-F10.7).
 Assembled STUN, STUL, and STUS have zero volume and do not add to the structural requirement ([R3.0](#rule-R3.0)).
-The total volume units times the STRUCTURE RATIO, (see [F3.1.1](#rule-F3.1.1)<!-- was 7.3.1.1 -->), gives the s/c structural requirement.
+The enclosed volume times the structure ratio gives the structural requirement in STUN equivalents ([F3.1.1](#rule-F3.1.1)).
+The s/c must have enough assembled structural units to meet this requirement, subject to [F3.2](#rule-F3.2).
 In OPC's and ESC's, NMTS and METS are stored outside the colony.
 
 <a id="rule-F3.1.1"></a>
 #### F3.1.1 Structure Ratio
 
-The minimum STUN, STUL, or STUS required to enclose a single volume unit are:
+Each STUN, STUL, and STUS has a mass of 0.1 MU.
+One assembled STUL encloses 5 times the volume of one assembled STUN, and one assembled STUS encloses 20 times that volume.
+For enclosure, count each assembled STUN as 1 STUN equivalent, each STUL as 5, and each STUS as 20; different types may be combined.
+The structure ratio is the number of STUN equivalents required to enclose one volume unit:
 
-|                                 |    |
-|---------------------------------|----|
-| Open colonies (OPC)             | 1  |
-| Enclosed surface colonies (ESC) | 5  |
-| Orbiting colonies (OBC)         | 8  |
-| Ships (SHP)                     | 10 |
+| S/C Type                       | Structure Ratio |
+|--------------------------------|-----------------|
+| Open colonies (OPC)             | 1               |
+| Enclosed surface colonies (ESC) | 5               |
+| Orbiting colonies (OBC)         | 8               |
+| Ships (SHP)                     | 10              |
+
+The available enclosure capacity is the total assembled STUN equivalents divided by the structure ratio.
+The following table gives the volume units enclosed by 1 MU of assembled structure:
+
+| Structural Unit | Mass Per Unit (MU) | Units Per 1 MU | OPC | ESC | OBC  | SHIP |
+|-----------------|--------------------|----------------|-----|-----|------|------|
+| STUN            | 0.1                | 10             | 10  | 2   | 1.25 | 1    |
+| STUL            | 0.1                | 10             | 50  | 10  | 6.25 | 5    |
+| STUS            | 0.1                | 10             | 200 | 40  | 25   | 20   |
+
+SHIP in this table means SHP.
 
 This means that structural requirements of a SHP are determined by how much it carries.
-If a SHP is to transport 100,000 volume units, it will require a minimum of 1,000,000 STUN, STUL, or STUS.
+If a SHP is to transport 100,000 volume units, it requires 1,000,000 STUN equivalents: 1,000,000 STUN, 200,000 STUL, 50,000 STUS, or a combination providing at least that many equivalents.
 For the number of volume units per item see the UNIT CHARACTERISTICS SUMMARY in [R3.0](#rule-R3.0)<!-- was on the back cover -->.
 
 <a id="rule-F3.2"></a>
@@ -2399,8 +2415,8 @@ An attempt to do so will result in the computer changing the STUN to either STUL
 * OBC's TL5-10 build STUS, so the computer would change the STUN to STUS.
 * And if one tried to have an OBC-7, for instance, build STUL, the computer would automatically change the STUL to STUS.
 
-In other words, ordering a heavier type of structural unit than what should have been ordered will cause the computer to correct it to the appropriate lighter type.
-But ordering a *lighter* structural unit than what should have been ordered will cause the order to abort.
+In other words, ordering a structural type with less enclosure capacity per unit than the appropriate type will cause the computer to correct it to the appropriate type.
+But ordering a type with *greater* enclosure capacity per unit than the appropriate type will cause the order to abort.
 
 <a id="rule-H3.9"></a>
 ### H3.9 Shortages and Factory Group Numbers
@@ -3101,7 +3117,7 @@ The error code at the end of a failed order explains why the order failed.
 | FRM TL6-10    | 4+TL                  | 2+TL                  | 6+(2xTL)            | 1xTL              | 5xTL FOOD/TN                 | 1 PRO + 3 USK               | 3+TL      | UNA       |
 | HDRV          | 25xTL                 | 20xTL                 | 45xTL               | 40 x dist.        | 1045xTL MU lift              | none                        | 22.5xTL   | UNA       |
 | LFS           | 3xTL                  | 5xTL                  | 8xTL                | 1xTL              | TL^2= POP supported          | none                        | 4xTL      | UNA       |
-| STUL          | 0.01                  | 0.01                  | 0.02                | --                | none                         | --                          | 0.01      | UNA \*\*  |
+| STUL          | 0.05                  | 0.05                  | 0.1                 | --                | 5 STUN equivalents           | --                          | 0.05      | UNA \*\*  |
 | MRB           | 10+TL                 | 10+TL                 | 20+(2xTL)           | 0                 | TLx2= SLD replaced           | none                        | 20+(2xTL) | NON       |
 | MIN           | 5+TL                  | 5+TL                  | 10+(2xTL)           | 0.5xTL            | 25xTL MU/TN                  | 1 PRO + 3 USK               | 5+TL      | UNA       |
 | MSL           | 15xTL                 | 10xTL                 | 25xTL               | 0                 | 1 MSS/attack                 | none                        | 12.5xTL   | UNA       |
@@ -3110,8 +3126,8 @@ The error code at the end of a failed order explains why the order failed.
 | RSCH          | --                    | --                    | 0                   | --                | --                           | --                          | 0         |           |
 | SEN           | 1,000xTL              | 2,000xTL              | 3,000xTL            | 0.05xTL           | 1 probe/TL                   | none                        | 1500xTL   | UNA       |
 | SDRV          | 15xTL                 | 10xTL                 | 25xTL               | TL^2              | 1000xTL^2=thrust/TN          | none                        | 12.5xTL   | UNA       |
-| STUN          | 0.07                  | 0.03                  | 0.1                 | --                | --                           | --                          | 0.05      | UNA \*\*  |
-| STUS          | 0.001                 | 0.004                 | 0.005               | --                | --                           | --                          | 0.0025    | UNA \*\*  |
+| STUN          | 0.07                  | 0.03                  | 0.1                 | --                | 1 STUN equivalent            | --                          | 0.05      | UNA \*\*  |
+| STUS          | 0.02                  | 0.08                  | 0.1                 | --                | 20 STUN equivalents          | --                          | 0.05      | UNA \*\*  |
 | TPT           | 3xTL                  | 1xTL                  | 4xTL                | 0.1xTL^2          | 200xTL^2=MU                  | 1 PRO/10 TPT                | 4xTL      | NON       |
 | TPT/COMBAT    | 3xTL                  | 1xTL                  | 4xTL                | 0.01xTL^2         | 3xTL^2=MU/TN                 | 1 PRO/10 TPT                | 4xTL      | NON       |
 | SPYS          | --                    | --                    | 2                   | --                | --                           | --                          | 2         |           |
@@ -3122,7 +3138,8 @@ The error code at the end of a failed order explains why the order failed.
 \* Farms and factories in orbiting colonies within the 5th orbit or less use 0 fuel.
 
 \*\* Unassembled items (UNA), when assembled are doubled in volume, except for STUN, STUL, and STUS, which have zero assembled volume.
-The table gives their unassembled volumes, which are unchanged.
+The table gives their unassembled volumes.
+Their enclosure capacities are given in STUN equivalents, as defined in [F3.1.1](#rule-F3.1.1).
 
 # S. Orders
 
