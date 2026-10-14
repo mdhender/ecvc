@@ -460,7 +460,7 @@ See also errata 41.
   The TL is raised at B3.17.6, one level at a time toward the TL named, as far as the RSCH pay for; the rest stay accumulated, and several TL's may be gained in one turn.
   A second ASM order for TL in the same turn fails with E01.
 
-### 80. ASM order for a TL that can not be reached
+### 80. ASM order for a TL that can not be reached ✅
 
 - **Rules:** [J4.1](manual.md#rule-J4.1), [S6.1](manual.md#rule-S6.1), [R2.0](manual.md#rule-R2.0)
 - **Kind:** gap
@@ -468,7 +468,9 @@ See also errata 41.
 J4.1 does not say what happens to an ASM order for TL that names the s/c's current TL or a lower one, or a TL above 10, where the RSCH table ends.
 Such an order should fail with error E01.
 
-### 81. ASM order for TL without enough RSCH
+- **Resolved:** #36. An ASM order naming the s/c's current TL, a lower TL, or a TL above 10 fails with E01 ([J4.1](manual.md#rule-J4.1)).
+
+### 81. ASM order for TL without enough RSCH ✅
 
 - **Rules:** [J4.1](manual.md#rule-J4.1), [S6.1](manual.md#rule-S6.1), [R2.0](manual.md#rule-R2.0)
 - **Kind:** gap
@@ -477,13 +479,17 @@ J4.1 raises the TL as far as the RSCH pay for, but does not say whether an order
 The order should fail with error E02 when the RSCH do not pay for the TL named.
 It is still carried out in part when the RSCH pay for at least one level: the s/c gains those levels, and the order is reported with E02.
 
-### 82. TL in a multiple ASM order
+- **Resolved:** #36. The order fails with E02 when the RSCH do not pay for the TL named, but the s/c still gains the levels they pay for ([J4.1](manual.md#rule-J4.1)).
+
+### 82. TL in a multiple ASM order ✅
 
 - **Rules:** [J4.1](manual.md#rule-J4.1), [S6.1](manual.md#rule-S6.1), [S6.1.1](manual.md#rule-S6.1.1)
 - **Kind:** gap
 
 S6.1.1 does not say whether a multiple ASM order may include a TL line.
 TL should never be allowed in a multiple ASM order.
+
+- **Resolved:** #36. TL is never allowed in a multiple ASM order; a TL line fails with E01, and the rest of the order is still processed ([S6.1.1](manual.md#rule-S6.1.1)).
 
 ## L. Markets and Trade
 
