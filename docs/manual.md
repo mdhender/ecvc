@@ -1358,6 +1358,9 @@ The formula is written thus: HP =(2^AT ÷ 2^MT) x .55
 HP is the fraction of ANM that hit, AT is the ANM TL, MT is the TL of the MSS.
 In the case of an invasion, MT is the TL of their ASC or ASW.
 If a force is not armed with either ASC or ASW, then MT = 1.
+HP is not capped at 1: an ANM with a higher TL than its target may make more than one hit.
+The number of hits is HP times the number of ANM fired, rounded up to benefit the defender.
+Against MSS, each hit destroys one MSS, up to the number of MSS in the volley.
 
 <a id="rule-E5.0"></a>
 ## E5.0 Energy Weapons
@@ -1398,7 +1401,8 @@ Where HP is the fraction of energy units that hit, ET is the EWP's TL, MT is the
 In the case of an invasion, or raid, MT is the TL of their ASC or ASW.
 If the attacking force is not armed with either ASC or ASW, then MT = 1.
 EWP's use fuel each time they are fired.
-When EWP are fired at MSS, the number of MSS destroyed = HP x the number of EWP.
+HP is not capped at 1: an EWP with a higher TL than its target may destroy more than one MSS.
+When EWP are fired at MSS, the number of MSS destroyed = HP x the number of EWP, rounded up to benefit the defender, up to the number of MSS in the volley.
 
 <a id="rule-E6.0"></a>
 ## E6.0 Energy Shields
