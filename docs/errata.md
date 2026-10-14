@@ -55,13 +55,16 @@ A4.2 gives no scale.
 - **Resolved:** #19. A4.2 defines the planet's HN limit as the habitability number (HN) times 10,000,000 POP, and lists its effects on births (G2.1), the death rate (G3.9), and FRM-1 (H1.7); G2.1 and G3.9 cite A4.2 for the limit.
   H1.7's 100,000 FRM-1 per HN feed G3.9's 10,000,000 POP per HN; V1.0's 200,000 POP per HN is a scoring threshold, not a capacity.
 
-### 4. Contents of a resource deposit
+### 4. Contents of a resource deposit ✅
 
 - **Rules:** [A4.3](manual.md#rule-A4.3)
 - **Kind:** ambiguity
 
 "Each deposit contains 1,000,000-99,000,000 units of: gold, fuel, metallics and non-metallics" can be read as one resource per deposit or all four.
 M1.0 reports "the resource each deposit contains", which suggests one.
+
+- **Resolved:** #22. A deposit contains 1,000,000 to 99,000,000 units of a single resource, with a yield of 1% to 9% for gold and 10% to 90% for the others ([A4.3](manual.md#rule-A4.3)).
+  MIN's extract ORE, which is refined at the deposit's yield and rounded down, up to the quantity left in the deposit ([H2.1](manual.md#rule-H2.1)).
 
 ### 5. Race numbers for Regents and Independents
 

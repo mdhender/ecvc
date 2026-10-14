@@ -306,7 +306,10 @@ Habitability numbers do not affect, and are not affected by, the operations of e
 ### A4.3 Resource Deposits
 
 Each planet has a maximum of 40 natural resource deposits.
-Each deposit contains 1,000,000-99,000,000 units of: gold, fuel, metallics and non-metallics.
+Each deposit contains between 1,000,000 and 99,000,000 units of a single resource (gold, fuel, metallics, or non-metallics).
+Each deposit also has a yield: the percentage of the raw resource (ORE) mined from it that is refined into its resource ([H2.1](#rule-H2.1)).
+A yield is always a whole percentage.
+The yield of a gold deposit is from 1% to 9%; the yield of a fuel, metallics, or non-metallics deposit is from 10% to 90%.
 
 <a id="rule-A5.0"></a>
 ## A5.0 Time Scale
@@ -470,11 +473,12 @@ Players are assigned race numbers as follows:
 
 ### O
 
-| Code | Term                    | Definition                          |
-|------|-------------------------|-------------------------------------|
-| OBC  | Orbiting colony         | Colony that orbits a planet.        |
-| OPC  | Open colony             | Surface colony open to environment. |
-| OTS  | Offensive troop support | See Combat ([D4.0](#rule-D4.0)<!-- was 15 -->).                    |
+| Code | Term                    | Definition                                                                  |
+|------|-------------------------|-----------------------------------------------------------------------------|
+| OBC  | Orbiting colony         | Colony that orbits a planet.                                                |
+| OPC  | Open colony             | Surface colony open to environment.                                         |
+| ORE  | Ore                     | Raw resource extracted by MIN's, before it is refined ([H2.1](#rule-H2.1)). |
+| OTS  | Offensive troop support | See Combat ([D4.0](#rule-D4.0)<!-- was 15 -->).                             |
 
 ### P
 
@@ -2181,14 +2185,19 @@ This is done with an ASM (assembly) order, and is explained in [F10.0](#rule-F10
 <a id="rule-H2.1"></a>
 ### H2.1 Amount of Resources Mined
 
-Each deposit is rated for yield; the yield percentage indicates the percentage of usable resources that can be extracted from each unit of resources mined.
-If a deposit had a 90% yield, and 100 units of resource were mined, 90 units of resources would be added to the player's resources in storage.
-One MIN mines 25 times its TL in resource units per turn.
+One MIN extracts 25 times its TL in units of raw resource (ORE) per turn.
+The ORE is refined at the deposit's yield ([A4.3](#rule-A4.3)), rounded down to a whole number of units, and the refined resource is added to the s/c's storage.
+The deposit's quantity goes down by the refined amount, not by the ORE extracted.
+The MIN's always extract their full amount of ORE, unless a shortage of fuel or labor stops them ([H2.2](#rule-H2.2)); the quantity left in the deposit does not limit it.
+The refined amount, however, can never be more than the quantity left in the deposit; a deposit with no quantity left is exhausted.
+For example, 10 MIN-1 working a deposit of 500 FUEL with a 50% yield extract 10 x 25 x 1 = 250 ORE in a turn, and refine it into 125 FUEL.
+The deposit has 375 FUEL left.
+Had it held only 100 FUEL, the MIN's would still extract 250 ORE, but refine only the 100 FUEL left, exhausting the deposit.
 
 <a id="rule-H2.2"></a>
 ### H2.2 Effect of Shortages
 
-If there is a shortage of available space to hold the amount of *gold* or *fuel* which would normally be mined on a turn, the MIN's will only mine the quantity which will fit the space available, and no more.
+If there is a shortage of available space to hold the refined *gold* or *fuel* which would normally be mined on a turn, the MIN's will only mine the ORE whose refined gold or fuel will fit the space available, and no more.
 Shortages of space do not affect NMTS or METS: extra amounts of those are stored outside the colony walls.
 (This applies only to enclosed surface colonies and open colonies.
 Mines are not operable on ships or orbiting colonies).
@@ -2637,7 +2646,7 @@ A player sells items to the market with sell (SEL) orders, in which no price is 
 <a id="rule-M1.0"></a>
 ## M1.0 Surveys
 
-A survey (SUR) will report the number of natural resource deposits on a planet, their deposit location numbers, the resource each deposit contains, quantity of resource per deposit, and the planet's habitability number.
+A survey (SUR) will report the number of natural resource deposits on a planet, their deposit location numbers, the resource each deposit contains, quantity of resource per deposit, the yield of each deposit ([A4.3](#rule-A4.3)), and the planet's habitability number.
 A survey also reports the number of TL-1 farms assembled and the total population of the open colonies there.
 A SUR can only be made if the planet and s/c are in the same orbit.
 A SUR is ordered with a survey (SUR) order, is completed in one turn, and requires one TPT and one PRO to do it.
