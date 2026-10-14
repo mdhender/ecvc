@@ -411,12 +411,9 @@ Each subject has one table, sorted by manual ID, so the tables show the outline 
 | S5.0      | Ship and Colony Orders                         |             | New group heading.                  |
 | S5.1      | Permission to Colonize Orders (PTC)            | 17.4.13     |                                     |
 | S5.2      | Allow Add-On Orders (AAN)                      | 17.4.14     |                                     |
-| S5.2.1    | Multiple Target AAN Orders                     | 17.4.14.1   |                                     |
 | S5.3      | Set Up Orders (STP)                            | 17.4.15     |                                     |
 | S5.4      | Add-On Orders (ADN)                            | 17.4.16     |                                     |
-| S5.4.1    | Multiple Target ADN Orders                     | 17.4.16.1   |                                     |
 | S5.5      | Junk Orders (JNK)                              | 17.4.17     |                                     |
-| S5.5.1    | Multiple Target JNK Orders                     | 17.4.17.1   |                                     |
 | S5.6      | Give Orders (GIV)                              | 17.4.18     |                                     |
 | S5.7      | Accept Orders (ACP)                            | 17.4.19     |                                     |
 | S5.8      | Merge Orders (MRG)                             | 17.4.20     |                                     |
@@ -513,5 +510,8 @@ These rules go in `docs/variants.md`, not the manual.
 | 16.2       | Stages                                           | Heading only; stages become B3.1 to B3.22.                |
 | 17         | Writing Orders                                   | Chapter heading with no text; its sections become topics. |
 | 17.4       | Order Formats and Examples                       | Heading only; orders become S4 to S14.                    |
+| 17.4.14.1  | Multiple Target AAN Orders                       | Folded into S5.2 by #12.                                  |
+| 17.4.16.1  | Multiple Target ADN Orders                       | Folded into S5.4 by #12.                                  |
+| 17.4.17.1  | Multiple Target JNK Orders                       | Folded into S5.5 by #12.                                  |
 |            | Foreword                                         | Unnumbered front matter.                                  |
 |            | Table of Contents                                | Regenerated for the manual.                               |
