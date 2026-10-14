@@ -315,19 +315,19 @@ Like the rest of `docs/`, it is licensed under CC BY-NC-ND 4.0; see [LICENSE](LI
 | [17.4.23](rulebook.md#17423-scrap-orders-scr) | Scrap Orders (SCR) | [S6.3](manual.md#rule-S6.3) | |
 | [17.4.23.1](rulebook.md#174231-multiple-scrap-orders) | Multiple Scrap Orders | [S6.3.1](manual.md#rule-S6.3.1) | |
 | [17.4.24](rulebook.md#17424-transfer-orders-tfr) | Transfer Orders (TFR) | [S7.1](manual.md#rule-S7.1) | |
-| [17.4.24.1](rulebook.md#174241-multiple-target-tfr-orders) | Multiple Target TFR Orders | [S7.1.1](manual.md#rule-S7.1.1) | |
+| [17.4.24.1](rulebook.md#174241-multiple-target-tfr-orders) | Multiple Target TFR Orders | [S7.1](manual.md#rule-S7.1) | Merged into S7.1 by #13. |
 | [17.4.24.2](rulebook.md#174242-multiple-tfr-orders) | Multiple TFR Orders | [S7.1.2](manual.md#rule-S7.1.2) | |
 | [17.4.24.3](rulebook.md#174243-tfrs-of-population) | TFR's of Population | [K3.2](manual.md#rule-K3.2) | |
 | [17.4.25](rulebook.md#17425-receive-orders-rec) | Receive Orders (REC) | [S7.2](manual.md#rule-S7.2) | |
-| [17.4.25.1](rulebook.md#174251-multiple-target-rec-orders) | Multiple Target REC Orders | [S7.2.1](manual.md#rule-S7.2.1) | |
+| [17.4.25.1](rulebook.md#174251-multiple-target-rec-orders) | Multiple Target REC Orders | [S7.2](manual.md#rule-S7.2) | Merged into S7.2 by #13. |
 | [17.4.25.2](rulebook.md#174252-to-cancel-receive-orders) | To Cancel Receive Orders | [S7.2.2](manual.md#rule-S7.2.2) | |
 | [17.4.25.3](rulebook.md#174253-multiple-rec-orders) | Multiple REC Orders | [S7.2.3](manual.md#rule-S7.2.3) | |
 | [17.4.26](rulebook.md#17426-pick-up-orders-pup) | Pick Up Orders (PUP) | [S7.3](manual.md#rule-S7.3) | |
-| [17.4.26.1](rulebook.md#174261-multiple-target-pup-orders) | Multiple Target PUP Orders | [S7.3.1](manual.md#rule-S7.3.1) | |
+| [17.4.26.1](rulebook.md#174261-multiple-target-pup-orders) | Multiple Target PUP Orders | [S7.3](manual.md#rule-S7.3) | Merged into S7.3 by #13. |
 | [17.4.26.2](rulebook.md#174262-multiple-pup-orders) | Multiple PUP Orders | [S7.3.2](manual.md#rule-S7.3.2) | |
 | [17.4.27](rulebook.md#17427-allow-pick-up-orders-apu) | Allow Pick Up Orders (APU) | [S7.4](manual.md#rule-S7.4) | |
-| [17.4.27.1](rulebook.md#174271-multiple-target-apu-orders) | Multiple Target APU Orders | [S7.4.1](manual.md#rule-S7.4.1) | |
-| [17.4.27.1.1](rulebook.md#1742711-cancelling-apu-orders) | Cancelling APU Orders | [S7.4.1.1](manual.md#rule-S7.4.1.1) | |
+| [17.4.27.1](rulebook.md#174271-multiple-target-apu-orders) | Multiple Target APU Orders | [S7.4](manual.md#rule-S7.4) | Merged into S7.4 by #13. |
+| [17.4.27.1.1](rulebook.md#1742711-cancelling-apu-orders) | Cancelling APU Orders | [S7.4.3](manual.md#rule-S7.4.3) | Moved from S7.4.1.1 by #13. |
 | [17.4.27.2](rulebook.md#174272-multiple-apu-orders) | Multiple APU Orders | [S7.4.2](manual.md#rule-S7.4.2) | |
 | [17.4.28](rulebook.md#17428-build-change-orders-bch) | Build Change Orders (BCH) | [S8.1](manual.md#rule-S8.1) | |
 | [17.4.29](rulebook.md#17429-mine-change-orders-mch) | Mine Change Orders (MCH) | [S8.3](manual.md#rule-S8.3) | |

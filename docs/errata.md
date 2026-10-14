@@ -14,6 +14,7 @@ Rule changes start from the `manual-baseline` tag and work through this list.
   - *example*: an example or table does not match the rule it illustrates;
   - *ambiguity*: the rule can be read more than one way;
   - *gap*: the rules do not say what happens;
+  - *structure*: a rule is out of place, or out of step with its counterparts;
   - *withdrawn*: the entry turned out not to be a rule mistake, and its number stays reserved.
 - **Resolved**, when present, names the issue that fixed the rule and says how.
 - Entries are grouped by the subject of their first rule.
@@ -601,6 +602,15 @@ The rules do not say whether such an order is handled as a jump or as a move: wh
 
 S2.5 leaves it to each order's rule to say what an item listed more than once does.
 S10.1 does not say, for either an orbit probe such as `77, PRB, 3, [4, 4].` or a s/c probe such as `77, PRB, S/C, [78, 78].`, whether the repeat is an error, is ignored, or makes a second probe and uses a second sensor.
+
+### 75. Placement of the REC cancel rule
+
+- **Rules:** [S7.2.2](manual.md#rule-S7.2.2), [S7.2.3](manual.md#rule-S7.2.3), [S7.4.2](manual.md#rule-S7.4.2), [S7.4.3](manual.md#rule-S7.4.3)
+- **Kind:** structure
+
+APU's cancel rule, S7.4.3, follows its multiple APU rule, S7.4.2.
+REC's cancel rule, S7.2.2, comes before its multiple REC rule, S7.2.3.
+REC should mirror APU, with the cancel rule after the multiple rule.
 
 ## V. Variants
 

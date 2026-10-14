@@ -2538,7 +2538,7 @@ For example, PRO would be PRX, SLD would be SLX, CNW would be CNX, etc.
 Rebels can be moved along with other population units in a TFR only.
 They will never be moved in pick-ups, add-ons, or set ups.
 To prevent the rebels from being transferred, change the last letter of the POP abbreviation to X.
-For instance, 54, TFR, 500, PRX-3, 398.
+For instance, 54, TFR, 500, PRX-3, [398].
 This TFR order TFR's 500 PRO-3 to s/c 398 without rebels.
 
     Note: POP can not be TFR's to s/c 0 from a home colony.
@@ -2549,7 +2549,7 @@ This TFR order TFR's 500 PRO-3 to s/c 398 without rebels.
 Shortages of fuel or PRO's will result in all or part of the TFR or PUP orders failing.
 TFR's and PUP's are done in the order in which they are listed on the turnsheet; they are done one by one until stopped by a shortage.
 
-    NOTE: NEVER WRITE MORE THAN ONE TFR OR PUP ORDER FOR THE SAME ITEM TO THE SAME S/C ON THE SAME TURN, ie: 30, TFR, 40,000, METS, 26. and 30, TFR, 80,000, METS, 26.
+    NOTE: NEVER WRITE MORE THAN ONE TFR OR PUP ORDER FOR THE SAME ITEM TO THE SAME S/C ON THE SAME TURN, ie: 30, TFR, 40,000, METS, [26]. and 30, TFR, 80,000, METS, [26].
 
 This is very important as doing this can not only cause the order to abort, but can cause other errors in the turn, as well.
 The order will also abort if there is not enough space in the receiving s/c to house the new items.
@@ -3119,7 +3119,7 @@ For example:
 
 And:
 
-    29, TFR , TL-7, 28.
+    29, TFR , TL-7, [28].
 
 <a id="rule-S2.4"></a>
 ### S2.4 Race Numbers and TL Numbers
@@ -3151,18 +3151,18 @@ RACE #2      SIGNATURE:                      PLAYER ID #22    ACCT #0353
 
 
 22, DAS, 60,000, STUN.
-22, TFR, 1E6, MSS-1, 24.
-22, PUP, 2E6, NMTS, 24.
-22, TFR, 100,000, FUEL, 295.
+22, TFR, 1E6, MSS-1, [24].
+22, PUP, 2E6, NMTS, [24].
+22, TFR, 100,000, FUEL, [295].
 
-22, PUP, 3, M, 295.
+22, PUP, 3, M, [295].
 800, SPYS.
 100, CNW-1.
 2E5, LFS-2.
 
 22, SPM, 1, G, A.
 25, SPM, 1E3, G, E.
-209, TFR, 100,000, METS, 22.
+209, TFR, 100,000, METS, [22].
 209, MOV, (0,0,0,1,6).
 
 209, PAY, .4, PRO.
@@ -3578,28 +3578,29 @@ This order does not require "END" to finish it.
 <a id="rule-S7.1"></a>
 ### S7.1 Transfer Orders (TFR)
 
-- Format: S/C ID#, "TFR", quantity, item, receiving s/c.
-- Example: 75, TFR, 1,000,000, NMTS, 74.
-- Notes: The TFR order has s/c 75 transfer 1,000,000 NMTS TO s/c 74.
+- Format: S/C ID#, "TFR", quantity, item, [receiving s/c ID#'s].
+- Examples:
+  ```text
+  75, TFR, 1,000,000, NMTS, [74].
+  75, TFR, 30,000, RSCH, [70, 71, 72, 73, 74].
+  ```
+- Notes: The first TFR order has s/c 75 transfer 1,000,000 NMTS TO s/c 74; a single s/c is still written as a list ([S2.5](#rule-S2.5)).
+  The second causes the RSCH to be transferred to 70, 71, 72, 73, and 74.
+  Each s/c listed receives the full quantity, and the s/c's are supplied in the order listed ([K4.0](#rule-K4.0)).
+  A s/c listed more than once is transferred to only the first time; each repeat fails with error E01, and the rest of the list is still processed.
+  `[*]` can not be used in a TFR order.
   The items are taken from 75's storage and are put into 74's storage.
   Any item can be TFR'd to another Ruler of the same race if the receiving s/c writes a REC order.
   Only gold can be TFR'd to a Ruler of another race.
   Group G SPYS may be TFR'd into a foreign s/c to conduct espionage, but they remain under their Ruler's control (see [K1.0](#rule-K1.0)<!-- was 11.1 -->).
 
-<a id="rule-S7.1.1"></a>
-#### S7.1.1 Multiple Target TFR Orders
-
-- Format: S/C ID#, "TFR", quantity, item, receiving s/c's.
-- Example: 75, TFR, 30,000, RSCH, 70, 71, 72, 73, 74.
-- Notes: The multiple target TFR order causes the RSCH to be transferred to 70, 71, 72, 73, and 74.
-
 <a id="rule-S7.1.2"></a>
 #### S7.1.2 Multiple TFR Orders
 
-- Format: S/C ID#, "TFR", quantity of unit types, M, receiving s/c (or s/c's).
+- Format: S/C ID#, "TFR", quantity of unit types, M, [receiving s/c ID#'s].
 - Example:
   ```text
-  75, TFR, 3, M, 307, 308, 310, 311.
+  75, TFR, 3, M, [307, 308, 310, 311].
   100, CNGD.
   5,000, FOOD.
   30,000, RSCH.
@@ -3611,34 +3612,35 @@ This order does not require "END" to finish it.
 <a id="rule-S7.2"></a>
 ### S7.2 Receive Orders (REC)
 
-- Format: S/C ID#, "REC", quantity, item, s/c received from.
-- Example: 307, REC, 1E6, NMTS, 75.
-- Notes: The REC order has s/c 307 receive 1,000,000 NMTS from s/c #75.
+- Format: S/C ID#, "REC", quantity, item, [s/c ID#'s received from].
+- Examples:
+  ```text
+  307, REC, 1E6, NMTS, [75].
+  75, REC, 3E3, NMTS, [72, 73].
+  ```
+- Notes: The first REC order has s/c 307 receive 1,000,000 NMTS from s/c #75; a single s/c is still written as a list ([S2.5](#rule-S2.5)).
+  The second causes the NMTS to be received from 72 and 73.
+  A s/c listed more than once is received from only once; the repeat is not an error.
+  `[*]` can not be used in a REC order.
   This order is not necessary if both s/c's are owned by the same player.
   If X- POP units are used in a REC order, it will be void.
   REC orders are used only for TFR's from another Ruler of the same race, or his Regent (see [K1.0](#rule-K1.0)<!-- was 11.1 -->).
   Gold, RSCH, and SPYS do not require a REC order.
 
-<a id="rule-S7.2.1"></a>
-#### S7.2.1 Multiple Target REC Orders
-
-- Format: S/C ID#, "REC", quantity, item, s/c's received from.
-- Example: 75, REC, 3E3, NMTS, 72, 73.
-- Notes: The multiple target REC order causes the NMTS to be received from 72 and 73.
-
 <a id="rule-S7.2.2"></a>
 #### S7.2.2 To Cancel Receive Orders
 
 REC orders remain in force until used or canceled.
-To do this, the order should be written as before, except that the qty # being REC'd is changed to 0, as in 29, REC, 0, FOOD, 25.
+To do this, the order should be written as before, except that the qty # being REC'd is changed to 0, as in 29, REC, 0, FOOD, [25].
+A REC order cancelled this way is cancelled for every s/c in its list.
 
 <a id="rule-S7.2.3"></a>
 #### S7.2.3 Multiple REC Orders
 
-- Format: S/C ID#, "REC", quantity of unit types, M, s/c (or s/c's) received from.
+- Format: S/C ID#, "REC", quantity of unit types, M, [s/c ID#'s received from].
 - Example:
   ```text
-  307, REC, 4, M, 75, 76, 77, 78, 79.
+  307, REC, 4, M, [75, 76, 77, 78, 79].
   100, PRO-4.
   200, LFS-1.
   10, TPT-2.
@@ -3652,28 +3654,29 @@ To do this, the order should be written as before, except that the qty # being R
 <a id="rule-S7.3"></a>
 ### S7.3 Pick Up Orders (PUP)
 
-- Format: S/C ID#, "PUP", quantity, item, s/c being picked up from.
-- Example: 69, PUP, 10, SDRV-1, 70.
-- Notes: The PUP order has s/c 69 pick-up SDRV-1 from s/c 70.
+- Format: S/C ID#, "PUP", quantity, item, [s/c ID#'s being picked up from].
+- Examples:
+  ```text
+  69, PUP, 10, SDRV-1, [70].
+  307, PUP, 100, HDRV-1, [75, 74, 72].
+  ```
+- Notes: The first PUP order has s/c 69 pick-up SDRV-1 from s/c 70; a single s/c is still written as a list ([S2.5](#rule-S2.5)).
+  The second causes the HDRV-1 to be picked up from 75, 74, and 72.
+  The full quantity is picked up from each s/c listed, in the order listed ([K4.0](#rule-K4.0)).
+  A s/c listed more than once is picked up from only the first time; each repeat fails with error E01, and the rest of the list is still processed.
+  `[*]` can not be used in a PUP order.
   X-POP units may not be used in a pick up order; if used, it will be void.
   The items are picked up from 70's storage and go into 69's storage.
   Any item can be PUP'd from another Ruler of the same race if that s/c writes an APU order.
   Nothing can be PUP'd from a Ruler of another race, except the player's own group G SPYS (see [K1.0](#rule-K1.0)<!-- was 11.1 -->).
 
-<a id="rule-S7.3.1"></a>
-#### S7.3.1 Multiple Target PUP Orders
-
-- Format: S/C ID#, "PUP", quantity, item, s/c's being picked up from.
-- Example: 307, PUP, 100, HDRV-1, 75, 74, 72.
-- Notes: The multiple target PUP order causes the HDRV-1 to be picked up from 75, 74, and 72.
-
 <a id="rule-S7.3.2"></a>
 #### S7.3.2 Multiple PUP Orders
 
-- Format: S/C ID#, "PUP", quantity of unit types, M, s/c (or s/c's) to be PUP'd from.
+- Format: S/C ID#, "PUP", quantity of unit types, M, [s/c ID#'s to be PUP'd from].
 - Example:
   ```text
-  307, PUP, 3, M, 80, 81.
+  307, PUP, 3, M, [80, 81].
   2E6, LTSU.
   800, FOOD.
   90, CNW-2.
@@ -3686,35 +3689,27 @@ To do this, the order should be written as before, except that the qty # being R
 <a id="rule-S7.4"></a>
 ### S7.4 Allow Pick Up Orders (APU)
 
-- Format: S/C ID#, "APU", quantity, item, s/c making pick up.
-- Example: 70, APU, 10, SDRV-1, 69.
-- Notes: The APU order has s/c 70 allow s/c 69 to pick up 70's 10 SDRV-1.
+- Format: S/C ID#, "APU", quantity, item, [s/c ID#'s making pick up].
+- Examples:
+  ```text
+  70, APU, 10, SDRV-1, [69].
+  75, APU, 1, GOLD, [72, 73, 74].
+  ```
+- Notes: The first APU order has s/c 70 allow s/c 69 to pick up 70's 10 SDRV-1; a single s/c is still written as a list ([S2.5](#rule-S2.5)).
+  The second has s/c 75 allow the three s/c's to pick up 1 gold unit each from s/c 75.
+  A s/c listed more than once is allowed only once; the repeat is not an error.
+  `[*]` can not be used in an APU order.
   X-POP can not be used in an APU order or it will be void.
   APU orders are not used if both s/c's are owned by the same player.
   APU orders are used only for PUP's by another Ruler of the same race, or his Regent (see [K1.0](#rule-K1.0)<!-- was 11.1 -->).
 
-<a id="rule-S7.4.1"></a>
-#### S7.4.1 Multiple Target APU Orders
-
-- Format: S/C ID#, "APU", quantity, item, s/c's making pick up.
-- Example: 75, APU, 1, GOLD, 72, 73, 74.
-- Notes: The multiple target APU order has s/c 75 allow the three s/c's to pick up 1 gold unit each from s/c 75.
-
-<a id="rule-S7.4.1.1"></a>
-##### S7.4.1.1 Cancelling APU Orders
-
-APU orders remain in force until either used or cancelled.
-In order to cancel an APU order, the player writes it as before, substituting 0 for the quantity.
-
-- Example: 38, APU, 0, GOLD, 292.
-
 <a id="rule-S7.4.2"></a>
 #### S7.4.2 Multiple APU Orders
 
-- Format: S/C ID#, "APU", quantity of unit types, M, s/c (s), making pick up.
+- Format: S/C ID#, "APU", quantity of unit types, M, [s/c ID#'s making pick up].
 - Example:
   ```text
-  75, APU, 2, M, 66, 67, 68, 69, 70, 71, 72, 73, 74.
+  75, APU, 2, M, [66, 67, 68, 69, 70, 71, 72, 73, 74].
   300,500, SLSU.
   400, PRO-5.
   ```
@@ -3722,6 +3717,15 @@ In order to cancel an APU order, the player writes it as before, substituting 0 
   It can be used to have more than one item picked up by one or more s/c's.
   In this case, it has s/c 75 allow 9 s/c's to each pick up 300,300 SLSU and 400 PRO-5 from s/c 75.
   If the player wishes, he can write each APU order separately.
+
+<a id="rule-S7.4.3"></a>
+#### S7.4.3 Cancelling APU Orders
+
+APU orders remain in force until either used or canceled.
+In order to cancel an APU order, the player writes it as before, substituting 0 for the quantity.
+An APU order canceled this way is canceled for every s/c in its list.
+
+- Example: 38, APU, 0, GOLD, [292].
 
 <a id="rule-S8.0"></a>
 ## S8.0 Production Orders
