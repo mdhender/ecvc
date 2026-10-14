@@ -43,7 +43,7 @@ A3.0 says a star has 11 orbits, numbered 0 to 10.
 
 - **Resolved:** #2. A solar system has orbits 1 to 10; orbit 0 belongs to the star system ([A3.1](manual.md#rule-A3.1)).
 
-### 3. Scale of the habitability number
+### 3. Scale of the habitability number ✅
 
 - **Rules:** [A4.2](manual.md#rule-A4.2), [G3.9](manual.md#rule-G3.9), [H1.7](manual.md#rule-H1.7), [V1.0](variants.md#rule-V1.0)
 - **Kind:** ambiguity
@@ -51,6 +51,9 @@ A3.0 says a star has 11 orbits, numbered 0 to 10.
 A4.2 says the habitability number, 0 to 25, "indicates the number of population units who can live on a planet's surface".
 G3.9 scales it by 10,000,000 POP, H1.7 limits FRM-1 to the number times 100,000, and V1.0 counts 200,000 POP per habitability point.
 A4.2 gives no scale.
+
+- **Resolved:** #19. A4.2 defines the planet's HN limit as the habitability number (HN) times 10,000,000 POP, and lists its effects on births (G2.1), the death rate (G3.9), and FRM-1 (H1.7); G2.1 and G3.9 cite A4.2 for the limit.
+  H1.7's 100,000 FRM-1 per HN feed G3.9's 10,000,000 POP per HN; V1.0's 200,000 POP per HN is a scoring threshold, not a capacity.
 
 ### 4. Contents of a resource deposit
 
