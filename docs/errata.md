@@ -18,6 +18,8 @@ Rule changes start from the `manual-baseline` tag and work through this list.
   - *withdrawn*: the entry turned out not to be a rule mistake, and its number stays reserved.
 - **Resolved**, when present, names the issue that fixed the rule and says how.
   A resolved entry has ✅ at the end of its title; an entry resolved only in part does not.
+- **Won't fix**, when present, says why the rule is left as it is.
+- A withdrawn entry, or one marked won't fix, has 🚫 at the end of its title.
 - Entries are grouped by the subject of their first rule.
 
 Typographic and scan errors are not logged here; they are corrected in `docs/rulebook.md` and the manual is rebuilt.
@@ -78,7 +80,7 @@ The Moderator assigns Regents a player number (B4.1), and Independents take the 
   Regents and Independents get the next available player number.
   A Regent takes his Ruler's race ([B4.1](manual.md#rule-B4.1)); an Independent takes the race of his s/c's majority population ([B4.2](manual.md#rule-B4.2)).
 
-### 6. Sample turnsheet race number
+### 6. Sample turnsheet race number 🚫
 
 - **Rules:** [A6.0](manual.md#rule-A6.0), [S3.0](manual.md#rule-S3.0)
 - **Kind:** withdrawn
