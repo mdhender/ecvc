@@ -776,7 +776,7 @@ All the orders for one stage are processed before any of the orders for the next
 <a id="rule-B4.1"></a>
 ### B4.1 Regents
 
-Regents (formerly called Subordinates) are players who run one or more s/c's for a single Ruler.
+Regents are players who run one or more s/c's for a single Ruler.
 Any number of s/c's may be managed by a single Regent.
 A Ruler may advise his Regent and issue commands to him, but the only actual control he has over him is to remove him from the game.
 The Ruler removes him by sending a postcard or note to the Moderator, telling him the name of the Regent and the ID numbers of the s/c's he manages.
