@@ -1059,8 +1059,13 @@ A target within the s/c may be chosen.
 ### D6.2 Targets
 
 A player does not have to specify a target in his bombardment orders.
-If targets are not specified, the damage will be done randomly.
-Specifying a target will increase the chance of hitting the target area by 50%.
+Each salvo, all the MSS or all the EWP that one s/c fires with one bombardment order, counts as one hit.
+Each hit strikes one kind of unit in the s/c hit, such as MSL-1 or METS, chosen at random; each kind's chance of being hit is its share of the s/c's mass.
+All the damage from the hit is applied to that kind of unit.
+If the damage is more than it takes to destroy all of them, the excess is applied to another kind of unit, chosen at random the same way but without the target bonus, and so on until all the damage has been applied or nothing is left in the s/c.
+Troops ([D2.2](#rule-D2.2)) count at 75% of their mass, and weapons (ANM, ASC, ASW, EWP, MSL, and MSS) at 90% of their mass, rounded down, when the chances are worked out.
+Specifying a target group ([D6.2.1](#rule-D6.2.1)) increases the mass of the units in that group by half, rounded up, before the chances are worked out, but decreases the damage of each hit by 25%, rounded down.
+When the mass of a kind of unit is adjusted twice, the adjustments are applied in the order that gives the lower mass.
 Only colonies may be targeted for bombardment, not ships.
 
 <a id="rule-D6.2.1"></a>
@@ -1123,7 +1128,7 @@ The TL's used in computing ANM and EWP hits on MSS's and troops is the *weighted
 * A ship may not fire an EWP or MSL unless it has at least one assembled sensor on board.
 * A colony can't fire on a ship unless it has an assembled SEN.
 * A colony can fire on another colony without a SEN.
-* Damage from bombardment against untargeted colonies and against ships is allocated randomly.
+* Damage from bombardment against untargeted colonies and against ships is allocated randomly, by mass ([D6.2](#rule-D6.2)).
 * STUN, LTSU,and SLSU all absorb damage at the same rate.
   (500 M.U. damaged will destroy 1,000 STUN or 1,000 LTSU or 1,000 SLSU).
   *On ships, the number destroyed will be 10,000 instead.*
@@ -1132,7 +1137,7 @@ The TL's used in computing ANM and EWP hits on MSS's and troops is the *weighted
   Each tactical coordinate is a whole number of distance units from -999 to 999.
   Tactical coordinates are not cluster coordinates ([A2.1](#rule-A2.1)); they are written the same way, and context tells them apart.
 * The scale is 1 distance unit = 10,000 km's.
-* Troops and weapons are not as likely to be hit as other items are, even if they are in the designated target group.
+* Troops and weapons are not as likely to be hit as other items are, even if they are in the designated target group ([D6.2](#rule-D6.2)).
 * Ships do not collide.
 
 <a id="rule-D7.0"></a>
