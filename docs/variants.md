@@ -111,7 +111,7 @@ BELOW IS A LIST OF YOUR STARTING EQUIPMENT:
 | MSL-1 |     800,000 |
 | STUN  | 875,000,000 |
 
-Your turn 0 printout will show your orbiting colony, which will produce 5,000,000 LTSU per turn.
+Your turn 0 printout will show your orbiting colony, which will produce 5,000,000 STUL per turn.
 Both your home planet and your orbiting colony have TL-1.
 Your turn 0 printout will also have a survey of the home planet on it.
 FCT group #1 consists of 3,750,000 FCT-1 producing CNGD's.
