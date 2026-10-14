@@ -1009,7 +1009,7 @@ Invaders or defenders in an INV may receive supporting forces from other s/c's.
 These s/c's may be other s/c's belonging to that Ruler or his Regent or may belong to a different Ruler or Regent.
 The supporting forces fight for the s/c designated in the order.
 If a force is supporting an invading force, and the invader's force is withdrawn, then the supporting force will be forced to withdraw.
-Should a force (supporting or otherwise) be forced to withdraw with no place to withdraw *to*, (their s/c being destroyed, captured, or moved), it must surrender.
+Should a force (supporting or otherwise) be forced to withdraw with no place to withdraw *to*, (their s/c being destroyed, captured, or moved), it must surrender ([D9.6](#rule-D9.6)).
 This applies to a force *ordered* to withdraw, as well.
 A defensive support order, besides supporting a player against invasion will support him against raids, as well.
 But an offensive support order does not include raids.
@@ -1021,7 +1021,7 @@ This applies to both offensive & defensive support in an invasion, and to defens
 ## D5.0 Withdrawal
 
 Invading or supporting players may withdraw all or part of their forces on any turn if they have a s/c at the same orbit to withdraw to.
-If they do not, they are forced to surrender.
+If they do not, they are forced to surrender ([D9.6](#rule-D9.6)).
 WTD's use TPT capacity just as transfer type orders do.
 
 <a id="rule-D6.0"></a>
@@ -1207,8 +1207,10 @@ EWP's and MSL's fire at troops, supporting troops, and raiders, (and at their AS
 <a id="rule-D9.6"></a>
 ### D9.6 Surrender Check
 
-If the ratio of combat factors of defenders and their supporters to raiders, or to invaders and their supporters, is 6 to 1, then the invaders surrender.
-If the ratio is 1 to 6, then the defenders surrender.
+If the combat factor of the defenders and their supporters, divided by that of the raiders, or of the invaders and their supporters, is at least 6, then the raiders or invaders surrender.
+If the attackers' combat factor divided by the defenders' is at least 6, then the defenders surrender.
+Each ratio is rounded to benefit the defender: the defenders' combat factor divided by the attackers' is rounded up, and the attackers' divided by the defenders' is rounded down.
+SLD that surrender, here or when forced to by [D4.0](#rule-D4.0) or [D5.0](#rule-D5.0), become UEM of their own race (UEM-R, where R is their race number), as losing soldiers do after a rebellion ([N1.4](#rule-N1.4)).
 
 <a id="rule-D9.7"></a>
 ### D9.7 Invasion Casualties
@@ -1261,7 +1263,7 @@ The fractions are 0.3 for OPC's, 0.5 for ESC's, 0.75 for OBC's, and 0.9 for ship
 <a id="rule-D10.0"></a>
 ## D10.0 Mission Completion
 
-If the defending troops have been eliminated, then the invaded s/c becomes the property of the owner of the largest invading force.
+If the defending troops have been eliminated or have surrendered ([D9.6](#rule-D9.6)), then the invaded s/c becomes the property of the owner of the largest invading force.
 Supporters of the invader are not eligible.
 65% of rebels in the captured s/c become loyal, while 65% of the loyal POP in the captured s/c become rebels; this can lead to a rebellion.
 Raiders return home; raids only last one turn.
