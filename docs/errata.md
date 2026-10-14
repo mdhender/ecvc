@@ -315,7 +315,7 @@ Nothing says what happens to surrendering MRB, or to the ASC and ASW that carrie
 
 ## E. Weapons and Defenses
 
-### 20. Hit fractions above 1
+### 20. Hit fractions above 1 ✅
 
 - **Rules:** [E4.2](manual.md#rule-E4.2), [E5.2](manual.md#rule-E5.2)
 - **Kind:** gap
@@ -323,6 +323,9 @@ Nothing says what happens to surrendering MRB, or to the ASC and ASW that carrie
 HP is "the fraction of ANM that hit", (2^AT ÷ 2^MT) x .55, which is above 1 when the ANM's TL is higher than the MSS's.
 The EWP formula, x 0.3, is above 1 when the EWP's TL is two or more higher.
 Neither rule caps the result.
+
+- **Resolved:** #56. HP is not capped at 1: a higher-TL ANM or EWP may destroy more than one MSS ([E4.2](manual.md#rule-E4.2), [E5.2](manual.md#rule-E5.2)).
+  The result is rounded up to benefit the defender, and no more MSS are destroyed than the volley holds.
 
 ### 21. Energy of an EWP
 
