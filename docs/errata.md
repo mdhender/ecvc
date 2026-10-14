@@ -327,7 +327,7 @@ Neither rule caps the result.
 - **Resolved:** #56. HP is not capped at 1: a higher-TL ANM or EWP may destroy more than one MSS ([E4.2](manual.md#rule-E4.2), [E5.2](manual.md#rule-E5.2)).
   The result is rounded up to benefit the defender, and no more MSS are destroyed than the volley holds.
 
-### 21. Energy of an EWP
+### 21. Energy of an EWP ✅
 
 - **Rules:** [E5.1](manual.md#rule-E5.1), [R3.0](manual.md#rule-R3.0)
 - **Kind:** contradiction
@@ -335,13 +335,45 @@ Neither rule caps the result.
 E5.1 gives each EWP 10 x TL energy units; R3.0 gives 10 x TL^2.
 The example in E6.0 uses TL-1, where both give 10.
 
-### 70. Energy weapon damage divisor not bounded
+- **Resolved:** #58. Each EWP fires 10 x TL^2 energy units, as in R3.0, and E5.1 has a new damage formula: the total energy divided by (distance + dodge bonus) ÷ the attacker's weighted average sensor TL, less the target's shielding ([E5.1](manual.md#rule-E5.1)).
+
+### 70. Energy weapon damage divisor not bounded ✅
 
 - **Rules:** [E5.1](manual.md#rule-E5.1), [E3.1](manual.md#rule-E3.1)
 - **Kind:** gap
 
 The damage formula divides by "D + SP/10 - S", which is 0 or negative when the attacker's sensor TL is at least the distance plus a tenth of the target's speed, such as when two ships share tactical coordinates.
 E3.1 uses 1 in place of the same expression when it is less than 1; E5.1 does not say what to use.
+
+- **Resolved:** #58. E5.1's new divisor, (distance + dodge bonus) ÷ sensor TL, is never 0 or negative, and 1 is used in its place when it is less than 1 ([E5.1](manual.md#rule-E5.1)).
+
+### 86. When a target is dodging
+
+- **Rules:** [E5.1](manual.md#rule-E5.1), [D9.2](manual.md#rule-D9.2), [S4.1](manual.md#rule-S4.1), [S4.2](manual.md#rule-S4.2), [S4.3](manual.md#rule-S4.3)
+- **Kind:** gap
+
+E5.1 adds a dodge bonus of the target's speed ÷ 10 when the target is dodging, but no rule says when a target is dodging.
+It could be a ship that moved this turn, one given a TMV, CLS, or RUN order, or only one that RAN.
+Colonies have speed 0 ([D6.3.1](manual.md#rule-D6.3.1)), so they never gain a bonus.
+
+### 87. Missile hits use the old sensor divisor
+
+- **Rules:** [E3.1](manual.md#rule-E3.1), [E5.1](manual.md#rule-E5.1)
+- **Kind:** structure
+
+E3.1's missile formula still divides by (D + SP/10 - S)^2, with S the highest sensor TL on board and the target's speed always counted.
+E5.1's EWP formula now divides by (D + DB) ÷ S, with S the weighted average of the attacker's sensors and the speed counted only when the target is dodging.
+The rules should say whether missiles follow E5.1.
+
+### 88. EWP fire without sensors ✅
+
+- **Rules:** [E5.1](manual.md#rule-E5.1), [D6.3.4](manual.md#rule-D6.3.4)
+- **Kind:** gap
+
+E5.1 divides by S, the weighted average TL of the attacker's assembled sensors.
+D6.3.4 lets a colony fire on another colony without a SEN, which makes S 0, and the formula undefined.
+
+- **Resolved:** #58. An attacker with no assembled sensors squares the distance instead: DF = (D + DB)^2 ([E5.1](manual.md#rule-E5.1)).
 
 ## F. Ships and Colonies
 
