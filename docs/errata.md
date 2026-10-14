@@ -365,13 +365,15 @@ E3.1's missile formula still divides by (D + SP/10 - S)^2, with S the highest se
 E5.1's EWP formula now divides by (D + DB) ÷ S, with S the weighted average of the attacker's sensors and the speed counted only when the target is dodging.
 The rules should say whether missiles follow E5.1.
 
-### 88. EWP fire without sensors
+### 88. EWP fire without sensors ✅
 
 - **Rules:** [E5.1](manual.md#rule-E5.1), [D6.3.4](manual.md#rule-D6.3.4)
 - **Kind:** gap
 
 E5.1 divides by S, the weighted average TL of the attacker's assembled sensors.
 D6.3.4 lets a colony fire on another colony without a SEN, which makes S 0, and the formula undefined.
+
+- **Resolved:** #58. An attacker with no assembled sensors squares the distance instead: DF = (D + DB)^2 ([E5.1](manual.md#rule-E5.1)).
 
 ## F. Ships and Colonies
 

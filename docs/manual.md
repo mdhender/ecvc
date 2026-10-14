@@ -1379,6 +1379,7 @@ The damage is calculated as follows:
 Where DA is the damage in mass units, E is the total energy of the EWP fired, D is the number of distance units to the target, DB is the dodge bonus, S is the weighted average TL of the assembled sensors in the attacker's s/c ([D6.3.3](#rule-D6.3.3)), and SH is the target's shielding.
 Each EWP fires 10 x its TL-squared energy units.
 If the target is dodging, DB is its speed divided by 10; otherwise DB is 0.
+If the attacker has no assembled sensors, DF = (D + DB)^2 instead.
 If DF is less than 1, the value 1 is used in its place.
 (Shielding is the total energy units deflected by all the assembled energy shields in the s/c.
 Each energy shield (ESH) deflects 10 x its TL-squared energy units per attack).
