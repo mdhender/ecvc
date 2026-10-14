@@ -155,6 +155,15 @@ Orbit 0 can not be the target of an orbit probe (M2.1), a s/c probe needs both s
 The rules do not say whether colonies and ships in orbits 1 to 10 should see ships in orbit 0, so ten ships could gather there unseen by everyone else in the star system.
 The list format of [S2.5](manual.md#rule-S2.5) makes `77, PRB, 3, [0].` a well-formed order, but no rule says what it does: M2.1 forbids orbit 0 as a target, and orbit 0 belongs to the star system, not to star 3 (A3.1).
 
+### 71. Placement of arriving and new ships
+
+- **Rules:** [C3.2](manual.md#rule-C3.2), [F4.1](manual.md#rule-F4.1)
+- **Kind:** ambiguity
+
+Arriving ships are placed "between 5 and 10 distance units from the planet" and new ships "between 2 and 3", without saying how the distance is measured or how the ship's tactical coordinates are chosen.
+
+- **Resolved:** #8. Each tactical coordinate of an arriving ship is chosen at random from -10 to -5 and 5 to 10, and of a newly set up ship from -3, -2, 2, and 3 ([D6.3.4](manual.md#rule-D6.3.4)).
+
 ## D. Combat
 
 ### 14. Effect of choosing a target
@@ -221,6 +230,14 @@ Neither rule caps the result.
 
 E5.1 gives each EWP 10 x TL energy units; R3.0 gives 10 x TL^2.
 The example in E6.0 uses TL-1, where both give 10.
+
+### 70. Energy weapon damage divisor not bounded
+
+- **Rules:** [E5.1](manual.md#rule-E5.1), [E3.1](manual.md#rule-E3.1)
+- **Kind:** gap
+
+The damage formula divides by "D + SP/10 - S", which is 0 or negative when the attacker's sensor TL is at least the distance plus a tenth of the target's speed, such as when two ships share tactical coordinates.
+E3.1 uses 1 in place of the same expression when it is less than 1; E5.1 does not say what to use.
 
 ## F. Ships and Colonies
 
@@ -592,11 +609,3 @@ The sheet says "Both your home planet and your orbiting colony have TL-1"; TL be
 
 Item 9 refers to the Ten Planet War pre-game turn sheet, which is not in the rules.
 There are no Independents in the game (item 3), but N1.4 gives a s/c that rebels to an Independent in some cases.
-
-### 68. Energy weapon damage divisor not bounded
-
-- **Rules:** [E5.1](manual.md#rule-E5.1), [E3.1](manual.md#rule-E3.1)
-- **Kind:** gap
-
-The damage formula divides by "D + SP/10 - S", which is 0 or negative when the attacker's sensor TL is at least the distance plus a tenth of the target's speed, such as when two ships share tactical coordinates.
-E3.1 uses 1 in place of the same expression when it is less than 1; E5.1 does not say what to use.

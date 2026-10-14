@@ -208,6 +208,7 @@ The cluster is a sphere with a radius of 26 light years, mapped on a three-dimen
 Each axis is numbered in light years.
 Star systems are designated by their coordinates, written (x,y,z) with no spaces, such as (12,-3,7).
 Each coordinate is a whole number of light years; a star system is never at a fraction of a light year.
+Tactical coordinates, used in combat around a planet, are a separate grid ([D6.3.4](#rule-D6.3.4)).
 
 There are 100 star systems in a game.
 
@@ -533,14 +534,14 @@ Players are assigned race numbers as follows:
 
 ### T
 
-| Code | Term                | Definition                                                |
-|------|---------------------|-----------------------------------------------------------|
-| TFR  | Transfer            | This order transfers units from one s/c to another.       |
-| TL   | Technological level | S/c's level of scientific advancement.                    |
-| TMV  | Tactical maneuver   | This order places a ship at a specific point by a planet. |
-| TN\* | Turn                | Game turn.                                                |
-| TPT  | Transport           | Unarmed vehicle used to make transfers and in combat.     |
-| TRN  | Trainee cadre       | Cadre consisting of 1 USK who will graduate to be PRO's.  |
+| Code | Term                | Definition                                               |
+|------|---------------------|----------------------------------------------------------|
+| TFR  | Transfer            | This order transfers units from one s/c to another.      |
+| TL   | Technological level | S/c's level of scientific advancement.                   |
+| TMV  | Tactical maneuver   | This order moves a ship toward new tactical coordinates. |
+| TN\* | Turn                | Game turn.                                               |
+| TPT  | Transport           | Unarmed vehicle used to make transfers and in combat.    |
+| TRN  | Trainee cadre       | Cadre consisting of 1 USK who will graduate to be PRO's. |
 
 ### U
 
@@ -872,7 +873,7 @@ The following chart shows the odds.
 ### C3.2 Moves
 
 Moves can be either interplanetary, within a star system, or interstellar, from one star system to another.
-When moving from one orbit to another, the ship always arrives in the orbit between 5 and 10 distance units from the planet, and is informed of the ID# and name of the colony which controls the planet.
+When moving from one orbit to another, the ship arrives at random tactical coordinates ([D6.3.4](#rule-D6.3.4)), each coordinate chosen from -10 to -5 and 5 to 10, and is informed of the ID# and name of the colony which controls the planet.
 In the case of a home planet, the ship will be informed that a race controls it.
 Interplanetary moves only take one turn, even between solar systems; the distance they count for fuel usage is given in [C3.3](#rule-C3.3).
 A ship when MOVing is considered to be in hyper space; that is, time does not pass in the ship.
@@ -1070,10 +1071,9 @@ surface colony (ESC or OPC) to surface colony is 1 distance unit;
 orbiting colony to surface colony is 2 distance units;
 orbiting colony vs orbiting colony is 3
 
-When a ship is involved, the ship's position is shown on the probe report section of the printout.
+When a ship is involved, the ship's tactical coordinates ([D6.3.4](#rule-D6.3.4)) are shown on the orbit probe section of the printout ([M2.1](#rule-M2.1)).
 
-All colonies are assumed to be at a position of 0/0/0.
-Position coordinates can not be greater than 999 or -999.
+All colonies are at tactical coordinates (0,0,0).
 When determining MSS and EWP hits on colonies, a colony's speed is always 0.
 
 <a id="rule-D6.3.2"></a>
@@ -1102,7 +1102,10 @@ The TL's used in computing ANM and EWP hits on MSS's and troops is the *weighted
 * STUN, LTSU,and SLSU all absorb damage at the same rate.
   (500 M.U. damaged will destroy 1,000 STUN or 1,000 LTSU or 1,000 SLSU).
   *On ships, the number destroyed will be 10,000 instead.*
-* Ship maneuvers during combat take place on a 3-D grid, with the planet at 0/0/0.
+* Ship maneuvers during combat take place on a 3-D grid around the planet, with the planet at (0,0,0).
+  A point on the grid is given by its tactical coordinates, written (x,y,z) with no spaces, such as (1,-5,2).
+  Each tactical coordinate is a whole number of distance units from -999 to 999.
+  Tactical coordinates are not cluster coordinates ([A2.1](#rule-A2.1)); they are written the same way, and context tells them apart.
 * The scale is 1 distance unit = 10,000 km's.
 * Troops and weapons are not as likely to be hit as other items are, even if they are in the designated target group.
 * Ships do not collide.
@@ -1457,7 +1460,7 @@ In the case of an excess of POP, LFS would not be sufficient, and some would die
 
 A set up (STP) order establishes a new s/c.
 A s/c does not have to be established all in one turn; part may be set up on one turn, and the rest of it can be built on following turns, using add-on orders and transfer orders.
-The computer places newly set up ships between 2 and 3 distance units from the planet.
+The computer places a newly set up ship at random tactical coordinates ([D6.3.4](#rule-D6.3.4)), each coordinate chosen from -3, -2, 2, and 3.
 
 <a id="rule-F4.2"></a>
 ### F4.2 S/C ID Numbers
@@ -2649,7 +2652,7 @@ An orbit probe can be made of any other orbit in the solar system; in a multiple
 Orbit 0 can not be the target of an orbit probe, but a ship in orbit 0 gets the probe report of orbit 0 every turn.
 An orbit probe of an orbit with no planet fails with error E19, and one of the orbit the s/c is in fails with error E13.
 Neither uses a sensor, and only that orbit fails; the other orbits in the order are still probed.
-The orbit probe also lists the tactical coordinate positions of the s/c's at the planet.
+The orbit probe also lists the tactical coordinates of the s/c's at the planet ([D6.3.4](#rule-D6.3.4)).
 
 **Log Base 10**
 
@@ -2980,8 +2983,8 @@ Most of the printout is in easy to understand terms, with the exceptions of the 
 ```text
                                                           tactical
 Format:   S/C type  S/C name (S/C ID#)  mass=log base 10  coordinates
-Example:  SHP       VEGA-5   (356)      M=6               9/-28/13
-          OPC       BADSHOT  (28)       M=8               0/0/0
+Example:  SHP       VEGA-5   (356)      M=6               (9,-28,13)
+          OPC       BADSHOT  (28)       M=8               (0,0,0)
 ```
 
 <a id="rule-R2.0"></a>
@@ -3172,9 +3175,9 @@ will have more LTSU for sale next turn. Signed.
 <a id="rule-S4.1"></a>
 ### S4.1 Tactical Maneuver Orders (TMV)
 
-- Format: Ship ID#, "TMV", new tactical coordinates.
-- Example: 250, TMV, 1,-5,2.
-- Notes: The TMV order causes ship #250 to fly to position 1,-5,2 around the planet or as close to that position as the ship's speed allows.
+- Format: Ship ID#, "TMV", new tactical coordinates ([D6.3.4](#rule-D6.3.4)).
+- Example: 250, TMV, (1,-5,2).
+- Notes: The TMV order causes ship #250 to fly to (1,-5,2) around the planet, or as close to it as the ship's speed allows.
 
 <a id="rule-S4.2"></a>
 ### S4.2 Close Orders (CLS)
