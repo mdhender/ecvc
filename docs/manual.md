@@ -1085,7 +1085,7 @@ Each type is represented by a numeral.
 <a id="rule-D6.3.1"></a>
 #### D6.3.1 Distances and Speed
 
-The distance between colonies during bombardment is calculated as follows:
+All colonies are at tactical coordinates (0,0,0), so the distance between two colonies during bombardment is an effective distance, given by this table:
 
 | From | To  | Distance |
 |------|-----|----------|
@@ -1093,17 +1093,14 @@ The distance between colonies during bombardment is calculated as follows:
 | ESC  | OPC | 1        |
 | OPC  | ESC | 1        |
 | OPC  | OPC | 1        |
-| ORB  | ESC | 2        |
-| ORB  | OPC | 2        |
-| ORB  | ORB | 3        |
-
-surface colony (ESC or OPC) to surface colony is 1 distance unit;
-orbiting colony to surface colony is 2 distance units;
-orbiting colony vs orbiting colony is 3
+| ESC  | OBC | 2        |
+| OPC  | OBC | 2        |
+| OBC  | ESC | 2        |
+| OBC  | OPC | 2        |
+| OBC  | OBC | 3        |
 
 When a ship is involved, the ship's tactical coordinates ([D6.3.4](#rule-D6.3.4)) are shown on the orbit probe section of the printout ([M2.1](#rule-M2.1)).
 
-All colonies are at tactical coordinates (0,0,0).
 When determining MSS and EWP hits on colonies, a colony's speed is always 0.
 
 <a id="rule-D6.3.2"></a>

@@ -229,13 +229,16 @@ Arriving ships are placed "between 5 and 10 distance units from the planet" and 
   A target group's mass is increased by half, rounded up, and specifying a target decreases each hit's damage by 25%, rounded down.
   A kind of unit adjusted twice takes the order that gives the lower mass.
 
-### 15. Colony positions in bombardment
+### 15. Colony positions in bombardment ✅
 
 - **Rules:** [D6.3.1](manual.md#rule-D6.3.1)
 - **Kind:** contradiction
 
 The table puts colonies 1 to 3 distance units apart, but the same rule says all colonies are at position 0/0/0.
 The table uses "ORB", which is not defined (the glossary uses OBC), and lists ORB to ESC and OPC but not the reverse.
+
+- **Resolved:** #45. All colonies are at (0,0,0), and the table gives the effective distance between two colonies ([D6.3.1](manual.md#rule-D6.3.1)).
+  ORB is corrected to OBC, and the table now has ESC to OBC and OPC to OBC.
 
 ### 16. Commitment percentage names MSS
 
