@@ -3134,11 +3134,12 @@ Examples: TPT-1, SEN-4, ASC-6, AUT-8, FCT-5.
 ### S2.5 Lists
 
 Some orders take a list, such as the orbits in a probe order.
-A list is written inside brackets, with commas between its items, as in [1, 2, 4].
-An order that takes a list always takes one, even for a single item, as in [4].
-An empty list, [], is a format error (E01).
-[*] stands for every valid item, and is allowed only in an order whose rule says so.
-[*] stands alone; a list such as [5, *] is a format error (E01).
+A list is written inside brackets, with commas between its items, as in `[1, 2, 4]`.
+An order that takes a list always takes one, even for a single item, as in `[4]`.
+An empty list, `[]`, is a format error (E01).
+`[*]` stands for every valid item, and is allowed only in an order whose rule says so.
+`[*]` stands alone; a list such as `[5, *]` is a format error (E01).
+Each order's rule says what an item listed more than once does.
 A list in an order that does not take one is a format error (E01).
 
 <a id="rule-S3.0"></a>
@@ -3329,16 +3330,16 @@ will have more LTSU for sale next turn. Signed.
 <a id="rule-S5.2"></a>
 ### S5.2 Allow Add-On Orders (AAN)
 
-- Format: S/C ID#, "AAN", s/c to do the add-on.
-- Example: 205, AAN, 38.
-- Notes: The AAN order allows s/c 38 to add-on items to s/c 205.
-
-<a id="rule-S5.2.1"></a>
-#### S5.2.1 Multiple Target AAN Orders
-
-- Format: S/C ID#, "AAN", s/c's to do the add-ons.
-- Example: 205, AAN, 38, 39, 42, 46, 48, 49.
-- Notes: The multiple target AAN order allows s/c's 38, 39, 42, 46, 48, and 49 to add-on items to s/c 205.
+- Format: S/C ID#, "AAN", [s/c ID#'s to do the add-ons].
+- Examples:
+  ```text
+  205, AAN, [38].
+  205, AAN, [38, 39, 42, 46, 48, 49].
+  ```
+- Notes: The first AAN order allows s/c 38 to add-on items to s/c 205; a single s/c is still written as a list ([S2.5](#rule-S2.5)).
+  The second allows s/c's 38, 39, 42, 46, 48, and 49 to add-on items to s/c 205.
+  A s/c listed more than once is allowed only once; the repeat is not an error.
+  `[*]` can not be used in an AAN order.
 
 <a id="rule-S5.3"></a>
 ### S5.3 Set Up Orders (STP)
@@ -3376,13 +3377,13 @@ will have more LTSU for sale next turn. Signed.
 
 - Format:
   ```text
-  S/C ID#, "ADN", s/c being added-on to.
+  S/C ID#, "ADN", [s/c ID#'s being added-on to].
   Quantity, item.
   1, END.
   ```
 - Example:
   ```text
-  38, ADN, 205.
+  38, ADN, [205].
   1,400,000, SLSU.
   12, LFS-1.
   10,000, FCT-1.
@@ -3394,40 +3395,35 @@ will have more LTSU for sale next turn. Signed.
   As in the STP order, the items are listed in the order of their importance, with the SLSU listed first, and only one quantity and one type of unit is allowed per line.
   Add-on orders always finish with **1, END**, never with any other quantity.
   The 10,000 FCT-1 will go into storage, the 6,000 FCT-1 will be assembled and begin manufacturing FCT-2, and the 1,000 FCT-1 will be added to FCT group #3 already in colony 205.
+  A single s/c is still written as a list ([S2.5](#rule-S2.5)), and `[*]` can not be used in an ADN order.
 
-<a id="rule-S5.4.1"></a>
-#### S5.4.1 Multiple Target ADN Orders
-
-- Format:
-  ```text
-  S/C ID#, "ADN", s/c's being added-on to.
-  Quantity, item.
-  1, END.
-  ```
 - Example:
   ```text
-  38, ADN, 205, 206, 207, 208, 209, 210.
+  38, ADN, [205, 206, 207, 208, 209, 210].
   1,400,000, SLSU.
   12, LFS-1.
   300, PRO-2.
   1, END.
   ```
-- Notes: The multiple target ADN order allows the listed items to be added-on to ships 205, 206, 207, 208, 209, and 210.
+- Notes: This ADN order allows the listed items to be added-on to ships 205, 206, 207, 208, 209, and 210.
+  Each ship listed receives the full quantity of every item; the quantities are not shared among them.
+  If there are not enough units to supply every ship, the ships are supplied in the order listed, each receiving what is left of each item, and the ships after them receive less or nothing.
+  A s/c listed more than once receives the items once for each time it is listed.
 
 <a id="rule-S5.5"></a>
 ### S5.5 Junk Orders (JNK)
 
-- Format: S/C ID#, "JNK", s/c to be junked.
-- Example: 698, JNK, 299.
-- Notes: The JNK order causes s/c 299 to be dis-assembled into its component parts, which are placed in storage in s/c 698.
+- Format: S/C ID#, "JNK", [s/c ID#'s to be junked].
+- Examples:
+  ```text
+  698, JNK, [299].
+  698, JNK, [299, 300, 301, 302].
+  ```
+- Notes: The first JNK order causes s/c 299 to be dis-assembled into its component parts, which are placed in storage in s/c 698; a single s/c is still written as a list ([S2.5](#rule-S2.5)).
+  The second causes s/c's 299, 300, 301, and 302, to be dis-assembled, and their component parts to be placed into 698's storage.
   Only s/c's may be junked.
-
-<a id="rule-S5.5.1"></a>
-#### S5.5.1 Multiple Target JNK Orders
-
-- Format: S/C ID#, "JNK", s/c's to be junked.
-- Example: 698, JNK, 299, 300, 301, 302.
-- Notes: The multiple target junk order causes s/c's 299, 300, 301, and 302, to be dis-assembled, and their component parts to be placed into 698's storage.
+  A s/c listed more than once is junked the first time; each repeat fails with error E04, as the s/c no longer exists.
+  `[*]` can not be used in a JNK order.
 
 <a id="rule-S5.6"></a>
 ### S5.6 Give Orders (GIV)
@@ -3834,15 +3830,15 @@ The above examples are all for orbit probes.
 The star is always given; there is no default star.
 The first example has s/c 77 probe orbits 1, 2, and 4 of star 3.
 The second has s/c 77 probe orbit 6 of star 1; a single orbit is still written as a list ([S2.5](#rule-S2.5)).
-The third has s/c 77 probe every orbit of star 3: [*] is short for [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], and never includes orbit 0.
-Under [*], an orbit with no planet, and the orbit s/c 77 is in ([M2.1](#rule-M2.1)), are skipped without an error and use no sensor.
+The third has s/c 77 probe every orbit of star 3: `[*]` is short for `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`, and never includes orbit 0.
+Under `[*]`, an orbit with no planet, and the orbit s/c 77 is in ([M2.1](#rule-M2.1)), are skipped without an error and use no sensor.
 If s/c 77 can not make every probe in the list ([M3.0](#rule-M3.0)), it probes the orbits in the order listed, and the rest are not probed.
 
 - Format: S/C ID#, "PRB", "S/C", [S/C ID#'s].
 - Example: 77, PRB, S/C, [78, 79, 80].
 - Notes: These 3 s/c's are probed by s/c 77.
   If s/c 77 can not make every probe in the list ([M3.0](#rule-M3.0)), it probes the s/c's in the order listed, and the rest are not probed.
-  [*] can not be used in a s/c probe.
+  `[*]` can not be used in a s/c probe.
 
 - Format: S/C ID#, "PRB", "SYS", Magnitude #.
 - Example: 79, PRB, SYS, 10.

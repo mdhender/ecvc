@@ -301,12 +301,12 @@ Like the rest of `docs/`, it is licensed under CC BY-NC-ND 4.0; see [LICENSE](LI
 | [17.4.12](rulebook.md#17412-withdraw-orders-wtd) | Withdraw Orders (WTD) | [S4.12](manual.md#rule-S4.12) | |
 | [17.4.13](rulebook.md#17413-permission-to-colonize-orders-ptc) | Permission to Colonize Orders (PTC) | [S5.1](manual.md#rule-S5.1) | |
 | [17.4.14](rulebook.md#17414-allow-add-on-orders-aan) | Allow Add-On Orders (AAN) | [S5.2](manual.md#rule-S5.2) | |
-| [17.4.14.1](rulebook.md#174141-multiple-target-aan-orders) | Multiple Target AAN Orders | [S5.2.1](manual.md#rule-S5.2.1) | |
+| [17.4.14.1](rulebook.md#174141-multiple-target-aan-orders) | Multiple Target AAN Orders | [S5.2](manual.md#rule-S5.2) | Merged into S5.2 by #12. |
 | [17.4.15](rulebook.md#17415-set-up-orders-stp) | Set Up Orders (STP) | [S5.3](manual.md#rule-S5.3) | |
 | [17.4.16](rulebook.md#17416-add-on-orders-adn) | Add-On Orders (ADN) | [S5.4](manual.md#rule-S5.4) | |
-| [17.4.16.1](rulebook.md#174161-multiple-target-adn-orders) | Multiple Target ADN Orders | [S5.4.1](manual.md#rule-S5.4.1) | |
+| [17.4.16.1](rulebook.md#174161-multiple-target-adn-orders) | Multiple Target ADN Orders | [S5.4](manual.md#rule-S5.4) | Merged into S5.4 by #12. |
 | [17.4.17](rulebook.md#17417-junk-orders-jnk) | Junk Orders (JNK) | [S5.5](manual.md#rule-S5.5) | |
-| [17.4.17.1](rulebook.md#174171-multiple-target-jnk-orders) | Multiple Target JNK Orders | [S5.5.1](manual.md#rule-S5.5.1) | |
+| [17.4.17.1](rulebook.md#174171-multiple-target-jnk-orders) | Multiple Target JNK Orders | [S5.5](manual.md#rule-S5.5) | Merged into S5.5 by #12. |
 | [17.4.18](rulebook.md#17418-give-orders-giv) | Give Orders (GIV) | [S5.6](manual.md#rule-S5.6) | |
 | [17.4.19](rulebook.md#17419-accept-orders-acp) | Accept Orders (ACP) | [S5.7](manual.md#rule-S5.7) | |
 | [17.4.20](rulebook.md#17420-merge-orders-mrg) | Merge Orders (MRG) | [S5.8](manual.md#rule-S5.8) | |

@@ -523,11 +523,14 @@ The notes describe 5,000 FCT-1 and 6,000 FCT-1 that are not in the example, appa
 
 ### 57. Add-on examples
 
-- **Rules:** [S5.4](manual.md#rule-S5.4), [S5.4.1](manual.md#rule-S5.4.1)
+- **Rules:** [S5.4](manual.md#rule-S5.4)
 - **Kind:** example, ambiguity
 
-S5.4 calls s/c 205 a colony; S5.4.1 calls 205 to 210 ships.
-S5.4.1 does not say whether each target receives the listed quantities or they are shared.
+S5.4's first example calls s/c 205 a colony; its second example, which was S5.4.1 until #12, calls 205 to 210 ships.
+S5.4 does not say whether each target of an ADN order receives the listed quantities or they are shared.
+
+- **Resolved:** #12, in part. Each target receives the full quantities, supplied in the order listed when units run short ([S5.4](manual.md#rule-S5.4)).
+  The example naming s/c 205 as both a colony and a ship is still open.
 
 ### 58. Multiple DAS item count
 
@@ -590,6 +593,14 @@ S14.1 has no format for a move to orbit 0, and S14.1 and S14.2 write coordinates
 S14.2 says a JMP order naming the star system the ship is in is valid, and the ship moves to its orbit 0.
 C3.1 says jumps are not made within a star system.
 The rules do not say whether such an order is handled as a jump or as a move: whether it uses 40 FUEL per light year of a zero-length jump or the .1 light years of a move to orbit 0 (C3.3), whether it can over-jump (C3.1.1), and whether the ship is in hyper space for it (C3.2).
+
+### 74. Duplicates in probe lists
+
+- **Rules:** [S10.1](manual.md#rule-S10.1), [S2.5](manual.md#rule-S2.5), [M2.1](manual.md#rule-M2.1), [M2.2](manual.md#rule-M2.2)
+- **Kind:** gap
+
+S2.5 leaves it to each order's rule to say what an item listed more than once does.
+S10.1 does not say, for either an orbit probe such as `77, PRB, 3, [4, 4].` or a s/c probe such as `77, PRB, S/C, [78, 78].`, whether the repeat is an error, is ignored, or makes a second probe and uses a second sensor.
 
 ## V. Variants
 
