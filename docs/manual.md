@@ -1274,8 +1274,9 @@ Raiders return home; raids only last one turn.
 If the attacking forces have surrendered, withdrawn, or been destroyed, then the defender's supporters will WTD now.
 The victor's supporters will also withdraw unless there is another invader there.
 If so, the victor's supporters will support the victor against the invader.
-Unfinished battles will continue on the following turn.
-The victor WTD's troops on the turn following the victory.
+A battle with no winner continues in the next round of combat, the combat stage of the following turn ([D9.0](#rule-D9.0)), without new orders.
+The victor's troops are withdrawn automatically, without a WTD order, during troop movement ([D9.4](#rule-D9.4)) in the next round of combat.
+Until then they are still in the s/c, and fight if another invader attacks it.
 
 # E. Weapons and Defenses
 
