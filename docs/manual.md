@@ -292,11 +292,15 @@ The asteroids in an orbit are treated as one body.
 <a id="rule-A4.2"></a>
 ### A4.2 Habitability Numbers
 
-A habitability number indicates the number of population units who can live on a planet's surface, in OPEN colonies, without being overcrowded or having to import food.
+Each planet has a habitability number (HN) ranging from 0 to 25.
+The HN determines the number of population units who can live on a planet's surface, in OPEN colonies, without being overcrowded, having to import food, or suffering an increased death rate.
+That number, the planet's HN limit, is the HN times 10,000,000 POP.
+
+As the POP in the planet's open colonies approaches the HN limit, births decrease ([G2.1](#rule-G2.1)); when it exceeds the limit, the death rate of every open colony on the planet increases ([G3.9](#rule-G3.9)).
+
+The number of FRM-1 that can be assembled in the planet's open colonies is also limited by the HN ([H1.7](#rule-H1.7)).
+
 Habitability numbers do not affect, and are not affected by, the operations of enclosed surface colonies.
-Each planet has a habitability number ranging from 0 to 25.
-Should a planet have a population exceeding the limit indicated by the habitability number, the death rate of *all* the OPEN colonies on the planet will be increased.
-(Further explained in [G3.0](#rule-G3.0)<!-- was section 5.3 -->).
 
 <a id="rule-A4.3"></a>
 ### A4.3 Resource Deposits
@@ -407,11 +411,12 @@ Players are assigned race numbers as follows:
 
 ### H
 
-| Code | Term         | Definition                                     |
-|------|--------------|------------------------------------------------|
-| HDRV | Hyper drives | Used to propel ships through hyper space.      |
-|      | Home colony  | Colony whose ID# is identical to player's ID#. |
-|      | Home planet  | the home of a race.                            |
+| Code | Term                | Definition                                                                                 |
+|------|---------------------|--------------------------------------------------------------------------------------------|
+| HDRV | Hyper drives        | Used to propel ships through hyper space.                                                  |
+| HN   | Habitability number | A rating, 0 to 25, of how many POP a planet's open colonies can hold ([A4.2](#rule-A4.2)). |
+|      | Home colony         | Colony whose ID# is identical to player's ID#.                                             |
+|      | Home planet         | the home of a race.                                                                        |
 
 ### I
 
@@ -1878,7 +1883,7 @@ Unemployable increases are caused by births and SLD's captured in combat.
 All births occur in this population type, never in any other.
 All births occur in colonies, never in ships.
 Birth increases occur each turn and are never less than 0.25%, or more than 2.5%, of the total population of a colony.
-Births decrease as the standard of living rises and also as the total quantity of population units approaches the amount indicated by the habitability number.
+Births decrease as the standard of living rises and also as the total quantity of population units approaches the planet's HN limit ([A4.2](#rule-A4.2)).
 The number of wounded becoming UEM is determined by the total number of combat casualties.
 (30% of the total become UEM).
 Increases due to births and wounded are automatic and need no orders.
@@ -2005,7 +2010,7 @@ Trainee decreases are caused by DSB orders which disband them, (they become USK 
 
 The death rate per s/c per turn is 0.625%.
 The computer applies this percentage to each population type within the s/c.
-This percentage is increased for all open colonies when the planet's habitability number x 10,000,000 becomes less than the total POP in all the OPC's of the planet.
+This percentage is increased for all open colonies when the total POP in all the OPC's of the planet exceeds the planet's HN limit ([A4.2](#rule-A4.2)).
 
 <a id="rule-G4.0"></a>
 ## G4.0 Food
