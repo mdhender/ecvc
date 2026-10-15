@@ -330,12 +330,22 @@ def normalize_links(line):
     return re.sub(r"\]\((?:manual|variants)\.md#", "](#", line)
 
 
-def tutorials():
-    """Paths of the tutorials in docs/tutorials/."""
-    d = os.path.join(DOCS, "tutorials")
+def _pages(name):
+    """Paths of the Markdown pages in docs/<name>/."""
+    d = os.path.join(DOCS, name)
     if not os.path.isdir(d):
         return []
     return sorted(os.path.join(d, f) for f in os.listdir(d) if f.endswith(".md"))
+
+
+def tutorials():
+    """Paths of the tutorials in docs/tutorials/."""
+    return _pages("tutorials")
+
+
+def explanations():
+    """Paths of the explanations in docs/explanation/."""
+    return _pages("explanation")
 
 
 def errata():

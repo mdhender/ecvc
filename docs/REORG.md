@@ -26,6 +26,7 @@ Tests will cite rules by their manual ID.
 | `docs/mapping.md`  | Working mapping from every rule book heading to its subject and manual ID.                                          |
 | `docs/connect.md`  | The reviewed phase 4 edits, which the move script applies after copying the rule book text.                         |
 | `docs/tutorials/`  | Tutorials for new players, which explain the rules without adding to them.                                          |
+| `docs/explanation/` | Discussions of why the rules work as they do, which explain the rules without adding to them. |
 | `docs/errata.md`   | Log of mistakes found in the rules, each citing a rule ID. Entries record problems; they do not fix them.           |
 | `docs/REORG.md`    | This plan.                                                                                                          |
 
@@ -44,7 +45,7 @@ Tests will cite rules by their manual ID.
   For example, `D3.2.0` holds the general provisions of `D3.2`.
 - A rule may have both text and subordinate rules.
 - IDs may still change after `manual-baseline`, while the manual is reorganized before coding starts.
-  A changed ID is updated everywhere it is cited: links, the concordance, `docs/errata.md`, and `docs/tutorials/`.
+  A changed ID is updated everywhere it is cited: links, the concordance, `docs/errata.md`, `docs/tutorials/`, and `docs/explanation/`.
 - Once coding starts, an ID is never changed or reused, because tests cite it.
   New rules are added with new IDs, even when the hierarchy becomes awkward.
   A deleted rule's ID stays reserved.
@@ -176,6 +177,9 @@ Design work to take up after `manual-baseline`, through `docs/errata.md`:
   R3.0's listed volume means the VU required to enclose an item, not necessarily its physical volume.
   #68 adds F3.2.1 through F3.2.3: listed-order, whole-unit partial acceptance of incoming items, and limits on disassembly and on manufactured items entering storage, in SHP, OBC, and ESC only.
   Refusal reporting, ordering between transfer orders (#69), capacity lost under items already present, population growth (#70), and detailed WIP stalls remain deferred, as does clarifying life support in F3.2.
+- **Production pipeline.** Errata 91 proposes a per-FCT pipeline for manufacturing, with split efficiency factors, a group stockpile of WIP-4, and the same allocation order for farms and mines; it covers the detailed WIP stalls left open by errata 90.
+  Errata 92 makes group numbers never reused, so seniority is group number, and errata 93 moves RSCH from factories to laboratories.
+  `docs/explanation/work-in-process.md` explains the proposal; rewrite it as an explanation of the rules once they are in the manual.
 
 ## Decisions
 

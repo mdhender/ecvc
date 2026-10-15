@@ -19,7 +19,7 @@ Every rule in the manual has an ID, such as `D3.2.1`, and an anchor on its own l
 Tests cite the IDs of the rules they validate.
 
 - Until coding starts, IDs may change while the manual is reorganized.
-  When one changes, update everything that cites it: links in the manual and variants, `docs/concordance.md`, `docs/errata.md`, and `docs/tutorials/`.
+  When one changes, update everything that cites it: links in the manual and variants, `docs/concordance.md`, `docs/errata.md`, `docs/tutorials/`, and `docs/explanation/`.
 - Once coding starts, IDs are frozen: an ID is never changed or reused.
   A new rule gets a new ID, and a deleted rule's ID stays reserved.
 - IDs are strings that sort part by part, so `D3.2.10` follows `D3.2.9`.
@@ -41,7 +41,8 @@ Tests cite the IDs of the rules they validate.
 - Keep `docs/concordance.md` and the tables of contents in step with any rule that moves.
 - Rule changes go through `docs/errata.md` and the Deferred list in `docs/REORG.md`.
   Errata entries are numbered permanently; a resolved or mistaken entry is marked, not removed.
-- `docs/tutorials/` explains the rules without adding to them; tests never cite it.
+- `docs/tutorials/` and `docs/explanation/` explain the rules without adding to them; tests never cite them.
+  Tutorials teach by doing, and explanations discuss why the rules work as they do.
 
 ## Tools
 

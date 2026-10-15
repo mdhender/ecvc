@@ -554,6 +554,90 @@ Error codes E08 and E12 say the *player* already has 40 MIN groups or 25 FCT gro
 S8.1 names RSCH as the only change that needs no RETL; H3.6 also exempts switching between STUN, STUL, and STUS.
 S8.2 requires combined groups to have the same type of work in process; H3.5 requires only the same item.
 
+### 91. The production pipeline
+
+- **Rules:** [H3.0](manual.md#rule-H3.0), [H3.1](manual.md#rule-H3.1), [H3.2](manual.md#rule-H3.2), [H3.3](manual.md#rule-H3.3), [H3.4](manual.md#rule-H3.4), [H3.5](manual.md#rule-H3.5), [H3.6](manual.md#rule-H3.6), [H3.9](manual.md#rule-H3.9), [H3.10](manual.md#rule-H3.10), [H1.2](manual.md#rule-H1.2), [H2.2](manual.md#rule-H2.2), [B3.17](manual.md#rule-B3.17), [F3.2.3](manual.md#rule-F3.2.3), [F10.3](manual.md#rule-F10.3), [S8.2](manual.md#rule-S8.2), [R3.0](manual.md#rule-R3.0)
+- **Kind:** gap
+
+The rules describe WIP only by its printout columns and two examples, and do not say how a factory turn is processed, what a shortage or a full s/c does to work under way, or what happens to WIP when factories are lost or combined.
+The proposed pipeline is explained in [About work in process](explanation/work-in-process.md); it describes manufacturing from the outside, not how the engine works or how the printout reports it.
+The rules should state:
+
+- One FCT converts 20 MU times its TL of METS and NMTS a year into units of the same total mass, split between METS and NMTS in the proportions of the item's inputs.
+- Each FCT carries its own load through WIP-0 to WIP-4, taking at least four turns of work.
+  A FCT starts only when it can claim its whole load at the beginning of a turn, and holds the load until it is finished; the load keeps the mass and volume of its inputs.
+  WIP is not accessible to the player and can not be traded or transferred.
+- A group's WIP capacity is the total of its FCT's loads.
+  Its loads and its stockpile of WIP-4 share that capacity, and a FCT claims a load only if the whole load fits.
+- Manufacturing runs in four stages: resources, then staff and power, then processing, then output.
+  A group assembled this turn takes part the same turn.
+- Resources go to groups in order of seniority, and within a group to FCT with no load, from the highest TL down.
+  A FCT that can not get its full load, with its waste, is skipped.
+- The efficiency factor is split into a labor factor and a materials factor, both set by the number of FCT in the group:
+
+  | Number of FCT's in Group | Efficiency Factor (Labor) | Efficiency Factor (Materials) |
+  |--------------------------|---------------------------|-------------------------------|
+  |       1 ... 4            | 6                         | 3.00                          |
+  |       5 ... 49           | 5                         | 2.50                          |
+  |      50 ... 499          | 4                         | 2.00                          |
+  |     500 ... 4,999        | 3                         | 1.75                          |
+  |   5,000 ... 49,999       | 2                         | 1.50                          |
+  |  50,000 ... 199,999      | 1                         | 1.25                          |
+  | 200,000 ... infinity     | 0.5                       | 1.00                          |
+
+  The labor factor multiplies each FCT's PRO and USK.
+  The materials factor multiplies the METS and NMTS claimed with a load; only the load goes into WIP, and the rest is waste, removed from inventory when the load is claimed.
+- Labor is allocated to a group before fuel, and a group short of labor runs at the share it can staff.
+  Only FCT that hold WIP and are staffed claim fuel.
+  When staff or fuel is short, it goes by group seniority, then TL, then WIP-3, WIP-2, WIP-1, and WIP-0.
+- Staff is drawn from the s/c's pool and returned to it at the end of the turn, not at the end of farming, mining, or manufacturing.
+- A FCT that lacks a load, staff, or power is idle.
+  A FCT that holds WIP but has no staff and power is stalled; it keeps its WIP unchanged and resumes when staff and power return.
+- In processing, every FCT that is not idle advances its load one step, and a WIP-4 load passes to the group's stockpile.
+- In output, the group converts as much of its stockpile into whole target units as the s/c's enclosure capacity allows; the rest stays in the stockpile, and the units made go to the s/c's inventory.
+- A FCT that is disassembled or destroyed in combat has its WIP junked, and the group's capacity is worked out again.
+  Any WIP-4 that takes the loads and stockpile above the new capacity is junked too.
+  Junked WIP returns 90% of its METS and NMTS, in the item's proportions, under the junking rules of errata 25.
+- A COM order leaves each FCT's WIP-0 to WIP-3 with it, and the combined group owns both stockpiles of WIP-4.
+- Farms and mines are allocated labor and fuel in the same order as factories: senior groups first, then by TL.
+
+The current rules differ:
+
+- H3.2 charges a quarter of the yearly METS and NMTS each turn, not a whole load up front, and applies one efficiency factor to both materials and labor.
+- H3.1 has every assembled FCT use fuel, not only those holding staffed WIP.
+- H3.9 stops all processing at the first shortage (errata 36).
+- H3.0 and F3.2.3 send completed items to storage, or leave them stalled in WIP, rather than to a group stockpile.
+- H3.4 shows a group assembled on turn 3 with no WIP after turn 3.
+- S8.2 requires combined groups to have the same type of work in process (errata 38).
+- H1.2 gives no order in which farms produce when labor or fuel is short.
+
+### 92. Group numbers are reused
+
+- **Rules:** [H3.9](manual.md#rule-H3.9), [H2.2](manual.md#rule-H2.2)
+- **Kind:** contradiction
+
+H3.9 says the number of a DAS'd FCT group "remains unassigned until a new ASM is ordered", which implies that a later ASM reuses it.
+Allocation in production goes by seniority (errata 91), and mine groups produce in group number order (H2.2), which is the same order only if numbers are never reused.
+The engine never reuses an ID, and a group number is part of an ID.
+The rules should say that a new group always gets a higher number than any group before it, and that a number is never reused.
+
+### 93. Research laboratories
+
+- **Rules:** [H3.0](manual.md#rule-H3.0), [H3.6](manual.md#rule-H3.6), [H3.7](manual.md#rule-H3.7), [J4.1](manual.md#rule-J4.1), [B3.17](manual.md#rule-B3.17), [S8.1](manual.md#rule-S8.1), [R3.0](manual.md#rule-R3.0)
+- **Kind:** structure
+
+RSCH has no mass and needs no METS or NMTS (J4.1), so it does not fit the factory pipeline of errata 91, but H3.7 has factory groups build it.
+Research should be built by laboratory (LAB) units instead of FCT:
+
+- LAB units are assembled into laboratory groups, which own LAB units of a given TL.
+- A LAB has the same mass, volume, and other characteristics as a FCT.
+- Each LAB produces 0.25 times its TL in RSCH for each turn it is allocated labor and fuel.
+- Laboratories produce just after factories in the production stage.
+- Labor and fuel are allocated to laboratories as to factories: senior groups first, then by TL, highest first.
+
+Factory groups would no longer build RSCH, so the RSCH exceptions to retooling in H3.6, S8.1, and J4.1 go, and R3.0 needs a LAB row.
+Still to decide: how many laboratory groups a s/c may have and whether ships may operate them, the orders that assemble, combine, shut down, and start up laboratories, and whether LAB in OBC's within the 5th orbit use no fuel, as FCT there do.
+
 ## J. Technology and Research
 
 ### 39. Trading TL
