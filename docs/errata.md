@@ -534,6 +534,7 @@ S8.5's example shuts down only the FRM-2.
 
 - **Rules:** [H3.9](manual.md#rule-H3.9)
 - **Kind:** contradiction
+- **Issue:** [#72](https://github.com/mdhender/ecvc/issues/72)
 
 H3.9 says factory groups move "as many items through its WIP as there are resources, labor, and fuel", then that processing stops entirely at the first shortage, and is "not done" at all while the shortage lasts.
 
