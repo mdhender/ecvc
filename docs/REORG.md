@@ -174,7 +174,8 @@ Design work to take up after `manual-baseline`, through `docs/errata.md`:
   Assembled structural volume remains zero, and combat damage rules are unchanged.
   #66 defines required enclosure and available enclosure capacity in VU, distinct from structural requirement in STUN equivalents, and corrects F3.2's terminology.
   R3.0's listed volume means the VU required to enclose an item, not necessarily its physical volume.
-  Clarifying excess-capacity consequences separately from life support in F3.2 remains deferred.
+  #68 adds F3.2.1 through F3.2.3: listed-order, whole-unit partial acceptance of incoming items, and limits on disassembly and on manufactured items entering storage, in SHP, OBC, and ESC only.
+  Refusal reporting, ordering between transfer orders (#69), capacity lost under items already present, population growth (#70), and detailed WIP stalls remain deferred, as does clarifying life support in F3.2.
 
 ## Decisions
 

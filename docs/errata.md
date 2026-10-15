@@ -448,7 +448,12 @@ Clarify the consequences of exceeding that capacity separately from insufficient
   The glossary and H3.8 describe the types by enclosure capacity rather than different unit masses.
   #66 clarifies required enclosure and available enclosure capacity in VU, with structural requirement in STUN equivalents; F3.2 is now titled "Enclosure Capacity Exceeded".
   R3.0 and F10.7 define listed volume as the VU required to enclose each item, with the existing assembly exceptions unchanged.
-  F3.2's excess-capacity and life-support consequences remain open; combat damage rules are unchanged.
+  #68 adds [F3.2.1](manual.md#rule-F3.2.1) through [F3.2.3](manual.md#rule-F3.2.3) for ships, orbiting colonies, and enclosed surface colonies.
+  TFR, PUP, STP, and ADN entries are checked in listed order against the remaining capacity when each is executed; whole units that fit are accepted, and rejected units stay in the source inventory without loss.
+  Disassembly is refused if the result would exceed capacity, and manufactured items that do not fit stay in WIP and stall it.
+  K4.0, F4.3.4, F5.2.1, F10.3, and H3.0 cite the new rules; open colonies keep the F3.2 exception.
+  Still open: how refusals are reported, ordering between transfer orders (#69), items already present when capacity becomes insufficient, population growth (#70), and detailed WIP stalls.
+  F3.2's life-support consequence also remains open; combat damage rules are unchanged.
 
 ## G. Population
 
