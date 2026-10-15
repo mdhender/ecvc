@@ -1514,6 +1514,42 @@ When this happens, POP are forced into the fields outside the colony to live.
 Twenty-five percent of the dispossessed POP's will turn rebel each turn.
 In ships, orbiting colonies, and enclosed surface colonies, required enclosure exceeding available enclosure capacity prevents new items from entering the s/c.
 In the case of an excess of POP, LFS would not be sufficient, and some would die.
+In ships, orbiting colonies, and enclosed surface colonies, available enclosure capacity limits incoming items ([F3.2.1](#rule-F3.2.1)), disassembly ([F3.2.2](#rule-F3.2.2)), and manufactured items entering storage ([F3.2.3](#rule-F3.2.3)).
+These limits do not apply to open colonies.
+
+<a id="rule-F3.2.1"></a>
+#### F3.2.1 Incoming Items
+
+Items enter a SHP, OBC, or ESC by TFR, PUP, STP, or ADN only as far as its enclosure capacity allows.
+The remaining enclosure capacity is the available enclosure capacity less the required enclosure.
+The item entries in an order are processed in the order listed.
+Each entry is checked against the receiving s/c's remaining enclosure capacity when it is executed, using the inventory and assembled structure at that moment, including the effects of every unit accepted before it.
+This sets when capacity is checked; it does not change the sequence in which orders are executed.
+An entry's units require the enclosure they will need in the receiving s/c, assembled or in storage ([F4.8](#rule-F4.8), [F10.7](#rule-F10.7)).
+As many whole units of the entry are accepted as fit in the remaining enclosure capacity, up to the quantity ordered, and the rest are rejected.
+A unit is never split, and an exact fit is accepted.
+Rejecting part or all of an entry does not stop the order: later entries are still processed, and one may fit after an earlier one did not.
+Rejected units are returned to their source at once, as though they had never left its inventory.
+They are not deducted from the source, are not added to the receiving s/c, use none of its capacity, and are not lost.
+Accepted units need not fill the remaining capacity: capacity too small for another whole unit of the entry stays available to later entries.
+
+For example, 10,000 unassembled STUN require 500 VU at 0.05 VU each.
+If a TFR of them reaches a s/c with 300 VU remaining, 6,000 STUN are accepted and 4,000 are rejected; the 4,000 stay in the sending s/c.
+With 0.025 VU remaining, one unassembled STUN is rejected; half a STUN is never accepted.
+With 1 VU remaining, an entry for one unassembled HDRV-10 (225 VU) is rejected, and a following entry for 50 MTSP (0.02 VU each, 1 VU in all) is accepted.
+
+<a id="rule-F3.2.2"></a>
+#### F3.2.2 Disassembly
+
+A SHP, OBC, or ESC may not disassemble items if its resulting required enclosure would exceed its resulting available enclosure capacity.
+The resulting state counts the capacity lost with any disassembled structural units, and the enclosure required by the units that reach storage after the 10% disassembly loss ([F10.3](#rule-F10.3)).
+Items whose disassembly is refused stay assembled; none are lost, and none are added to storage.
+
+<a id="rule-F3.2.3"></a>
+#### F3.2.3 Manufactured Items
+
+In an OBC or ESC, a manufactured item leaves the production pipeline for storage only if there is enough remaining enclosure capacity for it ([H3.0](#rule-H3.0)).
+Items that do not fit remain in WIP and stall it; they do not enter storage.
 
 <a id="rule-F4.0"></a>
 ## F4.0 Set Ups
@@ -1560,7 +1596,7 @@ When a player has received PTC on a planet, he does not need it to set up more c
 
 All set-up orders, whether for ships or colonies, will abort if no population are included in the set up order.
 A ship set up will also abort if no SDRV are included.
-Portions of a STP, or all of it, may fail due to a shortage of construction workers, transports, fuel (for the transports), or due to a shortage of STUN, STUL, or STUS (there must be enough to hold the units being STP).
+Portions of a STP, or all of it, may fail due to a shortage of construction workers, transports, fuel (for the transports), or due to a shortage of STUN, STUL, or STUS (there must be enough enclosure capacity to hold the units being STP, [F3.2.1](#rule-F3.2.1)).
 The s/c's otherwise have no size limitations, and players may build them as they choose.
 
 <a id="rule-F4.3.5"></a>
@@ -1653,7 +1689,7 @@ An existing s/c may ADN to any other type or number of ships and colonies, so lo
 <a id="rule-F5.2.1"></a>
 #### F5.2.1 ADN Abortions
 
-Portions of an ADN, or all of an ADN, may fail due to a shortage of CNW, fuel for the TPT's, TPT's, or STUN (or STUL or STUS) to hold all the additional units.
+Portions of an ADN, or all of an ADN, may fail due to a shortage of CNW, fuel for the TPT's, TPT's, or STUN (or STUL or STUS) to hold all the additional units ([F3.2.1](#rule-F3.2.1)).
 
 <a id="rule-F5.3"></a>
 ### F5.3 How ADN Orders Work
@@ -1790,6 +1826,7 @@ Dis-assembly of non-population units causes a 10% *LOSS*.
 For instance, if 5,000 EWP-2 are dis-assembled then 500 will be lost and 4,500 will appear in storage under "un-assembled items" in the storage section of the printout.
 There is no loss in disassembling population units.
 When determining the 10% loss, fractions are rounded down.
+In a SHP, OBC, or ESC, a disassembly is refused if the result would exceed the s/c's enclosure capacity ([F3.2.2](#rule-F3.2.2)).
 
 <a id="rule-F10.4"></a>
 ### F10.4 Non-Assembly Items
@@ -2297,7 +2334,7 @@ No item can be built in less than a year.
 All FCT groups require four turns to produce any item in production.
 There may be more than one FCT group building the same item.
 A colony may have only 25 factory groups.
-When a FCT group completes an item, it is placed in storage.
+When a FCT group completes an item, it is placed in storage, subject to enclosure capacity ([F3.2.3](#rule-F3.2.3)).
 Ships can NOT have assembled factories (operating factories), but may carry them in storage.
 
 <a id="rule-H3.1"></a>
@@ -2626,7 +2663,7 @@ TFR's and PUP's are done in the order in which they are listed on the turnsheet;
     NOTE: NEVER WRITE MORE THAN ONE TFR OR PUP ORDER FOR THE SAME ITEM TO THE SAME S/C ON THE SAME TURN, ie: 30, TFR, 40,000, METS, [26]. and 30, TFR, 80,000, METS, [26].
 
 This is very important as doing this can not only cause the order to abort, but can cause other errors in the turn, as well.
-The order will also abort if there is not enough space in the receiving s/c to house the new items.
+If the receiving s/c lacks the enclosure capacity to house the new items, it receives only the whole units that fit, and the rest stay in the s/c they came from ([F3.2.1](#rule-F3.2.1)).
 
 <a id="rule-K5.0"></a>
 ## K5.0 RSCH
